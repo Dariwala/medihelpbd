@@ -113,7 +113,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                     <div class="thumbnail">
                         @if($ambulance->photo_path == '')
                                 <img alt="user avatar" src="{{asset('/ambulance.png')}}">
@@ -123,7 +123,7 @@
                     </div>
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{$ambulance->b_ambulance_name}}</span>
                     </h2>
                 </div>
@@ -166,7 +166,30 @@
     
     
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px"  class="md-list-heading">{!! nl2br($ambulance->b_ambulance_phone) !!}</span>
+                                            <span style="margin-top:5px"  class="md-list-heading">
+                                            @if($ambulance->b_ambulance_phone != '')
+                                                @php
+                                                    $phone_number_splitted = explode("\n",$ambulance->b_ambulance_phone);
+                                                    $e_phone_number_splitted = explode("\n",$ambulance->ambulance_phone);
+                                                    $len = sizeof($phone_number_splitted);
+                                                @endphp
+                                                    @for($i = 0; $i < $len ; $i = $i + 1)
+                                                        @php
+                                                            $phone_number = $phone_number_splitted[$i];
+                                                            $e_phone_number = $e_phone_number_splitted[$i];
+                                                            $length = strlen($e_phone_number);
+                                                        @endphp
+                                                        @if(!is_numeric($e_phone_number[1]))
+                                                            {{$phone_number}}
+                                                        @else
+                                                            <a href = "tel:{{$e_phone_number}}">{{$phone_number}}</a>
+                                                        @endif
+                                                        @if($i != $len - 1)
+                                                            <br>
+                                                        @endif
+                                                    @endfor
+                                            @endif
+                                            </span>
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
@@ -175,7 +198,9 @@
                                             <i style="margin: 0" class="md-list-addon-icon material-icons">&#xE158;</i>
                                         </div>
                                         <div class="md-list-content">
-                                              <span style="margin-top:5px"  class="md-list-heading">{{$ambulance->ambulance_email}}</span>
+                                              <span style="margin-top:5px"  class="md-list-heading">
+                                                <a href = "mailto:{{$ambulance->ambulance_email}}">{{$ambulance->ambulance_email}}</a>
+                                              </span>
                                               <span class="uk-text-small uk-text-muted hidden">Email</span>
                                        </div>
                                     </li>
@@ -198,8 +223,10 @@
                             </div>
                         </div>
                         
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c">সাধারণ তথ্য</h4>
+                            <?php echo $ambulance->b_total_ambulance; ?>
+                            <!--
                             <ul class="md-list uk-margin-small-top">
                                 <li>
                                     <div class="md-list-content">
@@ -207,14 +234,17 @@
                                     </div>
                                 </li>
                             </ul>  
+                            -->
                         </div>
                         
                         <!-- START google maps -->
+                        @if($ambulance->ambulance_latitude != "")
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
                                 src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD3_tCn50Ef5Z2zUJxkXi26T486gIzIHp8&q={{ $ambulance->ambulance_latitude }}, {{ $ambulance->ambulance_longitude }}&zoom=15" frameborder="0" height="600" style="border:0; width:100%;" allowfullscreen>
                             </iframe>
                         </div>
+                        @endif
                         <!-- END google maps -->
                         
                     </li>
@@ -222,12 +252,15 @@
                     <li>
                         <ul class="md-list">
                             @foreach( $notices as $notice )
+                            <?php echo $notice->b_ambulance_notice_description; ?>
+                            <!--
                             <li>
                                 <div style="margin-top: -10px;" class="md-list-content">
                                         <span class="uk-margin-right"><?php echo $notice->b_ambulance_notice_description; ?></span>
                                 
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>
@@ -239,7 +272,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                     <div class="thumbnail">
                         @if($ambulance->photo_path == '')
                                 <img alt="user avatar" src="{{asset('/ambulance.png')}}">
@@ -249,7 +282,7 @@
                     </div>
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{$ambulance->ambulance_name}}</span>
                     </h2>
                 </div>
@@ -292,7 +325,28 @@
     
     
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px"  class="md-list-heading">{!! nl2br($ambulance->ambulance_phone) !!}</span>
+                                            <span style="margin-top:5px"  class="md-list-heading">
+                                            @if($ambulance->ambulance_phone != '')
+                                                @php
+                                                    $e_phone_number_splitted = explode("\n",$ambulance->ambulance_phone);
+                                                    $len = sizeof($e_phone_number_splitted);
+                                                @endphp
+                                                    @for($i = 0; $i < $len ; $i = $i + 1)
+                                                        @php
+                                                            $e_phone_number = $e_phone_number_splitted[$i];
+                                                            $length = strlen($e_phone_number);
+                                                        @endphp
+                                                        @if(!is_numeric($e_phone_number[1]))
+                                                            {{$e_phone_number}}
+                                                        @else
+                                                            <a href = "tel:{{$e_phone_number}}">{{$e_phone_number}}</a>
+                                                        @endif
+                                                        @if($i != $len - 1)
+                                                            <br>
+                                                        @endif
+                                                    @endfor
+                                            @endif
+                                            </span>
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
@@ -301,7 +355,9 @@
                                             <i style="margin: 0" class="md-list-addon-icon material-icons">&#xE158;</i>
                                         </div>
                                         <div class="md-list-content">
-                                              <span style="margin-top:5px"  class="md-list-heading">{{$ambulance->ambulance_email}}</span>
+                                              <span style="margin-top:5px"  class="md-list-heading">
+                                                    <a href = "mailto:{{$ambulance->ambulance_email}}">{{$ambulance->ambulance_email}}</a>
+                                              </span>
                                               <span class="uk-text-small uk-text-muted hidden">Email</span>
                                        </div>
                                     </li>
@@ -324,23 +380,28 @@
                             </div>
                         </div>
                         
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">General Info</h4>
+                            <?php echo $ambulance->total_ambulance; ?>
+                            <!--
                             <ul class="md-list uk-margin-small-top">
                                 <li>
                                     <div class="md-list-content">
                                         <span class="hidden">Total Ambulance:</span> <span><?php echo $ambulance->total_ambulance; ?></span>
                                     </div>
                                 </li>
-                            </ul>  
+                            </ul> 
+                            --> 
                         </div>
                                           
                         <!-- START google maps -->
+                        @if($ambulance->ambulance_latitude != "")
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
                                 src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD3_tCn50Ef5Z2zUJxkXi26T486gIzIHp8&q={{ $ambulance->ambulance_latitude }}, {{ $ambulance->ambulance_longitude }}&zoom=15" frameborder="0" height="600" style="border:0; width:100%;" allowfullscreen>
                             </iframe>
                         </div>
+                        @endif
                         <!-- END google maps -->
                         
                     </li>
@@ -348,12 +409,15 @@
                     <li>
                         <ul class="md-list">
                             @foreach( $notices as $notice )
+                            <?php echo $notice->ambulance_notice_description; ?>
+                            <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
                                         <span class="uk-margin-right"><?php echo $notice->ambulance_notice_description; ?></span>
                                 
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>

@@ -704,6 +704,14 @@
     
 </script>
 
+<script type="text/javascript">
+        onload=function(){
+            if(performance.navigation.type == 2){
+                location.reload(true);
+            }
+        }
+</script>
+
 @yield('script')
 
 @yield('angular')
