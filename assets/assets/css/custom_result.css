@@ -1,0 +1,73 @@
+[class^='select2'] {
+  border-radius: 0px !important;
+}
+
+#login_form > form {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+.login_heading > img {
+  margin-left: calc(50% - 73px);
+  margin-top: 16px;
+}
+.user_heading{
+    background: red;
+}
+.md-btn-large {
+    line-height: 36px !important;
+}
+.header_main_content{
+    background: red;
+}
+#header_main{
+    background: red;
+    
+}
+#sidebar_main .sidebar_main_header {
+  background-position: center center;
+  background-size: cover;
+}
+
+#sidebar_main .sidebar_main_header .sidebar_logo {
+    overflow: visible;
+}
+.sidebar_logo{
+   max-width: 65%; 
+   height:30px;
+}
+.header_logo{
+   max-width: 72%; 
+}
+#sidebar_main .sidebar_main_header .sidebar_logo {
+    height: 34px;
+    overflow: visible;
+    margin-bottom: -31px;
+}
+
+.menu_section ul li img{
+    margin-top:18px;
+    width:49px;
+}
+.menu_section ul li span{
+    /*margin-left:5px;*/
+}
+.menu_section ul li p{
+    margin-left: 58px;
+    margin-top: -21px;
+}
+.sidebar_logo > a > h4 {
+  font-size: 22px;
+  margin-left: 35%;
+  margin-top: -19px;
+  color: #fff;
+}
+.total_result > p {
+  font-size: 20px;
+  margin-left: 22px;
+  color: red;
+}
+.uk-tab > li.uk-active > a {
+    border-bottom-color: red;
+}
+
+

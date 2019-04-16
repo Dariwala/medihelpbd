@@ -1,0 +1,63 @@
+#login_form > form {
+  padding: 24px;
+}
+.login_heading > img {
+  margin-left: calc(50% - 73px);
+  margin-top: 16px;
+}
+.user_heading{
+    background: red;
+}
+.md-btn-large {
+    line-height: 36px !important;
+}
+.header_main_content{
+    background: red;
+}
+#header_main{
+    background: red;
+    
+}
+#sidebar_main .sidebar_main_header {
+  background-position: center center;
+  opacity: 0.6;
+  background-size: cover;
+}
+
+#sidebar_main .sidebar_main_header .sidebar_logo {
+    overflow: visible;
+}
+.sidebar_logo{
+   max-width: 65%; 
+   height:30px;
+}
+.header_logo{
+   max-width: 72%; 
+}
+#sidebar_main .sidebar_main_header .sidebar_logo {
+    height: 34px;
+    
+    overflow: visible;
+}
+.sidebar_logo > h4 {
+  color: #fff;
+  margin-left: 69px;
+  margin-top: -45px;
+}
+.box-color{
+    background: red;
+    
+}
+.serch_bar{
+    background: red;
+    color: #fff;
+}
+.md-input-wrapper > label {
+  color: #fff;
+}
+.md-input-wrapper .md-input-bar::after, .md-input-wrapper .md-input-bar::before {
+  background: #fff none repeat scroll 0 0;
+}
+.md-card .md-card-head-text {
+    color: #fff;
+}

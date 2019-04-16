@@ -1,0 +1,28 @@
+
+/*datatable short icon remove*/
+.dataTable > thead > tr > th[class*="sort"]:after{
+    content: "" !important;
+}
+
+.uk-modal-dialog .uk-overflow-container {
+    margin: 0px;
+}
+
+.uk-sticky-placeholder .uk-active {
+    z-index: 980 !important;
+}
+
+.uk-table td, .uk-table th {
+    padding: 8px 8px;
+}
+
+body{
+    font-size:12px;
+}
+.md-icon {
+   font-size: 20px;
+}
+
+.uk-tab>li>a {
+    font-size: 15px !important;
+}

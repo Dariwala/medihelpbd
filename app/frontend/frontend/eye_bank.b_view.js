@@ -1,0 +1,160 @@
+// blank controller
+frontend.controller('ViewBnEyeBankController', ViewBnEyeBankController);
+
+function ViewBnEyeBankController($scope, $http, $sce) {
+
+    $scope.trustAsHtml = $sce.trustAsHtml;
+
+    var eye_bank_id = document.getElementsByName('eye_bank_id')[0].value;
+
+     $http
+        .get(window.location.origin+"/service/api/view/eye-bank/" + eye_bank_id, {
+            transformRequest: angular.identity,
+            headers: {'Content-Type': undefined, 'Process-Data': false}
+        })
+        .then(function(response){
+            data = response.data.eyebankservice;
+            $('#service_id').kendoDropDownList({
+                optionLabel   : "ধরণ নির্বাচন করুন",
+                dataTextField: "text",
+                dataValueField: "value",
+                dataSource: data,
+                dataType: "jsonp",
+                filter: "contains",
+                index: 0
+            });
+
+            var dropdownlist = $("#service_id").data("kendoDropDownList");
+
+        });
+
+        
+
+        $scope.getSubServiceDropDown = function() 
+        {
+            
+            $('#subservice_id').kendoDropDownList({
+             optionLabel   : "উপপরিষেবা নির্বাচন করুন",
+            });
+        };
+
+
+
+        $scope.getSubservice = function() 
+        {
+            var value = $("#service_id").data("kendoDropDownList").value();
+
+            $http
+            .get(window.location.origin+"/service/sub-service/api/view/eye-bank/" + value + "/" + eye_bank_id, {
+                transformRequest: angular.identity,
+                headers: {'Content-Type': undefined, 'Process-Data': false}
+            })
+            .then(function(response){
+                data = response.data.eyebanksubservice;
+                $('#subservice_id').kendoDropDownList({
+                    optionLabel   : "উপপরিষেবা নির্বাচন করুন",
+                    dataTextField: "text",
+                    dataValueField: "value",
+                    dataSource: data,
+                    dataType: "jsonp",
+                    filter: "contains",
+                    index: 0
+                });
+
+            });
+            
+    
+        };
+
+        $scope.getEyeBankService = function() 
+        {   
+            var value = $("#service_id").data("kendoDropDownList").value();
+
+            $http
+            .get(window.location.origin+"/eye-bank/eye-bank-service/api/list/" + eye_bank_id + "/" + value, {
+                transformRequest: angular.identity,
+                headers: {'Content-Type': undefined, 'Process-Data': false}
+            })
+
+            .then(function(response) {
+                $scope.services = response.data;
+            });
+    
+        };
+       
+       
+        $http
+        .get(window.location.origin+"/medical-department/api/view/eye-bank/" + eye_bank_id, {
+            transformRequest: angular.identity,
+            headers: {'Content-Type': undefined, 'Process-Data': false}
+        })
+        .then(function(response){
+            data = response.data.eyebankdepartment;
+            $('#department_id').kendoDropDownList({
+                optionLabel   : "বিভাগ নির্বাচন করুন",
+                dataTextField: "text",
+                dataValueField: "value",
+                dataSource: data,
+                dataType: "jsonp",
+                index: 0
+            });
+
+            var dropdownlist = $("#department_id").data("kendoDropDownList");
+
+        });
+
+        $scope.getMedicalSpecialistDropDown = function() 
+        {
+            
+            $('#medical_specialist_id').kendoDropDownList({
+             optionLabel   : "ডক্টর নির্বাচন করুন",
+            });
+        };
+
+        $scope.getMedicalSpecialist = function() 
+        {
+            var value = $("#department_id").data("kendoDropDownList").value();
+            console.log('hello');
+
+            $http
+            .get(window.location.origin+"/medical-specialist/api/view/eye-bank/" + value + "/" + eye_bank_id, {
+                transformRequest: angular.identity,
+                headers: {'Content-Type': undefined, 'Process-Data': false}
+            })
+            .then(function(response){
+            
+                data = response.data.eyebankmedicalspecialist;
+                console.log(data);
+                
+                $('#medical_specialist_id').kendoDropDownList({
+                    optionLabel   : "ডাক্তার নির্বাচন  করুন",
+                    dataTextField: "text",
+                    dataValueField: "value",
+                    dataSource: data,
+                    dataType: "jsonp",
+                    index: 0
+                });
+
+            });
+            
+    
+        };
+
+        $scope.getDoctor = function() 
+        {
+            var value = $("#medical_specialist_id").data("kendoDropDownList").value();
+
+            $http
+            .get(window.location.origin+"/eye-bank/eye-bank-doctor/api/list/" + value + "/" + eye_bank_id, {
+                transformRequest: angular.identity,
+                headers: {'Content-Type': undefined, 'Process-Data': false}
+            })
+
+            .then(function(response) {
+                $scope.doctors = response.data;
+            });
+    
+        };
+
+        
+}

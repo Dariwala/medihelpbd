@@ -1,0 +1,1 @@
+var pharmacynew = angular.module('app', []);

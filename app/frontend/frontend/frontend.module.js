@@ -1,0 +1,1 @@
+var frontend = angular.module('appfrontend', []);
