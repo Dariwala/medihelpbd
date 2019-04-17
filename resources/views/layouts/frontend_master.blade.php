@@ -236,9 +236,9 @@
                         <a href="{{url('/latest-news')}}">                    
                             <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 100%; color: #fff;">
                                 @if(Session('language') == 'bn')
-                                   সর্বশেষ সংবাদ
+                                   বিজ্ঞাপন
                                 @else
-                                   Latest News
+                                   Advertisement
                                 @endif
                             </button>
                         </a>
@@ -366,28 +366,28 @@
                                             
                                             @endphp
                                             
-                                            <a  href="mailto:?body={{$body_text}}&subject=মেডিহেল্পবিডি ডট কম">
+                                            <!--<a  href="mailto:?body={{$body_text}}&subject=মেডিহেল্পবিডি ডট কম">
                                                 <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff; padding:2px 7px;">বন্ধুদের সাথে শেয়ার করুন</button></span>
                                             </a>
                                             <a href="https://www.google.com/maps">
                                                 <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">ম্যাপে খুঁজুন</button></span>
-                                            </a>
+                                            </a>-->
                                             
                                             <a href="{{url('/special-notice')}}">
-                                                <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">নোটিশ</button></span>
+                                                <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">বিজ্ঞপ্তি</button></span>
                                             </a>
                                             
                                             <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;"> আরও   </button>
                                             
                                         @else
                                         
-                                            <a  href="mailto:?body=This is a painless way to connect service recipients with health care provider or organization. You can easily find detail information about them through this search engine sitting at home.
+                                            <!--<a  href="mailto:?body=This is a painless way to connect service recipients with health care provider or organization. You can easily find detail information about them through this search engine sitting at home.
                                                     %0D%0AExperience the freedom of choice on medihelpbd.com today.%0D%0A%0D%0ATo know more visit:%0D%0Ahttps://www.medihelpbd.com&subject=medihelpbd.com">
                                                 <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff; padding:2px 14px;">Share With Friends</button></span>
                                             </a>
                                             <a href="https://www.google.com/maps">
                                                 <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">Find On Map</button></span>
-                                            </a>
+                                            </a>-->
                                             
                                             <a href="{{url('/special-notice')}}">
                                                 <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">Notice</button></span>
@@ -427,7 +427,7 @@
                                             </a>
                                             
                                             <p style="margin-bottom: 2px;">&copy; মেডিহেল্পবিডি ডট কম</p>
-                                            <p style="font-size: 0.9em; margin-top: 0px; margin-bottom: 10px;">প্রস্তুত এবং রক্ষণাবেক্ষণের দায়িত্বে <a style="color: #444; text-decoration: none;" href="http://www.ontiktechnology.com">অন্তিক টেকনোলজি</a></p>
+                                            <!--<p style="font-size: 0.9em; margin-top: 0px; margin-bottom: 10px;">প্রস্তুত এবং রক্ষণাবেক্ষণের দায়িত্বে <a style="color: #444; text-decoration: none;" href="http://www.ontiktechnology.com">অন্তিক টেকনোলজি</a></p>-->
                                         </div>
                                     @else
                                         <div class="uk-margin-top uk-text-center">
@@ -459,7 +459,7 @@
                                             </a>
                                             
                                             <p style="margin-bottom: 2px;">&copy; medihelpbd.com</p>
-                                            <p style="font-size: 0.9em; margin-top: 0px;">Developed &amp; Maintained By <a style="color: #444; text-decoration: none;" href="http://www.ontiktechnology.com">Ontik Technology</a></p>
+                                            <!--<p style="font-size: 0.9em; margin-top: 0px;">Developed &amp; Maintained By <a style="color: #444; text-decoration: none;" href="http://www.ontiktechnology.com">Ontik Technology</a></p>-->
                                         </div>
                                     @endif
                                 </div>

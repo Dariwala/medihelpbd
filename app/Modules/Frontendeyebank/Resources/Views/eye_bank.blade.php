@@ -131,7 +131,7 @@
                 </div>
     
                 <div class="user_heading_content" style="display:table;margin:0 auto;">
-                    <h2 style="margin: 10px;" class="heading_b uk-margin-bottom"><span class="uk-text-truncate">{{$eye_bank->b_eye_bank_name}}</span>
+                    <h2 style="margin: 10px;" class="heading_b uk-margin-bottom"><span class="uk-text-break">{{$eye_bank->b_eye_bank_name}}</span>
                     </h2>
                 </div>
             </div>
@@ -337,7 +337,7 @@
                 </div>
     
                 <div class="user_heading_content" style="display:table;margin:0 auto;">
-                    <h2 style="margin: 10px;" class="heading_b uk-margin-bottom"><span class="uk-text-truncate">{{$eye_bank->eye_bank_name}}</span>
+                    <h2 style="margin: 10px;" class="heading_b uk-margin-bottom"><span class="uk-text-break">{{$eye_bank->eye_bank_name}}</span>
                     </h2>
                 </div>
             </div>

@@ -128,7 +128,7 @@
                     </div>
         
                     <div class="user_heading_content" style="display:table;margin:0 auto;">
-                        <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{$pharmacy->b_pharmacy_name}}</span>
+                        <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-break">{{$pharmacy->b_pharmacy_name}}</span>
                         </h2>
                     </div>
                 </div>
@@ -351,7 +351,7 @@
                 </div>
     
                 <div class="user_heading_content" style="display:table;margin:0 auto;">
-                    <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{$pharmacy->pharmacy_name}}</span>
+                    <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-break">{{$pharmacy->pharmacy_name}}</span>
                     </h2>
                 </div>
             </div>

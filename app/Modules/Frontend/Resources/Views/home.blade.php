@@ -259,7 +259,7 @@
                     
                     <div class="uk-margin-medium-top uk-text-center" style="margin-top: 15px !important;">
                         
-                        <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 50%; color: #fff;">
+                        <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 79%; color: #fff;">
                             @if(Session('language') == 'bn')
                                চলো যাই
                             @else
@@ -272,9 +272,9 @@
                 
                     <div class="uk-margin-medium-top uk-text-center" style = "margin-top: 20px!important;">
                     @if(Session('language') == 'bn')
-                      <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large" style="background: #FD0100; width: 50%; color: #fff;"> আরও   </button>
+                      <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;"> আরও   </button>
                     @else
-                      <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 50%; color: #fff;">  More </button>
+                      <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">  More </button>
                     @endif 
                 </div>
 
@@ -302,7 +302,7 @@
                             </ul>
                             
                             <a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
-                            	<img style="width: 50%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
+                            	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
                             </a>
                             
                             <p style="margin-bottom: 2px;">&copy; মেডিহেল্পবিডি ডট কম</p>
@@ -332,7 +332,7 @@
                             </ul>
                             
                             <a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
-                            	<img style="width: 50%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
+                            	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
                             </a>
                             
                             <p style="margin-bottom: 2px;">&copy; medihelpbd.com</p>

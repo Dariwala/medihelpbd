@@ -129,7 +129,7 @@
                         </div>
 
                         <div class="user_heading_content" style="display:table;margin:0 auto;">
-                            <h2 class="heading_b uk-margin-bottom"><span style= "margin: 10px" class="uk-text-truncate">{{$addiction->b_addiction_name}}</span>
+                            <h2 class="heading_b uk-margin-bottom"><span style= "margin: 10px" class="uk-text-break">{{$addiction->b_addiction_name}}</span>
                             </h2>
                         </div>
                     </div>
@@ -340,7 +340,7 @@
                         </div>
 
                         <div class="user_heading_content" style="display:table;margin:0 auto;">
-                            <h2 class="heading_b uk-margin-bottom"><span style= "margin: 10px" class="uk-text-truncate">{{$addiction->addiction_name}}</span>
+                            <h2 class="heading_b uk-margin-bottom"><span style= "margin: 10px" class="uk-text-break">{{$addiction->addiction_name}}</span>
                             </h2>
                         </div>
                     </div>

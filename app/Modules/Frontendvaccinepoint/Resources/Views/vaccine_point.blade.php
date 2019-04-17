@@ -129,7 +129,7 @@
                 </div>
     
                 <div class="user_heading_content" style="display:table;margin:0 auto;">
-                    <h2 class="heading_b uk-margin-bottom"><span class="uk-text-truncate">{{$vaccine_point->b_vaccine_point_name}}</span>
+                    <h2 class="heading_b uk-margin-bottom"><span class="uk-text-break">{{$vaccine_point->b_vaccine_point_name}}</span>
                     </h2>
                 </div>
             </div>
@@ -345,7 +345,7 @@
                 </div>
     
                 <div class="user_heading_content" style="display:table;margin:0 auto;">
-                    <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{$vaccine_point->vaccine_point_name}}</span>
+                    <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-break">{{$vaccine_point->vaccine_point_name}}</span>
                     </h2>
                 </div>
             </div>
