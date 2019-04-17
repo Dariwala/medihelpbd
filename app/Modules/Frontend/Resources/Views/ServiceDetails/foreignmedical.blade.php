@@ -231,11 +231,14 @@
                             <div class="uk-width-large-1-1 uk-margin-medium-top">
                                 <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">সাধারণ তথ্য</h4>
                                 <ul class="md-list uk-margin-small-top">
+                                <?php echo  $foreignmedical->b_total_medicine; ; ?>
+                                <!--
                                     <li>
                                         <div class="md-list-content">
-                                            <span class="hidden">General:</span> <span><?php echo  $foreignmedical->b_total_medicine; ; ?></span>
+                                            <span class="hidden">General:</span> <span><?php #echo  $foreignmedical->b_total_medicine; ; ?></span>
                                         </div>
                                     </li>
+                                -->
                                 </ul>  
                             </div>  
                             
@@ -293,7 +296,7 @@
         <div class="uk-width-large-7-10">
             <div class="md-card">
                 <div class="user_heading">
-                    <div class="user_heading_avatar"  style="width:100%;margin-left: calc(50% - 41px)">
+                    <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                         @if($foreignmedical->photo_path == '')
                         <div class="thumbnail"><img alt="foreignmedical"  src="{{asset('/foreignmedical.png')}}">
                         </div>
