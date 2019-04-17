@@ -120,7 +120,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                     <div class="thumbnail">
                         @if($eye_bank->photo_path == '')
                             <img alt="user avatar" src="{{asset('/EyeBank.jpg')}}">
@@ -130,7 +130,7 @@
                     </div>
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 style="margin: 10px;" class="heading_b uk-margin-bottom"><span class="uk-text-truncate">{{$eye_bank->b_eye_bank_name}}</span>
                     </h2>
                 </div>
@@ -178,7 +178,30 @@
                                             <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
                                         </div>
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{!! nl2br($eye_bank->b_eye_bank_phone_no) !!}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                @if($eye_bank->b_eye_bank_phone_no != '')
+                                                @php
+                                                    $phone_number_splitted = explode("\n",$eye_bank->b_eye_bank_phone_no);
+                                                    $e_phone_number_splitted = explode("\n",$eye_bank->eye_bank_phone_no);
+                                                    $len = sizeof($phone_number_splitted);
+                                                @endphp
+                                                    @for($i = 0; $i < $len ; $i = $i + 1)
+                                                        @php
+                                                            $phone_number = $phone_number_splitted[$i];
+                                                            $e_phone_number = $e_phone_number_splitted[$i];
+                                                            $length = strlen($e_phone_number);
+                                                        @endphp
+                                                        @if(!is_numeric($e_phone_number[1]))
+                                                            {{$phone_number}}
+                                                        @else
+                                                            <a href = "tel:{{$e_phone_number}}">{{$phone_number}}</a>
+                                                        @endif
+                                                        @if($i != $len - 1)
+                                                            <br>
+                                                        @endif
+                                                    @endfor
+                                                @endif
+                                            </span>
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
@@ -187,7 +210,9 @@
                                             <i  style= "margin: 0" class="md-list-addon-icon material-icons">&#xE158;</i>
                                         </div>
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{{$eye_bank->eye_bank_email_ad}}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                <a href = "mailto:{{$eye_bank->eye_bank_email_ad}}">{{$eye_bank->eye_bank_email_ad}}</a>
+                                            </span>
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
                                     </li>
@@ -209,20 +234,23 @@
                             </div>
                         </div>
                        
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c">সাধারণ তথ্য</h4>
                             <ul class="md-list uk-margin-small-top">
+                            <?php echo $eye_bank->b_total_eye; ?>
+                            <!--
                                 <li>
                                     <div class="md-list-content">
-                                        <span class="hidden">মোট চোখ: </span><span><?php echo $eye_bank->b_total_eye; ?></span>
+                                        <span class="hidden">মোট চোখ: </span><span><?php #echo $eye_bank->b_total_eye; ?></span>
                                     </div>
                                 </li>
+                            -->
                             </ul>  
                         </div>  
                         
                         <!-- START google maps -->
                         
-                        @if( $eye_bank->eye_bank_latitude != null && $eye_bank->eye_bank_longitude != null )
+                        @if( $eye_bank->eye_bank_latitude != '' && $eye_bank->eye_bank_longitude != '' )
                         
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
@@ -238,12 +266,15 @@
                     <li>
                         <ul class="md-list">
                             @foreach($notices as $notice)
+                            <?php echo $notice->b_eye_bank_notice_description; ?>
+                            <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
-                                        <span class="uk-margin-right"><?php echo $notice->b_eye_bank_notice_description; ?></span>
+                                        <span class="uk-margin-right"><?php #echo $notice->b_eye_bank_notice_description; ?></span>
                                 
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>
@@ -295,7 +326,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                     <div class="thumbnail">
                         @if($eye_bank->photo_path == '')
                             <img alt="user avatar" src="{{asset('/EyeBank.jpg')}}">
@@ -305,7 +336,7 @@
                     </div>
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 style="margin: 10px;" class="heading_b uk-margin-bottom"><span class="uk-text-truncate">{{$eye_bank->eye_bank_name}}</span>
                     </h2>
                 </div>
@@ -353,7 +384,28 @@
                                             <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
                                         </div>
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{!! nl2br($eye_bank->eye_bank_phone_no) !!}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                @if($eye_bank->eye_bank_phone_no != '')
+                                                @php
+                                                    $e_phone_number_splitted = explode("\n",$eye_bank->eye_bank_phone_no);
+                                                    $len = sizeof($e_phone_number_splitted);
+                                                @endphp
+                                                    @for($i = 0; $i < $len ; $i = $i + 1)
+                                                        @php
+                                                            $e_phone_number = $e_phone_number_splitted[$i];
+                                                            $length = strlen($e_phone_number);
+                                                        @endphp
+                                                        @if(!is_numeric($e_phone_number[1]))
+                                                            {{$e_phone_number}}
+                                                        @else
+                                                            <a href = "tel:{{$e_phone_number}}">{{$e_phone_number}}</a>
+                                                        @endif
+                                                        @if($i != $len - 1)
+                                                            <br>
+                                                        @endif
+                                                    @endfor
+                                                @endif
+                                            </span>
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
@@ -362,7 +414,9 @@
                                             <i  style= "margin: 0" class="md-list-addon-icon material-icons">&#xE158;</i>
                                         </div>
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{{$eye_bank->eye_bank_email_ad}}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                <a href = "mailto:{{$eye_bank->eye_bank_email_ad}}">{{$eye_bank->eye_bank_email_ad}}</a>
+                                            </span>
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
                                     </li>
@@ -384,20 +438,23 @@
                             </div>
                         </div>
                       
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">General Info</h4>
                             <ul class="md-list uk-margin-small-top">
+                            <?php echo $eye_bank->total_eye; ?>
+                            <!--
                                 <li>
                                     <div class="md-list-content">
-                                        <span><?php echo $eye_bank->total_eye; ?></span> <span class="uk-text-small uk-text-muted hidden">Total Eye</span>
+                                        <span><?php #echo $eye_bank->total_eye; ?></span> <span class="uk-text-small uk-text-muted hidden">Total Eye</span>
                                     </div>
                                 </li>
+                            -->
                             </ul>  
                         </div>
                                                                         
                         <!-- START google maps -->
                         
-                        @if( $eye_bank->eye_bank_latitude != null && $eye_bank->eye_bank_longitude != null )
+                        @if( $eye_bank->eye_bank_latitude != '' && $eye_bank->eye_bank_longitude != '' )
                         
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
@@ -413,12 +470,15 @@
                     <li>
                         <ul class="md-list">
                             @foreach($notices as $notice)
+                            <?php echo $notice->eye_bank_notice_description; ?>
+                            <!--
                                 <li style="padding-top: 0px;">
                                 <div class="md-list-content">
-                                        <span class="uk-margin-right"><?php echo $notice->eye_bank_notice_description; ?></span>
+                                        <span class="uk-margin-right"><?php #echo $notice->eye_bank_notice_description; ?></span>
                                 
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>

@@ -116,7 +116,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                      <div class="thumbnail">
                         @if($blood_donor->photo_path == '')
                         <div class="thumbnail"><img alt="blood donor"  src="{{asset('/BloodDonor.jpg')}}">
@@ -128,7 +128,7 @@
                     </div>
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 style="margin: 10px" class="heading_b uk-margin-bottom"><span class="uk-text-truncate">{{$blood_donor->b_blood_donor_name}}</span>
                     </h2>
                 </div>
@@ -170,7 +170,30 @@
                                             <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
                                         </div>
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{!! nl2br($blood_donor->b_blood_donor_phone_no) !!}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                @if($blood_donor->b_blood_donor_phone_no != '')
+                                                @php
+                                                    $phone_number_splitted = explode("\n",$blood_donor->b_blood_donor_phone_no);
+                                                    $e_phone_number_splitted = explode("\n",$blood_donor->blood_donor_phone_no);
+                                                    $len = sizeof($phone_number_splitted);
+                                                @endphp
+                                                    @for($i = 0; $i < $len ; $i = $i + 1)
+                                                        @php
+                                                            $phone_number = $phone_number_splitted[$i];
+                                                            $e_phone_number = $e_phone_number_splitted[$i];
+                                                            $length = strlen($e_phone_number);
+                                                        @endphp
+                                                        @if(!is_numeric($e_phone_number[1]))
+                                                            {{$phone_number}}
+                                                        @else
+                                                            <a href = "tel:{{$e_phone_number}}">{{$phone_number}}</a>
+                                                        @endif
+                                                        @if($i != $len - 1)
+                                                            <br>
+                                                        @endif
+                                                    @endfor
+                                                @endif
+                                            </span>
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
@@ -181,7 +204,9 @@
                                         </div>
                                         <div class="md-list-content">
     
-                                            <span style="margin-top:5px" class="md-list-heading">{{$blood_donor->blood_donor_email_ad}}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                <a href = "mailto:{{$blood_donor->blood_donor_email_ad}}">{{$blood_donor->blood_donor_email_ad}}</a>
+                                            </span>
     
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
@@ -206,20 +231,23 @@
                             </div>
                         </div>
                             
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c">সাধারণ তথ্য</h4>
                             <ul class="md-list uk-margin-small-top">
+                            <?php echo $blood_donor->b_blood_donor_general_info; ?>
+                            <!--
                                 <li>
                                     <div class="md-list-content ">
-                                       <span class="hidden">General info:</span> <span><?php echo $blood_donor->b_blood_donor_general_info; ?></span>
+                                       <span class="hidden">General info:</span> <span><?php #echo $blood_donor->b_blood_donor_general_info; ?></span>
                                     </div>
                                 </li>
                             </ul>
+                            -->
                         </div>
                                                                             
                         <!-- START google maps -->
                         
-                        @if( $blood_donor->blood_donor_latitude != null && $blood_donor->blood_donor_longitude != null )
+                        @if( $blood_donor->blood_donor_latitude != '' && $blood_donor->blood_donor_longitude != '' )
                         
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
@@ -234,6 +262,10 @@
                     </li>
                     <li>
                         <ul class="md-list">
+                        @foreach($prices as $price)
+                            @php echo $price->b_package_details; @endphp
+                        @endforeach
+                        <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
                                     @foreach($prices as $price)
@@ -241,6 +273,7 @@
                                     @endforeach
                                 </div>
                             </li>
+                        -->
                         </ul>
                     </li>
                 </ul>
@@ -251,7 +284,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                      <div class="thumbnail">
                         @if($blood_donor->photo_path == '')
                         <div class="thumbnail"><img alt="blood donor"  src="{{asset('/BloodDonor.jpg')}}">
@@ -263,7 +296,7 @@
                     </div>
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 class="heading_b uk-margin-bottom"><span style= "margin: 10px" class="uk-text-truncate">{{$blood_donor->blood_donor_name}}</span>
                     </h2>
                 </div>
@@ -305,7 +338,28 @@
                                             <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
                                         </div>
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{!! nl2br($blood_donor->blood_donor_phone_no) !!}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                @if($blood_donor->blood_donor_phone_no != '')
+                                                @php
+                                                    $e_phone_number_splitted = explode("\n",$blood_donor->blood_donor_phone_no);
+                                                    $len = sizeof($e_phone_number_splitted);
+                                                @endphp
+                                                    @for($i = 0; $i < $len ; $i = $i + 1)
+                                                        @php
+                                                            $e_phone_number = $e_phone_number_splitted[$i];
+                                                            $length = strlen($e_phone_number);
+                                                        @endphp
+                                                        @if(!is_numeric($e_phone_number[1]))
+                                                            {{$e_phone_number}}
+                                                        @else
+                                                            <a href = "tel:{{$e_phone_number}}">{{$e_phone_number}}</a>
+                                                        @endif
+                                                        @if($i != $len - 1)
+                                                            <br>
+                                                        @endif
+                                                    @endfor
+                                                @endif
+                                            </span>
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
@@ -316,7 +370,9 @@
                                         </div>
                                         <div class="md-list-content">
     
-                                            <span style="margin-top:5px" class="md-list-heading">{{$blood_donor->blood_donor_email_ad}}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                <a href = "mailto:{{$blood_donor->blood_donor_email_ad}}">{{$blood_donor->blood_donor_email_ad}}</a>
+                                            </span>
     
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
@@ -341,21 +397,24 @@
                             </div>
                         </div>
                         
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">General Info</h4>
                             <ul class="md-list uk-margin-small-top">
+                            <?php echo $blood_donor->blood_donor_general_info; ?>
+                            <!--
                                 <li>
                                     <div class="md-list-content">
-                                        <span class="hidden">General:</span> <span><?php echo $blood_donor->blood_donor_general_info; ?></span>
+                                        <span class="hidden">General:</span> <span><?php #echo $blood_donor->blood_donor_general_info; ?></span>
                                     </div>
                                 </li>
+                            -->
                             </ul> 
                         </div>
                             
                                                                                                         
                         <!-- START google maps -->
                         
-                        @if( $blood_donor->blood_donor_latitude != null && $blood_donor->blood_donor_longitude != null )
+                        @if( $blood_donor->blood_donor_latitude != '' && $blood_donor->blood_donor_longitude != '' )
                         
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
@@ -371,7 +430,10 @@
                     </li>
                     <li>
                         <ul class="md-list">
-    
+                        @foreach($prices as $price)
+                            @php echo $price->package_details; @endphp
+                        @endforeach
+                        <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
                                     @foreach($prices as $price)
@@ -379,6 +441,7 @@
                                     @endforeach
                                 </div>
                             </li>
+                        -->
                         </ul>
                     </li>
                 </li>
