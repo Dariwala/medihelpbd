@@ -144,7 +144,7 @@
         <div class="uk-width-large-7-10 hidden-print">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                     @if($medical_specialist->photo_path == '')
                     <div class="thumbnail"><img alt=" specialist"  src="{{asset('/medicalspecialist.jpg')}}">
                     </div>
@@ -154,7 +154,7 @@
                     @endif
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{$medical_specialist->b_medical_specialist_name}}</span>
                     </h2>
                 </div>
@@ -225,7 +225,30 @@
                                             <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
                                         </div>
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{!! nl2br($medical_specialist->b_medical_specialist_phone_no) !!}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                @if($medical_specialist->b_medical_specialist_phone_no != '')
+                                                @php
+                                                    $phone_number_splitted = explode("\n",$medical_specialist->b_medical_specialist_phone_no);
+                                                    $e_phone_number_splitted = explode("\n",$medical_specialist->medical_specialist_phone_no);
+                                                    $len = sizeof($phone_number_splitted);
+                                                @endphp
+                                                    @for($i = 0; $i < $len ; $i = $i + 1)
+                                                        @php
+                                                            $phone_number = $phone_number_splitted[$i];
+                                                            $e_phone_number = $e_phone_number_splitted[$i];
+                                                            $length = strlen($e_phone_number);
+                                                        @endphp
+                                                        @if(!is_numeric($e_phone_number[1]))
+                                                            {{$phone_number}}
+                                                        @else
+                                                            <a href = "tel:{{$e_phone_number}}">{{$phone_number}}</a>
+                                                        @endif
+                                                        @if($i != $len - 1)
+                                                            <br>
+                                                        @endif
+                                                    @endfor
+                                                @endif
+                                            </span>
      
                                         </div>
                                     </li>
@@ -234,7 +257,9 @@
                                             <i  style= "margin: 0" class="md-list-addon-icon material-icons">&#xE158;</i>
                                         </div>
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{{$medical_specialist->medical_specialist_email_ad}}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                <a href = "mailto:{{$medical_specialist->medical_specialist_email_ad}}">{{$medical_specialist->medical_specialist_email_ad}}</a>
+                                            </span>
                                         </div>
                                     </li>
                                     <li>
@@ -257,21 +282,24 @@
                             </div>
                         </div>
                         
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c">সাধারণ তথ্য</h4>
                             <ul class="md-list uk-margin-small-top">
+                            <?php echo $medical_specialist->b_fee_new; ?>
+                            <!--
                                 <li>
                                     <div class="md-list-content">
-                                        <span class="hidden">সাধারণ</span><span><?php echo $medical_specialist->b_fee_new; ?></span>
+                                        <span class="hidden">সাধারণ</span><span><?php #echo $medical_specialist->b_fee_new; ?></span>
                                     </div>
                                 </li>
+                            -->
                             </ul>  
                         </div>
                         
                                                                                                     
                         <!-- START google maps -->
                         
-                        @if( $medical_specialist->medical_specialist_latitude != null && $medical_specialist->medical_specialist_longitude != null )
+                        @if( $medical_specialist->medical_specialist_latitude != '' && $medical_specialist->medical_specialist_longitude != '' )
                         
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
@@ -287,34 +315,43 @@
                     <li>
                         <ul class="md-list">
                             @foreach($notices as $notice)
+                            <?php echo $notice->b_medical_specialist_notice_description; ?>
+                            <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
-                                        <span class="uk-margin-right"><?php echo $notice->b_medical_specialist_notice_description; ?></span>
+                                        <span class="uk-margin-right"><?php #echo $notice->b_medical_specialist_notice_description; ?></span>
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>
                     <li>
                         <ul class="md-list">
                             @foreach($chembers as $chember)
+                            <?php echo $chember->b_medical_specialist_chamber_description; ?>
+                            <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
                                         <span class="uk-margin-right">
-                                        <?php echo $chember->b_medical_specialist_chamber_description; ?></span>
+                                        <?php #echo $chember->b_medical_specialist_chamber_description; ?></span>
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>
                     <li>
                         <ul class="md-list">
+                        <?php echo $medical_specialist->b_specialty; ?>
+                        <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
                                         <span class="">
-                                        <?php echo $medical_specialist->b_specialty; ?></span>
+                                        <?php #echo $medical_specialist->b_specialty; ?></span>
                                 </div>
                             </li>
+                        -->
                         </ul>
                     </li>
 
@@ -795,7 +832,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading hidden-print">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                     @if($medical_specialist->photo_path == '')
                     <div class="thumbnail"><img alt=" specialist"  src="{{asset('/medicalspecialist.jpg')}}">
                     </div>
@@ -805,7 +842,7 @@
                     @endif
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{ $medical_specialist->medical_specialist_name }}</span>
                     </h2>
                 </div>
@@ -876,7 +913,28 @@
                                             <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
                                         </div>
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{!! nl2br($medical_specialist->medical_specialist_phone_no) !!}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                @if($medical_specialist->medical_specialist_phone_no != '')
+                                                @php
+                                                    $e_phone_number_splitted = explode("\n",$medical_specialist->medical_specialist_phone_no);
+                                                    $len = sizeof($e_phone_number_splitted);
+                                                @endphp
+                                                    @for($i = 0; $i < $len ; $i = $i + 1)
+                                                        @php
+                                                            $e_phone_number = $e_phone_number_splitted[$i];
+                                                            $length = strlen($e_phone_number);
+                                                        @endphp
+                                                        @if(!is_numeric($e_phone_number[1]))
+                                                            {{$e_phone_number}}
+                                                        @else
+                                                            <a href = "tel:{{$e_phone_number}}">{{$e_phone_number}}</a>
+                                                        @endif
+                                                        @if($i != $len - 1)
+                                                            <br>
+                                                        @endif
+                                                    @endfor
+                                                @endif
+                                            </span>
      
                                         </div>
                                     </li>
@@ -885,7 +943,9 @@
                                             <i  style= "margin: 0" class="md-list-addon-icon material-icons">&#xE158;</i>
                                         </div>
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{{$medical_specialist->medical_specialist_email_ad}}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                <a href = "mailto:{{$medical_specialist->medical_specialist_email_ad}}">{{$medical_specialist->medical_specialist_email_ad}}</a>
+                                            </span>
                                         </div>
                                     </li>
                                     <li>
@@ -908,21 +968,24 @@
                             </div>
                         </div>
                        
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">General Info</h4>
                             <ul class="md-list uk-margin-small-top">
+                            <?php echo $medical_specialist->fee_new; ?>
+                            <!--
                                 <li>
                                     <div class="md-list-content">
-                                    <span><?php echo $medical_specialist->fee_new; ?></span>
+                                    <span><?php #echo $medical_specialist->fee_new; ?></span>
                                     </div>
                                 </li>
+                            -->
                             </ul>  
                         </div>
                         
                                                                             
                         <!-- START google maps -->
                         
-                        @if( $medical_specialist->medical_specialist_latitude != null && $medical_specialist->medical_specialist_longitude != null )
+                        @if( $medical_specialist->medical_specialist_latitude != '' && $medical_specialist->medical_specialist_longitude != '' )
                         
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
@@ -938,34 +1001,43 @@
                     <li>
                         <ul class="md-list">
                             @foreach($notices as $notice)
+                            <?php echo $notice->medical_specialist_notice_description; ?>
+                            <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
-                                        <span class="uk-margin-right"><?php echo $notice->medical_specialist_notice_description; ?></span>
+                                        <span class="uk-margin-right"><?php #echo $notice->medical_specialist_notice_description; ?></span>
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>
                     <li>
                         <ul class="md-list">
                             @foreach($chembers as $chember)
+                            <?php echo $chember->medical_specialist_chamber_description; ?>
+                            <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
                                         <span class="uk-margin-right">
-                                        <?php echo $chember->medical_specialist_chamber_description; ?></span>
+                                        <?php #echo $chember->medical_specialist_chamber_description; ?></span>
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>
                     <li>
                         <ul class="md-list">
+                        <?php echo $medical_specialist->specialty; ?>
+                        <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
                                         <span class="">
                                         <?php echo $medical_specialist->specialty; ?></span>
                                 </div>
                             </li>
+                        -->
                         </ul>
                     </li>
                     <li>

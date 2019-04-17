@@ -117,7 +117,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                      @if($herbal_center->photo_path == '')
                     <div class="thumbnail"><img alt="herbal center"  src="{{asset('/herbalcenter.jpg')}}">
                     </div>
@@ -127,7 +127,7 @@
                     @endif
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 style="margin: 10px;" class="heading_b uk-margin-bottom"><span class="uk-text-truncate">{{$herbal_center->b_herbal_center_name}}</span>
                     </h2>
                 </div>
@@ -184,7 +184,30 @@
     
     
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{!! nl2br($herbal_center->b_herbal_center_phone_no) !!}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                @if($herbal_center->b_herbal_center_phone_no != '')
+                                                @php
+                                                    $phone_number_splitted = explode("\n",$herbal_center->b_herbal_center_phone_no);
+                                                    $e_phone_number_splitted = explode("\n",$herbal_center->herbal_center_phone_no);
+                                                    $len = sizeof($phone_number_splitted);
+                                                @endphp
+                                                    @for($i = 0; $i < $len ; $i = $i + 1)
+                                                        @php
+                                                            $phone_number = $phone_number_splitted[$i];
+                                                            $e_phone_number = $e_phone_number_splitted[$i];
+                                                            $length = strlen($e_phone_number);
+                                                        @endphp
+                                                        @if(!is_numeric($e_phone_number[1]))
+                                                            {{$phone_number}}
+                                                        @else
+                                                            <a href = "tel:{{$e_phone_number}}">{{$phone_number}}</a>
+                                                        @endif
+                                                        @if($i != $len - 1)
+                                                            <br>
+                                                        @endif
+                                                    @endfor
+                                                @endif
+                                            </span>
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
@@ -195,7 +218,9 @@
     
     
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{{$herbal_center->herbal_center_email_ad}}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                <a href = "mailto:{{$herbal_center->herbal_center_email_ad}}">{{$herbal_center->herbal_center_email_ad}}</a>
+                                            </span>
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
                                     </li>
@@ -217,20 +242,23 @@
                             </div>
                         </div>
                         
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c">সাধারণ তথ্য</h4>
                             <ul class="md-list uk-margin-small-top">
+                            <?php echo $herbal_center->b_herbal_center_total_bed; ?>
+                            <!--
                                 <li>
                                     <div class="md-list-content">
-                                        <span><?php echo $herbal_center->b_herbal_center_total_bed; ?></span>
+                                        <span><?php #echo $herbal_center->b_herbal_center_total_bed; ?></span>
                                     </div>
                                 </li>
+                            -->
                             </ul>  
                         </div>           
                     
                         <!-- START google maps -->
                         
-                        @if( $herbal_center->herbal_center_latitude != null && $herbal_center->herbal_center_longitude != null )
+                        @if( $herbal_center->herbal_center_latitude != '' && $herbal_center->herbal_center_longitude != '' )
                         
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
@@ -246,13 +274,18 @@
                     </li>
                     <li>
                         <ul class="md-list">
+                        @foreach($notices as $notice)
+                        <?php echo $notice->b_herbal_center_notice_description; ?>
+                        @endforeach
+                        <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
                                     @foreach($notices as $notice)
-                                    <span class="uk-margin-right"><?php echo $notice->b_herbal_center_notice_description; ?></span>
+                                    <span class="uk-margin-right"><?php #echo $notice->b_herbal_center_notice_description; ?></span>
                                     @endforeach
                                 </div>
                             </li>
+                        -->
                         </ul>
                     </li>
                     
@@ -282,11 +315,14 @@
                     <li>
                         <ul class="md-list">
                             @foreach($products as $product)
+                            <?php echo $product->b_herbal_center_product_description; ?>
+                            <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
-                                        <span class="uk-margin-right"><?php echo $product->b_herbal_center_product_description; ?></span>
+                                        <span class="uk-margin-right"><?php #echo $product->b_herbal_center_product_description; ?></span>
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>
@@ -315,7 +351,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                      @if($herbal_center->photo_path == '')
                     <div class="thumbnail"><img alt="herbal center"  src="{{asset('/herbalcenter.jpg')}}">
                     </div>
@@ -325,7 +361,7 @@
                     @endif
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 style="margin: 10px;" class="heading_b uk-margin-bottom"><span class="uk-text-truncate">{{$herbal_center->herbal_center_name}}</span>
                     </h2>
                 </div>
@@ -382,7 +418,28 @@
     
     
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{!! nl2br($herbal_center->herbal_center_phone_no) !!}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                @if($herbal_center->herbal_center_phone_no != '')
+                                                @php
+                                                    $e_phone_number_splitted = explode("\n",$herbal_center->herbal_center_phone_no);
+                                                    $len = sizeof($e_phone_number_splitted);
+                                                @endphp
+                                                    @for($i = 0; $i < $len ; $i = $i + 1)
+                                                        @php
+                                                            $e_phone_number = $e_phone_number_splitted[$i];
+                                                            $length = strlen($e_phone_number);
+                                                        @endphp
+                                                        @if(!is_numeric($e_phone_number[1]))
+                                                            {{$e_phone_number}}
+                                                        @else
+                                                            <a href = "tel:{{$e_phone_number}}">{{$e_phone_number}}</a>
+                                                        @endif
+                                                        @if($i != $len - 1)
+                                                            <br>
+                                                        @endif
+                                                    @endfor
+                                                @endif
+                                            </span>
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
@@ -393,7 +450,9 @@
     
     
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{{$herbal_center->herbal_center_email_ad}}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                <a href = "mailto:{{$herbal_center->herbal_center_email_ad}}">{{$herbal_center->herbal_center_email_ad}}</a>
+                                            </span>
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
                                     </li>
@@ -415,20 +474,23 @@
                             </div>
                         </div>
                         
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">General Info</h4>
                             <ul class="md-list uk-margin-small-top">
+                            <?php echo $herbal_center->herbal_center_total_bed; ?>
+                            <!--
                                 <li>
                                     <div class="md-list-content">
-                                        <span><?php echo $herbal_center->herbal_center_total_bed; ?></span>
+                                        <span><?php #echo $herbal_center->herbal_center_total_bed; ?></span>
                                     </div>
                                 </li>
+                            -->
                             </ul>  
                         </div>
                         
                         <!-- START google maps -->
                         
-                        @if( $herbal_center->herbal_center_latitude != null && $herbal_center->herbal_center_longitude != null )
+                        @if( $herbal_center->herbal_center_latitude != '' && $herbal_center->herbal_center_longitude != '' )
                         
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
@@ -443,13 +505,18 @@
                     </li>
                     <li>
                         <ul class="md-list">
+                        @foreach($notices as $notice)
+                        <?php echo $notice->herbal_center_notice_description; ?>
+                        @endforeach
+                        <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
                                     @foreach($notices as $notice)
-                                    <span class="uk-margin-right"><?php echo $notice->herbal_center_notice_description; ?></span>
+                                    <span class="uk-margin-right"><?php #echo $notice->herbal_center_notice_description; ?></span>
                                     @endforeach
                                 </div>
                             </li>
+                        -->
                         </ul>
                     </li>
                     
@@ -480,11 +547,14 @@
                     <li>
                         <ul class="md-list">
                             @foreach($products as $product)
+                            <?php echo $product->herbal_center_product_description; ?>
+                            <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
-                                        <span class="uk-margin-right"><?php echo $product->herbal_center_product_description; ?></span>
+                                        <span class="uk-margin-right"><?php #echo $product->herbal_center_product_description; ?></span>
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>

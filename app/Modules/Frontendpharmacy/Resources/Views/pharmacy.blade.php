@@ -117,7 +117,7 @@
         <div class="uk-width-large-7-10">
             <div class="md-card">
                 <div class="user_heading">
-                    <div class="user_heading_avatar">
+                    <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                          @if($pharmacy->photo_path == '')
                         <div class="thumbnail"><img alt="pharmacy"  src="{{asset('/pharmacy.png')}}">
                         </div>
@@ -127,7 +127,7 @@
                         @endif
                     </div>
         
-                    <div class="user_heading_content">
+                    <div class="user_heading_content" style="display:table;margin:0 auto;">
                         <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{$pharmacy->b_pharmacy_name}}</span>
                         </h2>
                     </div>
@@ -178,7 +178,30 @@
                                                 <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
                                             </div>
                                             <div class="md-list-content">
-                                                <span style="margin-top:5px"  class="md-list-heading">{!! nl2br ($pharmacy->b_pharmacy_phone_no) !!}</span>
+                                                <span style="margin-top:5px"  class="md-list-heading">
+                                                    @if($pharmacy->b_pharmacy_phone_no != '')
+                                                    @php
+                                                        $phone_number_splitted = explode("\n",$pharmacy->b_pharmacy_phone_no);
+                                                        $e_phone_number_splitted = explode("\n",$pharmacy->pharmacy_phone_no);
+                                                        $len = sizeof($phone_number_splitted);
+                                                    @endphp
+                                                        @for($i = 0; $i < $len ; $i = $i + 1)
+                                                            @php
+                                                                $phone_number = $phone_number_splitted[$i];
+                                                                $e_phone_number = $e_phone_number_splitted[$i];
+                                                                $length = strlen($e_phone_number);
+                                                            @endphp
+                                                            @if(!is_numeric($e_phone_number[1]))
+                                                                {{$phone_number}}
+                                                            @else
+                                                                <a href = "tel:{{$e_phone_number}}">{{$phone_number}}</a>
+                                                            @endif
+                                                            @if($i != $len - 1)
+                                                                <br>
+                                                            @endif
+                                                        @endfor
+                                                    @endif
+                                                </span>
                                                  <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                             </div>
                                         </li>
@@ -189,7 +212,9 @@
         
         
                                             <div class="md-list-content">
-                                                <span style="margin-top:5px" class="md-list-heading">{{$pharmacy->pharmacy_email_ad}}</span>
+                                                <span style="margin-top:5px" class="md-list-heading">
+                                                    <a href = "mailto:{{$pharmacy->pharmacy_email_ad}}">{{$pharmacy->pharmacy_email_ad}}</a>
+                                                </span>
                                                 <span class="uk-text-small uk-text-muted hidden">Email</span>
                                             </div>
                                         </li>
@@ -211,20 +236,23 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="uk-width-large-1-1">
+                            <div class="uk-width-large-1-1 uk-margin-medium-top">
                                 <h4 class="heading_c">সাধারণ তথ্য</h4>
                                 <ul class="md-list uk-margin-small-top">
+                                <?php echo  $pharmacy->b_total_medicine; ; ?>
+                                <!-- 
                                     <li>
                                         <div class="md-list-content">
-                                            <span class="hidden">General:</span> <span><?php echo  $pharmacy->b_total_medicine; ; ?></span>
+                                            <span class="hidden">General:</span> <span><?php #echo  $pharmacy->b_total_medicine; ; ?></span>
                                         </div>
                                     </li>
+                                -->
                                 </ul>  
                             </div>
                             
                             <!-- START google maps -->
                             
-                            @if( $pharmacy->pharmacy_latitude != null && $pharmacy->pharmacy_longitude != null )
+                            @if( $pharmacy->pharmacy_latitude != '' && $pharmacy->pharmacy_longitude != '' )
                             
                             <div class="uk-width-large-1-1 google_maps_show">
                                  <iframe 
@@ -239,13 +267,18 @@
                         </li>
                         <li>
                             <ul class="md-list">
+                            @foreach($notices as $notice)
+                                <?php echo $notice->b_pharmacy_notice_description; ?>
+                            @endforeach
+                            <!-- 
                                 <li style="padding-top: 0px;">
                                     <div class="md-list-content">
                                         @foreach($notices as $notice)
-                                            <span class="uk-margin-right"><?php echo $notice->b_pharmacy_notice_description; ?></span>
+                                            <span class="uk-margin-right"><?php #echo $notice->b_pharmacy_notice_description; ?></span>
                                         @endforeach
                                     </div>
                                 </li>
+                            -->
                             </ul>
                         </li>
                         <li ng-controller="ViewBnPharmacyController">
@@ -273,11 +306,14 @@
                         <li>
                             <ul class="md-list">
                                 @foreach($products as $product)
+                                <?php echo $product->b_pharmacy_product_description; ?>
+                                <!--
                                 <li style="padding-top: 0px;">
                                     <div class="md-list-content">
-                                            <span class="uk-margin-right"><?php echo $product->b_pharmacy_product_description; ?></span>
+                                            <span class="uk-margin-right"><?php #echo $product->b_pharmacy_product_description; ?></span>
                                     </div>
                                 </li>
+                                -->
                                 @endforeach
                             </ul>
                         </li>
@@ -304,7 +340,7 @@
         <div class="uk-width-large-7-10">
             <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                     @if($pharmacy->photo_path == '')
                     <div class="thumbnail"><img alt="pharmacy"  src="{{asset('/pharmacy.png')}}">
                     </div>
@@ -314,7 +350,7 @@
                     @endif
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{$pharmacy->pharmacy_name}}</span>
                     </h2>
                 </div>
@@ -364,7 +400,28 @@
                                             <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
                                         </div>
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px"  class="md-list-heading">{!! nl2br ($pharmacy->pharmacy_phone_no) !!}</span>
+                                            <span style="margin-top:5px"  class="md-list-heading">
+                                            @if($pharmacy->pharmacy_phone_no != '')
+                                            @php
+                                                $e_phone_number_splitted = explode("\n",$pharmacy->pharmacy_phone_no);
+                                                $len = sizeof($e_phone_number_splitted);
+                                            @endphp
+                                                @for($i = 0; $i < $len ; $i = $i + 1)
+                                                    @php
+                                                        $e_phone_number = $e_phone_number_splitted[$i];
+                                                        $length = strlen($e_phone_number);
+                                                    @endphp
+                                                    @if(!is_numeric($e_phone_number[1]))
+                                                        {{$e_phone_number}}
+                                                    @else
+                                                        <a href = "tel:{{$e_phone_number}}">{{$e_phone_number}}</a>
+                                                    @endif
+                                                    @if($i != $len - 1)
+                                                        <br>
+                                                    @endif
+                                                @endfor
+                                            @endif
+                                            </span>
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
@@ -375,7 +432,7 @@
     
     
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading">{{$pharmacy->pharmacy_email_ad}}</span>
+                                            <span style="margin-top:5px" class="md-list-heading"><a href = "mailto:{{$pharmacy->pharmacy_email_ad}}">{{$pharmacy->pharmacy_email_ad}}</a></span>
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
                                     </li>
@@ -399,21 +456,24 @@
                         </div>
                         
 
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">General Info</h4>
                             <ul class="md-list uk-margin-small-top">
+                            <?php echo  $pharmacy->total_medicine; ; ?>
+                            <!--
                                 <li>
                                     <div class="md-list-content">
-                                        <span class="hidden">General:</span> <span><?php echo  $pharmacy->total_medicine; ; ?></span>
+                                        <span class="hidden">General:</span> <span><?php #echo  $pharmacy->total_medicine; ; ?></span>
                                     </div>
                                 </li>
+                            -->
                             </ul>  
                         </div>
               
                         
                         <!-- START google maps -->
                         
-                        @if( $pharmacy->pharmacy_latitude != null && $pharmacy->pharmacy_longitude != null )
+                        @if( $pharmacy->pharmacy_latitude != '' && $pharmacy->pharmacy_longitude != '' )
                         
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
@@ -428,13 +488,18 @@
                     </li>
                     <li>
                         <ul class="md-list">
+                        @foreach($notices as $notice)
+                            <span class="uk-margin-right"><?php echo $notice->pharmacy_notice_description; ?></span>
+                        @endforeach
+                        <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
                                     @foreach($notices as $notice)
-                                        <span class="uk-margin-right"><?php echo $notice->pharmacy_notice_description; ?></span>
+                                        <span class="uk-margin-right"><?php #echo $notice->pharmacy_notice_description; ?></span>
                                     @endforeach
                                 </div>
                             </li>
+                        -->
                         </ul>
                     </li>
                     <li ng-controller="ViewPharmacyController">
@@ -462,11 +527,14 @@
                     <li>
                         <ul class="md-list">
                             @foreach($products as $product)
+                            <?php echo $product->pharmacy_product_description; ?>
+                            <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
-                                        <span class="uk-margin-right"><?php echo $product->pharmacy_product_description; ?></span>
+                                        <span class="uk-margin-right"><?php #echo $product->pharmacy_product_description; ?></span>
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>
