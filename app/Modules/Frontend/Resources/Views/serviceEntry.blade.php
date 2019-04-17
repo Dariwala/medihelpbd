@@ -238,64 +238,124 @@
             if($(this).val() == 7){
                 $("#24_hours_section").show();
             }
-            else if($(this).val() == 12){
+            else{
+                $("#24_hours_section").hide();
+            }
+            if($(this).val() == 12){
                 $("#addiction_rehabilitation_center").show();
             }
-            else if($(this).val() == 2){
+            else {
+                $("#addiction_rehabilitation_center").hide();
+            }
+            if($(this).val() == 2){
                 $("#air_ambulance").show();
             }
-            else if($(this).val() == 1){
+            else{
+                $("#air_ambulance").hide();
+            }
+            if($(this).val() == 1){
                 $("#ambulance").show();
             }
-            else if($(this).val() == 13){
+            else{
+                $("#ambulance").hide();
+            }
+            if($(this).val() == 13){
                 $("#beauty_parlour_and_spa").show();
+            }
+            else{
+                $("#beauty_parlour_and_spa").hide();
             } 
-            else if($(this).val() == 3){
+            if($(this).val() == 3){
                 $("#blood_bank").show();
             }
-            else if($(this).val() == 4){
+            else{
+                $("#blood_bank").hide();
+            }
+            if($(this).val() == 4){
                 $("#blood_donor").show();
             }
-            else if($(this).val() == 8){
+            else{
+                $("#blood_donor").hide();
+            }
+            if($(this).val() == 8){
                 $("#doctor_panel").show();
             }
-            else if($(this).val() == 5){
+            else{
+                $("#doctor_panel").hide();
+            }
+            if($(this).val() == 5){
                 $("#eye_bank").show();
             }
-            else if($(this).val() == 14){
+            else{
+                $("#eye_bank").hide();
+            }
+            if($(this).val() == 14){
                 $("#foreign_medical_info").show();
             }
-            else if($(this).val() == 15){
+            else{
+                $("#foreign_medical_info").hide();
+            }
+            if($(this).val() == 15){
                 $("#gym").show();
             }
-            else if($(this).val() == 6){
+            else{
+                $("#gym").hide();
+            }
+            if($(this).val() == 6){
                 $("#health_care_center").show();
             }
-            else if($(this).val() == 9){
+            else{
+                $("#health_care_center").hide();
+            }
+            if($(this).val() == 9){
                 $("#herbal_medicine_center").show();
             }
-            else if($(this).val() == 16){
+            else{
+                $("#herbal_medicine_center").hide();
+            }
+            if($(this).val() == 16){
                 $("#homeopathic_medicine_center").show();
             }
-            else if($(this).val() == 17){
+            else{
+                $("#homeopathic_medicine_center").hide();
+            }
+            if($(this).val() == 17){
                 $("#optical_shop").show();
             }
-            else if($(this).val() == 18){
+            else{
+                $("#optical_shop").hide();
+            }
+            if($(this).val() == 18){
                 $("#pharmacy").show();
             }
-            else if($(this).val() == 19){
+            else{
+                $("#pharmacy").hide();
+            }
+            if($(this).val() == 19){
                 $("#physiotherapy").show();
             }
-            else if($(this).val() == 11){
+            else{
+                $("#physiotherapy").hide();
+            }
+            if($(this).val() == 11){
                 $("#skincare").show();
             }
-            else if($(this).val() == 10){
+            else{
+                $("#skincare").hide();
+            }
+            if($(this).val() == 10){
                 $("#vaccination_center").show();
             }
-            else if($(this).val() == 20){
+            else{
+                $("#vaccination_center").hide();
+            }
+            if($(this).val() == 20){
                 $("#yoga").show();
             }
-            $('#service_list').prop('disabled', 'disabled');
+            else{
+                $("#yoga").hide();
+            }
+            //$('#service_list').prop('disabled', 'disabled');
             
         });
     </script>
