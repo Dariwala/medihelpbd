@@ -181,7 +181,7 @@
                         
                         <div class="uk-width-medium-1-1">
                             <div class="parsley-row">
-                                <select id="main_district_id" name="district_name" required class="md-input selectable">
+                                <select id="main_district_id" name="district_name" required class = "md-input selectable">
                                     <option>
                                         @if(Session('language') == 'bn')
                                         জেলা নির্বাচন করুন

@@ -374,7 +374,7 @@
                                             </a>-->
                                             
                                             <a href="{{url('/special-notice')}}">
-                                                <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">বিজ্ঞপ্তি</button></span>
+                                                <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">বিজ্ঞপ্তি</button></span>
                                             </a>
                                             
                                             <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;"> আরও   </button>
@@ -390,7 +390,7 @@
                                             </a>-->
                                             
                                             <a href="{{url('/special-notice')}}">
-                                                <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">Notice</button></span>
+                                                <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">Notice</button></span>
                                             </a>
                                             
                                             <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">  More </button>
