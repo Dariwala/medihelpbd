@@ -117,7 +117,7 @@
         <div class="uk-width-large-7-10">
             <div class="md-card">
                 <div class="user_heading">
-                    <div class="user_heading_avatar">
+                    <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                         @if($foreignmedical->photo_path == '')
                         <div class="thumbnail"><img alt="foreignmedical"  src="{{asset('/foreignmedical.png')}}">
                         </div>
@@ -127,7 +127,7 @@
                         @endif
                     </div>
         
-                    <div class="user_heading_content">
+                    <div class="user_heading_content" style="display:table;margin:0 auto;">
                         <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{$foreignmedical->b_foreignmedical_name}}</span>
                         </h2>
                     </div>
@@ -169,7 +169,30 @@
                                                 <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
                                             </div>
                                             <div class="md-list-content">
-                                                <span style="margin-top:5px"  class="md-list-heading">{!! nl2br ($foreignmedical->b_foreignmedical_phone_no) !!}</span>
+                                                <span style="margin-top:5px"  class="md-list-heading">
+                                                    @if($foreignmedical->b_foreignmedical_phone_no != '')
+                                                    @php
+                                                        $phone_number_splitted = explode("\n",$foreignmedical->b_foreignmedical_phone_no);
+                                                        $e_phone_number_splitted = explode("\n",$foreignmedical->foreignmedical_phone_no);
+                                                        $len = sizeof($phone_number_splitted);
+                                                    @endphp
+                                                        @for($i = 0; $i < $len ; $i = $i + 1)
+                                                            @php
+                                                                $phone_number = $phone_number_splitted[$i];
+                                                                $e_phone_number = $e_phone_number_splitted[$i];
+                                                                $length = strlen($e_phone_number);
+                                                            @endphp
+                                                            @if(!is_numeric($e_phone_number[1]))
+                                                                {{$phone_number}}
+                                                            @else
+                                                                <a href = "tel:{{$e_phone_number}}">{{$phone_number}}</a>
+                                                            @endif
+                                                            @if($i != $len - 1)
+                                                                <br>
+                                                            @endif
+                                                        @endfor
+                                                    @endif
+                                                </span>
                                                  <span class="uk-text-small uk-text-muted hidden">ফোন</span>
                                             </div>
                                         </li>
@@ -180,7 +203,9 @@
         
         
                                             <div class="md-list-content">
-                                                <span style="margin-top:5px" class="md-list-heading">{{$foreignmedical->foreignmedical_email_ad}}</span>
+                                                <span style="margin-top:5px" class="md-list-heading">
+                                                    <a href = "mailto:{{$foreignmedical->foreignmedical_email_ad}}">{{$foreignmedical->foreignmedical_email_ad}}</a>
+                                                </span>
                                                 <span class="uk-text-small uk-text-muted hidden">ই-মেইল</span>
                                             </div>
                                         </li>
@@ -203,7 +228,7 @@
                                 </div>
                             </div>
                             
-                            <div class="uk-width-large-1-1">
+                            <div class="uk-width-large-1-1 uk-margin-medium-top">
                                 <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">সাধারণ তথ্য</h4>
                                 <ul class="md-list uk-margin-small-top">
                                     <li>
@@ -216,7 +241,7 @@
                             
                             <!-- START google maps -->
                             
-                            @if( $foreignmedical->foreignmedical_latitude != null && $foreignmedical->foreignmedical_longitude != null )
+                            @if( $foreignmedical->foreignmedical_latitude != '' && $foreignmedical->foreignmedical_longitude != '' )
                             
                             <div class="uk-width-large-1-1 google_maps_show">
                                  <iframe 
@@ -231,13 +256,18 @@
                         </li>
                         <li>
                             <ul class="md-list">
+                            @foreach($notices as $notice)
+                                <?php echo $notice->b_foreignmedical_notice_description; ?>
+                            @endforeach
+                            <!--
                                 <li style="padding-top: 0px;">
                                     <div class="md-list-content">
                                         @foreach($notices as $notice)
-                                            <span class="uk-margin-right"><?php echo $notice->b_foreignmedical_notice_description; ?></span>
+                                            <span class="uk-margin-right"><?php #echo $notice->b_foreignmedical_notice_description; ?></span>
                                         @endforeach
                                     </div>
                                 </li>
+                            -->
                             </ul>
                         </li>
                         <li ng-controller="ViewBnForeignmedicalController">
@@ -263,7 +293,7 @@
         <div class="uk-width-large-7-10">
             <div class="md-card">
                 <div class="user_heading">
-                    <div class="user_heading_avatar">
+                    <div class="user_heading_avatar"  style="width:100%;margin-left: calc(50% - 41px)">
                         @if($foreignmedical->photo_path == '')
                         <div class="thumbnail"><img alt="foreignmedical"  src="{{asset('/foreignmedical.png')}}">
                         </div>
@@ -273,7 +303,7 @@
                         @endif
                     </div>
         
-                    <div class="user_heading_content">
+                    <div class="user_heading_content" style="display:table;margin:0 auto;">
                         <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{$foreignmedical->foreignmedical_name}}</span>
                         </h2>
                     </div>
@@ -315,7 +345,28 @@
                                                 <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
                                             </div>
                                             <div class="md-list-content">
-                                                <span style="margin-top:5px"  class="md-list-heading">{!! nl2br ($foreignmedical->foreignmedical_phone_no) !!}</span>
+                                                <span style="margin-top:5px"  class="md-list-heading">
+                                                    @if($foreignmedical->foreignmedical_phone_no != '')
+                                                    @php
+                                                        $e_phone_number_splitted = explode("\n",$foreignmedical->foreignmedical_phone_no);
+                                                        $len = sizeof($e_phone_number_splitted);
+                                                    @endphp
+                                                        @for($i = 0; $i < $len ; $i = $i + 1)
+                                                            @php
+                                                                $e_phone_number = $e_phone_number_splitted[$i];
+                                                                $length = strlen($e_phone_number);
+                                                            @endphp
+                                                            @if(!is_numeric($e_phone_number[1]))
+                                                                {{$e_phone_number}}
+                                                            @else
+                                                                <a href = "tel:{{$e_phone_number}}">{{$e_phone_number}}</a>
+                                                            @endif
+                                                            @if($i != $len - 1)
+                                                                <br>
+                                                            @endif
+                                                        @endfor
+                                                    @endif
+                                                </span>
                                                  <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                             </div>
                                         </li>
@@ -326,7 +377,7 @@
         
         
                                             <div class="md-list-content">
-                                                <span style="margin-top:5px" class="md-list-heading">{{$foreignmedical->foreignmedical_email_ad}}</span>
+                                                <span style="margin-top:5px" class="md-list-heading"><a href = "mailto:{{$foreignmedical->foreignmedical_email_ad}}">{{$foreignmedical->foreignmedical_email_ad}}</a></span>
                                                 <span class="uk-text-small uk-text-muted hidden">Email</span>
                                             </div>
                                         </li>
@@ -349,20 +400,23 @@
                                 </div>
                             </div>
                             
-                            <div class="uk-width-large-1-1">
+                            <div class="uk-width-large-1-1 uk-margin-medium-top">
                                 <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">General Info</h4>
                                 <ul class="md-list uk-margin-small-top">
+                                <?php echo  $foreignmedical->total_medicine; ; ?>
+                                <!--
                                     <li>
                                         <div class="md-list-content">
-                                            <span class="hidden">General:</span> <span><?php echo  $foreignmedical->total_medicine; ; ?></span>
+                                            <span class="hidden">General:</span> <span><?php #echo  $foreignmedical->total_medicine; ; ?></span>
                                         </div>
                                     </li>
+                                -->
                                 </ul>  
                             </div>      
                             
                             <!-- START google maps -->
                             
-                            @if( $foreignmedical->foreignmedical_latitude != null && $foreignmedical->foreignmedical_longitude != null )
+                            @if( $foreignmedical->foreignmedical_latitude != '' && $foreignmedical->foreignmedical_longitude != '' )
                             
                             <div class="uk-width-large-1-1 google_maps_show">
                                  <iframe 
@@ -377,13 +431,18 @@
                         </li>
                         <li>
                             <ul class="md-list">
+                            @foreach($notices as $notice)
+                                <?php echo $notice->foreignmedical_notice_description; ?>
+                            @endforeach
+                            <!--
                                 <li style="padding-top: 0px;">
                                     <div class="md-list-content">
                                         @foreach($notices as $notice)
-                                            <span class="uk-margin-right"><?php echo $notice->foreignmedical_notice_description; ?></span>
+                                            <span class="uk-margin-right"><?php #echo $notice->foreignmedical_notice_description; ?></span>
                                         @endforeach
                                     </div>
                                 </li>
+                            -->
                             </ul>
                         </li>
                         <li ng-controller="ViewForeignmedicalController">

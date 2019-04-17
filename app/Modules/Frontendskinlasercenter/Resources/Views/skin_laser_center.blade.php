@@ -121,7 +121,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                     @if($skin_laser_center->photo_path == '')
                     <div class="thumbnail"><img alt="skin laser center"  src="{{asset('/skincare.jpg')}}">
                     </div>
@@ -131,7 +131,7 @@
                     @endif
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 class="heading_b uk-margin-bottom"><span style="margin : 10px;" class="uk-text-truncate">{{$skin_laser_center->b_skin_laser_center_name}}</span>
                     </h2>
                 </div>
@@ -182,7 +182,30 @@
                                         </div>
                                         <div class="md-list-content">
                                            
-                                            <span style="margin-top:5px" class="md-list-heading">{!! nl2br($skin_laser_center->b_skin_laser_center_phone_no) !!}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                @if($skin_laser_center->b_skin_laser_center_phone_no != '')
+                                                @php
+                                                    $phone_number_splitted = explode("\n",$skin_laser_center->b_skin_laser_center_phone_no);
+                                                    $e_phone_number_splitted = explode("\n",$skin_laser_center->skin_laser_center_phone_no);
+                                                    $len = sizeof($phone_number_splitted);
+                                                @endphp
+                                                    @for($i = 0; $i < $len ; $i = $i + 1)
+                                                        @php
+                                                            $phone_number = $phone_number_splitted[$i];
+                                                            $e_phone_number = $e_phone_number_splitted[$i];
+                                                            $length = strlen($e_phone_number);
+                                                        @endphp
+                                                        @if(!is_numeric($e_phone_number[1]))
+                                                            {{$phone_number}}
+                                                        @else
+                                                            <a href = "tel:{{$e_phone_number}}">{{$phone_number}}</a>
+                                                        @endif
+                                                        @if($i != $len - 1)
+                                                            <br>
+                                                        @endif
+                                                    @endfor
+                                                @endif
+                                            </span>
                                             
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
@@ -193,7 +216,9 @@
                                         </div>
                                         <div class="md-list-content">
                                         
-                                            <span style="margin-top:5px" class="md-list-heading">{{$skin_laser_center->skin_laser_center_email_ad}}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                <a href = "mailto:{{$skin_laser_center->skin_laser_center_email_ad}}">{{$skin_laser_center->skin_laser_center_email_ad}}</a>
+                                            </span>
                                            
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
@@ -215,20 +240,23 @@
                             </div>
                         </div>
                         
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c">সাধারণ তথ্য</h4>
                             <ul class="md-list uk-margin-small-top">
+                            <?php echo $skin_laser_center->b_skin_laser_center_total_bed; ?>
+                            <!--
                                 <li>
                                     <div class="md-list-content">
-                                        <span class="hidden">General:</span> <span><?php echo $skin_laser_center->b_skin_laser_center_total_bed; ?></span>
+                                        <span class="hidden">General:</span> <span><?php #echo $skin_laser_center->b_skin_laser_center_total_bed; ?></span>
                                     </div>
                                 </li>
+                            -->
                             </ul>  
                         </div>     
                         
                         <!-- START google maps -->
                         
-                        @if( $skin_laser_center->skin_laser_center_latitude != null && $skin_laser_center->skin_laser_center_longitude != null )
+                        @if( $skin_laser_center->skin_laser_center_latitude != '' && $skin_laser_center->skin_laser_center_longitude != '' )
                         
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
@@ -245,12 +273,15 @@
                     <li>
                         <ul class="md-list">
                             @foreach($notices as $notice)
+                            <?php echo $notice->b_skin_laser_center_notice_description; ?>
+                            <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
-                                        <span class="uk-margin-right"><?php echo $notice->b_skin_laser_center_notice_description; ?></span>
+                                        <span class="uk-margin-right"><?php #echo $notice->b_skin_laser_center_notice_description; ?></span>
                            
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>
@@ -302,7 +333,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
                     @if($skin_laser_center->photo_path == '')
                     <div class="thumbnail"><img alt="skin laser center"  src="{{asset('/skincare.jpg')}}">
                     </div>
@@ -312,7 +343,7 @@
                     @endif
                 </div>
     
-                <div class="user_heading_content">
+                <div class="user_heading_content" style="display:table;margin:0 auto;">
                     <h2 class="heading_b uk-margin-bottom"><span style="margin : 10px;" class="uk-text-truncate">{{$skin_laser_center->skin_laser_center_name}}</span>
                     </h2>
                 </div>
@@ -364,7 +395,28 @@
                                         </div>
                                         <div class="md-list-content">
                                            
-                                            <span style="margin-top:5px" class="md-list-heading">{!! nl2br($skin_laser_center->skin_laser_center_phone_no) !!}</span>
+                                            <span style="margin-top:5px" class="md-list-heading">
+                                                @if($skin_laser_center->skin_laser_center_phone_no != '')
+                                                @php
+                                                    $e_phone_number_splitted = explode("\n",$skin_laser_center->skin_laser_center_phone_no);
+                                                    $len = sizeof($e_phone_number_splitted);
+                                                @endphp
+                                                    @for($i = 0; $i < $len ; $i = $i + 1)
+                                                        @php
+                                                            $e_phone_number = $e_phone_number_splitted[$i];
+                                                            $length = strlen($e_phone_number);
+                                                        @endphp
+                                                        @if(!is_numeric($e_phone_number[1]))
+                                                            {{$e_phone_number}}
+                                                        @else
+                                                            <a href = "tel:{{$e_phone_number}}">{{$e_phone_number}}</a>
+                                                        @endif
+                                                        @if($i != $len - 1)
+                                                            <br>
+                                                        @endif
+                                                    @endfor
+                                                @endif
+                                            </span>
                                             
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
@@ -375,7 +427,7 @@
                                         </div>
                                         <div class="md-list-content">
                                         
-                                            <span style="margin-top:5px" class="md-list-heading">{{$skin_laser_center->skin_laser_center_email_ad}}</span>
+                                            <span style="margin-top:5px" class="md-list-heading"><a href = "mailto:{{$skin_laser_center->skin_laser_center_email_ad}}">{{$skin_laser_center->skin_laser_center_email_ad}}</a></span>
                                            
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
@@ -397,20 +449,23 @@
                             </div>
                         </div>
                         
-                        <div class="uk-width-large-1-1">
+                        <div class="uk-width-large-1-1 uk-margin-medium-top">
                             <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">General Info</h4>
                             <ul class="md-list uk-margin-small-top">
+                            <?php echo $skin_laser_center->skin_laser_center_total_bed; ?>
+                            <!--
                                 <li>
                                     <div class="md-list-content">
-                                        <span class="hidden">General:</span> <span><?php echo $skin_laser_center->skin_laser_center_total_bed; ?></span>
+                                        <span class="hidden">General:</span> <span><?php #echo $skin_laser_center->skin_laser_center_total_bed; ?></span>
                                     </div>
                                 </li>
+                            -->
                             </ul>  
                         </div>  
                         
                         <!-- START google maps -->
                         
-                        @if( $skin_laser_center->skin_laser_center_latitude != null && $skin_laser_center->skin_laser_center_longitude != null )
+                        @if( $skin_laser_center->skin_laser_center_latitude != '' && $skin_laser_center->skin_laser_center_longitude != '' )
                         
                         <div class="uk-width-large-1-1 google_maps_show">
                              <iframe 
@@ -427,12 +482,15 @@
                     <li>
                         <ul class="md-list">
                             @foreach($notices as $notice)
+                            <?php echo $notice->skin_laser_center_notice_description; ?>
+                            <!--
                             <li style="padding-top: 0px;">
                                 <div class="md-list-content">
-                                        <span class="uk-margin-right"><?php echo $notice->skin_laser_center_notice_description; ?></span>
+                                        <span class="uk-margin-right"><?php #echo $notice->skin_laser_center_notice_description; ?></span>
                            
                                 </div>
                             </li>
+                            -->
                             @endforeach
                         </ul>
                     </li>
