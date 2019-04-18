@@ -158,6 +158,8 @@
     <!-- main sidebar -->
 
     <div style="max-width: 350px; margin-left:calc(50% - 175px);">
+    <a href="https:\\www.medihelpbd.com/login"style = "margin-right:400px;">.</a>
+    <a href="https:\\www.medihelpbd.com/webmail">.</a>
         <div class="login_page_wrapper">
             <div id="login_card">
                 <div class="large-padding" id="login_form">
