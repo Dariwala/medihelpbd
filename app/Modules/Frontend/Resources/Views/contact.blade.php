@@ -73,19 +73,19 @@
                                         @if($message != "") <h5 style="color: @if($status == 1) green @else red @endif;"><strong>{{ $message }}</strong></h5> @endif
                                         <div class="uk-width-1-1 uk-margin-top">
                                             <div class="parsley-row">
-                                                <label for="name">আপনার নাম <span class="req">*</span></label>
-                                                <input type="text" id="name" name="name" value="" required class="md-input" />
+                                                <label for="name">নাম <span class="req">*</span></label>
+                                                <textarea type="text" id="name" name="name" value="" required class="md-input" ></textarea>
                                             </div>
                                             <div class="parsley-row uk-margin-top">
-                                                <label for="email">ই-মেইল/ ফোন <span class="req">*</span></label>
-                                                <input type="text" id="email" name="email" value="" required class="md-input" />
+                                                <label for="email">ই-মেইল অথবা ফোন <span class="req">*</span></label>
+                                                <textarea type="text" id="email" name="email" value="" required class="md-input"></textarea>
                                             </div>
                                             <div class="parsley-row uk-margin-top">
                                                 <label for="subject">বিষয় <span class="req">*</span></label>
-                                                <input type="text" id="subject" name="subject" value="" required class="md-input" />
+                                                <textarea type="text" id="subject" name="subject" value="" required class="md-input"></textarea>
                                             </div>
                                             <div class="parsley-row uk-margin-top">
-                                                <label for="details">আপনার মেসেজ <span class="req">*</span></label>
+                                                <label for="details">বিস্তারিত <span class="req">*</span></label>
                                                 <textarea id="details" name="details" value="" required class="md-input"></textarea>
                                             </div>
                                         </div>
@@ -117,16 +117,16 @@
                                         @if($message != "") <h5 style="color: @if($status == 1) green @else red @endif;"><strong>{{ $message }}</strong></h5> @endif
                                         <div class="uk-width-1-1 uk-margin-top">
                                             <div class="parsley-row">
-                                                <label for="name">Your Name <span class="req">*</span></label>
-                                                <input type="text" id="name" name="name" value="" required class="md-input" />
+                                                <label for="name">Name <span class="req">*</span></label>
+                                                <textarea type="text" id="name" name="name" value="" required class="md-input" ></textarea>
                                             </div>
                                             <div class="parsley-row uk-margin-top">
-                                                <label for="email">Your E-Mail Address/ Phone Number <span class="req">*</span></label>
-                                                <input type="text" id="email" name="email" value="" required class="md-input" />
+                                                <label for="email">E-Mail or Phone <span class="req">*</span></label>
+                                                <textarea type="text" id="email" name="email" value="" required class="md-input" ></textarea>
                                             </div>
                                             <div class="parsley-row uk-margin-top">
                                                 <label for="subject">Subject <span class="req">*</span></label>
-                                                <input type="text" id="subject" name="subject" value="" required class="md-input" />
+                                                <textarea type="text" id="subject" name="subject" value="" required class="md-input" ></textarea>
                                             </div>
                                             <div class="parsley-row uk-margin-top">
                                                 <label for="details">Details <span class="req">*</span></label>
@@ -136,7 +136,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-float-right uk-margin-top">
-                                    <button type="submit" class="md-btn md-btn-danger md-btn-large" >Send</button>
+                                    <button type="submit" class="md-btn md-btn-danger md-btn-large">Send</button>
                                 </div>
                             {!! Form::close() !!}
                         </div>    
