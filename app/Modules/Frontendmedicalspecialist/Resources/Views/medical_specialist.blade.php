@@ -155,7 +155,7 @@
                 </div>
     
                 <div class="user_heading_content" style="display:table;margin:0 auto;">
-                    <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-break">{{$medical_specialist->b_medical_specialist_name}}</span>
+                    <h2 class="heading_b uk-margin-bottom"><span class="uk-text-break">{{$medical_specialist->b_medical_specialist_name}}</span>
                     </h2>
                 </div>
             </div>
@@ -843,7 +843,7 @@
                 </div>
     
                 <div class="user_heading_content" style="display:table;margin:0 auto;">
-                    <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-break">{{ $medical_specialist->medical_specialist_name }}</span>
+                    <h2 class="heading_b uk-margin-bottom"><span class="uk-text-break">{{ $medical_specialist->medical_specialist_name }}</span>
                     </h2>
                 </div>
             </div>
