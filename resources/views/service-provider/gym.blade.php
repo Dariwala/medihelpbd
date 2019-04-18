@@ -91,14 +91,10 @@
             </div>
         </div>
     </div>
-    <br>
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সাধারণ তথ্য  </p>
     
     <br>
     
     <p style="font-size: 18px;font-weight: bold;background:red;color:white; text-align:center">সেবা </p>
-    
-    <br>
     
     <br>
     
@@ -208,9 +204,6 @@
         </div>
     </div>
     
-    <br>
-    
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">General Info</p>
     
     <br>
     

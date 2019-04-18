@@ -138,11 +138,11 @@
                 <label for="emergency_number" class="">সার্ভিস চার্জ আলোচনা সাপেক্ষে </label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="dc_home_service_charge_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px">Yes</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="dc_home_service_charge_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="dc_home_service_charge_negotiable"> <span style="padding:5px">No</span></label> 
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="dc_home_service_charge_negotiable"> <span style="padding:5px">না</span></label> 
                  </span>
             </div>
         </div>
@@ -267,11 +267,11 @@
                 <label for="emergency_number" class="">ফোনে সিরিয়াল নম্বর দেওয়া হয় না। সরাসরি এসে সিরিয়াল দিতে হয় </label>
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="dc_cham_1_come"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="dc_cham_1_come"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="dc_cham_1_come"> <span style="padding:5px">NO</span></label> 
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="dc_cham_1_come"> <span style="padding:5px">না</span></label> 
                  </span>
             </div>
         </div>
@@ -345,7 +345,7 @@
     </div>
 
     
-     <p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">চেম্বার-১   </p>
+     <p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">চেম্বার-২   </p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -426,11 +426,11 @@
                 <label for="emergency_number" class="">ফোনে সিরিয়াল নম্বর দেওয়া হয় না। সরাসরি এসে সিরিয়াল দিতে হয় </label>
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="dc_cham_2_come"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="dc_cham_2_come"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="dc_cham_2_come"> <span style="padding:5px">NO</span></label> 
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="dc_cham_2_come"> <span style="padding:5px">না</span></label> 
                  </span>
             </div>
         </div>
@@ -505,7 +505,7 @@
     
     
     
-     <p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">চেম্বার-১   </p>
+     <p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">চেম্বার-৩   </p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -586,11 +586,11 @@
                 <label for="emergency_number" class="">ফোনে সিরিয়াল নম্বর দেওয়া হয় না। সরাসরি এসে সিরিয়াল দিতে হয় </label>
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="dc_cham_3_come"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="dc_cham_3_come"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="dc_cham_3_come"> <span style="padding:5px">NO</span></label> 
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="dc_cham_3_come"> <span style="padding:5px">না</span></label> 
                  </span>
             </div>
         </div>
@@ -745,11 +745,11 @@
                 <label for="emergency_number" class="">ফোনে সিরিয়াল নম্বর দেওয়া হয় না। সরাসরি এসে সিরিয়াল দিতে হয় </label>
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="dc_cham_4_come"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="dc_cham_4_come"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="dc_cham_4_come"> <span style="padding:5px">NO</span></label> 
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="dc_cham_4_come"> <span style="padding:5px">না</span></label> 
                  </span>
             </div>
         </div>
@@ -911,7 +911,7 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">General Info</p>
+    <p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">সাধারণ তথ্য</p>
     
     <br>
     

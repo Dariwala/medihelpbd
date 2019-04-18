@@ -76,7 +76,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="emergency_number">সেবার পরিধি</label>
-                <input type="text" name="amb_service_area"  class="md-input" />
+                <textarea type="text" name="amb_service_area"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -85,7 +85,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">ভাড়া</label>
-                <input type="text" name="amb_fare"  class="md-input" />
+                <textarea type="text" name="amb_fare"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -112,7 +112,7 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">সেবা ঘণ্টা</label>
-                <input type="text" name="amb_service_hour"  class="md-input" />
+                <textarea type="text" name="amb_service_hour"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -121,7 +121,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="emergency_number">কার্য দিবস  </label>
-                <input type="text" name="amb_working_day"  class="md-input" />
+                <textarea type="text" name="amb_working_day"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -130,7 +130,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">বন্ধ </label>
-                <input type="text" name="amb_cont_close"  class="md-input" />
+                <textarea type="text" name="amb_cont_close"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -342,7 +342,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">Fare</label>
-                <input type="text" name="amb_fare"  class="md-input" />
+                <textarea type="text" name="amb_fare"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -368,7 +368,7 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">Service Hour</label>
-                <input type="text" name="amb_service_hour"  class="md-input" />
+                <textarea type="text" name="amb_service_hour"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -377,7 +377,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="emergency_number">Working Day</label>
-                <input type="text" name="amb_working_day"  class="md-input" />
+                <textarea type="text" name="amb_working_day"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -386,7 +386,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">Closed</label>
-                <input type="text" name="amb_cont_close"  class="md-input" />
+                <textarea type="text" name="amb_cont_close"  class="md-input"></textarea>
             </div>
         </div>
     </div>

@@ -115,9 +115,7 @@
     
     <br>
     
-    <label style="font-size: 16px;font-weight: bold">ডাক্তার</label> <span>(যদি থাকে, ডক্টরস্‌ প্যানেলে বিস্তারিত )</span>
-      
-    <br>
+    <p style="font-size: 18px;font-weight: bold;background:red;color:white; text-align:center">ডাক্তার<br><small>যদি থাকে, ডক্টরস্‌ প্যানেলে বিস্তারিত লিখুন</small></p>
     <br>
     
     <p style="font-size: 18px;font-weight: bold;background:red;color:white; text-align:center">সেবা </p>
@@ -465,9 +463,7 @@
 
     <br>
     
-    <label style="font-size: 16px;font-weight: bold; margin-top: 6px;">Doctor </label><span>(If Any, Write details in the Doctors Panel)</span>
-     
-    <br>
+    <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Doctor<br><small>If Any, Write details in the Doctors Panel</small></p>
     <br>
     
     <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Service</p>

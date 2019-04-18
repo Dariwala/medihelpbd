@@ -1,6 +1,6 @@
 @extends('layouts.frontend_master_02')
 
-@section('title', 'Latest News')
+@section('title', 'Advertisement')
 
 @section('angular')
     <script src="{{url('app/frontend/frontend/pharmacy.view.js')}}"></script>

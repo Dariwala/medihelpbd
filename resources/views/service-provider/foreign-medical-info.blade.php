@@ -112,11 +112,8 @@
     
     <br>
     
-    <br>
     
     <p style="font-size: 18px;font-weight: bold;background:red;color:white; text-align:center">সেবা </p>
-    
-    <br>
     
     <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সুযোগ-সুবিধা </p>
     
@@ -388,12 +385,8 @@
     </div>
 
     <br>
-
-    <br>
     
     <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Service</p>
-    
-    <br>
     
     
     

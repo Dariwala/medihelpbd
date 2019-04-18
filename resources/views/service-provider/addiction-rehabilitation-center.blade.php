@@ -102,9 +102,8 @@
 
     <br>
     
-    <label style="font-size: 16px;font-weight: bold">ডাক্তার</label> <span>(যদি থাকে, ডক্টরস্‌ প্যানেলে বিস্তারিত )</span>
+    <p style="font-size: 18px;font-weight: bold;background:red;color:white; text-align:center">ডাক্তার <br><small>যদি থাকে, ডক্টরস্‌ প্যানেলে বিস্তারিত লিখুন</small> </p>
       
-    <br>
     <br>
     
     <p style="font-size: 18px;font-weight: bold;background:red;color:white; text-align:center">সেবা </p>
@@ -117,7 +116,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="emergency_number">সেবার পরিধি</label>
-                <input type="text" name="amb_service_area"  class="md-input" />
+                <textarea type="text" name="amb_service_area"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -126,7 +125,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">ভাড়া</label>
-                <input type="text" name="amb_fare"  class="md-input" />
+                <textarea type="text" name="amb_fare"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -153,7 +152,7 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">সেবা ঘণ্টা</label>
-                <input type="text" name="amb_service_hour"  class="md-input" />
+                <textarea type="text" name="amb_service_hour"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -162,7 +161,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="emergency_number">কার্য দিবস  </label>
-                <input type="text" name="amb_working_day"  class="md-input" />
+                <textarea type="text" name="amb_working_day"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -171,7 +170,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">বন্ধ </label>
-                <input type="text" name="amb_cont_close"  class="md-input" />
+                <textarea type="text" name="amb_cont_close"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -181,7 +180,7 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">যোগাযোগের নম্বর</label>
-                <input type="text" name="amb_cont_number"  class="md-input" />
+                <textarea type="text" name="amb_cont_number"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -274,7 +273,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="emergency_number">সেবার পরিধি</label>
-                <input type="text" name="ac_amb_service_area"  class="md-input" />
+                <textarea type="text" name="ac_amb_service_area"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -283,7 +282,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">ভাড়া</label>
-                <input type="text" name="ac_amb_fare"  class="md-input" />
+                <textarea type="text" name="ac_amb_fare"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -937,9 +936,8 @@
     
     <br>
     
-    <label style="font-size: 16px;font-weight: bold; margin-top: 6px;">Doctor </label><span>(If Any, Write details in the Doctors Panel)</span>
+    <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Doctor <br><small>If Any, Write details in the Doctors Panel</small></p>
      
-    <br>
     <br>
     
     <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Service</p>
@@ -961,7 +959,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">Fare</label>
-                <input type="text" name="amb_fare"  class="md-input" />
+                <textarea type="text" name="amb_fare"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -987,7 +985,7 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">Service Hour</label>
-                <input type="text" name="amb_service_hour"  class="md-input" />
+                <textarea type="text" name="amb_service_hour"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -996,7 +994,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="emergency_number">Working Day</label>
-                <input type="text" name="amb_working_day"  class="md-input" />
+                <textarea type="text" name="amb_working_day"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -1005,7 +1003,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">Closed</label>
-                <input type="text" name="amb_cont_close"  class="md-input" />
+                <textarea type="text" name="amb_cont_close"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -1015,14 +1013,14 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">Contact Number</label>
-                <input type="text" name="amb_cont_number"  class="md-input" />
+                <textarea type="text" name="amb_cont_number"  class="md-input"></textarea>
             </div>
         </div>
     </div>
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Ambulance Facilities </p>
+    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Facilities </p>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -1202,7 +1200,7 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;"> ICU Ambulance Facilities </p>
+    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;"> Facilities </p>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">

@@ -51,15 +51,6 @@
     </div>
     
     <div class="uk-grid" data-uk-grid-margin>
-        <div class="uk-width-medium-1-1">
-            <div class="parsley-row">
-                <label for="address">নাম</label>
-                <textarea type="text" name="con_info_address"address  class="md-input" rows="2" cols="10"></textarea>
-            </div>
-        </div>
-    </div>
-    
-    <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">    
              <div class="parsley-row">
                 <label for="contact_cumber">যোগাযোগের নম্বর </label>
@@ -284,9 +275,8 @@
     
     <br>
     
-    <label style="font-size: 16px;font-weight: bold; margin-top: 6px;">ডাক্তার </label><span>(যদি থাকে, ডক্টরস্‌ প্যানেলে বিস্তারিত লিখুন)</span>
+    <p style="font-size: 18px;font-weight: bold;background:red;color:white; text-align:center">ডাক্তার<br><small>যদি থাকে, ডক্টরস্‌ প্যানেলে বিস্তারিত লিখুন</small></p>
      
-    <br>
     <br>
     
     <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">সেবা </p>
@@ -308,7 +298,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">ভাড়া</label>
-                <input type="text" name="amb_fare"  class="md-input" />
+                <textarea type="text" name="amb_fare"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -334,7 +324,7 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">সেবা ঘণ্টা</label>
-                <input type="text" name="amb_service_hour"  class="md-input" />
+                <textarea type="text" name="amb_service_hour"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -343,7 +333,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="emergency_number">কার্য দিবস</label>
-                <input type="text" name="amb_working_day"  class="md-input" />
+                <textarea type="text" name="amb_working_day"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -352,7 +342,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">বন্ধ</label>
-                <input type="text" name="amb_cont_close"  class="md-input" />
+                <textarea type="text" name="amb_cont_close"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -362,7 +352,7 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">যোগাযোগের নম্বর</label>
-                <input type="text" name="amb_cont_number"  class="md-input" />
+                <textarea type="text" name="amb_cont_number"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -1669,6 +1659,7 @@
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class=""> সেবার পরিধি </label> 
+                <!--
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                    <label class="inline-label"><input type="radio" value="Yes" name="hm_serv_serv_area"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
@@ -1677,6 +1668,8 @@
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="hm_serv_serv_area"> <span style="padding:5px">না</span></label> 
                  </span>
+                 -->
+                 <textarea type="text" name="hm_serv_serv_area"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -1685,6 +1678,7 @@
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class=""> সার্ভিস চার্জ </label> 
+                <!--
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                    <label class="inline-label"><input type="radio" value="Yes" name="hm_serv_serv_charge"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
@@ -1693,6 +1687,8 @@
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="hm_serv_serv_charge"> <span style="padding:5px">না</span></label> 
                  </span>
+                 -->
+                 <textarea type="text" name="hm_serv_serv_charge"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -1717,6 +1713,7 @@
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class=""> সেবা ঘণ্টা </label> 
+                <!--
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                    <label class="inline-label"><input type="radio" value="Yes" name="hm_serv_serv_hour"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
@@ -1725,6 +1722,8 @@
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="hm_serv_serv_hour"> <span style="padding:5px">না</span></label> 
                  </span>
+                 -->
+                 <textarea type="text" name="hm_serv_serv_hour"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -1733,6 +1732,7 @@
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class=""> কার্য দিবস </label> 
+                <!--
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                    <label class="inline-label"><input type="radio" value="Yes" name="hm_serv_working_day"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
@@ -1741,6 +1741,8 @@
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="hm_serv_working_day"> <span style="padding:5px">না</span></label> 
                  </span>
+                 -->
+                 <textarea type="text" name="hm_serv_working_day"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -2058,6 +2060,7 @@
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class=""> সেবার পরিধি</label> 
+                <!--
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                    <label class="inline-label"><input type="radio" value="Yes" name="ops_serv_area"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
@@ -2066,6 +2069,8 @@
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ops_serv_area"> <span style="padding:5px">না</span></label> 
                  </span>
+                 -->
+                 <textarea type="text" name="ops_serv_area"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -2074,6 +2079,7 @@
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class=""> সার্ভিস চার্জ </label> 
+                <!--
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                    <label class="inline-label"><input type="radio" value="Yes" name="ops_serv_charge"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
@@ -2082,6 +2088,8 @@
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ops_serv_charge"> <span style="padding:5px">না</span></label> 
                  </span>
+                 -->
+                 <textarea type="text" name="ops_serv_charge"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -2106,6 +2114,7 @@
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class=""> সেবা ঘণ্টা </label> 
+                <!--
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                    <label class="inline-label"><input type="radio" value="Yes" name="ops_serv_hour"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
@@ -2114,6 +2123,8 @@
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ops_serv_hour"> <span style="padding:5px">না</span></label> 
                  </span>
+                 -->
+                 <textarea type="text" name="ops_serv_hour"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -2122,6 +2133,7 @@
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class=""> কার্য দিবস </label> 
+                <!--
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                    <label class="inline-label"><input type="radio" value="Yes" name="ops_working_day"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
@@ -2130,6 +2142,8 @@
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ops_working_day"> <span style="padding:5px">না</span></label> 
                  </span>
+                 -->
+                 <textarea type="text" name="ops_working_day"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -2816,9 +2830,8 @@
     
     <br>
     
-    <label style="font-size: 16px;font-weight: bold; margin-top: 6px;">Doctor </label><span>(If Any, Write details in the Doctors Panel)</span>
+    <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Doctor<br><small>If Any, Write details in the Doctors Panel</small></p>
      
-    <br>
     <br>
     
     <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Service</p>
@@ -2840,7 +2853,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">Fare</label>
-                <input type="text" name="amb_fare"  class="md-input" />
+                <textarea type="text" name="amb_fare"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -2866,7 +2879,7 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">Service Hour</label>
-                <input type="text" name="amb_service_hour"  class="md-input" />
+                <textarea type="text" name="amb_service_hour"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -2875,7 +2888,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="emergency_number">Working Day</label>
-                <input type="text" name="amb_working_day"  class="md-input" />
+                <textarea type="text" name="amb_working_day"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -2884,7 +2897,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">Closed</label>
-                <input type="text" name="amb_cont_close"  class="md-input" />
+                <textarea type="text" name="amb_cont_close"  class="md-input"></textarea>
             </div>
         </div>
     </div>
@@ -2894,14 +2907,14 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">Contact Number</label>
-                <input type="text" name="amb_cont_number"  class="md-input" />
+                <textarea type="text" name="amb_cont_number"  class="md-input"></textarea>
             </div>
         </div>
     </div>
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Ambulance Facilities </p>
+    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Facilities </p>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -3098,7 +3111,7 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;"> ICU Ambulance Facilities </p>
+    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;"> Facilities </p>
    
    
     <div class="uk-grid" data-uk-grid-margin>
@@ -3265,7 +3278,7 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;"> Air Ambulance Facilities </p>
+    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;"> Facilities </p>
    
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -4198,7 +4211,8 @@
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
-                <label for="emergency_number" class=""> Service Area </label> 
+                <label for="emergency_number" class=""> Service Area </label>
+                <!--
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                    <label class="inline-label"><input type="radio" value="Yes" name="hm_serv_serv_area"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
@@ -4207,6 +4221,8 @@
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="hm_serv_serv_area"> <span style="padding:5px">NO</span></label> 
                  </span>
+                 -->
+                 <textarea class="md-input" name="hm_serv_serv_area" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
     </div>
@@ -4215,6 +4231,7 @@
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class=""> Service Charge </label> 
+                <!--
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                    <label class="inline-label"><input type="radio" value="Yes" name="hm_serv_serv_charge"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
@@ -4223,6 +4240,8 @@
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="hm_serv_serv_charge"> <span style="padding:5px">NO</span></label> 
                  </span>
+                 -->
+                 <textarea class="md-input" name="hm_serv_serv_charge" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
     </div>
@@ -4588,6 +4607,7 @@
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class=""> Service Area </label> 
+                <!--
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                    <label class="inline-label"><input type="radio" value="Yes" name="ops_serv_area"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
@@ -4596,6 +4616,8 @@
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ops_serv_area"> <span style="padding:5px">NO</span></label> 
                  </span>
+                 -->
+                 <textarea type="text" name="ops_serv_area"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -4604,6 +4626,7 @@
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class=""> Service Charge </label> 
+                <!--
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                    <label class="inline-label"><input type="radio" value="Yes" name="ops_serv_charge"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
@@ -4612,6 +4635,8 @@
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ops_serv_charge"> <span style="padding:5px">NO</span></label> 
                  </span>
+                 -->
+                 <textarea class="md-input" name="ops_serv_charge" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
     </div>
