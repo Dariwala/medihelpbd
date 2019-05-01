@@ -70,6 +70,11 @@
         <tr> 
             <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> GeneralInfo</td>
         </tr>
+        <tr>
+            <td style=" width:30%">General Info</td>
+            <td>:</td>
+            <td style=" width:70%"> {{ nl2br($data1['general_info'])}} </td>
+        </tr>
         
         <tr> 
             <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> Service</td>
@@ -195,12 +200,6 @@
         <tr> 
             <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> ICU Ambulance Facilities</td>
         </tr>
-        
-            <tr> 
-                <td style=" width:30%">Non Air Conditioned <br> </td>
-                <td>:</td>
-                <td style=" width:70%">{{ isset($data1['no_air_condition']) ? $data1['no_air_condition'] : ''  }} </td>
-            </tr>
             <tr> 
                 <td style=" width:30%">Medical Staff for Critical Care   <br></td>
                 <td>:</td>
@@ -244,7 +243,7 @@
             <tr> 
                 <td style=" width:30%">Contact Number </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['blood_bank_contact_number']) ? $data1 ['blood_bank_contact_number']:  ''}} </td>
+                <td style=" width:70%"> {{  $data1 ['blood_bank_contact_number']}} </td>
             </tr>
         
         <tr>
@@ -254,7 +253,7 @@
             <tr> 
                 <td style=" width:30%">Write Test Name, Rate, Preparation & Contact Number</td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['diagnostic_test']) ? $data1 ['diagnostic_test']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1 ['diagnostic_test'] }} </td>
             </tr>
         
         <tr>
@@ -293,17 +292,17 @@
             <tr> 
                 <td style=" width:30%">Car Parking </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ nl2br($data1['facilities_car_parking'])}} </td>
+                <td style=" width:70%"> {{ isset($data1['facilities_car_parking']) ? $data1['facilities_car_parking']:  ''}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%">Mosque  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ nl2br($data1['facilities_mosque'])}} </td>
+                <td style=" width:70%"> {{ isset($data1['facilities_mosque']) ? $data1['facilities_mosque']:  ''}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%">Prayer Room  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ nl2br($data1['facilities_prayer_room'])}} </td>
+                <td style=" width:70%"> {{ isset($data1['facilities_prayer_room']) ? $data1['facilities_prayer_room']:  ''}} </td>
             </tr>
         
         <tr>
@@ -312,12 +311,12 @@
             <tr> 
                 <td style=" width:30%"> Service Area </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['home_service_area']) ? $data1 ['home_service_area']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1 ['home_service_area'] }} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Service Charge </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['home_service_service_charge']) ? $data1['home_service_service_charge']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['home_service_service_charge']}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Service Charge Negotiable   </td>
@@ -327,22 +326,22 @@
             <tr> 
                 <td style=" width:30%"> Service Hour </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['home_service_service_hour']) ? $data1['home_service_service_hour']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['home_service_service_hour'] }} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Working Day  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['home_service_working_day']) ? $data1['home_service_working_day']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['home_service_working_day'] }} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Closed  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['home_service_close']) ? $data1['home_service_close']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['home_service_close'] }} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Contact Number </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ nl2br($data1['home_service_number'])}} </td>
+                <td style=" width:70%"> {{ $data1['home_service_number'] }} </td>
             </tr>
         
         <tr>
@@ -351,7 +350,7 @@
             <tr> 
                 <td style=" width:30%"> Write Department Name </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['medical_department_name']) ? $data1 ['medical_department_name']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1 ['medical_department_name'] }} </td>
             </tr>
             
             <tr>
@@ -360,22 +359,22 @@
             <tr> 
                 <td style=" width:30%"> Service Hour </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['pharmacy_service_hour']) ? $data1 ['pharmacy_service_hour']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1 ['pharmacy_service_hour'] }} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Working Day </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['pharmacy_working_day']) ? $data1['pharmacy_working_day']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['pharmacy_working_day']}} </td>
             </tr>
             <tr>  
                 <td style=" width:30%"> Closed   </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['pharmacy_closed']) ? $data1['pharmacy_closed']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['pharmacy_closed']}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Contact Number </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['pharmacy_contact_number']) ? $data1['pharmacy_contact_number']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['pharmacy_contact_number'] }} </td>
             </tr>
         
         <tr>
@@ -384,17 +383,17 @@
             <tr> 
                 <td style=" width:30%"> Minimum Order Value  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['home_delivery_minimum_order']) ? $data1 ['home_delivery_minimum_order']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1 ['home_delivery_minimum_order']}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Service Area </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['home_delivery_service_area']) ? $data1['home_delivery_service_area']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['home_delivery_service_area']}} </td>
             </tr>
             <tr>  
                 <td style=" width:30%"> Delivery Charge   </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['home_delivery_charge']) ? $data1['home_delivery_charge']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['home_delivery_charge']}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Delivery Charge Negotiable  </td>
@@ -404,22 +403,22 @@
             <tr> 
                 <td style=" width:30%"> Service Hour  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['home_delivery_service_hour']) ? $data1['home_delivery_service_hour']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['home_delivery_service_hour']}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Working Day </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['home_delivery_working_day']) ? $data1['home_delivery_working_day']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['home_delivery_working_day']}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Closed  </td>
                <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['home_delivery_closed']) ? $data1['home_delivery_closed']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['home_delivery_closed']}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Contact Number  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['home_delivery_number']) ? $data1['home_delivery_number']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1['home_delivery_number']}} </td>
             </tr>
         
         <tr>
@@ -428,7 +427,7 @@
             <tr> 
                 <td style=" width:30%"> Write Bed Name, Total Bed Number, Free Bed Number, Rent & Contact Number  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['room_service_name']) ? $data1 ['room_service_name']:  ''}} </td>
+                <td style=" width:70%"> {{ $data1 ['room_service_name']}} </td>
             </tr>
         
         <tr> 

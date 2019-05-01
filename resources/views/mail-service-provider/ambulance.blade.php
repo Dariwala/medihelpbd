@@ -55,6 +55,12 @@
         <tr> 
             <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> GeneralInfo</td>
         </tr>
+
+            <tr> 
+                <td style=" width:30%">General Info</td>
+                <td>:</td>
+                <td style=" width:70%">{{ $data1['general_info'] }}<br></td>
+            </tr>
         
         <tr> 
             <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> Ambulance</td>

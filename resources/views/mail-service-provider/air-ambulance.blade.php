@@ -122,6 +122,11 @@
                 <td>:</td>
                 <td style=" width:70%">{{ isset($data1['wheel_chair']) ? $data1['wheel_chair']: '' }} </td>
             </tr>
+        <tr> 
+            <td style=" width:30%">Service</td>
+            <td>:</td>
+            <td style=" width:70%"> {{ $data1['service_details']}} </td>
+        </tr>
         
         <tr> 
             <td style=" width:30%">More Information (if any)</td>

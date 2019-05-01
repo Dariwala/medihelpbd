@@ -61,12 +61,12 @@
      <tr> 
       <td style=" width:30%">Hotline</td>
       <td>:</td>
-      <td style=" width:70%">Hotline: {{ $data1['con_info_hotline'] }} <br></td>
+      <td style=" width:70%">{{ $data1['con_info_hotline'] }} <br></td>
      </tr>
      <tr> 
       <td style=" width:30%">E-mail:</td>
       <td>:</td>
-      <td style=" width:70%">E-mail: {{ $data1['con_info_email'] }} </td>
+      <td style=" width:70%">{{ $data1['con_info_email'] }} </td>
      </tr>
      <tr> 
 
@@ -209,11 +209,6 @@
           <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> ICU Ambulance Facilities</td>
      </tr>
      <tr> 
-          <td style=" width:30%">Non Air Conditioned <br> </td>
-          <td>:</td>
-          <td style=" width:70%">{{ isset($data1['no_air_condition']) ? $data1['no_air_condition'] : ''  }} </td>
-     </tr>
-     <tr> 
           <td style=" width:30%">Medical Staff for Critical Care   <br></td>
           <td>:</td>
           <td style=" width:70%">{{ isset($data1['ac_medical_staf_cate']) ? $data1['ac_medical_staf_cate'] : '' }} </td>
@@ -346,7 +341,7 @@
      </tr>
 
   <tr>
-     <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;">Home Service</td></tr>
+     <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;">Medical Service</td></tr>
       <tr> 
           <td style=" width:30%">Blood Pressure Assessment </td>
           <td>:</td>
@@ -359,7 +354,7 @@
      </tr>
         <tr>  <td style=" width:30%"> Weight Measurement </td>
           <td>:</td>
-          <td style=" width:70%"> {{ isset($data1['home_service_weight_measrement']) ? $data1['home_service_weight_measrement']:  ''}} </td>
+          <td style=" width:70%"> {{ isset($data1['medical_service_weight_measrement']) ? $data1['medical_service_weight_measrement']:  ''}} </td>
      </tr>
       <tr> 
           <td style=" width:30%">Nebulization</td>

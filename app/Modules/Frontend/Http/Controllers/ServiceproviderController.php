@@ -51,7 +51,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -70,7 +70,8 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
+        #return view('frontend::serviceEntry')->with('sentMessageAlert',$message)->with(compact('data'))->with(compact('status'));
         
     }
     
@@ -81,13 +82,13 @@ class ServiceproviderController extends Controller
         try{
             $mail_send  = Mail::send('mail-service-provider.addiction-rehabilitation-center', ["data1" => $reqdata], function ($message) use ($reqdata) {
                               $message->to('info@medihelpbd.com');
-                              // $message->subject($reqdata['subject']);
+                              $message->subject($reqdata['subject']);
                           });
   
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -106,7 +107,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -117,13 +118,13 @@ class ServiceproviderController extends Controller
         try{
             $mail_send  = Mail::send('mail-service-provider.air-ambulance', ["data1" => $reqdata], function ($message) use ($reqdata) {
                               $message->to('info@medihelpbd.com');
-                              // $message->subject($reqdata['subject']);
+                              $message->subject($reqdata['subject']);
                           });
   
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -142,7 +143,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
         // return view('frontend::testmail', compact('reqdata'));
         
@@ -161,7 +162,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -180,7 +181,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -191,13 +192,13 @@ class ServiceproviderController extends Controller
         try{
             $mail_send  = Mail::send('mail-service-provider.parlour-and-spa', ["data1" => $reqdata], function ($message) use ($reqdata) {
                               $message->to('info@medihelpbd.com');
-                               // $message->subject($reqdata['subject']);
+                              $message->subject($reqdata['subject']);
                            });
   
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -216,7 +217,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -233,7 +234,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -252,7 +253,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -269,7 +270,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -288,7 +289,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -305,7 +306,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -324,7 +325,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -341,7 +342,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -360,7 +361,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -377,7 +378,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -396,7 +397,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -413,7 +414,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -432,7 +433,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -449,7 +450,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -468,7 +469,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -485,7 +486,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -504,7 +505,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -521,7 +522,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -540,7 +541,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
         
     }
@@ -558,7 +559,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -577,7 +578,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
         
     }
@@ -595,7 +596,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -614,7 +615,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -631,7 +632,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -650,7 +651,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
 
@@ -667,7 +668,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -686,7 +687,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
 
@@ -703,7 +704,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -722,7 +723,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
     }
     
@@ -739,7 +740,7 @@ class ServiceproviderController extends Controller
             if(Session('language') == 'bn'){
                 $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
             }else{
-                $message = "Thank you for your message. We will contact with you very soon.";    
+                $message = "Message sent successfully.";    
             }
             
             $status = 1;
@@ -758,7 +759,7 @@ class ServiceproviderController extends Controller
         
         $data = commonModules::first();
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
         
         // return view('frontend::testmail', compact('reqdata'));

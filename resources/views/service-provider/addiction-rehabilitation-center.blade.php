@@ -1,8 +1,10 @@
 <form id="form_validation" method="post" action="{{route('service-addiction-rehabilitation-center')}}" class="uk-form-stacked">
 {!! csrf_field() !!}
+<input type="hidden" name="subject" value="Addiction Rehabilitation Center" />
 @if(Session('language')=='bn')
 
-    <p style="font-size: 16px;font-weight: bold;">সম্বন্ধে</p>
+    <!--<p style="font-size: 16px;font-weight: bold;">সম্বন্ধে</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সম্বন্ধে</p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
@@ -36,7 +38,8 @@
         </div>
     </div>
     <br>
-     <p style="font-size: 16px;font-weight: bold;">যোগাযোগের তথ্য </p>
+     <!--<p style="font-size: 16px;font-weight: bold;">যোগাযোগের তথ্য </p>-->
+     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">যোগাযোগের তথ্য</p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
@@ -76,7 +79,7 @@
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
-                <label for="hotline">হট লাইন</label>
+                <label for="hotline">হটলাইন</label>
                 <textarea type="text" name="con_info_hotline"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>       
@@ -91,11 +94,13 @@
         </div>
     </div>
     <br>
-  <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সাধারণ তথ্য  </p>
-     <div class="uk-grid" data-uk-grid-margin>
+  <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সাধারণ তথ্য  </p>-->
+  <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সাধারণ তথ্য</p>
+    <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
-            <div class="uk-form-row parsley-row">
-                
+            <div class="parsley-row">
+                <label for="gen_info"></label>
+                <textarea class="md-input" name="general_info" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
     </div>
@@ -110,7 +115,8 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold">অ্যাম্বুলেন্স</p>
+    <!--<p style="font-size: 16px;font-weight: bold">অ্যাম্বুলেন্স</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">অ্যাম্বুলেন্স</p>
 
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -138,12 +144,12 @@
                 <label for="emergency_number" class="">ভাড়া আলোচনা সাপেক্ষে </label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="fare_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="fare_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="fare_negotiable"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="fare_negotiable"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -194,12 +200,28 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">শীতাতপ নিয়ন্ত্রিত </label> <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="yes" name="air_condition"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="air_condition"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="no" id="fare_negotiable" data-md-icheck name="air_condition"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="air_condition"><span style="padding:5px">না</span></label> 
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            
+            <div class="uk-form-row parsley-row">
+                <label for="emergency_number" class="">শীতাতপ নিয়ন্ত্রিত নয় </label>
+                <br>
+                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="no_air_condition"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
+                </span>
+                <br>
+                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="no_air_condition"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -209,12 +231,12 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">গুরুতর যত্নের জন্য মেডিক্যাল কর্মী </label> <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="medical_staf_cate"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="medical_staf_cate"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="medical_staf_cate"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="medical_staf_cate"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -224,12 +246,12 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">অক্সিজেন সিলিন্ডার </label> <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="oxygen_cylinder"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="oxygen_cylinder"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="oxygen_cylinder"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="oxygen_cylinder"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -240,12 +262,12 @@
                 <label for="emergency_number" class="">স্ট্রেচার</label>
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="stretcher"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="stretcher"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="stretcher"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="stretcher"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -255,19 +277,20 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">চাকাওয়ালা চেয়ার </label> <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="wheel_chair"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="wheel_chair"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="wheel_chair"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="wheel_chair"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
 
     <br> 
     
-    <p style="font-size: 16px;font-weight: bold">আই সি ইউ অ্যাম্বুলেন্স</p>
+    <!--<p style="font-size: 16px;font-weight: bold">আই সি ইউ অ্যাম্বুলেন্স</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">আই সি ইউ অ্যাম্বুলেন্স</p>
 
      <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -293,12 +316,12 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">ভাড়া আলোচনা সাপেক্ষে </label> <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="ac_fare_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="ac_fare_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_fare_negotiable"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_fare_negotiable"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -350,12 +373,12 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">গুরুতর যত্নের জন্য মেডিক্যাল কর্মী</label> <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="yes" name="ac_air_condition"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="ac_medical_staf_cate"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="no" id="fare_negotiable" data-md-icheck name="ac_air_condition"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_medical_staf_cate"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -366,12 +389,12 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class=""> অক্সিজেন সিলিন্ডার </label> <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="ac_oxygen_cylinder"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="ac_oxygen_cylinder"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_oxygen_cylinder"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_oxygen_cylinder"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -382,12 +405,12 @@
                 <label for="emergency_number" class="">স্ট্রেচার</label>
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="ac_stretcher"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="ac_stretcher"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_stretcher"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_stretcher"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -397,19 +420,20 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">চাকাওয়ালা চেয়ার </label> <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="ac_wheel_chair "id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="ac_wheel_chair"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_wheel_chair"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_wheel_chair"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
     
     <br>
 
-    <p style="font-size: 16px;font-weight: bold"> ব্লাড ব্যাংক  </p>
+    <!--<p style="font-size: 16px;font-weight: bold"> ব্লাড ব্যাংক  </p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">ব্লাড ব্যাংক</p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -447,7 +471,8 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">রোগ নির্ণয় সংক্রান্ত পরীক্ষা-নিরীক্ষা  </p>
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">রোগ নির্ণয় সংক্রান্ত পরীক্ষা-নিরীক্ষা  </p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">রোগ নির্ণয় সংক্রান্ত পরীক্ষা-নিরীক্ষা</p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -460,7 +485,8 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সুযোগ-সুবিধা </p>
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সুযোগ-সুবিধা </p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সুযোগ-সুবিধা</p>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -468,12 +494,12 @@
                 <label for="emergency_number" class="">এ টি ম বুথ  </label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_atm_booth"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_atm_booth"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_atm_booth"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_atm_booth"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -484,12 +510,12 @@
                 <label for="emergency_number" class="">ক্যাফিটিরিয়া   </label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_cafeteria"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_cafeteria"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_cafeteria"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_cafeteria"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -499,12 +525,12 @@
                 <label for="emergency_number" class="">ক্যান্টীন   </label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_canteen"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_canteen"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_canteen"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_canteen"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -518,7 +544,7 @@
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_canteen"><span style="padding:5px">না</span></label> 
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_coffee_shop"><span style="padding:5px">না</span></label> 
                 </span>
             </div>
         </div>
@@ -529,12 +555,12 @@
                 <label for="emergency_number" class="">স্ন্যাক্‌স কর্নার  </label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_snacks_conrner"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_snacks_conrner"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_snacks_conrner"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_snacks_conrner"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -544,12 +570,12 @@
                 <label for="emergency_number" class="">ডে-কেয়ার সেন্টার  </label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_day_care_center"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_day_care_center"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_day_care_center"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_day_care_center"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -559,12 +585,12 @@
                 <label for="emergency_number" class="">কার পার্কিং  </label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_car_parking"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_car_parking"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_car_parking"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_car_parking"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -574,12 +600,12 @@
                 <label for="emergency_number" class="">মসজিদ   <label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_mosque"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_mosque"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_mosque"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_mosque"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -589,19 +615,20 @@
                 <label for="emergency_number" class="">প্রার্থনা কক্ষ  </label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_prayer_room"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_prayer_room"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_prayer_room"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_prayer_room"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">হোম সার্ভিস </p>
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">হোম সার্ভিস </p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">হোম সার্ভিস<br><small>বাসায় গিয়ে রোগীকে চিকিৎসা বিষয়ক বিভিন্ন পরামর্শ প্রদান করা হয়</small></p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -626,12 +653,12 @@
                 <label for="emergency_number" class="">সার্ভিস চার্জ আলোচনা সাপেক্ষে  </label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="home_service_charge_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="home_service_charge_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="home_service_charge_negotiable"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="home_service_charge_negotiable"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -676,7 +703,8 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">চিকিৎসা বিভাগ</p>
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">চিকিৎসা বিভাগ</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">চিকিৎসা বিভাগ</p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -689,7 +717,8 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">ফার্মেসী </p>
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">ফার্মেসী </p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">ফার্মেসী</p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -729,7 +758,8 @@
     <br>
     
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">হোম ডেলিভারি সার্ভিস </p>
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">হোম ডেলিভারি সার্ভিস </p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">হোম ডেলিভারি সার্ভিস</p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -764,12 +794,12 @@
                 <label for="emergency_number" class="">ডেলিভারি চার্জ আলোচনা সাপেক্ষে </label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="home_delivery_charge_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="home_delivery_charge_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="home_delivery_charge_negotiable"> <span style="padding:5px">না</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="home_delivery_charge_negotiable"><span style="padding:5px">না</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -795,7 +825,7 @@
         <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
-                <label for="email">কার্য দিবস:</label>
+                <label for="email">বন্ধ</label>
                 <textarea type="text" name="home_delivery_closed"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
@@ -804,7 +834,7 @@
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
-                <label for="email">যোগাযোগের নম্বর: </label>
+                <label for="email">যোগাযোগের নম্বর </label>
                 <textarea type="text" name="home_delivery_number"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
@@ -812,21 +842,22 @@
     
    <br>
    
-   <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">কক্ষ সেবা (ওয়ার্ড, ক্যাবিন ইত্যাদি)   </p>
+   <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">কক্ষ সেবা (ওয়ার্ড, ক্যাবিন ইত্যাদি)   </p>-->
+   <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">কক্ষ সেবা (ওয়ার্ড, ক্যাবিন ইত্যাদি)<br><small>শয্যার নাম, মোট শয্যা সংখ্যা, ফ্রি শয্যা সংখ্যা, ভাড়া এবং যোগাযোগের নম্বর লিখুন</small></p>
    
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
-                <label for="email">শয্যার নাম, মোট শয্যা সংখ্যা, ফ্রি শয্যা সংখ্যা, ভাড়া এবং যোগাযোগের নম্বর লিখুন</label>
+                <label for="email"></label>
                 <textarea type="text" name="room_service_name"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
-    
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center; margin-bottom: 2px;">আরও তথ্য <br><small>(যদি থাকে)</small></p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
-                <label for="message">আরও তথ্য (যদি থাকে)</label>
+                <label for="message"></label>
                 <textarea class="md-input" name="more_details" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
@@ -838,7 +869,8 @@
 
 @else  
 
-    <p style="font-size: 16px;font-weight: bold;">About</p>
+    <!--<p style="font-size: 16px;font-weight: bold;">About</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">About</p>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -875,7 +907,8 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold;">Contact Info</p>
+    <!--<p style="font-size: 16px;font-weight: bold;">Contact Info</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Contact Info</p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
@@ -932,8 +965,16 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">General Info</p>
-    
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">General Info</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">General Info</p>
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="parsley-row">
+                <label for="gen_info"></label>
+                <textarea class="md-input" name="general_info" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
+            </div>
+        </div>
+    </div>
     <br>
     
     <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Doctor <br><small>If Any, Write details in the Doctors Panel</small></p>
@@ -944,7 +985,8 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold">Ambulance</p>
+    <!--p style="font-size: 16px;font-weight: bold">Ambulance</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Ambulance</p>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -970,13 +1012,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Fare Negotiable</label>
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="fare_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="fare_negotiable" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="fare_negotiable"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="fare_negotiable"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1028,13 +1070,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Air Conditioned</label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="yes" name="air_condition"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="air_condition" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="no" id="fare_negotiable" data-md-icheck name="air_condition"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="air_condition"><span style="padding:5px">NO</span></label> 
+                </span>
                 <span  style="padding:5px 5px 5px 0px" class="icheck-inline">
                 
             </div>
@@ -1046,13 +1088,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Non Air Conditioned </label>
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="no_air_condition"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="no_air_condition" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="NO" id="val_radio_male" data-md-icheck name="no_air_condition"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="no_air_condition"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1062,13 +1104,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Medical Staff for Critical Care</label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="medical_staf_cate"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="medical_staf_cate" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="medical_staf_cate"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="medical_staf_cate"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1078,13 +1120,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Oxygen Cylinder</label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="oxygen_cylinder"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="oxygen_cylinder" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="oxygen_cylinder"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="oxygen_cylinder"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1094,13 +1136,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Stretcher</label> 
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="stretcher"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="stretcher" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="stretcher"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="stretcher"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1110,20 +1152,21 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Wheel Chair</label>
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="wheel_chair"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="wheel_chair" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="wheel_chair"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="wheel_chair"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold">ICU Ambulance</p>
+    <!--<p style="font-size: 16px;font-weight: bold">ICU Ambulance</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">ICU Ambulance</p>
     
      <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -1208,13 +1251,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Medical Staff for Critical Care</label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="ac_medical_staf_cate"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="ac_medical_staf_cate" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_medical_staf_cate"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_medical_staf_cate"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1224,13 +1267,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Oxygen Cylinder</label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="ac_oxygen_cylinder"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="ac_oxygen_cylinder" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_oxygen_cylinder"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_oxygen_cylinder"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1240,12 +1283,12 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Stretcher</label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="ac_stretcher"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="ac_stretcher" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_stretcher"> <span style="padding:5px">NO</span></label> 
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_stretcher"><span style="padding:5px">NO</span></label> 
                 </span>
             </div>
         </div>
@@ -1256,12 +1299,12 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Wheel Chair</label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="ac_wheel_chair"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="ac_wheel_chair" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_wheel_chair"> <span style="padding:5px">NO</span></label> 
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_wheel_chair"><span style="padding:5px">NO</span></label> 
                 </span>
             </div>
         </div>
@@ -1270,7 +1313,8 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold"> Blood Bank </p>
+    <!--<p style="font-size: 16px;font-weight: bold"> Blood Bank </p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Blood Bank</p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -1308,7 +1352,8 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Diagnostic Test</p>
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Diagnostic Test</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Diagnostic Test</p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -1321,20 +1366,21 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Facilities</p>
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Facilities</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Facilities</p>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">ATM Booth </label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_atm_booth"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_atm_booth" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_atm_booth"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_atm_booth"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1344,13 +1390,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Cafeteria  </label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_cafeteria"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_cafeteria" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_cafeteria"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_cafeteria"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1359,13 +1405,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Canteen  </label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_canteen"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_canteen" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_canteen"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_canteen"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1374,12 +1420,12 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Coffee Shop</label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_coffee_shop"id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_coffee_shop" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_canteen"><span style="padding:5px">NO</span></label> 
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_coffee_shop"><span style="padding:5px">NO</span></label> 
                 </span>
             </div>
         </div>
@@ -1389,13 +1435,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Snacks Corner </label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_snacks_conrner"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_snacks_conrner" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_snacks_conrner"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_snacks_conrner"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1404,13 +1450,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Day Care Center </label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_day_care_center"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_day_care_center" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_day_care_center"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_day_care_center"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1419,13 +1465,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Car Parking  </label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_car_parking"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_car_parking" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_car_parking"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_car_parking"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1434,13 +1480,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Mosque  </label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_mosque"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_mosque" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_mosque"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_mosque"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1449,20 +1495,21 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Prayer Room </label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_prayer_room"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="facilities_prayer_room" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_prayer_room"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="facilities_prayer_room"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Home Service</p>
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Home Service</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Home Service<br><small>Patient can receive various medical advices staying at home</small></p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -1486,13 +1533,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Service Charge Negotiable </label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="home_service_charge_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="home_service_charge_negotiable" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="home_service_charge_negotiable"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="home_service_charge_negotiable"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1537,7 +1584,8 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Medical Department</p>
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Medical Department</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Medical Department</p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -1550,7 +1598,8 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Pharmacy</p>
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Pharmacy</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Pharmacy</p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -1590,7 +1639,8 @@
     <br>
     
     
-    <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Home Delivery Service</p>
+    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Home Delivery Service</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Home Delivery Service</p>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -1624,13 +1674,13 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Delivery Charge Negotiable  </label> 
                 <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="home_delivery_charge_negotiable"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
+                 <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                   <label class="inline-label"><input type="radio" value="Yes" name="home_delivery_charge_negotiable" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
                 </span>
                 <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="home_delivery_charge_negotiable"> <span style="padding:5px">NO</span></label> 
-                 </span>
+                <span style="padding:5px 5px 5px 0px;" class="icheck-inline">
+                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="home_delivery_charge_negotiable"><span style="padding:5px">NO</span></label> 
+                </span>
             </div>
         </div>
     </div>
@@ -1673,21 +1723,22 @@
     
    <br>
    
-   <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Room Service (Ward, Cabin etc)</p>
+   <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Room Service (Ward, Cabin etc)</p>-->
+   <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Room Service (Ward, Cabin etc)<br><small>Write Bed Name, Total Bed Number, Free Bed Number, Rent & Contact Number</small></p>
    
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
-                <label for="email">Write Bed Name, Total Bed Number, Free Bed Number, Rent & Contact Number</label>
+                <label for="email"></label>
                 <textarea type="text" name="room_service_name"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
-    
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">More Information<br><small>(If Any)</small></p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
-                <label for="message">More Information (If Any)</label>
+                <label for="message"></label>
                 <textarea class="md-input" name="more_details" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>

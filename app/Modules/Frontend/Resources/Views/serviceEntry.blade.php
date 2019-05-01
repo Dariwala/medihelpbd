@@ -98,7 +98,7 @@
                                     <div class="parsley-row">
                                         
                                         <h2>&nbsp;</h2>
-                                        
+                                        @if($message != "") <h5 style="color: @if($status == 1) green @else red @endif;"><strong>{{ $message }}</strong></h5> @endif
                                         <select id="service_list" name="" class="md-input selectable ">
                                             <option> 
                                                 @if(Session('language') == 'bn')

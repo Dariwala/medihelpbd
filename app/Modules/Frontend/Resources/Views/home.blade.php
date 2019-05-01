@@ -308,7 +308,7 @@
                             </a>
                             
                             <p style="margin-bottom: 2px;">&copy; মেডিহেল্পবিডি ডট কম</p>
-                            <p style="font-size: 0.9em; margin-top: 0px; margin-bottom: 10px;">প্রস্তুত এবং রক্ষণাবেক্ষণের দায়িত্বে <a style="color: #444; text-decoration: none;" href="http://www.ontiktechnology.com">অন্তিক টেকনোলজি</a></p>
+                            <p style="font-size: 0.9em; margin-top: 0px; margin-bottom: 10px;">প্রস্তুত এবং রক্ষণাবেক্ষণের দায়িত্বে অন্তিক টেকনোলজি</p>
                         </div>
                     @else
                         <div class="uk-margin-top uk-text-center">
@@ -338,7 +338,7 @@
                             </a>
                             
                             <p style="margin-bottom: 2px;">&copy; medihelpbd.com</p>
-                            <p style="font-size: 0.9em; margin-top: 0px;">Developed &amp; Maintained By <a style="color: #444; text-decoration: none;" href="http://www.ontiktechnology.com">Ontik Technology</a></p>
+                            <p style="font-size: 0.9em; margin-top: 0px;">Developed &amp; Maintained By Ontik Technology</p>
                         </div>
                     @endif
                 </div>

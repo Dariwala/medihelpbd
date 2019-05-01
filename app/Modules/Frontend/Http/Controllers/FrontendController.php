@@ -134,8 +134,9 @@ class FrontendController extends Controller
     public function serviceEntry(){
         
         $data = commonModules::first();
+        $message = '';
         
-        return view('frontend::serviceEntry', compact('data'));
+        return view('frontend::serviceEntry', compact('data','message'));
     }
     
     public function faq(){

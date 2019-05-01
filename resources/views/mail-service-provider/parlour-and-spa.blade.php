@@ -74,6 +74,12 @@
         <tr> 
             <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> Service</td>
         </tr>
+
+        <tr> 
+            <td style=" width:30%">Service</td>
+            <td>:</td>
+            <td style=" width:70%"> {{ $data1['service_details']}} </td>
+        </tr>
         
         <tr> 
             <td style=" width:30%">More Information (if any)</td>
