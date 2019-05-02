@@ -70,6 +70,12 @@
         <tr> 
             <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> GeneralInfo</td>
         </tr>
+
+            <tr> 
+                <td style=" width:30%">General Info</td>
+                <td>:</td>
+                <td style=" width:70%">{{ $data1['general_info'] }}<br></td>
+            </tr>
         
         <tr> 
             <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> Service</td>
@@ -286,7 +292,7 @@
             <tr> 
                 <td style=" width:30%"> Write Department Name </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['medical_department_name']) ? $data1 ['medical_department_name']:  ''}} </td>
+                <td style=" width:70%"> {{ isset($data1['eye_bank_doctor_dept']) ? $data1 ['eye_bank_doctor_dept']:  ''}} </td>
             </tr>
             
            

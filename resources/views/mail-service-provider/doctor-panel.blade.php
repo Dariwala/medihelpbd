@@ -31,11 +31,11 @@
                 <td>:</td>
                 <td style=" width:70%">{{ $data1['con_info_address'] }}</td>    
             </tr>
-            <tr> 
-                <td style=" width:30%">Contact Number</td>
-                <td>:</td>
-                <td style=" width:70%">{{ $data1['con_info_contact_number'] }} </td>
-            </tr>
+
+        <tr> 
+            <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> Contact Number</td>
+        </tr>
+
             <tr> 
                 <td style=" width:30%"> Personal </td>
                 <td>:</td>

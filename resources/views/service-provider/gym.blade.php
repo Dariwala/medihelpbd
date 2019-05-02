@@ -3,7 +3,8 @@
 <input type="hidden" name="subject" value="Gym" />
 @if(Session('language')=='bn')
 
-    <p style="font-size: 16px;font-weight: bold;">সম্বন্ধে</p>
+    <!--<p style="font-size: 16px;font-weight: bold;">সম্বন্ধে</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সম্বন্ধে</p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
@@ -37,7 +38,8 @@
         </div>
     </div>
     <br>
-     <p style="font-size: 16px;font-weight: bold;">যোগাযোগের তথ্য </p>
+     <!--<p style="font-size: 16px;font-weight: bold;">যোগাযোগের তথ্য </p>-->
+     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">যোগাযোগের তথ্য</p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
@@ -77,7 +79,7 @@
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
-                <label for="hotline">হট লাইন</label>
+                <label for="hotline">হটলাইন</label>
                 <textarea type="text" name="con_info_hotline"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>       
@@ -95,13 +97,24 @@
     <br>
     
     <p style="font-size: 18px;font-weight: bold;background:red;color:white; text-align:center">সেবা </p>
+
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="parsley-row">
+                <label for="message"></label>
+                <textarea class="md-input" name="service_details" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
+            </div>
+        </div>
+    </div>
     
     <br>
+
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">আরও তথ্য<br><small>(যদি থাকে)</small></p>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
-                <label for="message">আরও তথ্য (যদি থাকে)</label>
+                <label for="message"></label>
                 <textarea class="md-input" name="more_details" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
@@ -112,7 +125,8 @@
 
 @else  
 
-    <p style="font-size: 16px;font-weight: bold;">About</p>
+    <!--<p style="font-size: 16px;font-weight: bold;">About</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">About</p>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -149,7 +163,8 @@
     
     <br>
     
-    <p style="font-size: 16px;font-weight: bold;">Contact Info</p>
+    <!--<p style="font-size: 16px;font-weight: bold;">Contact Info</p>-->
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Contact Info</p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
@@ -208,14 +223,24 @@
     <br>
     
     <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Service</p>
+
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="parsley-row">
+                <label for="message"></label>
+                <textarea class="md-input" name="service_details" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
+            </div>
+        </div>
+    </div>
     
     <br>
     
+    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">More Information<br><small>(If Any)</small></p>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
-                <label for="message">More Information (If Any)</label>
+                <label for="message"></label>
                 <textarea class="md-input" name="more_details" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
