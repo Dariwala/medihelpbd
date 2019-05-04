@@ -222,7 +222,15 @@
                 <td style=" width:70%">{{ isset($data1['ac_wheel_chair']) ? $data1['ac_wheel_chair']:' '  }} </td>
             </tr>
         
-       
+        <tr>
+            <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> Facilities   </td>
+        </tr>
+
+            <tr> 
+                <td style=" width:30%">Facilities</td>
+                <td>:</td>
+                <td style=" width:70%"> {{ isset($data1['facilities_description']) ? $data1 ['facilities_description']:  ''}} </td>
+            </tr>
         
         <tr>
             <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> Home Delivery Service  </td>

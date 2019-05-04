@@ -627,14 +627,24 @@
                 <td style=" width:70%"> {{ nl2br($data1['hlt_chk_dry_eye'])}} </td>
             </tr>
             <tr> 
-                <td style=" width:30%"> Executive Basic Check Up-Male/Female  </td>
+                <td style=" width:30%"> Executive Basic Check Up-Male  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ nl2br($data1['hlt_chk_exe_basic'])}} </td>
+                <td style=" width:70%"> {{ nl2br($data1['hlt_chk_exe_basic_man'])}} </td>
             </tr>
             <tr> 
-                <td style=" width:30%"> Executive Premier Check Up-Male/Female  </td>
+                <td style=" width:30%"> Executive Basic Check Up-Female  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ nl2br($data1['hlt_chk_exe_premier'])}} </td>
+                <td style=" width:70%"> {{ nl2br($data1['hlt_chk_exe_basic_woman'])}} </td>
+            </tr>
+            <tr> 
+                <td style=" width:30%"> Executive Premier Check Up-Male </td>
+                <td>:</td>
+                <td style=" width:70%"> {{ nl2br($data1['hlt_chk_exe_premier_man'])}} </td>
+            </tr>
+            <tr> 
+                <td style=" width:30%"> Executive Premier Check Up-Female  </td>
+                <td>:</td>
+                <td style=" width:70%"> {{ nl2br($data1['hlt_chk_exe_premier_woman'])}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Full Mouth Check Up with Caries Prevention-Children  </td>
