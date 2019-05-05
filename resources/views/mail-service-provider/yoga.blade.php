@@ -62,18 +62,24 @@
      <tr> 
       <td style=" width:30%">Hotline</td>
       <td>:</td>
-      <td style=" width:70%">Hotline: {{ $data1['con_info_hotline'] }} <br></td>
+      <td style=" width:70%"> {{ $data1['con_info_hotline'] }} <br></td>
      </tr>
      <tr> 
       <td style=" width:30%">E-mail:</td>
       <td>:</td>
-      <td style=" width:70%">E-mail: {{ $data1['con_info_email'] }} </td>
+      <td style=" width:70%"> {{ $data1['con_info_email'] }} </td>
      </tr>
      <tr> 
 
-          <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> GeneralInfo</td>
+          <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> Serivce</td>
       
      </tr>
+
+     <tr> 
+      <td style=" width:30%">Service </td>
+      <td>:</td>
+      <td style=" width:70%"> {{ $data1['service_details']}} </td>
+    </tr>
      
     <tr> 
       <td style=" width:30%">More Information </td>

@@ -287,7 +287,7 @@
             <tr> 
                 <td style=" width:30%"> Diabetes Test  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['medical_service_weight_test']) ? $data1 ['medical_service_weight_test']:  ''}} </td>
+                <td style=" width:70%"> {{ isset($data1['medical_service_diabetes_test']) ? $data1 ['medical_service_diabetes_test']:  ''}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Weight Measurement  </td>
@@ -297,7 +297,7 @@
             <tr> 
                 <td style=" width:30%"> Nebulization   </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['medical_department_name']) ? $data1 ['medical_department_name']:  ''}} </td>
+                <td style=" width:70%"> {{ isset($data1['medical_service_nebulization']) ? $data1 ['medical_service_nebulization']:  ''}} </td>
             </tr>
         
         <tr> 

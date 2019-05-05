@@ -51,6 +51,15 @@
             </div>
         </div>
     </div>
+
+    <div class="uk-grid" data-uk-grid-margin>
+        <div class="uk-width-medium-1-1">
+            <div class="parsley-row">
+                <label for="address">ঠিকানা</label>
+                <textarea type="text" name="con_info_address"address  class="md-input" rows="2" cols="10"></textarea>
+            </div>
+        </div>
+    </div>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">    
@@ -203,7 +212,7 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">সময় </label> <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Morning" name="out_general_info_time"id="val_radio_male" data-md-icheck ><span style="padding:5px">সময় </span></label> 
+                   <label class="inline-label"><input type="radio" value="Morning" name="out_general_info_time"id="val_radio_male" data-md-icheck ><span style="padding:5px">সকাল </span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
@@ -694,7 +703,7 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">সেবা ঘণ্টা</label>
-                <textarea type="text" name="ac_amb_service_hour" class="md-input" rows="2" cols="10" ></textarea>
+                <textarea type="text" name="air_amb_service_hour" class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -703,7 +712,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="emergency_number">কার্য দিবস</label>
-                <textarea type="text" name="ac_amb_working_day"  class="md-input" rows="2" cols="10" ></textarea>
+                <textarea type="text" name="air_amb_working_day"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -712,7 +721,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">বন্ধ</label>
-                <textarea type="text" name="ac_amb_cont_close"  class="md-input" rows="2" cols="10" ></textarea>
+                <textarea type="text" name="air_amb_cont_close"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -722,7 +731,7 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">যোগাযোগের নম্বর</label>
-                <textarea type="text" name="ac_amb_cont_number"  class="md-input" rows="2" cols="10" ></textarea>
+                <textarea type="text" name="air_amb_cont_number"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -1868,7 +1877,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">সেবার পরিধি </label>
-                <textarea type="text" name="opt_home_service_hour" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="opt_home_service_area" class="md-input" rows="2" cols="10"></textarea>
             </div>
          </div>
     </div>
@@ -2228,7 +2237,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">কার্য দিবস </label>
-                <textarea type="text" name="pha_home_working_day" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="pha_working_day" class="md-input" rows="2" cols="10"></textarea>
             </div>
         </div>
     </div>
@@ -2237,7 +2246,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="message">বন্ধ</label>
-                <textarea class="md-input" name="pha_home_closed" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
+                <textarea class="md-input" name="pha_closed" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
     </div>
@@ -2246,7 +2255,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="message">যোগাযোগের নম্বর</label>
-                <textarea class="md-input" name="pha_home_contact" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
+                <textarea class="md-input" name="pha_contact" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
     </div>
@@ -2312,7 +2321,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">কার্য দিবস </label>
-                <textarea type="text" name="pha_working_day" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="pha_home_working_day" class="md-input" rows="2" cols="10"></textarea>
             </div>
         </div>
     </div>
@@ -2321,7 +2330,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="message">বন্ধ</label>
-                <textarea class="md-input" name="pha_closed" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
+                <textarea class="md-input" name="pha_home_closed" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
     </div>
@@ -2330,7 +2339,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="message">যোগাযোগের নম্বর</label>
-                <textarea class="md-input" name="pha_contact" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
+                <textarea class="md-input" name="pha_home_contact" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
     </div>
@@ -2385,7 +2394,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">সেবার পরিধি</label>
-                <textarea type="text" name="prc_service_hour" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="prc_service_area" class="md-input" rows="2" cols="10"></textarea>
             </div>
          </div>
     </div>
@@ -2420,7 +2429,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">সেবা ঘণ্টা</label>
-                <textarea type="text" name="prc_service_hour" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="prc_home_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
          </div>
     </div>
@@ -2429,7 +2438,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">কার্য দিবস </label>
-                <textarea type="text" name="prc_working_day" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="prc_home_working_day" class="md-input" rows="2" cols="10"></textarea>
             </div>
         </div>
     </div>
@@ -2438,7 +2447,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="message">বন্ধ</label>
-                <textarea class="md-input" name="prc_closed" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
+                <textarea class="md-input" name="prc_home_closed" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
     </div>
@@ -2447,7 +2456,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="message">যোগাযোগের নম্বর</label>
-                <textarea class="md-input" name="prc_contact" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
+                <textarea class="md-input" name="prc_home_contact" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
     </div>
@@ -2515,7 +2524,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">সেবার পরিধি</label>
-                <textarea type="text" name="vc_service_hour" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="vc_service_area" class="md-input" rows="2" cols="10"></textarea>
             </div>
          </div>
     </div>
@@ -2550,7 +2559,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">সেবা ঘণ্টা</label>
-                <textarea type="text" name="vc_service_hour" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="vc_home_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
          </div>
     </div>
@@ -2559,7 +2568,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">কার্য দিবস </label>
-                <textarea type="text" name="vc_working_day" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="vc_home_working_day" class="md-input" rows="2" cols="10"></textarea>
             </div>
         </div>
     </div>
@@ -2568,7 +2577,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="message">বন্ধ</label>
-                <textarea class="md-input" name="vc_closed" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
+                <textarea class="md-input" name="vc_home_closed" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
     </div>
@@ -2577,7 +2586,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="message">যোগাযোগের নম্বর</label>
-                <textarea class="md-input" name="vc_contact" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
+                <textarea class="md-input" name="vc_home_contact" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
     </div>
@@ -3298,7 +3307,7 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">Service Hour</label>
-                <textarea type="text" name="ac_amb_service_hour" class="md-input" rows="2" cols="10" ></textarea>
+                <textarea type="text" name="air_amb_service_hour" class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -3307,7 +3316,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="emergency_number">Working Day</label>
-                <textarea type="text" name="ac_amb_working_day"  class="md-input" rows="2" cols="10" ></textarea>
+                <textarea type="text" name="air_amb_working_day"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -3316,7 +3325,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="hotline">Closed</label>
-                <textarea type="text" name="ac_amb_cont_close"  class="md-input" rows="2" cols="10" ></textarea>
+                <textarea type="text" name="air_amb_cont_close"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -3326,7 +3335,7 @@
          <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="email">Contact Number</label>
-                <textarea type="text" name="ac_amb_cont_number"  class="md-input" rows="2" cols="10" ></textarea>
+                <textarea type="text" name="air_amb_cont_number"  class="md-input" rows="2" cols="10" ></textarea>
             </div>
         </div>
     </div>
@@ -3747,7 +3756,7 @@
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             <div class="uk-form-row parsley-row">
-                <label for="emergency_number" class=""> Cancer Screening-Male  </label> 
+                <label for="emergency_number" class=""> Cancer Screening-Male/Female  </label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                     <label class="inline-label"><input type="radio" value="Yes" name="hlt_chk_cancer" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
@@ -4455,7 +4464,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">Service Area</label>
-                <textarea type="text" name="opt_home_service_hour" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="opt_home_service_area" class="md-input" rows="2" cols="10"></textarea>
             </div>
          </div>
     </div>
@@ -4954,7 +4963,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">Service Area</label>
-                <textarea type="text" name="prc_service_hour" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="prc_service_area" class="md-input" rows="2" cols="10"></textarea>
             </div>
          </div>
     </div>
@@ -5119,7 +5128,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">Service Hour</label>
-                <textarea type="text" name="vc_service_hour" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="vc_home_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
          </div>
     </div>
@@ -5128,7 +5137,7 @@
         <div class="uk-width-medium-1-1">
             <div class="parsley-row">
                 <label for="fullname">Working Day </label>
-                <textarea type="text" name="vc_working_day" class="md-input" rows="2" cols="10"></textarea>
+                <textarea type="text" name="vc_home_working_day" class="md-input" rows="2" cols="10"></textarea>
             </div>
         </div>
     </div>

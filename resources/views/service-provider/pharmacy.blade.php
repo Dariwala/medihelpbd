@@ -393,11 +393,11 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">গুরুতর যত্নের জন্য মেডিক্যাল কর্মী</label> <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="yes" name="ac_air_condition"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="yes" name="ac_medical_staf_cate"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-	                <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_air_condition"><span style="padding:5px;">না</span></label> 
+	                <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_medical_staf_cate"><span style="padding:5px;">না</span></label> 
                 </span>
             </div>
         </div>
@@ -711,11 +711,11 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">রক্তচাপ নির্ণয় করা হয় </label> <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="medical_service_diabets_test"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="medical_service_blood_presssure"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-	                <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="medical_service_diabets_test"><span style="padding:5px;">না</span></label> 
+	                <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="medical_service_blood_presssure"><span style="padding:5px;">না</span></label> 
                 </span>
             </div>
         </div>
@@ -726,11 +726,11 @@
             <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">ডায়বেটিস পরীক্ষা করা হয় </label> <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="medical_service_blood_presssure"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
+                   <label class="inline-label"><input type="radio" value="Yes" name="medical_service_diabets_test"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
                 </span>
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-	                <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="medical_service_blood_presssure"><span style="padding:5px;">না</span></label> 
+	                <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="medical_service_diabets_test"><span style="padding:5px;">না</span></label> 
                 </span>
             </div>
         </div>

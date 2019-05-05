@@ -734,7 +734,7 @@ class ServiceproviderController extends Controller
         try{
             $mail_send  = Mail::send('mail-service-provider.yoga', ["data1" => $reqdata], function ($message) use ($reqdata) {
                               $message->to('info@medihelpbd.com');
-                              // $message->subject($reqdata['subject']);
+                              $message->subject($reqdata['subject']);
                           });
   
             if(Session('language') == 'bn'){

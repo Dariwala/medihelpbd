@@ -70,6 +70,12 @@
         <tr> 
             <td colspan="3" class="info text-center" style="font-size: 16px;font-weight: bold;"> General Info</td>
         </tr>
+
+            <tr> 
+                <td style=" width:30%">General Info</td>
+                <td>:</td>
+                <td style=" width:70%"> {{ $data1['general_info'] }} </td>
+            </tr>
             
         
         <tr> 
@@ -428,22 +434,22 @@
             <tr> 
                 <td style=" width:30%"> Service Hour </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['pha_service_hour']) ? $data1 ['pha_service_hour']:  ''}} </td>
+                <td style=" width:70%"> {{ isset($data1['pha_home_service_hour']) ? $data1 ['pha_home_service_hour']:  ''}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Working Day </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['pha_working_day']) ? $data1 ['pha_working_day']:  ''}} </td>
+                <td style=" width:70%"> {{ isset($data1['pha_home_working_day']) ? $data1 ['pha_home_working_day']:  ''}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Closed </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['pha_closed']) ? $data1 ['pha_closed']:  ''}} </td>
+                <td style=" width:70%"> {{ isset($data1['pha_home_closed']) ? $data1 ['pha_home_closed']:  ''}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%"> Contact Number </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ isset($data1['pha_contact']) ? $data1 ['pha_contact']:  ''}} </td>
+                <td style=" width:70%"> {{ isset($data1['pha_home_contact']) ? $data1 ['pha_home_contact']:  ''}} </td>
             </tr>
 
         
