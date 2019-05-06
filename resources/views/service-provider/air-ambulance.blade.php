@@ -14,8 +14,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold;">যোগাযোগের তথ্য </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">যোগাযোগের তথ্য</p>
     
@@ -72,7 +70,6 @@
             </div>
         </div>
     </div>
-    <br>
   <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সাধারণ তথ্য  </p>-->
   <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সাধারণ তথ্য</p>
      
@@ -138,8 +135,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom:25px;">সুযোগ-সুবিধা </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সুযোগ-সুবিধা</p>
@@ -240,8 +235,6 @@
             </div>
         </div>
     </div>
-
-    <br> 
     
    <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">সেবা</p>
 
@@ -255,8 +248,6 @@
         </div>
     </div>
 
-    <br>
-
    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">আরও তথ্য <br><small>(যদি থাকে)</small></p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -267,7 +258,7 @@
             </div>
         </div>
     </div>
-    <br><br>
+    <br>
    <input  type="submit" class="md-btn md-btn-danger md-btn-large" name="submit" value="পাঠিয়ে দিন" style="float:right">
 
 @else  
@@ -283,9 +274,6 @@
             </div>
         </div>
     </div>
-    
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold;">Contact Info</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Contact Info</p>
@@ -343,12 +331,8 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">General Info</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">General Info</p>
-    
-    <br>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -411,8 +395,6 @@
             </div>
         </div>
     </div>
-  
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Facilities </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Facilities</p>
@@ -516,8 +498,6 @@
         </div>
     </div>
     
-    <br>
-    
    <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Service</p>
    <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -528,7 +508,6 @@
             </div>
         </div>
     </div>    
-    <br>
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">More Information <br><small>(If Any)</small></p>
 
     <div class="uk-grid" data-uk-grid-margin>

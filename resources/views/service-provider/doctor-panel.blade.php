@@ -15,8 +15,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold;">যোগাযোগের তথ্য </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">যোগাযোগের তথ্য</p>
     <div class="uk-grid" data-uk-grid-margin>
@@ -75,12 +73,8 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">সাধারণ তথ্য</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সাধারণ তথ্য</p>
-    
-    <br>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -114,8 +108,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">হোম সার্ভিস </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">হোম সার্ভিস<br><small>দুঃসহ যানজট কিংবা গুরুতর অসুস্থ বা বার্ধক্যের কারণে বাইরে যেতে অক্ষম ব্যাক্তির বাসায় গিয়ে চিকিৎসা সেবা প্রদান করা হয়</small></p>
@@ -189,8 +181,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">চেম্বার-১   </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">চেম্বার-১</p>
@@ -843,8 +833,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     <br>
    
    <input  type="submit" class="md-btn md-btn-danger md-btn-large" name="submit" value="পাঠিয়ে দিন" style="float:right">
@@ -862,8 +850,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold;">Contact Info</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Contact Info</p>
@@ -923,12 +909,8 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">General Info</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">General Info</p>
-    
-    <br>
     
     <div class="uk-grid" data-uk-grid-margin>
          <div class="uk-width-medium-1-1">
@@ -962,8 +944,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">Home Service</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Home Service<br><small>Medical service is provided to the patient at home who is unable to go out because of illness, being old age or severe traffic jam</small></p>
@@ -1037,8 +1017,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">Chamber-1</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Chamber-1</p>

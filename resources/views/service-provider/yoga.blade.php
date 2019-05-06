@@ -18,7 +18,7 @@
                 <label for="fullname">সেবা ঘণ্টা</label>
                 <textarea type="text" name="ab_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
-    </div>
+        </div>
     </div>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -36,7 +36,6 @@
             </div>
         </div>
     </div>
-    <br>
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">যোগাযোগের তথ্য </p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -91,8 +90,6 @@
             </div>
         </div>
     </div>
-        
-    <br>
     
     <p style="font-size: 18px;font-weight: bold;background:red;color:white; text-align:center">সেবা </p>
 
@@ -104,11 +101,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
-    
-    <br>
-    
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">আরও তথ্য<br><small>(যদি থাকে)</small></p>
     
     
@@ -142,7 +134,7 @@
                 <label for="fullname">Service Hour</label>
                 <textarea type="text" name="ab_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
-    </div>
+        </div>
     </div>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -160,8 +152,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Contact Info</p>
     <div class="uk-grid" data-uk-grid-margin>
@@ -218,8 +208,6 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Service</p>
 
     <div class="uk-grid" data-uk-grid-margin>
@@ -229,10 +217,7 @@
                 <textarea class="md-input" name="service_details" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
-    </div>
-    
-    <br>
-    
+    </div>    
     
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">More Information<br><small>(If Any)</small></p>
    

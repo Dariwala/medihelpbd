@@ -20,7 +20,7 @@
                 <label for="fullname">সেবা ঘণ্টা</label>
                 <textarea type="text" name="ab_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
-    </div>
+        </div>
     </div>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -38,8 +38,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold;">যোগাযোগের তথ্য</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">যোগাযোগের তথ্য</p>
@@ -115,16 +113,10 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">সাধারণ তথ্য</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সাধারণ তথ্য</p>
     
-    <br>
-    
     <p style="font-size: 16px;font-weight: bold">অভ্যন্তরীণ পরামর্শ </p>
-    
-    <br>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -204,8 +196,6 @@
     </div>
     
     <p style="font-size: 16px;font-weight: bold">বহির্বিভাগ পরামর্শ </p>
-    
-    <br>
 
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -370,8 +360,6 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সুযোগ-সুবিধা  </p>
     
     <div class="uk-grid" data-uk-grid-margin>
@@ -490,8 +478,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold">আই সি ইউ অ্যাম্বুলেন্স </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">আই সি ইউ অ্যাম্বুলেন্স</p>
     
@@ -568,8 +554,6 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সুযোগ-সুবিধা </p>
    
    
@@ -585,22 +569,6 @@
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                      <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_medical_staf_cate"><span style="padding:5px">না</span></label> 
-                 </span> 
-            </div>
-        </div>
-    </div>
-    <div class="uk-grid" data-uk-grid-margin>
-        <div class="uk-width-medium-1-1">
-            
-            <div class="uk-form-row parsley-row">
-                <label for="emergency_number" class="">অক্সিজেন সিলিন্ডার </label> 
-                <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="ac_oxygen_cylinder"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
-                </span>
-                <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_oxygen_cylinder"><span style="padding:5px">না</span></label> 
                  </span> 
             </div>
         </div>
@@ -655,8 +623,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
 
     
@@ -735,8 +701,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সুযোগ-সুবিধা  </p>
    
@@ -839,9 +803,6 @@
             </div>
         </div>
     </div>
-
-    
-    <br>
     
     
     <!--<p style="font-size: 16px;font-weight: bold">ব্লাড ব্যাংক  </p>-->
@@ -882,8 +843,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">রোগ নির্ণয় সংক্রান্ত পরীক্ষা-নিরীক্ষা  </p>-->
@@ -937,8 +896,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
 
     
@@ -1096,8 +1053,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
 
     <!--<p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">হেল্‌থ চেক আপ প্যাকেজ</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">হেল্‌থ চেক আপ প্যাকেজ<br><small>প্রাথমিক পর্যায়ে সমস্যা নির্ধারণের পাশাপাশি একজন ব্যক্তির স্বাস্থ্যের স্থিতি সম্পর্কে জানতে প্যাকেজের মাধ্যমে রোগ নির্নয় সংক্রান্ত পরীক্ষা-নিরীক্ষা মূলক সেবা প্রদান করা হয়</small></p>
@@ -1814,8 +1769,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
          
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;"> চিকিৎসা বিভাগ </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">চিকিৎসা বিভাগ<br><small>বিভাগের নাম লিখুন</small></p>
@@ -1868,8 +1821,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">হোম ডেলিভারি সার্ভিস  </p>
     
@@ -1943,8 +1894,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">আউট পেশন্ট সার্ভিস </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">আউট পেশন্ট সার্ভিস<br><small>হাসপাতালের বাইরে গিয়ে অন্য রোগীকে রোগ নির্নয় সংক্রান্ত পরীক্ষা-নিরীক্ষা মূলক সেবা প্রদান করা হয়</small> </p>
@@ -2219,8 +2168,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">ফার্মেসী </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">ফার্মেসী</p>
     
@@ -2259,8 +2206,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">হোম ডেলিভারি সার্ভিস  </p>
     
@@ -2344,8 +2289,6 @@
         </div>
     </div>
     
-    <br>
-    
     
     <!--<p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">ফিজিওথেরাপি অ্যান্ড রিহ্যাবিলিটেশন সেন্টার</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">ফিজিওথেরাপি অ্যান্ড রিহ্যাবিলিটেশন সেন্টার</p>
@@ -2386,9 +2329,8 @@
         </div>
     </div>
     
-    <br>
-    
-    <p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">হোম সার্ভিস  </p>
+    <p style="font-size: 16px; font-weight: bold;">হোম সার্ভিস  </p>
+    <p style="font-size: 16px; margin-bottom: 25px;">বাসায় গিয়ে রোগীকে চিকিৎসা বিষয়ক বিভিন্ন পরামর্শ ও সেবা প্রদান করা হয়</p>
     
    <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -2461,8 +2403,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">কক্ষ সেবা (ওয়ার্ড, ক্যাবিন ইত্যাদি) </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">কক্ষ সেবা<br>(ওয়ার্ড, ক্যাবিন ইত্যাদি)<br><small>শয্যার নাম, মোট শয্যা সংখ্যা, ফ্রি শয্যা সংখ্যা, ভাড়া এবং যোগাযোগের নম্বর লিখুন</small></p>
    
@@ -2474,8 +2414,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
      <!--<p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">ভ্যাকসিনেশন সেন্টার </p>-->
      <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">ভ্যাকসিনেশন সেন্টার</p>
@@ -2515,8 +2453,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">হোম সার্ভিস  </p>
     
@@ -2624,7 +2560,7 @@
                 <label for="fullname">Service Hour</label>
                 <textarea type="text" name="ab_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
-    </div>
+        </div>
     </div>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -2642,8 +2578,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold;">Contact Info</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Contact Info</p>
@@ -2719,16 +2653,10 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">General Info</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">General Info</p>
     
-    <br>
-    
     <p style="font-size: 16px;font-weight: bold">Indoor Consultation</p>
-    
-    <br>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -2808,8 +2736,6 @@
     </div>
     
     <p style="font-size: 16px;font-weight: bold">Outdoor Consultation</p>
-    
-    <br>
 
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -2974,8 +2900,6 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Facilities </p>
     
     <div class="uk-grid" data-uk-grid-margin>
@@ -3094,8 +3018,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold">ICU Ambulance</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">ICU Ambulance</p>
     
@@ -3172,8 +3094,6 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;"> Facilities </p>
    
    
@@ -3189,22 +3109,6 @@
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_medical_staf_cate"><span style="padding:5px;">NO</span></label> 
-                 </span>
-            </div>
-        </div>
-    </div>
-    <div class="uk-grid" data-uk-grid-margin>
-        <div class="uk-width-medium-1-1">
-            
-            <div class="uk-form-row parsley-row">
-                <label for="emergency_number" class="">Oxygen Cylinder</label> 
-                <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                    <label class="inline-label"><input type="radio" value="Yes" name="ac_oxygen_cylinder" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
-                </span>
-                <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                    <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_oxygen_cylinder"><span style="padding:5px;">NO</span></label> 
                  </span>
             </div>
         </div>
@@ -3259,10 +3163,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
-    
-
     
     <!--<p style="font-size: 16px;font-weight: bold">Air Ambulance</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Air Ambulance</p>
@@ -3339,8 +3239,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;"> Facilities </p>
    
@@ -3442,8 +3340,6 @@
             </div>
         </div>
     </div>
-
-    <br>
     
     
     <!--<p style="font-size: 16px;font-weight: bold">Blood Bank</p>-->
@@ -3484,8 +3380,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Diagnostic Test</p>-->
@@ -3539,10 +3433,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
-    
-
     
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Facilities</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Facilities</p>
@@ -3699,8 +3589,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
 
     <!--<p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">Health Check Up Package</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Health Check Up Package<br><small>Diagnostic test service is provided by the package for fixing the problem in the initial stage or to know the status of a person's health</small></p>
@@ -4401,8 +4289,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
          
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;"> Medical Department</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Medical Department<br><small>Write Department Name</small></p>
@@ -4455,8 +4341,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">Home Delivery Service </p>
     
@@ -4530,8 +4414,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">Out Patient Service</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Out Patient Service<br><small>Diagnostic test service is provided to other patients outside of the hospital</small></p>
@@ -4788,8 +4670,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">Pharmacy</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Pharmacy</p>
     
@@ -4828,8 +4708,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">Home Delivery Service </p>
     
@@ -4911,10 +4789,7 @@
                 <textarea class="md-input" name="pha_home_contact" cols="10" rows="2" data-parsley-trigger="keyup"  data-parsley-validation-threshold="10" d></textarea>
             </div>
         </div>
-    </div>
-    
-    <br>
-    
+    </div>   
     
     <!--<p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">Physiotherapy & Rehabilitation Center</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Physiotherapy & Rehabilitation Center</p>
@@ -4955,9 +4830,8 @@
         </div>
     </div>
     
-    <br>
-    
-    <p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">Home Service </p>
+    <p style="font-size: 16px; font-weight: bold;">Home Service</p>
+    <p style="font-size: 16px; margin-bottom: 25px;">Patient can receive various medical advices and services staying at home</p>
     
    <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -5030,8 +4904,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Room Service (Ward, Cabin etc)</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Room Service<br>(Ward, Cabin etc)<br><small>Write Bed Name, Total Bed Number, Free Bed Number, Rent & Contact Number</small></p>
    
@@ -5043,8 +4915,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
      <!--<p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">Vaccination Center</p>-->
      <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Vaccination Center</p>
@@ -5084,8 +4954,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 16px; font-weight: bold; margin-bottom: 25px;">Home Service </p>
     

@@ -19,7 +19,7 @@
                 <label for="fullname">সেবা ঘণ্টা</label>
                 <textarea type="text" name="ab_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
-    </div>
+        </div>
     </div>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -37,7 +37,6 @@
             </div>
         </div>
     </div>
-    <br>
      <!--<p style="font-size: 16px;font-weight: bold;">যোগাযোগের তথ্য </p>-->
      <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">যোগাযোগের তথ্য</p>
     <div class="uk-grid" data-uk-grid-margin>
@@ -93,7 +92,6 @@
             </div>
         </div>
     </div>
-    <br>
   <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সাধারণ তথ্য  </p>-->
   <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সাধারণ তথ্য</p>
 
@@ -112,7 +110,6 @@
     
     <p style="font-size: 18px;font-weight: bold;background:red;color:white; text-align:center">ডাক্তার<br><small>যদি থাকে, ডক্টরস্‌ প্যানেলে বিস্তারিত</small> </p>
       
-    <br>
     <br>
     
     <p style="font-size: 18px;font-weight: bold;background:red;color:white; text-align:center">সেবা </p>
@@ -194,8 +191,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 16px;font-weight: bold; margin-bottom:25px;">সুযোগ-সুবিধা </p>
     <div class="uk-grid" data-uk-grid-margin>
@@ -290,8 +285,6 @@
             </div>
         </div>
     </div>
-
-    <br> 
     
     <!--<p style="font-size: 16px;font-weight: bold">আই সি ইউ অ্যাম্বুলেন্স</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">আই সি ইউ অ্যাম্বুলেন্স</p>
@@ -384,22 +377,6 @@
             </div>
         </div>
     </div>
-   
-    <div class="uk-grid" data-uk-grid-margin>
-        <div class="uk-width-medium-1-1">
-            
-            <div class="uk-form-row parsley-row">
-                <label for="emergency_number" class=""> অক্সিজেন সিলিন্ডার </label> <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-	                <label class="inline-label"><input type="radio" value="Yes" name="ac_oxygen_cylinder" id="val_radio_male" data-md-icheck ><span style="padding:5px;">হ্যাঁ</span></label> 
-                </span>
-                <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-	                <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_oxygen_cylinder"><span style="padding:5px;">না</span></label> 
-                </span>
-            </div>
-        </div>
-    </div>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
             
@@ -432,8 +409,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">রোগ নির্ণয় সংক্রান্ত পরীক্ষা-নিরীক্ষা  </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">রোগ নির্ণয় সংক্রান্ত পরীক্ষা-নিরীক্ষা<br><small>পরীক্ষার নাম, মূল্য, পূর্ব-প্রস্তুতি এবং যোগাযোগের নম্বর লিখুন</small></p>
     
@@ -445,8 +420,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সুযোগ-সুবিধা </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সুযোগ-সুবিধা</p>
@@ -588,8 +561,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">কক্ষ সেবা (ওয়ার্ড, ক্যাবিন ইত্যাদি)   </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">কক্ষ সেবা (ওয়ার্ড, ক্যাবিন ইত্যাদি)<br><small>শয্যার নাম, মোট শয্যা সংখ্যা, ফ্রি শয্যা সংখ্যা, ভাড়া এবং যোগাযোগের নম্বর লিখুন</small></p>
    
@@ -613,7 +584,7 @@
             </div>
         </div>
     </div>
-    <br><br>
+    <br>
    <input  type="submit" class="md-btn md-btn-danger md-btn-large" name="submit" value="পাঠিয়ে দিন" style="float:right">
 
 @else  
@@ -636,7 +607,7 @@
                 <label for="fullname">Service Hour</label>
                 <textarea type="text" name="ab_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
-    </div>
+        </div>
     </div>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -654,8 +625,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold;">Contact Info</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Contact Info</p>
@@ -713,8 +682,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 5px;">General Info</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">General Info</p>
 
@@ -733,7 +700,6 @@
     
     <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Doctor<br><small>If Any, Write details in the Doctors Panel</small></p>
      
-    <br>
     <br>
     
     <p style="font-size: 18px;font-weight: bold; background:red; color:white; text-align: center; margin-bottom: 2px;">Service</p>
@@ -814,8 +780,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Facilities </p>
     
@@ -918,8 +882,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold">ICU Ambulance</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">ICU Ambulance</p>
     
@@ -1017,22 +979,6 @@
         <div class="uk-width-medium-1-1">
             
             <div class="uk-form-row parsley-row">
-                <label for="emergency_number" class="">Oxygen Cylinder</label> 
-                <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                    <label class="inline-label"><input type="radio" value="Yes" name="ac_oxygen_cylinder" id="val_radio_male" data-md-icheck ><span style="padding:5px;">YES</span></label> 
-                </span>
-                <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                    <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_oxygen_cylinder"><span style="padding:5px;">NO</span></label> 
-                 </span>
-            </div>
-        </div>
-    </div>
-    <div class="uk-grid" data-uk-grid-margin>
-        <div class="uk-width-medium-1-1">
-            
-            <div class="uk-form-row parsley-row">
                 <label for="emergency_number" class="">Stretcher</label> 
                 <br>
                  <span style="padding:5px 5px 5px 0px" class="icheck-inline">
@@ -1062,8 +1008,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Diagnostic Test</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Diagnostic Test<br><small>Write Test Name, Rate, Preparation & Contact Number</small></p>
     
@@ -1075,8 +1019,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Facilities</p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Facilities</p>
@@ -1217,8 +1159,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
    
    <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Room Service (Ward, Cabin etc)</p>-->
    <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Room Service (Ward, Cabin etc)<br><small>Write Bed Name, Total Bed Number, Free Bed Number, Rent & Contact Number</small></p>

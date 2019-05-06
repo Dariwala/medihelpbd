@@ -179,11 +179,6 @@
                 <td style=" width:70%">{{ isset($data1['ac_medical_staf_cate']) ? $data1['ac_medical_staf_cate'] : '' }} </td>
             </tr>
             <tr> 
-                <td style=" width:30%">Oxygen Cylinde</td>
-                <td>:</td>
-                <td style=" width:70%">{{ isset($data1['ac_oxygen_cylinder']) ? $data1['ac_oxygen_cylinder'] : ''}} </td>
-            </tr>
-            <tr> 
                 <td style=" width:30%">Stretcher </td>
                 <td>:</td>
                 <td style=" width:70%">{{ isset($data1['ac_stretcher']) ? $data1['ac_stretcher'] :'' }}</td>

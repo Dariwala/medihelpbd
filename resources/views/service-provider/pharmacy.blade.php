@@ -18,7 +18,7 @@
                 <label for="fullname">সেবা ঘণ্টা</label>
                 <textarea type="text" name="ab_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
-    </div>
+        </div>
     </div>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -36,7 +36,6 @@
             </div>
         </div>
     </div>
-    <br>
      <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">যোগাযোগের তথ্য</p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -91,7 +90,6 @@
             </div>
         </div>
     </div>
-    <br>
   <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সাধারণ তথ্য</p>
      <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -213,8 +211,6 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 16px;font-weight: bold; margin-bottom:25px;">সুযোগ-সুবিধা </p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -308,8 +304,6 @@
             </div>
         </div>
     </div>
-
-    <br> 
     
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">আই সি ইউ অ্যাম্বুলেন্স</p>
      <div class="uk-grid" data-uk-grid-margin>
@@ -383,8 +377,6 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 16px;font-weight: bold; margin-bottom:25px;"> সুযোগ-সুবিধা </p>
     
     <div class="uk-grid" data-uk-grid-margin>
@@ -398,22 +390,6 @@
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
 	                <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_medical_staf_cate"><span style="padding:5px;">না</span></label> 
-                </span>
-            </div>
-        </div>
-    </div>
-   
-    <div class="uk-grid" data-uk-grid-margin>
-        <div class="uk-width-medium-1-1">
-            
-            <div class="uk-form-row parsley-row">
-                <label for="emergency_number" class=""> অক্সিজেন সিলিন্ডার </label> <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="ac_oxygen_cylinder"id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> 
-                </span>
-                <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-	                <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_oxygen_cylinder"><span style="padding:5px;">না</span></label> 
                 </span>
             </div>
         </div>
@@ -450,23 +426,6 @@
             </div>
         </div>
     </div>
-    <!--<div class="uk-grid" data-uk-grid-margin>-->
-    <!--    <div class="uk-width-medium-1-1">-->
-            
-    <!--        <div class="uk-form-row parsley-row">-->
-    <!--            <label for="emergency_number" class="">চাকাওয়ালা চেয়ার </label> <br>-->
-    <!--             <span style="padding:5px 5px 5px 0px" class="icheck-inline">-->
-    <!--               <label class="inline-label"><input type="radio" value="Yes" name="ac_wheel_chair "id="val_radio_male" data-md-icheck ><span style="padding:5px">হ্যাঁ</span></label> -->
-    <!--            </span>-->
-    <!--            <br>-->
-    <!--            <span style="padding:5px 5px 5px 0px" class="icheck-inline">-->
-    <!--                 <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_wheel_chair"> <span style="padding:5px">না</span></label> -->
-    <!--             </span>-->
-    <!--        </div>-->
-    <!--    </div>-->
-    <!--</div>-->
-    
-    <br>
 
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">হোম ডেলিভারি সার্ভিস</p>
     <div class="uk-grid" data-uk-grid-margin>
@@ -540,8 +499,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">হোম সার্ভিস<br><small>বাসায় গিয়ে রোগীকে চিকিৎসা বিষয়ক বিভিন্ন সেবা প্রদান করা হয়</small></p>
     <div class="uk-grid" data-uk-grid-margin>
@@ -701,8 +658,6 @@
             </div>
         </div>
     </div>
-
-    <br>
     
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">চিকিৎসা সেবা</p>
 
@@ -806,7 +761,7 @@
             </div>
         </div>
     </div>
-    <br><br>
+    <br>
    <input  type="submit" class="md-btn md-btn-danger md-btn-large" name="submit" value="পাঠিয়ে দিন" style="float:right">
 
 @else  
@@ -827,7 +782,7 @@
                 <label for="fullname">Service Hour</label>
                 <textarea type="text" name="ab_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
-    </div>
+        </div>
     </div>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -845,8 +800,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Contact Info</p>
     <div class="uk-grid" data-uk-grid-margin>
@@ -903,11 +856,7 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">General Info</p>
-    
-    <br>
     
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -1027,8 +976,6 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">Facilities </p>
     
     <div class="uk-grid" data-uk-grid-margin>
@@ -1130,8 +1077,6 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">ICU Ambulance</p>
     
      <div class="uk-grid" data-uk-grid-margin>
@@ -1207,8 +1152,6 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;"> Facilities </p>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -1222,22 +1165,6 @@
                 <br>
                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
                     <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_medical_staf_cate"><span style="padding:5px;">NO</span></label> 
-                 </span>
-            </div>
-        </div>
-    </div>
-    <div class="uk-grid" data-uk-grid-margin>
-        <div class="uk-width-medium-1-1">
-            
-            <div class="uk-form-row parsley-row">
-                <label for="emergency_number" class="">Oxygen Cylinder</label> 
-                <br>
-                 <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                   <label class="inline-label"><input type="radio" value="Yes" name="ac_oxygen_cylinder"id="val_radio_male" data-md-icheck ><span style="padding:5px">YES</span></label> 
-                </span>
-                <br>
-                <span style="padding:5px 5px 5px 0px" class="icheck-inline">
-                    <label class="inline-label"><input type="radio" value="No" id="val_radio_male" data-md-icheck name="ac_oxygen_cylinder"><span style="padding:5px;">NO</span></label> 
                  </span>
             </div>
         </div>
@@ -1274,9 +1201,6 @@
             </div>
         </div>
     </div>
-    
-    
-    <br>
     
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Home Delivery Service</p>
     
@@ -1352,8 +1276,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Home Service<br><small>Patient can receive various medical services staying at home</small></p>
     
@@ -1519,8 +1441,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Medical Service</p>
     

@@ -19,7 +19,7 @@
                 <label for="fullname">সেবা ঘণ্টা</label>
                 <textarea type="text" name="ab_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
-    </div>
+        </div>
     </div>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -37,7 +37,6 @@
             </div>
         </div>
     </div>
-    <br>
      <!--<p style="font-size: 16px;font-weight: bold;">যোগাযোগের তথ্য </p>-->
      <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">যোগাযোগের তথ্য</p>
     <div class="uk-grid" data-uk-grid-margin>
@@ -94,8 +93,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সাধারণ তথ্য  </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সাধারণ তথ্য</p>
     
@@ -136,9 +133,6 @@
             </div>
         </div>
     </div>
-    
-    
-    <br>
     
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">সুযোগ-সুবিধা </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">সুযোগ-সুবিধা</p>
@@ -280,8 +274,6 @@
         </div>
     </div>
     
-    <br>
-    
     <!--<p style="font-size: 16px;font-weight: bold; margin-bottom: 25px;">চিকিৎসা সেবা </p>-->
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">চিকিৎসা সেবা </p>
    
@@ -335,8 +327,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
 
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">আরও তথ্য<br><small>(যদি থাকে)</small></p>
     
@@ -372,7 +362,7 @@
                 <label for="fullname">Service Hour</label>
                 <textarea type="text" name="ab_service_hour" class="md-input" rows="2" cols="10"></textarea>
             </div>
-    </div>
+        </div>
     </div>
     <div class="uk-grid" data-uk-grid-margin>
         <div class="uk-width-medium-1-1">
@@ -390,8 +380,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Contact Info</p>
     <div class="uk-grid" data-uk-grid-margin>
@@ -448,8 +436,6 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">General Info</p>
     
     <div class="uk-grid" data-uk-grid-margin>
@@ -489,8 +475,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Facilities</p>
     
@@ -631,8 +615,6 @@
         </div>
     </div>
     
-    <br>
-    
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">Medical Service</p>
    
     <div class="uk-grid" data-uk-grid-margin>
@@ -685,8 +667,6 @@
             </div>
         </div>
     </div>
-    
-    <br>
     
     <p style="font-size: 18px;font-weight: bold; background:black; color:white; text-align: center;">More Information<br><small>(If Any)</small></p>
 
