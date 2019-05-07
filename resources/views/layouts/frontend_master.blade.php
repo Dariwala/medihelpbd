@@ -72,8 +72,7 @@
         
         .home-link{
             color: white;
-            font-weight: bold !important;
-            font-size: 1.2em;
+            font-size: 1em;
         }
         
     	.footer-ul{

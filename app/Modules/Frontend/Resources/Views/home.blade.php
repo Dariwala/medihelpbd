@@ -36,7 +36,7 @@
         
         .home-link{
             color: white;
-            font-size: 1.2em;
+            font-size: 1em;
         }
     	.uk-navbar{
     		background: red;
@@ -308,6 +308,7 @@
                             
                             <p style="margin-bottom: 2px;">&copy; মেডিহেল্পবিডি ডট কম</p>
                             <p style="font-size: 0.9em; margin-top: 0px; margin-bottom: 10px;">প্রস্তুত এবং রক্ষণাবেক্ষণের দায়িত্বে অন্তিক টেকনোলজি</p>
+                            <br><br><br><br>
                         </div>
                     @else
                         <div class="uk-margin-top uk-text-center">
@@ -338,6 +339,7 @@
                             
                             <p style="margin-bottom: 2px;">&copy; medihelpbd.com</p>
                             <p style="font-size: 0.9em; margin-top: 0px;">Developed &amp; Maintained By Ontik Technology</p>
+                            <br><br><br><br>
                         </div>
                     @endif
                 </div>

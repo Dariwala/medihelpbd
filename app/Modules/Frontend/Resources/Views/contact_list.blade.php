@@ -28,7 +28,7 @@
         .home-link{
             line-height: 43px !important;
             color: white;
-            font-size: 1.2em;
+            font-size: 1em;
         }
         .hidden{
             display: none !important;
