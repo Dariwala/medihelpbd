@@ -183,6 +183,17 @@ class FrontendController extends Controller
        	$directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = Ambulance::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
 
        }
@@ -192,7 +203,18 @@ class FrontendController extends Controller
 
        	$directoryType  = $data['directoryType'];
        	$subdistrict_id = $data['subdistrict_name'];
-       	$contacts = Airambulance::where('subdistrict_id',$subdistrict_id)->get();
+        $contacts = Airambulance::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }   
        	return view('frontend::contact_list',compact('contacts','directoryType'));
 
        }
@@ -202,6 +224,17 @@ class FrontendController extends Controller
        	$directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = BloodBank::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
@@ -240,6 +273,17 @@ class FrontendController extends Controller
                 }
                 
             }
+            if(count($contacts) ==0){
+                if(Session('language') == 'bn')
+                {
+                    Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+                }
+                else
+                {
+                    Session::flash('message', "Sorry, no data could be found");
+                }
+                return back();
+            }
             
             return view('frontend::contact_list', compact('contacts', 'directoryType'));
        }
@@ -249,6 +293,17 @@ class FrontendController extends Controller
        	$directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = EyeBank::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
        
@@ -288,6 +343,18 @@ class FrontendController extends Controller
                 }
                 
             }
+
+            if(count($contacts) ==0){
+                if(Session('language') == 'bn')
+                {
+                    Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+                }
+                else
+                {
+                    Session::flash('message', "Sorry, no data could be found");
+                }
+                return back();
+            }
             
             return view('frontend::contact_list',compact('contacts','directoryType'));
 
@@ -298,6 +365,18 @@ class FrontendController extends Controller
        	$directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = Pharmacy::where('subdistrict_id',$subdistrict_id)->get();
+
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
@@ -337,6 +416,17 @@ class FrontendController extends Controller
                 }
                 
             }
+            if(count($contacts) ==0){
+                if(Session('language') == 'bn')
+                {
+                    Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+                }
+                else
+                {
+                    Session::flash('message', "Sorry, no data could be found");
+                }
+                return back();
+            }
             
             return view('frontend::contact_list',compact('contacts','directoryType'));
        }
@@ -346,6 +436,17 @@ class FrontendController extends Controller
         $directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = HerbalCenter::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
@@ -354,6 +455,17 @@ class FrontendController extends Controller
        	$directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = VaccinePoint::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
        
@@ -362,6 +474,17 @@ class FrontendController extends Controller
        	$directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = SkinLaserCenter::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
@@ -371,6 +494,17 @@ class FrontendController extends Controller
         $directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = Addiction::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
@@ -379,6 +513,17 @@ class FrontendController extends Controller
         $directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = Parlour::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
@@ -387,6 +532,17 @@ class FrontendController extends Controller
         $directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = Foreignmedical::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
@@ -395,6 +551,17 @@ class FrontendController extends Controller
         $directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = Gym::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
@@ -403,6 +570,17 @@ class FrontendController extends Controller
         $directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = Homeopathic::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
@@ -411,6 +589,17 @@ class FrontendController extends Controller
         $directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = Optical::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
@@ -419,6 +608,17 @@ class FrontendController extends Controller
         $directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = Pharmacynew::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
@@ -427,6 +627,17 @@ class FrontendController extends Controller
         $directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = Physiotherapy::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
@@ -435,6 +646,17 @@ class FrontendController extends Controller
         $directoryType  = $data['directoryType'];
         $subdistrict_id = $data['subdistrict_name'];
         $contacts = Yoga::where('subdistrict_id',$subdistrict_id)->get();
+        if(count($contacts) ==0){
+            if(Session('language') == 'bn')
+            {
+                Session::flash('message', "দুঃখিত, কোন তথ্য পাওয়া যায় নি");
+            }
+            else
+            {
+                Session::flash('message', "Sorry, no data could be found");
+            }
+            return back();
+        }
         return view('frontend::contact_list',compact('contacts','directoryType'));
        }
 
