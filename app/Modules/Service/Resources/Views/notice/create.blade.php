@@ -13,12 +13,13 @@
                     {!! Form::open(['url' => route('notice_store'), 'method' => 'post', 'class' => 'uk-form-stacked', 'id' => 'user_edit_form', 'enctype'=>'multipart/form-data', 'files' => 'true']) !!}
                         <div class="uk-grid" data-uk-grid-margin>
                             
-                            <div class="uk-width-medium-1-2">
+                            <div class="uk-width-medium-1-2" style = "margin-bottom:20px;">
                                 <div class="uk-width-1-1 uk-margin-top">
                                     <div class="parsley-row">
                                         <label for="district_id">Select District <span class="req">*</span></label>
-                                        <select id="district_id" name="district_id" required class="md-input" data-md-selectize>
-                                                <option value="0">Select District Name</option>
+                                        <select id="district_id" name="district_id" required class="md-input">
+                                                <option style="display:none"></option>
+                                                <option value="0" disabled>Select District</option>
                                             @foreach($districts as $district)
                                                 <option value="{{ $district->id }}">{{ $district->district_name }}</option>
                                             @endforeach
@@ -27,24 +28,33 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="uk-width-medium-1-2">
+                            </div>
+                            
+                            <div class="uk-width-medium-1-2" style = "margin-bottom:20px;">
                                 <div class="uk-width-1-1 uk-margin-top">
                                     <div class="parsley-row">
-                                        <label for="sub_district_id">Select Sub District <span class="req">*</span></label>
+                                        <label for="sub_district_id">Select Sub-District <span class="req">*</span></label>
                                         <select id="sub_district_id" name="sub_district_id" required class="md-input">
-                                            
+                                        <option style="display:none"></option>
+                                        <option value="0" disabled>Select Sub-District</option>
                                         </select>
                                         <p style="color:red;">{{ $errors -> first('district_id') }}</p>
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="uk-width-medium-1-2">
+                            </div>
+                            
+                            <div class="uk-width-medium-1-2" style = "margin-bottom:40px;">
                                 <div class="uk-width-1-1 uk-margin-top">
                                     <div class="parsley-row">
-                                        <label for="service_provider">Service Provider <span class="req">*</span></label>
-                                        <select id="service_provider" name="service_provider" required class="md-input" data-md-selectize>
+                                        <label for="service_provider">Select Service Provider <span class="req">*</span></label>
+                                        <select id="service_provider" name="service_provider" required class="md-input">
+                                        <option style="display:none"></option>
+                                            <option value="0" disabled>Select Service Provider</option>
                                            <option value="24 Hours Pharmacy">24 Hours Pharmacy</option>
                                            <option value="Addiction Rehabilitation Center">Addiction Rehabilitation Center</option>
                                            <option value="Air Ambulance">Air Ambulance</option>
@@ -69,6 +79,9 @@
                                         <p style="color:red;">{{ $errors -> first('service_provider') }}</p>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="uk-width-medium-1-2">
                             </div>
                             
                             <div class="uk-width-medium-1-2">
@@ -144,7 +157,9 @@
             $.get('/notice/ajax-sub-district/'+ district_id, function(data){
             
                 $('#sub_district_id').empty();
-                $('#sub_district_id').append('<option value="0">Select</option>');
+                
+                $('#sub_district_id').append('<option style="display:none"></option>');
+                $('#sub_district_id').append('<option value="0" disabled>Select Sub-District</option>');
                 
                 for(var i = 0; i< data.length; i++){
                     $('#sub_district_id').append( ' <option value="'+data[i].id+'">  ' + data[i].sub_district_name + '   </option> ' );
