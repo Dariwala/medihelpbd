@@ -338,10 +338,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        @if (Session::has('message'))
-                                            <div class="alert alert-info" style="margin-left:calc(50% - 100px);">{{ Session::get('message') }}</div>
-                                        @endif
                                         
                                         <div class="uk-margin-medium-top uk-text-center" style="margin-top: 15px !important;">
                                             
@@ -708,6 +704,14 @@
         onload=function(){
             if(performance.navigation.type == 2){
                 location.reload(true);
+            }
+            else if(performance.navigation.type == 0){
+                var msg = '{{Session::get('message')}}';
+                var exist = '{{Session::has('message')}}';
+                if(exist){
+                alert(msg);
+                //'{{Session::forget('message')}}'
+                }
             }
         }
 </script>
