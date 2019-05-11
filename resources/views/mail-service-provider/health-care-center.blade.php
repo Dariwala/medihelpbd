@@ -87,7 +87,7 @@
             <tr> 
                 <td style=" width:30%">Time</td>
                 <td>:</td>
-                <td style=" width:70%"> {{ $data1['general_info_time'] }} </td>
+                <td style=" width:70%"> {{ isset($data1['general_info_time']) ? $data1 ['general_info_time']:  ''}} </td>
             </tr>     
             <tr> 
                 <td style=" width:30%">Service Hour</td>
@@ -107,12 +107,12 @@
             <tr> 
                 <td style=" width:30%">Call to above number for serial</td>
                 <td>:</td>
-                <td style=" width:70%">{{ $data1['general_info_call_serial'] }}</td>
+                <td style=" width:70%"> {{ isset($data1['general_info_call_serial']) ? $data1 ['general_info_call_serial']:  ''}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%">Serial number is not given on the phone. Come directly to the serial</td>
                 <td>:</td>
-                <td style=" width:70%">{{ $data1['general_info_serial_number'] }}</td>
+                <td style=" width:70%"> {{ isset($data1['general_info_serial_number']) ? $data1 ['general_info_serial_number']:  ''}} </td>
             </tr>
             
             <tr> 
@@ -121,7 +121,7 @@
             <tr> 
                 <td style=" width:30%">Time</td>
                 <td>:</td>
-                <td style=" width:70%"> {{ $data1['out_general_info_time'] }} </td>
+                <td style=" width:70%"> {{ isset($data1['out_general_info_time']) ? $data1 ['out_general_info_time']:  ''}} </td>
             </tr>     
             <tr> 
                 <td style=" width:30%">Service Hour</td>
@@ -141,12 +141,12 @@
             <tr> 
                 <td style=" width:30%">Call to above number for serial</td>
                 <td>:</td>
-                <td style=" width:70%">{{ $data1['out_general_info_call_serial'] }}</td>
+                <td style=" width:70%"> {{ isset($data1['out_general_info_call_serial']) ? $data1 ['out_general_info_call_serial']:  ''}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%">Serial number is not given on the phone. Come directly to the serial</td>
                 <td>:</td>
-                <td style=" width:70%">{{ $data1['out_general_info_serial_number'] }}</td>
+                <td style=" width:70%"> {{ isset($data1['out_general_info_serial_number']) ? $data1 ['out_general_info_serial_number']:  ''}} </td>
             </tr>
         
         <tr> 

@@ -703,21 +703,26 @@
     
 </script>
 
-<script type="text/javascript">
-        onload=function(){
-            if(performance.navigation.type == 2){
-                location.reload(true);
-            }
-            else if(performance.navigation.type == 0){
-                var msg = '{{Session::get('message')}}';
-                var exist = '{{Session::has('message')}}';
-                if(exist){
-                alert(msg);
-                //'{{Session::forget('message')}}'
-                }
-            }
+<input id="backbuttonstate" type="text" value="0" style="display:none;" />
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var ibackbutton = document.getElementById("backbuttonstate");
+    if (ibackbutton.value == "0") {
+        // Page has been loaded for the first time - Set marker
+        ibackbutton.value = "1";
+
+        var msg = '{{Session::get('message')}}';
+        var exist = '{{Session::has('message')}}';
+        if(exist){
+            alert(msg);
         }
-</script>
+    }
+    else {
+        // Back button has been fired.. Do Something different..
+        location.reload(true);
+    }
+    }, false);
+    </script>
 
 @yield('script')
 

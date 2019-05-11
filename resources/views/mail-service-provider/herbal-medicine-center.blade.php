@@ -73,7 +73,7 @@
             <tr> 
                 <td style=" width:30%">No ‘Fee’ is payable for consultation</td>
                 <td>:</td>
-                <td style=" width:70%"> {{ $data1['herbarl_gre_info'] }} </td>
+                <td style=" width:70%"> {{ isset($data1['herbarl_gre_info']) ? $data1 ['herbarl_gre_info']:  ''}} </td>
             </tr>
         
         <tr> 
@@ -126,17 +126,17 @@
             <tr> 
                 <td style=" width:30%">Car Parking </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ nl2br($data1['facilities_car_parking'])}} </td>
+                <td style=" width:70%"> {{ isset($data1['facilities_car_parking']) ? $data1['facilities_car_parking']:  ''}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%">Mosque  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ nl2br($data1['facilities_mosque'])}} </td>
+                <td style=" width:70%"> {{ isset($data1['facilities_mosque']) ? $data1['facilities_mosque']:  ''}} </td>
             </tr>
             <tr> 
                 <td style=" width:30%">Prayer Room  </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ nl2br($data1['facilities_prayer_room'])}} </td>
+                <td style=" width:70%"> {{ isset($data1['facilities_prayer_room']) ? $data1['facilities_prayer_room']:  ''}} </td>
             </tr>
         
         

@@ -82,6 +82,27 @@ Route::post('/service-skincare','ServiceproviderController@skincare')->name('ser
 Route::post('/service-vaccination-center','ServiceproviderController@vaccinationcenter')->name('service-vaccination-center');
 Route::post('/service-yoga','ServiceproviderController@yoga')->name('service-yoga');
 
+Route::get('/service-24-hours-pharmacy','FrontendController@serviceEntry')->name('service-pharmacy24hours');
+Route::get('/service-addiction-rehabilitation-center','FrontendController@serviceEntry')->name('service-addiction-rehabilitation-center');
+Route::get('/service-air-ambulance','FrontendController@serviceEntry')->name('service-air-ambulance');
+Route::get('/service-ambulance','FrontendController@serviceEntry')->name('service-ambulance');
+Route::get('/service-beauty-parlour-and-spa','FrontendController@serviceEntry')->name('service-beauty-parlour-and-spa');
+Route::get('/service-blood-bank','FrontendController@serviceEntry')->name('service-blood-bank');
+Route::get('/service-blood-donor','FrontendController@serviceEntry')->name('service-blood-donor');
+Route::get('/service-doctor-panel','FrontendController@serviceEntry')->name('service-doctor-panel');
+Route::get('/service-eye-bank','FrontendController@serviceEntry')->name('service-eye-bank');
+Route::get('/service-foreign-medical-info','FrontendController@serviceEntry')->name('service-foreign-medical-info');
+Route::get('/service-gym','FrontendController@serviceEntry')->name('service-gym');
+Route::get('/service-health-care-center','FrontendController@serviceEntry')->name('service-health-care-center');
+Route::get('/service-herbal-medicine-center','FrontendController@serviceEntry')->name('service-herbal-medicine-center');
+Route::get('/service-homeopathic-medicine-center','FrontendController@serviceEntry')->name('service-homeopathic-medicine-center');
+Route::get('/service-optical-shop','FrontendController@serviceEntry')->name('service-optical-shop');
+Route::get('/service-pharmacy','FrontendController@serviceEntry')->name('service-pharmacy');
+Route::get('/service-physiotherapy','FrontendController@serviceEntry')->name('service-physiotherapy');
+Route::get('/service-skincare','FrontendController@serviceEntry')->name('service-skincare');
+Route::get('/service-vaccination-center','FrontendController@serviceEntry')->name('service-vaccination-center');
+Route::get('/service-yoga','FrontendController@serviceEntry')->name('service-yoga');
+
 
 
 

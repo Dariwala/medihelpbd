@@ -70,7 +70,6 @@
                                 <div class="uk-grid" data-uk-grid-margin style="margin-top: 15px;">
                                     <div class="uk-width-medium-1-1">
                                         <h4></h4>
-                                        <!--@if($message != "") <h5 style="color: @if($status == 1) green @else red @endif;"><strong>{{ $message }}</strong></h5> @endif-->
                                         <div class="uk-width-1-1 uk-margin-top">
                                             <div class="parsley-row">
                                                 <label for="name">নাম <span class="req">*</span></label>
@@ -114,7 +113,6 @@
                                 <div class="uk-grid" data-uk-grid-margin style="margin-top: 15px;">
                                     <div class="uk-width-medium-1-1">
                                         <h4></h4>
-                                        <!--@if($message != "") <h5 style="color: @if($status == 1) green @else red @endif;"><strong>{{ $message }}</strong></h5> @endif-->
                                         <div class="uk-width-1-1 uk-margin-top">
                                             <div class="parsley-row">
                                                 <label for="name">Name <span class="req">*</span></label>

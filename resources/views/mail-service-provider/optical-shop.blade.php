@@ -73,7 +73,7 @@
             <tr> 
                 <td style=" width:30%">Business Category </td>
                 <td>:</td>
-                <td style=" width:70%"> {{ $data1['business_category'] }} </td>
+                <td style=" width:70%"> {{ isset($data1['business_category']) ? $data1 ['business_category']:  ''}} </td>
             </tr>
         
         <tr> 
