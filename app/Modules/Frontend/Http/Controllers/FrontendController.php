@@ -48,11 +48,7 @@ class FrontendController extends Controller
         
         $data = commonModules::first();
         
-        $message = "";
-        
-        $status = 0;
-        
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::contact', compact('data'));
     }
      public function contactAdmin(Request $request){
        
@@ -70,7 +66,7 @@ class FrontendController extends Controller
                 $message = "Thank you for your message. We will contact with you very soon.";    
             }
             
-            $status = 1;
+            //$status = 1;
                            
         }catch(Exception $e){
             
@@ -80,13 +76,15 @@ class FrontendController extends Controller
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
             
-            $status = 0;
+            //$status = 0;
             
         }
         
         $data = commonModules::first();
+
+        Session::flash('contact_message',$message);
         
-        return view('frontend::contact', compact('data', 'message', 'status'));
+        return view('frontend::contact', compact('data'));
     }
     public function contactPost(Request $request){
         
@@ -105,7 +103,7 @@ class FrontendController extends Controller
                 $message = "Thank you for your message. We will contact with you very soon.";    
             }
             
-            $status = 1;
+            //$status = 1;
                            
         }catch(Exception $e){
             
@@ -115,13 +113,15 @@ class FrontendController extends Controller
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
             
-            $status = 0;
+            //$status = 0;
             
         }
         
         $data = commonModules::first();
-        
-        return view('frontend::contact', compact('data', 'message', 'status'));
+
+        Session::flash('contact_message',$message);
+
+        return view('frontend::contact', compact('data'));
     }
     
     public function appointment(){

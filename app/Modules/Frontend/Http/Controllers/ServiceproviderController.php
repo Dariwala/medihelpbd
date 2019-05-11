@@ -69,6 +69,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         #return view('frontend::serviceEntry')->with('sentMessageAlert',$message)->with(compact('data'))->with(compact('status'));
@@ -106,6 +108,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -142,6 +146,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -180,6 +186,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -216,6 +224,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -252,6 +262,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -288,6 +300,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -324,6 +338,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -360,6 +376,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -396,6 +414,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -432,6 +452,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -468,6 +490,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -504,6 +528,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -540,6 +566,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -577,6 +605,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -614,6 +644,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -650,6 +682,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -686,6 +720,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -722,6 +758,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         
@@ -758,6 +796,8 @@ class ServiceproviderController extends Controller
         }
         
         $data = commonModules::first();
+
+        Session::flash('enlist_service_message',$message);
         
         return view('frontend::serviceEntry', compact('data', 'message', 'status'));
         

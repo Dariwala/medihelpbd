@@ -98,7 +98,7 @@
                                     <div class="parsley-row">
                                         
                                         <h2>&nbsp;</h2>
-                                        @if($message != "") <h5 style="color: @if($status == 1) green @else red @endif;"><strong>{{ $message }}</strong></h5> @endif
+                                        <!--@if($message != "") <h5 style="color: @if($status == 1) green @else red @endif;"><strong>{{ $message }}</strong></h5> @endif-->
                                         <select id="service_list" name="" class="md-input selectable ">
                                             <option> 
                                                 @if(Session('language') == 'bn')
@@ -222,6 +222,7 @@
         </div>
     </div>
 </div>
+<input id="backbuttonstate" type="text" value="0" style="display:none;" />
 
 @endsection
 
@@ -358,6 +359,31 @@
             //$('#service_list').prop('disabled', 'disabled');
             
         });
+    </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var ibackbutton = document.getElementById("backbuttonstate");
+    if (ibackbutton.value == "0") {
+        // Page has been loaded for the first time - Set marker
+        ibackbutton.value = "1";
+
+        var msg = '{{Session::get('message')}}';
+        var exist = '{{Session::has('message')}}';
+        if(exist){
+            alert(msg);
+        }
+
+        var enlist_service = '{{Session::has('enlist_service_message')}}';
+        var enlist_service_message = '{{Session::get('enlist_service_message')}}';
+        if(enlist_service){
+            alert(enlist_service_message);
+        }
+    } else {
+        // Back button has been fired.. Do Something different..
+        location.reload(true);
+    }
+    }, false);
     </script>
     
     

@@ -700,22 +700,6 @@
     
 </script>
 
-<script type="text/javascript">
-        onload=function(){
-            if(performance.navigation.type == 2){
-                location.reload(true);
-            }
-            else if(performance.navigation.type == 0){
-                var msg = '{{Session::get('message')}}';
-                var exist = '{{Session::has('message')}}';
-                if(exist){
-                alert(msg);
-                //'{{Session::forget('message')}}'
-                }
-            }
-        }
-</script>
-
 @yield('script')
 
 @yield('angular')
