@@ -271,7 +271,7 @@
                     
                     {!! Form::close() !!}
                 
-                    <div class="uk-margin-medium-top uk-text-center" style = "margin-top: 20px!important;">
+                    <div class="uk-margin-medium-top uk-text-center" style = "margin-top: 6px!important;">
                     @if(Session('language') == 'bn')
                       <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;"> আরও   </button>
                     @else
@@ -307,8 +307,7 @@
                             </a>
                             
                             <p style="margin-bottom: 2px;">&copy; মেডিহেল্পবিডি ডট কম</p>
-                            <p style="font-size: 0.9em; margin-top: 0px; margin-bottom: 10px;">প্রস্তুত এবং রক্ষণাবেক্ষণের দায়িত্বে অন্তিক টেকনোলজি</p>
-                            <br><br><br><br>
+                            <p style="font-size: 0.9em; margin-bottom: 22px;">প্রস্তুত এবং রক্ষণাবেক্ষণের দায়িত্বে অন্তিক টেকনোলজি</p>
                         </div>
                     @else
                         <div class="uk-margin-top uk-text-center">
@@ -338,8 +337,7 @@
                             </a>
                             
                             <p style="margin-bottom: 2px;">&copy; medihelpbd.com</p>
-                            <p style="font-size: 0.9em; margin-top: 0px;">Developed &amp; Maintained By Ontik Technology</p>
-                            <br><br><br><br>
+                            <p style="font-size: 0.9em; margin-bottom: 22px;">Developed &amp; Maintained By Ontik Technology</p>
                         </div>
                     @endif
                 </div>
