@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div ><img style="height: 200px;margin-left: calc(50% - 100px);width: 200px;margin-top: 20px;" src="{{url('vendor/img/logo.jpg')}}"></div>
+                <div ><img style="width: 200px;margin-left: calc(50% - 100px);width: 200px;margin-top: 20px;" src="{{url('vendor/img/logo.jpg')}}"></div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
                         {{ csrf_field() }}
@@ -51,7 +51,7 @@
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Login
+                                    Log In
                                 </button>
 
                                 <a class="btn btn-link" href="{{ url('/password/reset') }}">
