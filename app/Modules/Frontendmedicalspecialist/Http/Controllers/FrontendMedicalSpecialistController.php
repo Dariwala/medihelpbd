@@ -339,7 +339,7 @@ class FrontendMedicalSpecialistController extends Controller
 
         $selected_chamber_limit_of_days = MedicalSpecialistAppointment::where('medical_specialist_id',$doctor_id)->where('id',$request->chamber_id)->first()->serial_given_before_days_en;
 
-        if($diff_in_days < $selected_chamber_limit_of_days)
+        if($diff_in_days < $selected_chamber_limit_of_days || $from > $to)
         {
             return redirect('frontendmedicalspecialist/view'.'/'.$doctor_id.'/'.$subdistrict_id)
                         ->with('flag',1)
