@@ -44,7 +44,7 @@
                                     </div>
                                 </div>
 
-                                <h2>Serial Time Limit</h2>
+                                <!--<h2>Serial Time Limit</h2>
 
                                 <div class="uk-grid" data-uk-grid-margin>
                                     <div class="uk-width-medium-2-5">
@@ -77,10 +77,10 @@
                                         <label for="invoice_number">সিরিয়ালের সময়</label>
                                         <input type="text" class="md-input" id="serial_time_bn" name="serial_time_bn" >
                                     </div>
-                                    <!-- <div class="uk-width-medium-2-5">
+                                     <div class="uk-width-medium-2-5">
                                         <label for="note">Note</label>
                                         <textarea name="note" id="note" class="md-input"></textarea>
-                                    </div> -->
+                                    </div> 
                                 </div>
                                 <div class="uk-grid" data-uk-grid-margin>
 
@@ -93,11 +93,127 @@
                                         <label for="invoice_number">সর্বোচ্চ সিরিয়াল নোটিশ</label>
                                         <input type="text" class="md-input" id="max_serial_limit_bn" name="max_serial_limit_bn">
                                     </div>
+                                     <div class="uk-width-medium-2-5">
+                                        <label for="note">Note</label>
+                                        <textarea name="note" id="note" class="md-input"></textarea>
+                                    </div>
+                                </div>-->
+
+                                <div class="uk-grid" data-uk-grid-margin>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="uk_tp_1">Serial Must be given Before days</label>
+                                        <input class="md-input" type="number" id="serial_given_before_days_en" name="serial_given_before_days_en">
+                                    </div>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="uk_tp_1">সিরিয়াল যতদিন আগে দিতে হবে</label>
+                                        <input class="md-input" type="text" id="serial_given_before_days_bn" name="serial_given_before_days_bn">
+                                    </div>
+                                </div>
+
+                                <h2>Morning Serial Details</h2>
+
+                                <div class="uk-grid" data-uk-grid-margin>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="invoice_number">Maximum Serial Limit Morning New</label>
+                                        <input type="text" class="md-input" id="max_serial_limit_morning_new_en" name="max_serial_limit_morning_new_en">
+                                    </div>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="invoice_number">সর্বোচ্চ সিরিয়াল নোটিশ সকাল নতুন</label>
+                                        <input type="text" class="md-input" id="max_serial_limit_morning_new_bn" name="max_serial_limit_morning_new_bn">
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid" data-uk-grid-margin>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="invoice_number">Maximum Serial Limit Morning report</label>
+                                        <input type="text" class="md-input" id="max_serial_limit_morning_report_en" name="max_serial_limit_morning_report_en">
+                                    </div>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="invoice_number">সর্বোচ্চ সিরিয়াল নোটিশ সকাল রিপোর্ট</label>
+                                        <input type="text" class="md-input" id="max_serial_limit_morning_report_bn" name="max_serial_limit_morning_report_bn">
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid" data-uk-grid-margin>
+
+                                    <div class="uk-width-medium-1-2 uk-margin-top">
+                                        <label for="invoice_number">Serial Time Morning</label>
+                                            <input type="text" class="md-input" id="serial_time_morning_en" name="serial_time_morning_en">
+                                    </div>
+
+                                    <div class="uk-width-medium-1-2 uk-margin-top">
+                                        <label for="invoice_number">সিরিয়ালের সময় সকাল</label>
+                                        <input type="text" class="md-input" id="serial_time_morning_bn" name="serial_time_morning_bn">
+                                    </div>
                                     <!-- <div class="uk-width-medium-2-5">
                                         <label for="note">Note</label>
                                         <textarea name="note" id="note" class="md-input"></textarea>
                                     </div> -->
                                 </div>
+
+                                <div class="uk-grid" data-uk-grid-margin>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="uk_tp_1">Select Start time Morning</label>
+                                        <input class="md-input" type="text" id="start_time_morning" name="start_time_morning" data-uk-timepicker>
+                                    </div>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="uk_tp_1">Select End time Morning</label>
+                                        <input class="md-input" type="text" id="end_time_morning" name="end_time_morning" data-uk-timepicker>
+                                    </div>
+                                </div>
+
+                                <h2>Evening Serial Details</h2>
+
+                                <div class="uk-grid" data-uk-grid-margin>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="invoice_number">Maximum Serial Limit Evening New</label>
+                                        <input type="text" class="md-input" id="max_serial_limit_evening_new_en" name="max_serial_limit_evening_new_en">
+                                    </div>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="invoice_number">সর্বোচ্চ সিরিয়াল নোটিশ বিকাল নতুন</label>
+                                        <input type="text" class="md-input" id="max_serial_limit_evening_new_bn" name="max_serial_limit_evening_new_bn">
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid" data-uk-grid-margin>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="invoice_number">Maximum Serial Limit Evening report</label>
+                                        <input type="text" class="md-input" id="max_serial_limit_evening_report_en" name="max_serial_limit_evening_report_en">
+                                    </div>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="invoice_number">সর্বোচ্চ সিরিয়াল নোটিশ বিকাল রিপোর্ট</label>
+                                        <input type="text" class="md-input" id="max_serial_limit_evening_report_bn" name="max_serial_limit_evening_report_bn">
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid" data-uk-grid-margin>
+
+                                    <div class="uk-width-medium-1-2 uk-margin-top">
+                                        <label for="invoice_number">Serial Time Evening</label>
+                                            <input type="text" class="md-input" id="serial_time_evening_en" name="serial_time_evening_en">
+                                    </div>
+
+                                    <div class="uk-width-medium-1-2 uk-margin-top">
+                                        <label for="invoice_number">সিরিয়ালের সময়</label>
+                                        <input type="text" class="md-input" id="serial_time_evening_bn" name="serial_time_evening_bn">
+                                    </div>
+                                    <!-- <div class="uk-width-medium-2-5">
+                                        <label for="note">Note</label>
+                                        <textarea name="note" id="note" class="md-input"></textarea>
+                                    </div> -->
+                                </div>
+
+                                <div class="uk-grid" data-uk-grid-margin>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="uk_tp_1">Select Start time Evening</label>
+                                        <input class="md-input" type="text" id="start_time_evening" name="start_time_evening" data-uk-timepicker>
+                                    </div>
+                                    <div class="uk-width-medium-1-2">
+                                        <label for="uk_tp_1">Select End time Evening</label>
+                                        <input class="md-input" type="text" id="end_time_evening" name="end_time_evening" data-uk-timepicker>
+                                    </div>
+                                </div>
+
                                 <div class="uk-grid" data-uk-grid-margin>
                                    <div class="uk-width-medium-1-2 uk-margin-top">
                                         <label for="invoice_number">Notice</label>

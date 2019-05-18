@@ -16,8 +16,8 @@ Route::group(['prefix' => 'frontendmedicalspecialist'], function () {
     Route::post('/chamber-search/{id1}/{id2}', 'FrontendMedicalSpecialistController@chamberSearch');
     Route::get('/chamber-search/{id1}/{id2}', 'FrontendMedicalSpecialistController@viewMedicalSpecialist');
     
-    Route::get('/morning_appointment/{id}/{dist}/{date}/{chamber_id}', 'FrontendMedicalSpecialistController@morning_appointment_pdf')->name('morning_appointment_pdf');
-    Route::get('/evening_appointment/{id}/{dist}/{date}/{chamber_id}', 'FrontendMedicalSpecialistController@evening_appointment_pdf')->name('evening_appointment_pdf');
+    Route::get('/morning_appointment/{id}/{date}/{chamber_id}', 'FrontendMedicalSpecialistController@morning_appointment_pdf')->name('morning_appointment_pdf');
+    Route::get('/evening_appointment/{id}/{date}/{chamber_id}', 'FrontendMedicalSpecialistController@evening_appointment_pdf')->name('evening_appointment_pdf');
 
     Route::get('/view/{id}', 'FrontendMedicalSpecialistController@viewMedicalSpecialistByid');
     Route::post('/appointment_booking/{doctor_id}/{subdistrict_id}', 'FrontendMedicalSpecialistController@appointmentBooking');

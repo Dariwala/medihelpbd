@@ -374,25 +374,44 @@
                                                 <li style="padding: 8px 0px" class="apppointment uk-margin-small-top">
                                                     <p>{{ $appointment->chamber_name_bn }}</p>
                                                     <p><?php echo $appointment->details_bn ; ?></p>
-                                                    <p>@if($appointment->start_time != null)
+                                                    <p>@if($appointment->start_time_morning != null)
 
-                                                       সিরিয়াল দেওয়ার সময়:
+                                                       সকালে সিরিয়াল দেওয়ার সময়:
 
                                                         <?php
 
                                                         
-                                                            echo $appointment->serial_time_bn ;
+                                                            echo $appointment->serial_time_morning_bn ;
 
                                                         ?>
                                                         @else
-                                                        সিরিয়াল দেওয়ার সময়: নির্দিষ্ট সময় নেই।
+                                                        সকালে সিরিয়াল দেওয়ার সময়: নির্দিষ্ট সময় নেই।
+                                                        @endif
+                                                    </p>
+
+                                                    <p>@if($appointment->start_time_evening != null)
+
+                                                       বিকালে সিরিয়াল দেওয়ার সময়:
+
+                                                        <?php
+
+                                                        
+                                                            echo $appointment->serial_time_evening_bn ;
+
+                                                        ?>
+                                                        @else
+                                                        বিকালে সিরিয়াল দেওয়ার সময়: নির্দিষ্ট সময় নেই।
                                                         @endif
                                                     </p>
                                                         
-                                                    <p>সর্বোচ্চ সিরিয়াল সীমা: {{ $appointment->max_serial_limit_bn }}  </p>
+                                                    <p>সকালে সর্বোচ্চ নতুন সিরিয়াল সীমা: {{ $appointment->max_serial_limit_morning_new_bn }}  </p>
+                                                    <p>সকালে সর্বোচ্চ রিপোর্ট সিরিয়াল সীমা: {{ $appointment->max_serial_limit_morning_report_bn }}  </p>
+                                                    <p>বিকালে সর্বোচ্চ নতুন সিরিয়াল সীমা: {{ $appointment->max_serial_limit_evening_new_bn }}  </p>
+                                                    <p>বিকালে সর্বোচ্চ রিপোর্ট সিরিয়াল সীমা: {{ $appointment->max_serial_limit_evening_report_bn }}  </p>
+                                                    <p>সিরিয়াল {{$appointment->serial_given_before_days_bn}} দিন আগে দিতে হবে</p>
                                                     <p>@if($appointment->notice_bn != null)
 
-                                                       লক্ষণীয়:
+                                                       
 
                                                         <?php
 
@@ -420,10 +439,11 @@
                                             <div style="padding: 16px 0px" class="md-card-content">
                                                 
                                                     <div class="uk-grid">
-                                                        <div class="uk-width-medium-1-4">
+                                                        <!--<div class="uk-width-medium-1-4">
                                                             <label class="uk-vertical-align-middle" for="chamberId">Select Chamber<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
-                                                        </div>
-                                                        <div class="uk-width-medium-3-4">
+                                                        </div>-->
+                                                        <div class="uk-width-medium-1-1">
+                                                            <label class="uk-vertical-align-middle" for="chamberId" style="text-align:center;">Select Chamber<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
                                                             <select data-md-selectize data-md-selectize-bottom data-uk-tooltip="{pos:'top'}" title="Select Chamber" id="chamberId" name="chamber_id">
                                                                 <option value=""></option>
                                                                 @foreach($chambers as $chamber)
@@ -438,10 +458,11 @@
                                                     </div>
                                                  
                                                     <div class="uk-grid">
-                                                        <div class="uk-width-medium-1-4">
+                                                        <!--<div class="uk-width-medium-1-4">
                                                             <label class="uk-vertical-align-middle" for="appointmentDate">Appointment Date<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
-                                                        </div>
-                                                        <div class="uk-width-medium-3-4">
+                                                        </div>-->
+                                                        <div class="uk-width-medium-1-1">
+                                                        <label class="uk-vertical-align-middle" for="appointmentDate" style="text-align:center;">Appointment Date<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
                                                             <input class="md-input" type="text" name="appointment_date" id="appointmentDate" data-uk-datepicker="{format:'DD.MM.YYYY'}">
                                                             @if($errors->has('appointment_date'))
                                                                 <br/>
@@ -495,10 +516,11 @@
                                                     </div>
                                                  
                                                     <div class="uk-grid">
-                                                        <div class="uk-width-medium-1-4">
+                                                        <!--<div class="uk-width-medium-1-4">
                                                             <label class="uk-vertical-align-middle" for="patientName">Patient Name<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
-                                                        </div>
-                                                        <div class="uk-width-medium-3-4">
+                                                        </div>-->
+                                                        <div class="uk-width-medium-1-1">
+                                                        <label class="uk-vertical-align-middle" for="patientName" style="text-align:center;">Patient Name<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
                                                             <input type="text" class="md-input" name="patient_name" id="patientName" required />
                                                             @if($errors->has('patient_name'))
                                                                 <br/>
@@ -508,10 +530,11 @@
                                                     </div>
                                                     
                                                     <div class="uk-grid">
-                                                        <div class="uk-width-medium-1-4">
+                                                        <!--<div class="uk-width-medium-1-4">
                                                             <label class="uk-vertical-align-middle" for="contactNumber">Contact Number<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
-                                                        </div>
-                                                        <div class="uk-width-medium-3-4">
+                                                        </div>-->
+                                                        <div class="uk-width-medium-1-1">
+                                                            <label class="uk-vertical-align-middle" for="contactNumber" style="text-align:center;">Contact Number<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
                                                             <input type="text" class="md-input" name="contact_number" id="contactNumber" />
                                                             @if($errors->has('contact_number'))
                                                                 <br/>
@@ -532,40 +555,40 @@
                                          </form>
                                         <hr>
                                             
-                                        <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">Next Appointment</h4>
+                                        <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">See All Appointments</h4>
                                         <form action="{{ url('frontendmedicalspecialist/chamber-search',['doctor_id'=>$medical_specialist->id,'subdistrict_id'=>$medical_specialist->subdistrict_id] ) }}" method="post" role="form" id="formfield" enctype="multipart/form-data">
                                             {{ csrf_field() }}
 
                                             <div style="padding: 16px 0px" class="md-card-content">
 
                                                 <div class="uk-grid">
-                                                    <div class="uk-width-medium-1-4 uk-margin-medium-top">
-                                                        <label class="uk-vertical-align-middle" for="chamberId">Select Date<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
-                                                    </div>
-
-                                                    <div class="uk-width-medium-3-4 uk-margin-medium-top">
-                                                        <label for="search_date"></label>
-                                                        <input class="md-input" type="text" name="search_date" id="search_date" data-uk-datepicker="{format:'DD.MM.YYYY'}">
-                                                        @if($errors->has('search_date'))
-                                                            <br/>
-                                                            <span style="color:orangered;">{!!$errors->first('search_date')!!}</span>
-                                                        @endif
-                                                    </div>
-                                                    
-                                                    <div class="uk-width-medium-1-4 uk-margin-medium-top">
+                                                    <!--<div class="uk-width-medium-1-4 uk-margin-medium-top">
                                                         <label class="uk-vertical-align-middle" for="chamberId">Select Chamber<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
-                                                    </div>
+                                                    </div>-->
 
-                                                    <div class="uk-width-medium-3-4 uk-margin-medium-top">
+                                                    <div class="uk-width-medium-1-1 uk-margin-medium-top">
+                                                    <label class="uk-vertical-align-middle" for="chamberId">Select Chamber<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
                                                         <select data-md-selectize data-md-selectize-bottom data-uk-tooltip="{pos:'top'}" title="Select Chamber" id="search_chamber_id" name="search_chamber_id">
                                                             <option value=""></option>
-                                                            @foreach($chambers as $chamber)
+                                                            @foreach($all_chambers as $chamber)
                                                                 <option value="{{ $chamber->id }}">{{ $chamber->chamber_name }}</option>
                                                             @endforeach
                                                         </select>
                                                         @if($errors->has('search_chamber_id'))
                                                             <br/>
                                                             <span style="color:orangered;">{!!$errors->first('search_chamber_id')!!}</span>
+                                                        @endif
+                                                    </div>
+                                                    <!--<div class="uk-width-medium-1-4 uk-margin-medium-top">
+                                                        <label class="uk-vertical-align-middle" for="chamberId">Select Date<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
+                                                    </div>-->
+
+                                                    <div class="uk-width-medium-1-1 uk-margin-medium-top">
+                                                    <label class="uk-vertical-align-middle" for="search_date" style="text-align:center;">Select Date<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
+                                                        <input class="md-input" type="text" name="search_date" id="search_date" data-uk-datepicker="{format:'DD.MM.YYYY'}">
+                                                        @if($errors->has('search_date'))
+                                                            <br/>
+                                                            <span style="color:orangered;">{!!$errors->first('search_date')!!}</span>
                                                         @endif
                                                     </div>
                                                     <div class="uk-width-1-1 uk-float-right uk-margin-medium-top">
@@ -575,10 +598,12 @@
                                             </div>
 
                                         </form>
+                                        @if(isset($all_appointments_morning_new[0])||isset($all_appointments_morning_report[0])||isset($all_appointments_evening_report[0])||isset($all_appointments_evening_new[0]))
                                         <hr>
+                                        @endif
                                             
-
-                                        <div class="md-card-content print_bg">
+                                    <div class="md-card-content print_bg">
+                                    @if(isset($all_appointments_morning_new[0])||isset($all_appointments_morning_report[0]))
                                         <div class="uk-grid" data-uk-grid-margin="">
                                             <div class="uk-width-small-5-5 uk-text-center">
                                                 
@@ -590,11 +615,6 @@
                                                 @elseif(isset($all_appointments_morning_report[0]))
                                                     <p style="line-height: 10px; font-weight: 600;"class="uk-text-large"> 
                                                           {{ $all_appointments_morning_report[0]->appointment->chamber_name }}
-                                                    </p>
-                                                @elseif(isset($chambers_id->chamber_name))
-                                                
-                                                    <p style="line-height: 10px; font-weight: 600;"class="uk-text-large"> 
-                                                        {{ $chambers_id->chamber_name }}
                                                     </p>
                                                     
                                                 @else
@@ -617,7 +637,7 @@
                                                         
                                                     </p>
                                                     <p >
-                                                        <a style="float: right;" target="_blank" href="{{ route("morning_appointment_pdf",['id'=>$medical_specialist->id,'dist'=>$medical_specialist->subdistrict_id,'date'=>$searched_date,'chamber_id'=>$searched_chambers_id]) }}"><input style="float: right;" type="submit" class="md-btn md-btn-primary" value="Print"/></a>
+                                                        <a style="float: right;" target="_blank" href="{{ route("morning_appointment_pdf",['id'=>$medical_specialist->id,'date'=>$searched_date,'chamber_id'=>$searched_chambers_id]) }}"><input style="float: right;" type="submit" class="md-btn md-btn-primary" value="Print"/></a>
                                                     </p>
                                                 </div>
                                             @endif
@@ -630,24 +650,24 @@
                                                         <table class="uk-table uk-table-hover">
                                                             <thead>
                                                             <tr>
-                                                                <th width="10%" >Sl</th>
-                                                                <th width="50%">Patient Name</th>
-                                                                <th width="40%">Contact No.</th>
+                                                                <th width="5%"  style="text-align: center;">Sl</th>
+                                                                <th width="83%" style="text-align: center;">Patient Name</th>
+                                                                <th width="12%" style="text-align: center;">Contact No.</th>
                                                             </tr>
                                                             </thead>
-                                                            <tfoot>
+                                                            <!--<tfoot>
                                                             <tr>
-                                                                <th>Sl</th>
-                                                                <th>Patient Name</th>
-                                                                <th>Contact No.</th>
+                                                                <th style="text-align: center;">Sl</th>
+                                                                <th style="text-align: center;">Patient Name</th>
+                                                                <th style="text-align: center;">Contact No.</th>
                                                             </tr>
-                                                            </tfoot>
+                                                            </tfoot>-->
                                                             <tbody>
                                                                 @foreach($all_appointments_morning_new as $key=>$booking)
                                                                     <tr>
-                                                                        <td>{{ $key+1 }}</td>
-                                                                        <td>{{ $booking->patient_name }}</td>
-                                                                        <td>{{ $booking->contact_number }}</td>
+                                                                        <td style="text-align: center;">{{ $key+1 }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->patient_name }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->contact_number }}</td>
                                                                     </tr>
                                                                 @endforeach
                                                             </tbody>
@@ -662,24 +682,24 @@
                                                         <table class="uk-table uk-table-hover">
                                                             <thead>
                                                             <tr>
-                                                                <th width="10%" >Sl</th>
-                                                                <th width="50%">Patient Name</th>
-                                                                <th width="40%">Contact No.</th>
+                                                                <th width="5%" style="text-align: center;" >Sl</th>
+                                                                <th width="83%" style="text-align: center;">Patient Name</th>
+                                                                <th width="12%" style="text-align: center;">Contact No.</th>
                                                             </tr>
                                                             </thead>
-                                                            <tfoot>
+                                                            <!--<tfoot>
                                                             <tr>
-                                                                <th>Sl</th>
-                                                                <th>Patient Name</th>
-                                                                <th>Contact No.</th>
+                                                                <th style="text-align: center;">Sl</th>
+                                                                <th style="text-align: center;">Patient Name</th>
+                                                                <th style="text-align: center;">Contact No.</th>
                                                             </tr>
-                                                            </tfoot>
+                                                            </tfoot>-->
                                                             <tbody>
                                                                 @foreach($all_appointments_morning_report as $key=>$booking)
                                                                     <tr>
-                                                                        <td>{{ $key+1 }}</td>
-                                                                        <td>{{ $booking->patient_name }}</td>
-                                                                        <td>{{ $booking->contact_number }}</td>
+                                                                        <td style="text-align: center;">{{ $key+1 }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->patient_name }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->contact_number }}</td>
                                                                     </tr>
                                                                 @endforeach
                                                             </tbody>
@@ -696,10 +716,10 @@
                                             </div>
                                         
                                         </div>
-                                        
+                                        @endif
                                         <br>
                                         <br>
-                                        
+                                        @if(isset($all_appointments_evening_new[0])||isset($all_appointments_evening_report[0]))
                                         <div class="uk-grid" data-uk-grid-margin="">
                                             <div class="uk-width-small-5-5 uk-text-center">
                                                 
@@ -739,7 +759,7 @@
                                                             
                                                         </p>
                                                         <p>
-                                                            <a style="float: right;" target="_blank" href="{{ route("evening_appointment_pdf",['id'=>$medical_specialist->id,'dist'=>$medical_specialist->subdistrict_id,'date'=>$searched_date,'chamber_id'=>$searched_chambers_id]) }}"><input style="float: right;" type="submit" class="md-btn md-btn-primary" value="Print"/></a>
+                                                            <a style="float: right;" target="_blank" href="{{ route("evening_appointment_pdf",['id'=>$medical_specialist->id,'date'=>$searched_date,'chamber_id'=>$searched_chambers_id]) }}"><input style="float: right;" type="submit" class="md-btn md-btn-primary" value="Print"/></a>
                                                         </p>
                                                     </div>
                                                 @endif
@@ -754,24 +774,24 @@
                                                         <table class="uk-table uk-table-hover">
                                                             <thead>
                                                             <tr>
-                                                                <th width="10%" >Sl</th>
-                                                                <th width="50%">Patient Name</th>
-                                                                <th width="40%">Contact No.</th>
+                                                                <th width="5%" style="text-align: center;" >Sl</th>
+                                                                <th width="83%" style="text-align: center;">Patient Name</th>
+                                                                <th width="12%" style="text-align: center;">Contact No.</th>
                                                             </tr>
                                                             </thead>
-                                                            <tfoot>
+                                                            <!--<tfoot>
                                                             <tr>
-                                                                <th>Sl</th>
-                                                                <th>Patient Name</th>
-                                                                <th>Contact No.</th>
+                                                                <th style="text-align: center;">Sl</th>
+                                                                <th style="text-align: center;">Patient Name</th>
+                                                                <th style="text-align: center;">Contact No.</th>
                                                             </tr>
-                                                            </tfoot>
+                                                            </tfoot>-->
                                                             <tbody>
                                                                 @foreach($all_appointments_evening_new as $key=>$booking)
                                                                     <tr>
-                                                                        <td>{{ $key+1 }}</td>
-                                                                        <td>{{ $booking->patient_name }}</td>
-                                                                        <td>{{ $booking->contact_number }}</td>
+                                                                        <td style="text-align: center;">{{ $key+1 }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->patient_name }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->contact_number }}</td>
                                                                     </tr>
                                                                 @endforeach
                                                             </tbody>
@@ -786,24 +806,24 @@
                                                         <table class="uk-table uk-table-hover">
                                                             <thead>
                                                             <tr>
-                                                                <th width="10%" >Sl</th>
-                                                                <th width="50%">Patient Name</th>
-                                                                <th width="40%">Contact No.</th>
+                                                                <th width="5%" style="text-align: center;" >Sl</th>
+                                                                <th width="83%" style="text-align: center;">Patient Name</th>
+                                                                <th width="12%" style="text-align: center;">Contact No.</th>
                                                             </tr>
                                                             </thead>
-                                                            <tfoot>
+                                                            <!--<tfoot>
                                                             <tr>
-                                                                <th>Sl</th>
-                                                                <th>Patient Name</th>
-                                                                <th>Contact No.</th>
+                                                                <th style="text-align: center;">Sl</th>
+                                                                <th style="text-align: center;">Patient Name</th>
+                                                                <th style="text-align: center;">Contact No.</th>
                                                             </tr>
-                                                            </tfoot>
+                                                            </tfoot>-->
                                                             <tbody>
                                                                 @foreach($all_appointments_evening_report as $key=>$booking)
                                                                     <tr>
-                                                                        <td>{{ $key+1 }}</td>
-                                                                        <td>{{ $booking->patient_name }}</td>
-                                                                        <td>{{ $booking->contact_number }}</td>
+                                                                        <td style="text-align: center;">{{ $key+1 }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->patient_name }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->contact_number }}</td>
                                                                     </tr>
                                                                 @endforeach
                                                             </tbody>
@@ -819,6 +839,7 @@
                                             </div>
                                         
                                         </div>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
@@ -1061,26 +1082,45 @@
                                                     <p>{{ $appointment->chamber_name }}</p>
                                                     <p><?php echo $appointment->details ; ?>
                                                     </p>
-                                                    <p>@if($appointment->start_time != null)
+                                                    <p>@if($appointment->start_time_morning != null)
 
-                                                        Time of Serial:
+                                                        Time of Serial for Morning:
                                                         <?php
 
                                                         
-                                                            echo $appointment->serial_time_en ;
+                                                            echo $appointment->serial_time_morning_en ;
 
                                                         ?>
                                                         @else
                                                         Time of Serial: No serial time limit.
                                                         @endif
                                                     </p>
-                                                    <p>Maxium Serial Limit: {{ $appointment->max_serial_limit_en }}</p>
+                                                    
+                                                    <p>@if($appointment->start_time_evening != null)
+
+                                                        Time of Serial for Evening:
+                                                        <?php
+
+                                                        
+                                                            echo $appointment->serial_time_evening_en ;
+
+                                                        ?>
+                                                        @else
+                                                        Time of Serial: No serial time limit.
+                                                        @endif
+                                                    </p>
+
+                                                    <p>Maximum Serial Limit for new in Morning: {{ $appointment->max_serial_limit_morning_new_en }}</p>
+                                                    <p>Maximum Serial Limit for report in Morning: {{ $appointment->max_serial_limit_morning_report_en }}</p>
+                                                    <p>Maximum Serial Limit for new in Evening: {{ $appointment->max_serial_limit_evening_new_en }}</p>
+                                                    <p>Maximum Serial Limit for report in Evening: {{ $appointment->max_serial_limit_evening_report_en }}</p>
+                                                    <p>Serial must be given before {{$appointment->serial_given_before_days_en}} days</p>
                                                     @if($appointment->notice != null)
                                                     
                                                         <?php
 
                                                         
-                                                            echo "Noteworthy: $appointment->notice " ;
+                                                            echo "$appointment->notice " ;
 
                                                         ?>
                                                         @else
@@ -1103,10 +1143,11 @@
                                             <div style="padding: 16px 0px" class="md-card-content">
                                                 
                                                     <div class="uk-grid">
-                                                        <div class="uk-width-medium-1-4">
+                                                        <!--<div class="uk-width-medium-1-4">
                                                             <label class="uk-vertical-align-middle" for="chamberId">Select Chamber<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
-                                                        </div>
-                                                        <div class="uk-width-medium-3-4">
+                                                        </div>-->
+                                                        <div class="uk-width-medium-1-1">
+                                                        <label class="uk-vertical-align-middle" for="chamberId">Select Chamber<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
                                                             <select data-md-selectize data-md-selectize-bottom data-uk-tooltip="{pos:'top'}" title="Select Chamber" id="chamberId" name="chamber_id">
                                                                 <option value=""></option>
                                                                 @foreach($chambers as $chamber)
@@ -1121,10 +1162,11 @@
                                                     </div>
                                                  
                                                     <div class="uk-grid">
-                                                        <div class="uk-width-medium-1-4">
+                                                        <!--<div class="uk-width-medium-1-4">
                                                             <label class="uk-vertical-align-middle" for="appointmentDate">Appointment Date<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
-                                                        </div>
-                                                        <div class="uk-width-medium-3-4">
+                                                        </div>-->
+                                                        <div class="uk-width-medium-1-1">
+                                                        <label class="uk-vertical-align-middle" for="appointmentDate" style="text-align: center;">Appointment Date<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
                                                             <input class="md-input" type="text" name="appointment_date" id="appointmentDate" data-uk-datepicker="{format:'DD.MM.YYYY'}">
                                                             @if($errors->has('appointment_date'))
                                                                 <br/>
@@ -1178,10 +1220,11 @@
                                                     </div>
                                                  
                                                     <div class="uk-grid">
-                                                        <div class="uk-width-medium-1-4">
+                                                        <!--<div class="uk-width-medium-1-4">
                                                             <label class="uk-vertical-align-middle" for="patientName">Patient Name<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
-                                                        </div>
-                                                        <div class="uk-width-medium-3-4">
+                                                        </div>-->
+                                                        <div class="uk-width-medium-1-1">
+                                                        <label class="uk-vertical-align-middle" for="patientName" style="text-align: center;">Patient Name<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
                                                             <input type="text" class="md-input" name="patient_name" id="patientName" required />
                                                             @if($errors->has('patient_name'))
                                                                 <br/>
@@ -1191,10 +1234,11 @@
                                                     </div>
                                                     
                                                     <div class="uk-grid">
-                                                        <div class="uk-width-medium-1-4">
+                                                        <!--<div class="uk-width-medium-1-4">
                                                             <label class="uk-vertical-align-middle" for="contactNumber">Contact Number<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
-                                                        </div>
-                                                        <div class="uk-width-medium-3-4">
+                                                        </div>-->
+                                                        <div class="uk-width-medium-1-1">
+                                                        <label class="uk-vertical-align-middle" for="contactNumber" style="text-align: center;">Contact Number<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
                                                             <input type="text" class="md-input" name="contact_number" id="contactNumber" />
                                                             @if($errors->has('contact_number'))
                                                                 <br/>
@@ -1215,34 +1259,23 @@
                                          </form>
                                         <hr>
                                             
-                                        <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">Next Appointment</h4>
+                                        <h4 class="heading_c uk-margin-small-bottom uk-margin-small-top">See All Appointments</h4>
                                         <form action="{{ url('frontendmedicalspecialist/chamber-search',['doctor_id'=>$medical_specialist->id,'subdistrict_id'=>$medical_specialist->subdistrict_id] ) }}" method="post" role="form" id="formfield" enctype="multipart/form-data">
                                             {{ csrf_field() }}
 
                                             <div style="padding: 16px 0px" class="md-card-content">
 
                                                 <div class="uk-grid">
-                                                    <div class="uk-width-medium-1-4 uk-margin-medium-top">
-                                                        <label class="uk-vertical-align-middle" for="chamberId">Select Date<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
-                                                    </div>
 
-                                                    <div class="uk-width-medium-3-4 uk-margin-medium-top">
-                                                        <label for="search_date"></label>
-                                                        <input class="md-input" type="text" name="search_date" id="search_date" data-uk-datepicker="{format:'DD.MM.YYYY'}">
-                                                        @if($errors->has('search_date'))
-                                                            <br/>
-                                                            <span style="color:orangered;">{!!$errors->first('search_date')!!}</span>
-                                                        @endif
-                                                    </div>
-                                                    
-                                                    <div class="uk-width-medium-1-4 uk-margin-medium-top">
+                                                    <!--<div class="uk-width-medium-1-4 uk-margin-medium-top">
                                                         <label class="uk-vertical-align-middle" for="chamberId">Select Chamber<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
-                                                    </div>
+                                                    </div>-->
 
-                                                    <div class="uk-width-medium-3-4 uk-margin-medium-top">
+                                                    <div class="uk-width-medium-1-1 uk-margin-medium-top">
+                                                    <label class="uk-vertical-align-middle" for="chamberId">Select Chamber<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
                                                         <select data-md-selectize data-md-selectize-bottom data-uk-tooltip="{pos:'top'}" title="Select Chamber" id="search_chamber_id" name="search_chamber_id">
                                                             <option value=""></option>
-                                                            @foreach($chambers as $chamber)
+                                                            @foreach($all_chambers as $chamber)
                                                                 <option value="{{ $chamber->id }}">{{ $chamber->chamber_name }}</option>
                                                             @endforeach
                                                         </select>
@@ -1251,6 +1284,19 @@
                                                             <span style="color:orangered;">{!!$errors->first('search_chamber_id')!!}</span>
                                                         @endif
                                                     </div>
+                                                    <!--<div class="uk-width-medium-1-4 uk-margin-medium-top">
+                                                        <label class="uk-vertical-align-middle" for="chamberId">Select Date<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
+                                                    </div>-->
+
+                                                    <div class="uk-width-medium-1-1 uk-margin-medium-top">
+                                                    <label class="uk-vertical-align-middle" for="search_date" style="text-align:center;">Select Date<sup><i style="color:red;font-size:9px;" class="material-icons">star_rate</i></sup></label>
+                                                        <input class="md-input" type="text" name="search_date" id="search_date" data-uk-datepicker="{format:'DD.MM.YYYY'}">
+                                                        @if($errors->has('search_date'))
+                                                            <br/>
+                                                            <span style="color:orangered;">{!!$errors->first('search_date')!!}</span>
+                                                        @endif
+                                                    </div>
+                                                    
                                                     <div class="uk-width-1-1 uk-float-right uk-margin-medium-top">
                                                         <input style="float: right;" type="submit" class="md-btn md-btn-primary" value="submit"/>
                                                     </div>
@@ -1258,10 +1304,13 @@
                                             </div>
 
                                         </form>
+                                        @if(isset($all_appointments_morning_new[0])||isset($all_appointments_morning_report[0])||isset($all_appointments_evening_report[0])||isset($all_appointments_evening_new[0]))
                                         <hr>
+                                        @endif
                                             
 
                                         <div class="md-card-content print_bg">
+                                        @if(isset($all_appointments_morning_new[0])||isset($all_appointments_morning_report[0]))
                                         <div class="uk-grid" data-uk-grid-margin="">
                                             <div class="uk-width-small-5-5 uk-text-center">
                                                 
@@ -1300,7 +1349,7 @@
                                                         
                                                     </p>
                                                     <p >
-                                                        <a style="float: right;" target="_blank" href="{{ route("morning_appointment_pdf",['id'=>$medical_specialist->id,'dist'=>$medical_specialist->subdistrict_id,'date'=>$searched_date,'chamber_id'=>$searched_chambers_id]) }}"><input style="float: right;" type="submit" class="md-btn md-btn-primary" value="Print"/></a>
+                                                        <a style="float: right;" target="_blank" href="{{ route("morning_appointment_pdf",['id'=>$medical_specialist->id,'date'=>$searched_date,'chamber_id'=>$searched_chambers_id]) }}"><input style="float: right;" type="submit" class="md-btn md-btn-primary" value="Print"/></a>
                                                     </p>
                                                 </div>
                                             @endif
@@ -1313,24 +1362,24 @@
                                                         <table class="uk-table uk-table-hover">
                                                             <thead>
                                                             <tr>
-                                                                <th width="10%" >Sl</th>
-                                                                <th width="50%">Patient Name</th>
-                                                                <th width="40%">Contact No.</th>
+                                                                <th width="5%" style="text-align: center;" >Sl</th>
+                                                                <th width="83%" style="text-align: center;">Patient Name</th>
+                                                                <th width="12%" style="text-align: center;">Contact No.</th>
                                                             </tr>
                                                             </thead>
-                                                            <tfoot>
+                                                            <!--<tfoot>
                                                             <tr>
-                                                                <th style="text-align: left;">Sl</th>
-                                                                <th style="text-align: left;">Patient Name</th>
-                                                                <th style="text-align: left;">Contact No.</th>
+                                                                <th style="text-align: center;">Sl</th>
+                                                                <th style="text-align: center;">Patient Name</th>
+                                                                <th style="text-align: center;">Contact No.</th>
                                                             </tr>
-                                                            </tfoot>
+                                                            </tfoot>-->
                                                             <tbody>
                                                                 @foreach($all_appointments_morning_new as $key=>$booking)
                                                                     <tr>
-                                                                        <td style="text-align: left;">{{ $key+1 }}</td>
-                                                                        <td style="text-align: left;">{{ $booking->patient_name }}</td>
-                                                                        <td style="text-align: left;">{{ $booking->contact_number }}</td>
+                                                                        <td style="text-align: center;">{{ $key+1 }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->patient_name }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->contact_number }}</td>
                                                                     </tr>
                                                                 @endforeach
                                                             </tbody>
@@ -1345,24 +1394,24 @@
                                                         <table class="uk-table uk-table-hover">
                                                             <thead>
                                                             <tr>
-                                                                <th width="10%" >Sl</th>
-                                                                <th width="50%">Patient Name</th>
-                                                                <th width="40%">Contact No.</th>
+                                                                <th width="5%" style="text-align: center;" >Sl</th>
+                                                                <th width="83%" style="text-align: center;">Patient Name</th>
+                                                                <th width="12%" style="text-align: center;">Contact No.</th>
                                                             </tr>
                                                             </thead>
-                                                            <tfoot>
+                                                            <!--<tfoot>
                                                             <tr>
-                                                                <th>Sl</th>
-                                                                <th style="text-align: left;">Patient Name</th>
-                                                                <th style="text-align: left;">Contact No.</th>
+                                                                <th style="text-align: center;">Sl</th>
+                                                                <th style="text-align: center;">Patient Name</th>
+                                                                <th style="text-align: center;">Contact No.</th>
                                                             </tr>
-                                                            </tfoot>
+                                                            </tfoot>-->
                                                             <tbody>
                                                                 @foreach($all_appointments_morning_report as $key=>$booking)
                                                                     <tr>
-                                                                        <td style="text-align: left;">{{ $key+1 }}</td>
-                                                                        <td style="text-align: left;">{{ $booking->patient_name }}</td>
-                                                                        <td style="text-align: left;">{{ $booking->contact_number }}</td>
+                                                                        <td style="text-align: center;">{{ $key+1 }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->patient_name }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->contact_number }}</td>
                                                                     </tr>
                                                                 @endforeach
                                                             </tbody>
@@ -1379,9 +1428,11 @@
                                             </div>
                                         
                                         </div>
+                                        @endif
                                         
                                         <br>
                                         <br>
+                                        @if(isset($all_appointments_evening_new[0])||isset($all_appointments_evening_report[0]))
                                         
                                         <div class="uk-grid" data-uk-grid-margin="">
                                             <div class="uk-width-small-5-5 uk-text-center">
@@ -1422,7 +1473,7 @@
                                                             
                                                         </p>
                                                         <p>
-                                                            <a style="float: right;" target="_blank" href="{{ route("evening_appointment_pdf",['id'=>$medical_specialist->id,'dist'=>$medical_specialist->subdistrict_id,'date'=>$searched_date,'chamber_id'=>$searched_chambers_id]) }}"><input style="float: right;" type="submit" class="md-btn md-btn-primary" value="Print"/></a>
+                                                            <a style="float: right;" target="_blank" href="{{ route("evening_appointment_pdf",['id'=>$medical_specialist->id,'date'=>$searched_date,'chamber_id'=>$searched_chambers_id]) }}"><input style="float: right;" type="submit" class="md-btn md-btn-primary" value="Print"/></a>
                                                         </p>
                                                     </div>
                                                 @endif
@@ -1437,24 +1488,24 @@
                                                         <table class="uk-table uk-table-hover">
                                                             <thead>
                                                             <tr>
-                                                                <th width="10%" >Sl</th>
-                                                                <th width="50%">Patient Name</th>
-                                                                <th width="40%">Contact No.</th>
+                                                                <th width="5%"  style="text-align: center;">Sl</th>
+                                                                <th width="83%" style="text-align: center;">Patient Name</th>
+                                                                <th width="12%" style="text-align: center;">Contact No.</th>
                                                             </tr>
                                                             </thead>
-                                                            <tfoot>
+                                                            <!--<tfoot>
                                                             <tr>
-                                                                <th style="text-align: left;">Sl</th>
-                                                                <th style="text-align: left;">Patient Name</th>
-                                                                <th style="text-align: left;">Contact No.</th>
+                                                                <th style="text-align: center;">Sl</th>
+                                                                <th style="text-align: center;">Patient Name</th>
+                                                                <th style="text-align: center;">Contact No.</th>
                                                             </tr>
-                                                            </tfoot>
+                                                            </tfoot>-->
                                                             <tbody>
                                                                 @foreach($all_appointments_evening_new as $key=>$booking)
                                                                     <tr>
-                                                                        <td style="text-align: left;">{{ $key+1 }}</td>
-                                                                        <td style="text-align: left;">{{ $booking->patient_name }}</td>
-                                                                        <td style="text-align: left;">{{ $booking->contact_number }}</td>
+                                                                        <td style="text-align: center;">{{ $key+1 }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->patient_name }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->contact_number }}</td>
                                                                     </tr>
                                                                 @endforeach
                                                             </tbody>
@@ -1469,24 +1520,24 @@
                                                         <table class="uk-table uk-table-hover">
                                                             <thead>
                                                             <tr>
-                                                                <th width="10%" >Sl</th>
-                                                                <th width="50%">Patient Name</th>
-                                                                <th width="40%">Contact No.</th>
+                                                                <th width="5%"  style="text-align: center;">Sl</th>
+                                                                <th width="83%" style="text-align: center;">Patient Name</th>
+                                                                <th width="12%" style="text-align: center;">Contact No.</th>
                                                             </tr>
                                                             </thead>
-                                                            <tfoot>
+                                                            <!--<tfoot>
                                                             <tr>
-                                                                <th style="text-align: left;">Sl</th>
-                                                                <th style="text-align: left;">Patient Name</th>
-                                                                <th style="text-align: left;">Contact No.</th>
+                                                                <th style="text-align: center;">Sl</th>
+                                                                <th style="text-align: center;">Patient Name</th>
+                                                                <th style="text-align: center;">Contact No.</th>
                                                             </tr>
-                                                            </tfoot>
+                                                            </tfoot>-->
                                                             <tbody>
                                                                 @foreach($all_appointments_evening_report as $key=>$booking)
                                                                     <tr>
-                                                                        <td style="text-align: left;">{{ $key+1 }}</td>
-                                                                        <td style="text-align: left;">{{ $booking->patient_name }}</td>
-                                                                        <td style="text-align: left;">{{ $booking->contact_number }}</td>
+                                                                        <td style="text-align: center;">{{ $key+1 }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->patient_name }}</td>
+                                                                        <td style="text-align: center;">{{ $booking->contact_number }}</td>
                                                                     </tr>
                                                                 @endforeach
                                                             </tbody>
@@ -1502,6 +1553,7 @@
                                             </div>
                                         
                                         </div>
+                                        @endif
                                     </div>
                                 </div>
                             
