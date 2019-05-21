@@ -194,7 +194,7 @@
                                     </div>
 
                                     <div class="uk-width-medium-1-2 uk-margin-top">
-                                        <label for="invoice_number">সিরিয়ালের সময়</label>
+                                        <label for="invoice_number">সিরিয়ালের সময় বিকাল</label>
                                         <input type="text" class="md-input" id="serial_time_evening_bn" name="serial_time_evening_bn">
                                     </div>
                                     <!-- <div class="uk-width-medium-2-5">

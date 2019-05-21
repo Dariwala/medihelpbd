@@ -374,41 +374,13 @@
                                                 <li style="padding: 8px 0px" class="apppointment uk-margin-small-top">
                                                     <p>{{ $appointment->chamber_name_bn }}</p>
                                                     <p><?php echo $appointment->details_bn ; ?></p>
-                                                    <p>@if($appointment->start_time_morning != null)
-
-                                                       সকালে সিরিয়াল দেওয়ার সময়:
-
-                                                        <?php
-
-                                                        
-                                                            echo $appointment->serial_time_morning_bn ;
-
-                                                        ?>
-                                                        @else
-                                                        সকালে সিরিয়াল দেওয়ার সময়: নির্দিষ্ট সময় নেই।
-                                                        @endif
-                                                    </p>
-
-                                                    <p>@if($appointment->start_time_evening != null)
-
-                                                       বিকালে সিরিয়াল দেওয়ার সময়:
-
-                                                        <?php
-
-                                                        
-                                                            echo $appointment->serial_time_evening_bn ;
-
-                                                        ?>
-                                                        @else
-                                                        বিকালে সিরিয়াল দেওয়ার সময়: নির্দিষ্ট সময় নেই।
-                                                        @endif
-                                                    </p>
-                                                        
-                                                    <p>সকালে সর্বোচ্চ নতুন সিরিয়াল সীমা: {{ $appointment->max_serial_limit_morning_new_bn }}  </p>
-                                                    <p>সকালে সর্বোচ্চ রিপোর্ট সিরিয়াল সীমা: {{ $appointment->max_serial_limit_morning_report_bn }}  </p>
-                                                    <p>বিকালে সর্বোচ্চ নতুন সিরিয়াল সীমা: {{ $appointment->max_serial_limit_evening_new_bn }}  </p>
-                                                    <p>বিকালে সর্বোচ্চ রিপোর্ট সিরিয়াল সীমা: {{ $appointment->max_serial_limit_evening_report_bn }}  </p>
-                                                    <p>সিরিয়াল {{$appointment->serial_given_before_days_bn}} দিন আগে দিতে হবে</p>
+                                                    @if($appointment->serial_time_morning_bn != '')<p>সকালে সিরিয়াল দেওয়ার সময়: {{ $appointment->serial_time_morning_bn }}  </p>@endif
+                                                    @if($appointment->serial_time_evening_bn != '')<p>বিকালে সিরিয়াল দেওয়ার সময়: {{ $appointment->serial_time_evening_bn }}  </p>@endif    
+                                                    @if($appointment->max_serial_limit_morning_new_bn != '')<p>সকালে সর্বোচ্চ নতুন সিরিয়াল সীমা: {{ $appointment->max_serial_limit_morning_new_bn }}  </p>@endif
+                                                    @if($appointment->max_serial_limit_morning_report_bn != '')<p>সকালে সর্বোচ্চ রিপোর্ট সিরিয়াল সীমা: {{ $appointment->max_serial_limit_morning_report_bn }}  </p>@endif
+                                                    @if($appointment->max_serial_limit_evening_new_bn != '')<p>বিকালে সর্বোচ্চ নতুন সিরিয়াল সীমা: {{ $appointment->max_serial_limit_evening_new_bn }}  </p>@endif
+                                                    @if($appointment->max_serial_limit_evening_report_bn != '')<p>বিকালে সর্বোচ্চ রিপোর্ট সিরিয়াল সীমা: {{ $appointment->max_serial_limit_evening_report_bn }}  </p>@endif
+                                                    @if($appointment->serial_given_before_days_bn != '')<p>সিরিয়াল {{$appointment->serial_given_before_days_bn}} দিন আগে দিতে হবে</p>@endif
                                                     <p>@if($appointment->notice_bn != null)
 
                                                        
@@ -1082,39 +1054,13 @@
                                                     <p>{{ $appointment->chamber_name }}</p>
                                                     <p><?php echo $appointment->details ; ?>
                                                     </p>
-                                                    <p>@if($appointment->start_time_morning != null)
-
-                                                        Time of Serial for Morning:
-                                                        <?php
-
-                                                        
-                                                            echo $appointment->serial_time_morning_en ;
-
-                                                        ?>
-                                                        @else
-                                                        Time of Serial: No serial time limit.
-                                                        @endif
-                                                    </p>
-                                                    
-                                                    <p>@if($appointment->start_time_evening != null)
-
-                                                        Time of Serial for Evening:
-                                                        <?php
-
-                                                        
-                                                            echo $appointment->serial_time_evening_en ;
-
-                                                        ?>
-                                                        @else
-                                                        Time of Serial: No serial time limit.
-                                                        @endif
-                                                    </p>
-
-                                                    <p>Maximum Serial Limit for new in Morning: {{ $appointment->max_serial_limit_morning_new_en }}</p>
-                                                    <p>Maximum Serial Limit for report in Morning: {{ $appointment->max_serial_limit_morning_report_en }}</p>
-                                                    <p>Maximum Serial Limit for new in Evening: {{ $appointment->max_serial_limit_evening_new_en }}</p>
-                                                    <p>Maximum Serial Limit for report in Evening: {{ $appointment->max_serial_limit_evening_report_en }}</p>
-                                                    <p>Serial must be given before {{$appointment->serial_given_before_days_en}} days</p>
+                                                    @if($appointment->serial_time_morning_en != '')<p>Time of Serial for Morning: {{ $appointment->serial_time_morning_en }}</p>@endif
+                                                    @if($appointment->serial_time_evening_en != '')<p>Time of Serial for Evening: {{ $appointment->serial_time_evening_en }}</p>@endif
+                                                    @if($appointment->max_serial_limit_morning_new_en != '')<p>Maximum Serial Limit for new in Morning: {{ $appointment->max_serial_limit_morning_new_en }}</p>@endif
+                                                    @if($appointment->max_serial_limit_morning_report_en != '')<p>Maximum Serial Limit for report in Morning: {{ $appointment->max_serial_limit_morning_report_en }}</p>@endif
+                                                    @if($appointment->max_serial_limit_mevening_new_en != '')<p>Maximum Serial Limit for new in Evening: {{ $appointment->max_serial_limit_evening_new_en }}</p>@endif
+                                                    @if($appointment->max_serial_limit_evening_report_en != '')<p>Maximum Serial Limit for report in Evening: {{ $appointment->max_serial_limit_evening_report_en }}</p>@endif
+                                                    @if($appointment->serial_given_before_days_en != '')<p>Serial must be given before {{$appointment->serial_given_before_days_en}} days</p>@endif
                                                     @if($appointment->notice != null)
                                                     
                                                         <?php
