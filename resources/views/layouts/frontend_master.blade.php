@@ -231,19 +231,7 @@
                         </div>
                     @endif
                     
-                    <div class="uk-margin-medium-top uk-text-center" @if($notices->count() > 0) style="margin-top: 15px !important;" @else style="margin-top: 0px !important;" @endif>
-                        <a href="{{url('/latest-news')}}">                    
-                            <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 100%; color: #fff;">
-                                @if(Session('language') == 'bn')
-                                   বিজ্ঞাপন
-                                @else
-                                   Advertisement
-                                @endif
-                            </button>
-                        </a>
-                    </div>
-                    
-                    <div style="margin-top: 15px !important;" class="md-card" @if(!isset($notices) || $notices->count() == 0) style="margin-top: 0px;" @endif>  
+                    <div class="md-card" @if(!isset($notices) || $notices->count() == 0) style="margin-top: 0px;" @endif>  
                         <div class="login_page_wrapper">
                             <div id="login_card" style="padding-bottom: 8px;">
                                 <div class="large-padding" id="login_form">
@@ -345,7 +333,7 @@
                                         
                                         <div class="uk-margin-medium-top uk-text-center" style="margin-top: 15px !important;">
                                             
-                                            <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 79%; color: #fff;">
+                                            <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 78%; color: #fff;">
                                                 @if(Session('language') == 'bn')
                                                    চলো যাই
                                                 @else
@@ -356,7 +344,7 @@
                                         
                                     {!! Form::close() !!}
                                     
-                                    <div class="uk-margin-medium-top uk-text-center" style = "margin-top: 20px!important;">
+                                    <div class="uk-margin-medium-top uk-text-center" style = "margin-top: 6px!important;">
                                         @if(Session('language') == 'bn')
                                         
                                             @php
@@ -372,11 +360,8 @@
                                                 <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">ম্যাপে খুঁজুন</button></span>
                                             </a>-->
                                             
-                                            <a href="{{url('/special-notice')}}">
-                                                <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">বিজ্ঞপ্তি</button></span>
-                                            </a>
                                             
-                                            <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;"> আরও   </button>
+                                            <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;"> আরও   </button>
                                             
                                         @else
                                         
@@ -388,11 +373,9 @@
                                                 <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">Find On Map</button></span>
                                             </a>-->
                                             
-                                            <a href="{{url('/special-notice')}}">
-                                                <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">Notice</button></span>
-                                            </a>
                                             
-                                            <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">  More </button>
+                                            
+                                            <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">  More </button>
                                             
                                         @endif 
                                     </div>
@@ -420,6 +403,20 @@
                                                 </li>
                                                 
                                             </ul>
+
+                                            <div class="uk-margin-small-top uk-text-center" style="margin-bottom:15px;">
+                                                <a href="{{url('/latest-news')}}">                    
+                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                                        বিজ্ঞাপন
+                                                    </button>
+                                                </a>
+                                            </div>
+
+                                            <div style="margin-bottom:15px;">
+                                                <a href="{{url('/special-notice')}}">
+                                                    <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">বিজ্ঞপ্তি</button></span>
+                                                </a>
+                                            </div>
                                             
                                             <a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
                                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
@@ -452,6 +449,20 @@
                                                 </li>
                                                 
                                             </ul>
+
+                                            <div class="uk-margin-small-top uk-text-center" style="margin-bottom:15px;">
+                                                <a href="{{url('/latest-news')}}">                    
+                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                                        Advertisement
+                                                    </button>
+                                                </a>
+                                            </div>
+
+                                            <div style="margin-bottom:15px;">
+                                                <a href="{{url('/special-notice')}}">
+                                                    <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">Notice</button></span>
+                                                </a>
+                                            </div>
                                             
                                             <a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
                                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">

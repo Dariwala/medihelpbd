@@ -277,7 +277,7 @@
                     @else
                       <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">  More </button>
                     @endif 
-                </div>
+                    </div>
 
                     @if(Session('language')=='bn')
                         <div class="uk-margin-top uk-text-center">
@@ -301,7 +301,21 @@
                                     <a href="{{url('/services-list')}}"><span><strong>সেবাসমূহের তালিকা</strong></span></a>
                                 </li>
                             </ul>
-                            
+
+                            <div class="uk-margin-medium-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">
+                            <a href="{{url('/latest-news')}}">                    
+                                <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                    বিজ্ঞাপন
+                                </button>
+                            </a>
+                            </div>
+
+                            <div style="margin-bottom:15px;">
+                            <a href="{{url('/special-notice')}}">
+                                <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">বিজ্ঞপ্তি</button></span>
+                            </a>
+                            </div>
+
                             <a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
                             </a>
@@ -331,6 +345,19 @@
                                     <a href="{{url('/services-list')}}"><span><strong>List of Services</strong></span></a>
                                 </li>
                             </ul>
+                            <div class="uk-margin-medium-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">
+                            <a href="{{url('/latest-news')}}">                    
+                                <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                    Advertisement
+                                </button>
+                            </a>
+                            </div>
+
+                            <div style="margin-bottom:15px;">
+                            <a href="{{url('/special-notice')}}">
+                                <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">Notice</button></span>
+                            </a>
+                            </div>
                             
                             <a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
