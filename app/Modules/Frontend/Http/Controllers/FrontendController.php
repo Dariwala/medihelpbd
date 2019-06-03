@@ -190,11 +190,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় অ্যাম্বুলেন্সের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় অ্যাম্বুলেন্সের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Ambulance");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Ambulance");
             }
             return back();
         }
@@ -215,11 +215,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় এয়ার অ্যাম্বুলেন্সের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় এয়ার অ্যাম্বুলেন্সের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Air Ambulance");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Air Ambulance");
             }
             return back();
         }   
@@ -239,11 +239,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় ব্লাড ব্যাংকের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় ব্লাড ব্যাংকের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Blood Bank");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Blood Bank");
             }
             return back();
         }
@@ -292,11 +292,11 @@ class FrontendController extends Controller
             if(count($contacts) ==0){
                 if(Session('language') == 'bn')
                 {
-                    Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় ব্লাড ডোনারের কোন তথ্য পাওয়া যায় নি।");
+                    Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় ব্লাড ডোনারের কোন তথ্য পাওয়া যায় নি।");
                 }
                 else
                 {
-                    Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Blood Donor");
+                    Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Blood Donor");
                 }
                 return back();
             }
@@ -316,11 +316,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় আই ব্যাংকের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় আই ব্যাংকের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Eye Bank");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Eye Bank");
             }
             return back();
         }
@@ -371,11 +371,11 @@ class FrontendController extends Controller
             if(count($contacts) ==0){
                 if(Session('language') == 'bn')
                 {
-                    Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় হেল্‌থ কেয়ার সেন্টারের কোন তথ্য পাওয়া যায় নি।");
+                    Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় হেল্‌থ কেয়ার সেন্টারের কোন তথ্য পাওয়া যায় নি।");
                 }
                 else
                 {
-                    Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Health Care Center");
+                    Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Health Care Center");
                 }
                 return back();
             }
@@ -397,11 +397,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় ২৪ ঘণ্টা ফার্মেসির কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় ২৪ আউয়ারস্‌ ফার্মেসীর কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service 24 Hour Pharmacy");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service 24 Hour Pharmacy");
             }
             return back();
         }
@@ -451,11 +451,11 @@ class FrontendController extends Controller
             if(count($contacts) ==0){
                 if(Session('language') == 'bn')
                 {
-                    Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় ডাক্তারের কোন তথ্য পাওয়া যায় নি।");
+                    Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় ডাক্তারের কোন তথ্য পাওয়া যায় নি।");
                 }
                 else
                 {
-                    Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Doctor");
+                    Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Doctor");
                 }
                 return back();
             }
@@ -475,11 +475,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় হারবাল সেন্টারের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় হারবাল মেডিসিন সেন্টারের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Herbal Center");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Herbal Center");
             }
             return back();
         }
@@ -498,11 +498,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় ভ্যাকসিনেশন সেন্টারের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় ভ্যাকসিনেশন সেন্টারের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Vaccination Center");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Vaccination Center");
             }
             return back();
         }
@@ -521,11 +521,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় স্কিন লেজার সেন্টারের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় স্কিন কেয়ার অ্যান্ড লেজার সেন্টারের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Skin Laser Center");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Skin Laser Center");
             }
             return back();
         }
@@ -545,11 +545,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় অ্যাডিকশন রিহ্যাবিলিটেশন সেন্টারের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় অ্যাডিকশন রিহ্যাবিলিটেশন সেন্টারের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Addiction Rehabilitation Center");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Addiction Rehabilitation Center");
             }
             return back();
         }
@@ -568,11 +568,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় বিউটি পার্লার এবং স্পা এর কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় বিউটি পার্লার এবং স্পা এর কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Beauty Parlour and Spa");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Beauty Parlour and Spa");
             }
             return back();
         }
@@ -591,11 +591,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় ফরেন মেডিক্যাল ইনফরমেশন সেন্টারের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় ফরেন মেডিক্যাল ইনফরমেশন সেন্টারের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Foreign Medical Information Center");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Foreign Medical Information Center");
             }
             return back();
         }
@@ -614,11 +614,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় জিমের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় জিমের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Gym");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Gym");
             }
             return back();
         }
@@ -637,11 +637,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় হোমিওপ্যাথিক মেডিসিন সেন্টারের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় হোমিওপ্যাথিক মেডিসিন সেন্টারের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Homeopathic Medicine Center");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Homeopathic Medicine Center");
             }
             return back();
         }
@@ -660,11 +660,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় অপটিক্যাল সপের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় অপটিক্যাল সপের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Optical Shop");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Optical Shop");
             }
             return back();
         }
@@ -683,11 +683,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় ফার্মেসির কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় ফার্মেসীর কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Pharmacy");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Pharmacy");
             }
             return back();
         }
@@ -706,11 +706,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় ফিজিওথেরাপি অ্যান্ড রিহ্যাবিলিটেশন সেন্টারের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় ফিজিওথেরাপি অ্যান্ড রিহ্যাবিলিটেশন সেন্টারের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Physiotherapy and Rehabilitation Center");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Physiotherapy and Rehabilitation Center");
             }
             return back();
         }
@@ -729,11 +729,11 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".$district_info->b_district_name." জেলার ".$subdistrict_info->b_sub_district_name." উপজেলায় ইয়োগা সেন্টারের কোন তথ্য পাওয়া যায় নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় ইয়োগা সেন্টারের কোন তথ্য পাওয়া যায় নি।");
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".$district_name_updated.", Sub-District ".$subdistrict_name_updated.", service Yoga Center");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Yoga Center");
             }
             return back();
         }
