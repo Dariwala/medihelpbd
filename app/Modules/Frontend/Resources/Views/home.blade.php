@@ -316,12 +316,12 @@
                             </a>
                             </div>
 
-                            <a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
+                            <!--<a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
-                            </a>
+                            </a>-->
                             
-                            <p style="margin-bottom: 2px;">&copy; মেডিহেল্পবিডি ডট কম</p>
-                            <p style="font-size: 0.9em; margin-bottom: 22px;">প্রস্তুত এবং রক্ষণাবেক্ষণের দায়িত্বে অন্তিক টেকনোলজি</p>
+                            <p style="margin-bottom: 22px;">&copy; মেডিহেল্পবিডি ডট কম</p>
+                            <!--<p style="font-size: 0.9em; margin-bottom: 22px;">প্রস্তুত এবং রক্ষণাবেক্ষণের দায়িত্বে অন্তিক টেকনোলজি</p>-->
                         </div>
                     @else
                         <div class="uk-margin-top uk-text-center">
@@ -359,12 +359,12 @@
                             </a>
                             </div>
                             
-                            <a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
+                            <!--<a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
-                            </a>
+                            </a>-->
                             
-                            <p style="margin-bottom: 2px;">&copy; medihelpbd.com</p>
-                            <p style="font-size: 0.9em; margin-bottom: 22px;">Developed &amp; Maintained By Ontik Technology</p>
+                            <p style="margin-bottom: 22px;">&copy; medihelpbd.com</p>
+                            <!--<p style="font-size: 0.9em; margin-bottom: 22px;">Developed &amp; Maintained By Ontik Technology</p>-->
                         </div>
                     @endif
                 </div>

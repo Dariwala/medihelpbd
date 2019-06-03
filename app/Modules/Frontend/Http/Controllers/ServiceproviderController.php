@@ -49,9 +49,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -88,9 +88,9 @@ class ServiceproviderController extends Controller
                           });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -126,9 +126,9 @@ class ServiceproviderController extends Controller
                           });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -166,9 +166,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -204,9 +204,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -242,9 +242,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -280,9 +280,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -318,9 +318,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -356,9 +356,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -394,9 +394,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -432,9 +432,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -470,9 +470,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -508,9 +508,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -546,9 +546,9 @@ class ServiceproviderController extends Controller
                           });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -585,9 +585,9 @@ class ServiceproviderController extends Controller
                           });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -624,9 +624,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -662,9 +662,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -700,9 +700,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -738,9 +738,9 @@ class ServiceproviderController extends Controller
                            });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;
@@ -776,9 +776,9 @@ class ServiceproviderController extends Controller
                           });
   
             if(Session('language') == 'bn'){
-                $message = "আপনার মেসেজের জন্য ধন্যবাদ। আমরা খুব শীঘ্রই আপনার সাথে যোগাযোগ করব।";
+                $message = "তথ্য সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Data sent successfully.";    
             }
             
             $status = 1;

@@ -339,9 +339,9 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="uk-margin-medium-top uk-text-center" style="margin-top: 15px !important;">
+                                        <div class="uk-margin-medium-top uk-text-center" style="margin-top: 15px !important;margin-bottom:-8px;">
                                             
-                                            <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 79%; color: #fff;">
+                                            <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 77.5%; color: #fff;">
                                                 @if(Session('language') == 'bn')
                                                    চলো যাই
                                                 @else
@@ -425,9 +425,9 @@
                                                 </a>
                                             </div>
                                             
-                                            <a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
+                                            <!--<a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
                                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
-                                            </a>
+                                            </a>-->
                                             
                                             <p style="margin-bottom: 2px;">&copy; মেডিহেল্পবিডি ডট কম</p>
                                             <!--<p style="font-size: 0.9em; margin-top: 0px; margin-bottom: 10px;">প্রস্তুত এবং রক্ষণাবেক্ষণের দায়িত্বে <a style="color: #444; text-decoration: none;" href="http://www.ontiktechnology.com">অন্তিক টেকনোলজি</a></p>-->
@@ -471,9 +471,9 @@
                                                 </a>
                                             </div>
                                             
-                                            <a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
+                                            <!--<a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
                                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
-                                            </a>
+                                            </a>-->
                                             
                                             <p style="margin-bottom: 2px;">&copy; medihelpbd.com</p>
                                             <!--<p style="font-size: 0.9em; margin-top: 0px;">Developed &amp; Maintained By <a style="color: #444; text-decoration: none;" href="http://www.ontiktechnology.com">Ontik Technology</a></p>-->
