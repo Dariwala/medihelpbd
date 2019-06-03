@@ -331,7 +331,7 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="uk-margin-medium-top uk-text-center" style="margin-top: 15px !important;margin-bottom: 20px;">
+                                        <div class="uk-margin-medium-top uk-text-center" style="margin-top: 15px !important;margin-bottom: 15px;">
                                             
                                             <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 40%; color: #fff;">
                                                 @if(Session('language') == 'bn')
@@ -352,6 +352,20 @@
                                                 $body_text = "সেবা গ্রহীতা এবং স্বাস্থ্যসেবা প্রদানকারী ব্যাক্তি বা প্রতিষ্ঠানের সাথে সংযোগ স্থাপন করার জন্য এটি একটি যন্ত্রণাহীন উপায়। আপনি খুব সহজে ঘরে বসেই এই সার্চ ইঞ্জিনের মাধ্যমে তাদের সম্পর্কে বিস্তারিত তথ্য খুঁজে পেতে পারেন। %0D%0Ahttps://www.medihelpbd.com";
                                             
                                             @endphp
+
+                                            <div class="uk-margin-small-top uk-text-center" style="margin-bottom:15px;">
+                                                <a href="{{url('/latest-news')}}">                    
+                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                                        বিজ্ঞাপন
+                                                    </button>
+                                                </a>
+                                            </div>
+
+                                            <div style="margin-bottom:15px;">
+                                                <a href="{{url('/special-notice')}}">
+                                                    <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">বিজ্ঞপ্তি</button></span>
+                                                </a>
+                                            </div>
                                             
                                             <!--<a  href="mailto:?body={{$body_text}}&subject=মেডিহেল্পবিডি ডট কম">
                                                 <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff; padding:2px 7px;">বন্ধুদের সাথে শেয়ার করুন</button></span>
@@ -373,7 +387,19 @@
                                                 <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">Find On Map</button></span>
                                             </a>-->
                                             
-                                            
+                                            <div class="uk-margin-small-top uk-text-center" style="margin-bottom:15px;">
+                                                <a href="{{url('/latest-news')}}">                    
+                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                                        Advertisement
+                                                    </button>
+                                                </a>
+                                            </div>
+
+                                            <div style="margin-bottom:15px;">
+                                                <a href="{{url('/special-notice')}}">
+                                                    <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">Notice</button></span>
+                                                </a>
+                                            </div>
                                             
                                             <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">  More </button>
                                             
@@ -404,19 +430,7 @@
                                                 
                                             </ul>
 
-                                            <div class="uk-margin-small-top uk-text-center" style="margin-bottom:15px;">
-                                                <a href="{{url('/latest-news')}}">                    
-                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
-                                                        বিজ্ঞাপন
-                                                    </button>
-                                                </a>
-                                            </div>
-
-                                            <div style="margin-bottom:15px;">
-                                                <a href="{{url('/special-notice')}}">
-                                                    <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">বিজ্ঞপ্তি</button></span>
-                                                </a>
-                                            </div>
+                                            
                                             
                                             <!--<a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
                                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
@@ -450,19 +464,7 @@
                                                 
                                             </ul>
 
-                                            <div class="uk-margin-small-top uk-text-center" style="margin-bottom:15px;">
-                                                <a href="{{url('/latest-news')}}">                    
-                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
-                                                        Advertisement
-                                                    </button>
-                                                </a>
-                                            </div>
-
-                                            <div style="margin-bottom:15px;">
-                                                <a href="{{url('/special-notice')}}">
-                                                    <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">Notice</button></span>
-                                                </a>
-                                            </div>
+                                            
                                             
                                             <!--<a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
                                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">

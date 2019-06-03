@@ -339,7 +339,7 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="uk-margin-medium-top uk-text-center" style="margin-top: 15px !important;margin-bottom: 20px;">
+                                        <div class="uk-margin-medium-top uk-text-center" style="margin-top: 15px !important;margin-bottom: 15px;">
                                             
                                             <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 40%; color: #fff;">
                                                 @if(Session('language') == 'bn')
@@ -367,7 +367,19 @@
                                             <a href="https://www.google.com/maps">
                                                 <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">ম্যাপে খুঁজুন</button></span>
                                             </a>-->
-                                            
+                                            <div class="uk-margin-small-top uk-text-center" style="margin-bottom:15px;">
+                                                <a href="{{url('/latest-news')}}">                    
+                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                                        বিজ্ঞাপন
+                                                    </button>
+                                                </a>
+                                            </div>
+
+                                            <div style="margin-bottom:15px;">
+                                                <a href="{{url('/special-notice')}}">
+                                                    <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">বিজ্ঞপ্তি</button></span>
+                                                </a>
+                                            </div>
                                             
                                             <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;"> আরও   </button>
                                             
@@ -381,7 +393,19 @@
                                             <a href="https://www.google.com/maps">
                                                 <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">Find On Map</button></span>
                                             </a>-->
-                                            
+                                            <div class="uk-margin-small-top uk-text-center" style="margin-bottom:15px;">
+                                                <a href="{{url('/latest-news')}}">                    
+                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                                        Advertisement
+                                                    </button>
+                                                </a>
+                                            </div>
+
+                                            <div style="margin-bottom:15px;">
+                                                <a href="{{url('/special-notice')}}">
+                                                    <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">Notice</button></span>
+                                                </a>
+                                            </div>
                                             <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">  More </button>
                                             
                                         @endif 
@@ -411,19 +435,7 @@
                                                 
                                             </ul>
 
-                                            <div class="uk-margin-small-top uk-text-center" style="margin-bottom:15px;">
-                                                <a href="{{url('/latest-news')}}">                    
-                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
-                                                        বিজ্ঞাপন
-                                                    </button>
-                                                </a>
-                                            </div>
-
-                                            <div style="margin-bottom:15px;">
-                                                <a href="{{url('/special-notice')}}">
-                                                    <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">বিজ্ঞপ্তি</button></span>
-                                                </a>
-                                            </div>
+                                            
                                             
                                             <!--<a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
                                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
@@ -457,19 +469,7 @@
                                                 
                                             </ul>
 
-                                            <div class="uk-margin-small-top uk-text-center" style="margin-bottom:15px;">
-                                                <a href="{{url('/latest-news')}}">                    
-                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
-                                                        Advertisement
-                                                    </button>
-                                                </a>
-                                            </div>
-
-                                            <div style="margin-bottom:15px;">
-                                                <a href="{{url('/special-notice')}}">
-                                                    <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">Notice</button></span>
-                                                </a>
-                                            </div>
+                                            
                                             
                                             <!--<a href="https://play.google.com/store/apps/details?id=com.shehab.user.medihelpbd" target="_blank">
                                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
