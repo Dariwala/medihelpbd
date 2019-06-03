@@ -91,7 +91,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-float-right uk-margin-top">
-                                    <button type="submit" class="md-btn md-btn-danger md-btn-large" >পাঠিয়ে দিন</button>
+                                    <button type="submit" class="md-btn md-btn-large" style="background: #808080;color: #fff;">পাঠিয়ে দিন</button>
                                 </div>
                             {!! Form::close() !!}
                         </div>    
@@ -134,7 +134,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-float-right uk-margin-top">
-                                    <button type="submit" class="md-btn md-btn-danger md-btn-large">Send</button>
+                                    <button type="submit" class="md-btn md-btn-large" style="background: #808080;color: #fff;">Send</button>
                                 </div>
                             {!! Form::close() !!}
                         </div>    

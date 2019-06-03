@@ -835,7 +835,7 @@
     </div>
     <br>
    
-   <input  type="submit" class="md-btn md-btn-danger md-btn-large" name="submit" value="পাঠিয়ে দিন" style="float:right">
+   <input  type="submit" class="md-btn md-btn-danger md-btn-large" name="submit" value="পাঠিয়ে দিন" style="float:right;background: #808080;color: #fff;">
 
 @else  
 
@@ -1667,7 +1667,7 @@
         </div>
     </div>
     <br>
-    <input  type="submit" class="md-btn md-btn-danger md-btn-large" name="submit"value="send" style="float:right">
+    <input  type="submit" class="md-btn md-btn-danger md-btn-large" name="submit"value="send" style="float:right;background: #808080;color: #fff;">
                     
 @endif
 

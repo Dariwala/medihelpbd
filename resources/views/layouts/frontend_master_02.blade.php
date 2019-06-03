@@ -339,9 +339,9 @@
                                             </div>
                                         </div>
                                         
-                                        <div class="uk-margin-medium-top uk-text-center" style="margin-top: 15px !important;margin-bottom:-8px;">
+                                        <div class="uk-margin-medium-top uk-text-center" style="margin-top: 15px !important;margin-bottom: 20px;">
                                             
-                                            <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 77.5%; color: #fff;">
+                                            <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 40%; color: #fff;">
                                                 @if(Session('language') == 'bn')
                                                    চলো যাই
                                                 @else
