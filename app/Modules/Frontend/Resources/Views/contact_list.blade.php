@@ -10,7 +10,7 @@
 
     <link rel="icon" type="image/png" href="{{url('vendor/img/logo1.png')}}" sizes="16x16">
 
-    <title>Showing All Result</title>
+    <title>Showing all Results</title>
 
 
     <!-- uikit -->

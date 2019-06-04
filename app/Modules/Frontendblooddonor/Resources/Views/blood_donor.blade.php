@@ -116,7 +116,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px);margin-top:16px;">
                      <div class="thumbnail">
                         @if($blood_donor->photo_path == '')
                         <div class="thumbnail"><img alt="blood donor"  src="{{asset('/BloodDonor.jpg')}}">
@@ -129,7 +129,7 @@
                 </div>
     
                 <div class="user_heading_content" style="display:table;margin:0 auto;">
-                    <h2 class="heading_b uk-margin-bottom"><span class="uk-text-break">{{$blood_donor->b_blood_donor_name}}</span>
+                    <h2 class="heading_b"><span class="uk-text-break">{{$blood_donor->b_blood_donor_name}}</span>
                     </h2>
                 </div>
             </div>
@@ -284,7 +284,7 @@
         <div class="uk-width-large-7-10">
         <div class="md-card">
             <div class="user_heading">
-                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
+                <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px);margin-top:16px;">
                      <div class="thumbnail">
                         @if($blood_donor->photo_path == '')
                         <div class="thumbnail"><img alt="blood donor"  src="{{asset('/BloodDonor.jpg')}}">
@@ -297,7 +297,7 @@
                 </div>
     
                 <div class="user_heading_content" style="display:table;margin:0 auto;">
-                    <h2 class="heading_b uk-margin-bottom"><span class="uk-text-break">{{$blood_donor->blood_donor_name}}</span>
+                    <h2 class="heading_b"><span class="uk-text-break">{{$blood_donor->blood_donor_name}}</span>
                     </h2>
                 </div>
             </div>
@@ -450,5 +450,26 @@
         </div>
     </div>
     @endif
+
+    <input id="backbuttonstate" type="text" value="0" style="display:none;" />
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var ibackbutton = document.getElementById("backbuttonstate");
+    if (ibackbutton.value == "0") {
+        // Page has been loaded for the first time - Set marker
+        ibackbutton.value = "1";
+
+        var msg = '{{Session::get('message')}}';
+        var exist = '{{Session::has('message')}}';
+        if(exist){
+            alert(msg);
+        }
+    }
+    else {
+        // Back button has been fired.. Do Something different..
+        location.reload(true);
+    }
+    }, false);
+    </script>
 
 @endsection

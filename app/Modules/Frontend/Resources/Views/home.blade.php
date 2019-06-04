@@ -227,7 +227,7 @@
                                     <option value="12">@if(Session('language') == 'bn') অ্যাডিকশন রিহ্যাবিলিটেশন সেন্টার@else Addiction Rehabilitation Center @endif </option>
                                     <option value="2">@if(Session('language') == 'bn') এয়ার অ্যাাম্বুলেন্স  @else  Air Ambulance @endif </option>
                                     <option value="1">@if(Session('language') == 'bn') অ্যাাম্বুলেন্স @else Ambulance @endif </option>
-                                    <option value="13">@if(Session('language') == 'bn') বিউটি পার্লার এবং স্পা @else Beauty Parlour & Spa @endif </option>
+                                    <option value="13">@if(Session('language') == 'bn') বিউটি পার্লার অ্যান্ড স্পা @else Beauty Parlour & Spa @endif </option>
                                     <option value="3">@if(Session('language') == 'bn') ব্লাড ব্যাংক @else Blood Bank @endif </option>
                                     <option value="4">@if(Session('language') == 'bn') ব্লাড ডোনার @else Blood Donor @endif </option>
                                     <option value="8">@if(Session('language') == 'bn') ডক্টরস্‌ প্যানেল @else Doctors Panel @endif </option>
@@ -260,7 +260,7 @@
                     
                     <div class="uk-margin-medium-top uk-text-center" style="margin-top: 15px !important;margin-bottom: 15px;">
                         
-                        <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 40%; color: #fff;">
+                        <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 45%; color: #fff;">
                             @if(Session('language') == 'bn')
                                চলো যাই
                             @else

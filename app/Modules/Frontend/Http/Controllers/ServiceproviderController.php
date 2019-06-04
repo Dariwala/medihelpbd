@@ -59,7 +59,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -98,7 +98,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -136,7 +136,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -176,7 +176,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -214,7 +214,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -252,7 +252,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -290,7 +290,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -328,7 +328,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -366,7 +366,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -404,7 +404,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -442,7 +442,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -480,7 +480,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -518,7 +518,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -556,7 +556,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -595,7 +595,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -634,7 +634,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -672,7 +672,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -710,7 +710,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -748,7 +748,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
@@ -786,7 +786,7 @@ class ServiceproviderController extends Controller
         }catch(Exception $e){
             
             if(Session('language') == 'bn'){
-                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। অনুগ্রহপূর্বক আবার চেষ্টা করুন।";
             }else{
                 $message = "Sorry! Something went wrong. Please try again.";    
             }
