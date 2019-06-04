@@ -525,7 +525,7 @@ class FrontendController extends Controller
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Skin Laser Center.");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Skin Care \u0026 Laser Center.");
             }
             return back();
         }
@@ -572,7 +572,7 @@ class FrontendController extends Controller
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Beauty Parlour & Spa.");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Beauty Parlour \u0026 Spa.");
             }
             return back();
         }
@@ -710,7 +710,7 @@ class FrontendController extends Controller
             }
             else
             {
-                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Physiotherapy & Rehabilitation Center.");
+                Session::flash('message', "Sorry, no data could be found for District ".trim($district_name_updated).", Sub-District ".trim($subdistrict_name_updated).", Service Physiotherapy \u0026 Rehabilitation Center.");
             }
             return back();
         }
