@@ -568,7 +568,7 @@ class FrontendController extends Controller
         if(count($contacts) ==0){
             if(Session('language') == 'bn')
             {
-                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় বিউটি পার্লার এবং স্পার কোন তথ্য পাওয়া যায়নি।");
+                Session::flash('message', "দুঃখিত, ".trim($district_info->b_district_name)." জেলার ".trim($subdistrict_info->b_sub_district_name)." উপজেলায় বিউটি পার্লার অ্যান্ড স্পার কোন তথ্য পাওয়া যায়নি।");
             }
             else
             {
