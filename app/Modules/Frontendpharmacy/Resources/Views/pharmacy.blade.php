@@ -128,7 +128,7 @@
                     </div>
         
                     <div class="user_heading_content" style="display:table;margin:0 auto;">
-                        <h2 class="heading_"><span class="uk-text-break">{{$pharmacy->b_pharmacy_name}}</span>
+                        <h2 class="heading_b"><span class="uk-text-break">{{$pharmacy->b_pharmacy_name}}</span>
                         </h2>
                     </div>
                 </div>
