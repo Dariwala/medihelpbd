@@ -15,7 +15,7 @@
                 <div class="uk-width-large-1-1">
                     <div class="md-card">
                         <div class="user_heading">
-                            <div class="user_heading_avatar">
+                            <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px);margin-top:16px;">
                                 @if($addiction->photo_path == '')
                                 <div class="thumbnail"><img alt="addiction"  src="{{asset('/addiction.PNG')}}">
                                 </div>
@@ -25,8 +25,8 @@
                                 @endif
                             </div>
 
-                            <div class="user_heading_content">
-                                <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{$addiction->addiction_name}}</span>
+                            <div class="user_heading_content" style="display:table;margin:0 auto;">
+                                <h2 class="heading_b"><span style="margin: 10px;" class="uk-text-truncate">{{$addiction->addiction_name}}</span>
                                 </h2>
                             </div>
                         </div>
@@ -36,20 +36,20 @@
                         @include('partials.flash_message')
                             <ul class="uk-tab" data-uk-sticky="{ top: 48, media: 960 }" data-uk-tab="{connect:'#user_profile_tabs_content', animation:'slide-horizontal'}" id="user_profile_tabs">
                                 <li class="uk-active">
-                                    <a style="text-align:left" href="#">Info</a>
+                                    <a style="text-align:center" href="#">Info</a>
                                 </li>
 
                                 <li>
-                                    <a style="text-align:left" href="#">About</a>
+                                    <a style="text-align:center" href="#">About</a>
                                 </li>
                                 <li>
-                                    <a style="text-align:left" href="#">Article</a>
+                                    <a style="text-align:center" href="#">Article</a>
                                 </li>
                                 <li>
-                                    <a style="text-align:left" href="#">Doctor</a>
+                                    <a style="text-align:center" href="#">Doctor</a>
                                 </li>
                                 <li>
-                                    <a style="text-align:left" href="#">Service</a>
+                                    <a style="text-align:center" href="#">Service</a>
                                 </li>
                             </ul>
 
@@ -145,9 +145,9 @@
                                             </div>
                                             <div class="uk-width-medium-1-2">
                                                 <div class="uk-grid uk-grid-medium form_section form_section_separator" data-uk-grid-match>
-                                                    <div class="uk-width-8-10">
+                                                    <div class="uk-width-10-10">
                                                         <div class="parsley-row uk-margin-top">
-                                                            <label for="addiction_phone_no">Phone<span class="req">*</span></label>
+                                                            <label for="addiction_phone_no">Phone</label>
                                                             <textarea class="md-input" id="addiction_phone_no" name="addiction_phone_no" cols="10" rows="3" data-parsley-trigger="keyup">{{$addiction->addiction_phone_no}}</textarea>
                                                         </div>
                                                     </div>
@@ -155,9 +155,9 @@
                                             </div>
                                             <div class="uk-width-medium-1-2">
                                                 <div class="uk-grid uk-grid-medium form_section form_section_separator" data-uk-grid-match>
-                                                    <div class="uk-width-8-10">
+                                                    <div class="uk-width-10-10">
                                                         <div class="parsley-row uk-margin-top">
-                                                            <label for="b_addiction_phone_no">ফোন <span class="req">*</span></label>
+                                                            <label for="b_addiction_phone_no">ফোন</label>
                                                             <textarea class="md-input" type="text" id="b_addiction_phone_no" name="b_addiction_phone_no" cols="10" rows="3" data-parsley-trigger="keyup" class="md-input">{{$addiction->b_addiction_phone_no}}</textarea>
                                                         </div>
                                                     </div>
@@ -166,9 +166,9 @@
 
                                             <div class="uk-width-medium-1-2">
                                                 <div class="uk-grid uk-grid-medium form_section form_section_separator" data-uk-grid-match>
-                                                    <div class="uk-width-8-10">
+                                                    <div class="uk-width-10-10">
                                                         <div class="parsley-row uk-margin-top">
-                                                            <label for="addiction_email_ad">Email<span class="req">*</span></label>
+                                                            <label for="addiction_email_ad">Email</label>
                                                             <input type="text" id="addiction_email_ad" name="addiction_email_ad" value="{{ $addiction->addiction_email_ad }}" class="md-input" />
                                                         </div>
                                                     </div>

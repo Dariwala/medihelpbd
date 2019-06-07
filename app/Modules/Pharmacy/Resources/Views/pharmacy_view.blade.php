@@ -49,7 +49,7 @@
                 <div class="uk-width-large-1-1">
                     <div class="md-card">
                         <div class="user_heading">
-                            <div class="user_heading_avatar">
+                            <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px);margin-top:16px;">
                                  @if($pharmacy->photo_path == '')
                                 <div class="thumbnail"><img alt="pharmacy"  src="{{asset('/pharmacy.png')}}">
                                 </div>
@@ -59,8 +59,8 @@
                                 @endif
                             </div>
 
-                            <div class="user_heading_content">
-                                <h2 class="heading_b uk-margin-bottom"><span style="margin:10px" class="uk-text-truncate">{{$pharmacy->pharmacy_name}}</span>
+                            <div class="user_heading_content" style="display:table;margin:0 auto;">
+                                <h2 class="heading_b"><span style="margin:10px" class="uk-text-truncate">{{$pharmacy->pharmacy_name}}</span>
                                 </h2>
                             </div>
                         </div>
@@ -69,23 +69,23 @@
                         <div class="user_content">
                             <ul class="uk-tab" data-uk-sticky="{ top: 48, media: 960 }" data-uk-tab="{connect:'#user_profile_tabs_content', animation:'slide-horizontal'}" id="user_profile_tabs">
                                 <li class="uk-active">
-                                    <a style="text-align:left"  href="#">About</a>
+                                    <a style="text-align:center"  href="#">About</a>
                                 </li>
 
                                 <li>
-                                    <a  style="text-align:left" href="#">Article</a>
+                                    <a  style="text-align:center" href="#">Article</a>
                                 </li>
                                 
                                 <li ng-controller="ViewPharmacyController">
-                                    <a style="text-align:left" ng-click="getMedicalSpecialistDropDown()" href="#">Doctor</a>
+                                    <a style="text-align:center" ng-click="getMedicalSpecialistDropDown()" href="#">Doctor</a>
                                 </li>
                                 
                                 <li ng-controller="ViewPharmacyController">
-                                    <a style="text-align:left;" href="#">Medicinal</a>
+                                    <a style="text-align:center;" href="#">Medicinal</a>
                                 </li>
                                 
                                 <li ng-controller="ViewPharmacyController">
-                                    <a style="text-align:left;" ng-click="getSubServiceDropDown()" href="#">Service</a>
+                                    <a style="text-align:center;" ng-click="getSubServiceDropDown()" href="#">Service</a>
                                 </li>
                             </ul>
                             
@@ -160,7 +160,7 @@
                                             </div>
                                         </div>
                                         
-                                        
+                                        @if( $pharmacy->pharmacy_latitude != '' && $pharmacy->pharmacy_longitude != '' )
                                         <!-- START google maps -->
                                         <div class="uk-width-large-1-1 google_maps_show">
                                              <iframe 
@@ -168,6 +168,7 @@
                                             </iframe>
                                         </div>
                                         <!-- END google maps -->
+                                        @endif
                                         
                                         
                                     </li>

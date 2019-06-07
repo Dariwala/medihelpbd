@@ -14,7 +14,7 @@
                 <div class="uk-width-large-1-1">
                     <div class="md-card">
                         <div class="user_heading">
-                            <div class="user_heading_avatar">
+                            <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px);margin-top:16px;">
                                 @if($ambulance->photo_path == '')
                                 <div class="thumbnail"><img alt="Ambulance"  src="{{asset('ambulance.png')}}">
                                 </div>
@@ -23,8 +23,8 @@
                                 </div>
                                 @endif
                             </div>
-                            <div class="user_heading_content">
-                                <h2 class="heading_b uk-margin-bottom"><span style="margin: 10px;" class="uk-text-truncate">{{ $ambulance->ambulance_name}}</span>
+                            <div class="user_heading_content" style="display:table;margin:0 auto;">
+                                <h2 class="heading_b"><span style="margin: 10px;" class="uk-text-truncate">{{ $ambulance->ambulance_name}}</span>
                                 </h2>
                             </div>
                         </div>
@@ -34,15 +34,15 @@
                         <div class="user_content">
                             <ul class="uk-tab" data-uk-sticky="{ top: 48, media: 960 }" data-uk-tab="{connect:'#user_profile_tabs_content', animation:'slide-horizontal'}" id="user_profile_tabs">
                                 <li class="uk-active">
-                                    <a style="text-align: left;" href="#">Info</a>
+                                    <a style="text-align: center;" href="#">Info</a>
                                 </li>
 
                                 <li class="">
-                                    <a style="text-align: left;" href="#">About</a>
+                                    <a style="text-align: center;" href="#">About</a>
                                 </li>
                                 
                                 <li>
-                                    <a style="text-align: left;" href="#">Article</a>
+                                    <a style="text-align: center;" href="#">Article</a>
                                 </li>
                             </ul>
 
@@ -138,9 +138,9 @@
                                         </div>
                                         <div class="uk-width-medium-1-2">
                                             <div class="uk-grid uk-grid-medium form_section form_section_separator" data-uk-grid-match>
-                                                <div class="uk-width-8-10">
+                                                <div class="uk-width-10-10">
                                                     <div class="parsley-row uk-margin-top">
-                                                        <label for="ambulance_phone_no">Phone<span class="req">*</span></label>
+                                                        <label for="ambulance_phone_no">Phone</label>
                                                         <textarea class="md-input" id="ambulance_phone" name="ambulance_phone" cols="10" rows="3" data-parsley-trigger="keyup">{{$ambulance->ambulance_phone}}</textarea>
                                                     </div>
                                                 </div>
@@ -148,9 +148,9 @@
                                         </div>
                                         <div class="uk-width-medium-1-2">
                                             <div class="uk-grid uk-grid-medium form_section form_section_separator" data-uk-grid-match>
-                                                <div class="uk-width-8-10">
+                                                <div class="uk-width-10-10">
                                                     <div class="parsley-row uk-margin-top">
-                                                        <label for="ambulance_phone_no">ফোন <span class="req">*</span></label>
+                                                        <label for="ambulance_phone_no">ফোন</label>
                                                         <textarea class="md-input" type="text" id="b_ambulance_phone" name="b_ambulance_phone" cols="10" rows="3" data-parsley-trigger="keyup" class="md-input">{{$ambulance->b_ambulance_phone}}</textarea>
                                                     </div>
                                                 </div>
@@ -158,9 +158,9 @@
                                         </div>
                                         <div class="uk-width-medium-1-2">
                                             <div class="uk-grid uk-grid-medium form_section form_section_separator" data-uk-grid-match>
-                                                <div class="uk-width-8-10">
+                                                <div class="uk-width-10-10">
                                                     <div class="parsley-row uk-margin-top">
-                                                        <label for="ambulance_email_ad">Email<span class="req">*</span></label>
+                                                        <label for="ambulance_email_ad">Email</label>
                                                         <input type="text" id="ambulance_email_ad" name="ambulance_email" value="{{ $ambulance->ambulance_email }}" class="md-input" />
                                                     </div>
                                                 </div>
@@ -168,7 +168,7 @@
                                         </div>
                                         <div class="uk-width-medium-1-2">
                                             <div class="parsley-row uk-margin-top">
-                                                <label for="air_ambulance_fb_link">Website<span class="req">*</span></label>
+                                                <label for="air_ambulance_fb_link">Website</label>
                                                 <input type="text" id="ambulance_fb_link" name="ambulance_fb_link" value="{{$ambulance->ambulance_fb_link}}"  class="md-input" /> 
                                             </div>
                                         </div>
@@ -191,7 +191,7 @@
                                         
                                         <div class="uk-width-medium-1-2">
                                             <div class="parsley-row uk-margin-top">
-                                                <label for="add_publication_title">General Info<span class="req">*</span></label>
+                                                <label for="add_publication_title">General Info</label>
                                                 <div class="parsley-row uk-margin-top">
                                                     <textarea type="text" id="total_ambulance" name="total_ambulance" value="{{$ambulance->total_ambulance}}"  class="md-input ">{{$ambulance->total_ambulance}}</textarea>
                                                 </div>
@@ -199,7 +199,7 @@
                                         </div>
                                         <div class="uk-width-medium-1-2">
                                             <div class="parsley-row uk-margin-top">
-                                                <label for="add_publication_title">সাধারন তথ্য<span class="req">*</span></label>
+                                                <label for="add_publication_title">সাধারন তথ্য</label>
                                                 <div class="parsley-row uk-margin-top">
                                                     <textarea type="text" id="b_total_ambulance" name="b_total_ambulance" value="{{$ambulance->b_total_ambulance}}"  class="md-input ">{{$ambulance->b_total_ambulance}}</textarea>
                                                 </div>
