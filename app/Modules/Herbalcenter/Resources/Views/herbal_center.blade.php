@@ -46,7 +46,7 @@
                                 <td>{{ $herbal_center['created_at'] }}</td>
                                 <td>{{ $herbal_center['updated_at'] }}</td>
                                 <td class="uk-text-center">
-                                    <a href="{{ url('herbal-center/view'.'/'.$herbal_center['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>
+                                    <!--<a href="{{ url('herbal-center/view'.'/'.$herbal_center['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>-->
                                     <a href="{{ url('herbal-center/edit/info'.'/'.$herbal_center['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE254;</i></a>
                                     <a class="confirm">
                                     <input class="confirm_id" type="hidden" name="id" value="{{$herbal_center['id'] }}">

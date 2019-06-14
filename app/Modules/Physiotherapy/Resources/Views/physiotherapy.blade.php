@@ -45,7 +45,7 @@
                                 <td>{{ $physiotherapy['created_at'] }}</td>
                                 <td>{{ $physiotherapy['updated_at']}}</td>
                                 <td class="uk-text-center">
-                                    <a title="Bangla View" href="{{ url('physiotherapy/view'.'/'.$physiotherapy['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>
+                                    <!--<a title="Bangla View" href="{{ url('physiotherapy/view'.'/'.$physiotherapy['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>-->
                                     <a href="{{ url('physiotherapy/edit/info'.'/'.$physiotherapy['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE254;</i></a>
                                     <a class="confirm">
                                     <input class="confirm_id" type="hidden" name="id" value="{{$physiotherapy['id'] }}">

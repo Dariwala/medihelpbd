@@ -46,7 +46,7 @@
                                 <td>{{ $blood_bank['created_at'] }}</td>
                                 <td>{{ $blood_bank['updated_at'] }}</td>
                                 <td class="uk-text-center">
-                                    <a href="{{ url('blood-bank/view'.'/'.$blood_bank['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>
+                                    <!--<a href="{{ url('blood-bank/view'.'/'.$blood_bank['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>-->
                                     <a href="{{ url('blood-bank/edit/info'.'/'.$blood_bank['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE254;</i></a>
                                     <a class="confirm">
                                         <input class="confirm_id" type="hidden" name="id" value="{{$blood_bank['id'] }}">

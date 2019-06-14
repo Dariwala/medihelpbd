@@ -45,7 +45,7 @@
                                 <td>{{ $homeopathic['created_at'] }}</td>
                                 <td>{{ $homeopathic['updated_at']}}</td>
                                 <td class="uk-text-center">
-                                    <a title="Bangla View" href="{{ url('homeopathic/view'.'/'.$homeopathic['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>
+                                    <!--<a title="Bangla View" href="{{ url('homeopathic/view'.'/'.$homeopathic['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>-->
                                     <a href="{{ url('homeopathic/edit/info'.'/'.$homeopathic['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE254;</i></a>
                                     <a class="confirm">
                                     <input class="confirm_id" type="hidden" name="id" value="{{$homeopathic['id'] }}">

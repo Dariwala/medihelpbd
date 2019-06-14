@@ -45,7 +45,7 @@
                                 <td>{{ $pharmacy['created_at'] }}</td>
                                 <td>{{ $pharmacy['updated_at']}}</td>
                                 <td class="uk-text-center">
-                                    <a href="{{ url('pharmacy/view'.'/'.$pharmacy['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>
+                                    <!--<a href="{{ url('pharmacy/view'.'/'.$pharmacy['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>-->
                                     <a href="{{ url('pharmacy/edit/info'.'/'.$pharmacy['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE254;</i></a>
                                     <a class="confirm">
                                     <input class="confirm_id" type="hidden" name="id" value="{{$pharmacy['id'] }}">

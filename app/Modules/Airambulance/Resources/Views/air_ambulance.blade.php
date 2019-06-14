@@ -46,7 +46,7 @@
                                 <td>{{ $air_ambulance['created_at'] }}</td>
                                 <td>{{ $air_ambulance['updated_at'] }}</td>
                                 <td class="uk-text-center">
-                                    <a href="{{ url('air-ambulance/view'.'/'.$air_ambulance['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>
+                                    <!--<a href="{{ url('air-ambulance/view'.'/'.$air_ambulance['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>-->
                                     <a href="{{ url('air-ambulance/edit/info'.'/'.$air_ambulance['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE254;</i></a>
                                     <a class="confirm" >
                                         <input class="confirm_id" type="hidden" name="id" value="{{$air_ambulance['id'] }}">

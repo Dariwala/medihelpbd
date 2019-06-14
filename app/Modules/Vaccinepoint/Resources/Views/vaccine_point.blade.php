@@ -46,7 +46,7 @@
                                 <td>{{ $vaccine_point['created_at'] }}</td>
                                 <td>{{ $vaccine_point['updated_at'] }}</td>
                                 <td class="uk-text-center">
-                                    <a title="English View" href="{{ url('vaccine-point/view'.'/'.$vaccine_point['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>
+                                    <!--<a title="English View" href="{{ url('vaccine-point/view'.'/'.$vaccine_point['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>-->
                                     <a href="{{ url('vaccine-point/edit/info'.'/'.$vaccine_point['id'] )}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE254;</i></a>
                                     <a class="confirm">
                                         <input class="confirm_id" type="hidden" name="id" value="{{$vaccine_point['id'] }}">
