@@ -39,7 +39,7 @@ class OpticalDoctorController extends Controller
         if($optical_doctor->save())
         {
         	return redirect('optical/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -75,7 +75,7 @@ class OpticalDoctorController extends Controller
         if($optical_doctor->update())
         {
             return redirect('optical/edit/info'.'/'.$optical_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -96,7 +96,7 @@ class OpticalDoctorController extends Controller
         if($optical_doctor->delete())
         {
             return redirect('optical/edit/info'.'/'.$optical_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

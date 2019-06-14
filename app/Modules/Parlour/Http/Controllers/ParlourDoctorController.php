@@ -38,7 +38,7 @@ class ParlourDoctorController extends Controller
         if($parlour_doctor->save())
         {
         	return redirect('parlour/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -74,7 +74,7 @@ class ParlourDoctorController extends Controller
         if($parlour_doctor->update())
         {
             return redirect('parlour/edit/doctor/edit'.'/'.$parlour_doctor_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -95,7 +95,7 @@ class ParlourDoctorController extends Controller
         if($parlour_doctor->delete())
         {
             return redirect('parlour/edit/info'.'/'.$parlour_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

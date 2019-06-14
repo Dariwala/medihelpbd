@@ -121,7 +121,7 @@ class HospitalController extends Controller
             if($hospital->save())
             {
                 return redirect('hospital')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -245,7 +245,7 @@ class HospitalController extends Controller
                 if($hospital->update())
                 {
                      return redirect('hospital/edit/info'.'/'.$id)
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -299,7 +299,7 @@ class HospitalController extends Controller
             if($hospital->update())
             {
                 return redirect('hospital/edit/info'.'/'.$id)
-                    ->with('flash_message', 'Updated Successfully')
+                    ->with('flash_message', 'Edited Successfully.')
                     ->with('flash_notification', 'success');
             }
 
@@ -336,7 +336,7 @@ class HospitalController extends Controller
             if($service->update())
             {
                 return redirect('hospital/edit/service'.'/'.$id)
-                    ->with('flash_message', 'Updated Successfully')
+                    ->with('flash_message', 'Edited Successfully.')
                     ->with('flash_notification', 'success');
             }
 
@@ -366,7 +366,7 @@ class HospitalController extends Controller
                 if($hospital->delete())
                 {
                     return redirect('hospital')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

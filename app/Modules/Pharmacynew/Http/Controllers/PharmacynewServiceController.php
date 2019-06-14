@@ -56,7 +56,7 @@ class PharmacynewServiceController extends Controller
         if($pharmacynew_service->save())
         {
             return redirect('pharmacynew/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -99,7 +99,7 @@ class PharmacynewServiceController extends Controller
         if($pharmacynew_service->update())
         {
             return redirect('pharmacynew/edit/info'.'/'.$pharmacynew_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -120,7 +120,7 @@ class PharmacynewServiceController extends Controller
         if($pharmacynew_service->delete())
         {
             return redirect('pharmacynew/edit/info'.'/'.$pharmacynew_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

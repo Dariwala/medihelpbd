@@ -118,7 +118,7 @@ class BloodDonarController extends Controller
             if($blood_donor->save())
             {
                 return redirect('blood-donar')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -219,7 +219,7 @@ class BloodDonarController extends Controller
                 if($blood_donor->update())
                 {
                      return redirect('blood-donar/edit/info'.'/'.$id)
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -270,7 +270,7 @@ class BloodDonarController extends Controller
                 if($blood_donor->update())
                 {
                      return redirect('blood-donar/edit/info'.'/'.$id)
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -304,7 +304,7 @@ class BloodDonarController extends Controller
                 if($blood_donor->delete())
                 {
                     return redirect('blood-donar')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

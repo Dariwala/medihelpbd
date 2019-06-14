@@ -120,7 +120,7 @@ class AirAmbulanceController extends Controller
             if($air_ambulance->save())
             {
                 return redirect('air-ambulance')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -221,7 +221,7 @@ class AirAmbulanceController extends Controller
                 if($air_ambulance->update())
                 {
                      return redirect('air-ambulance/edit/info'.'/'.$id)
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -322,7 +322,7 @@ class AirAmbulanceController extends Controller
                 if($air_ambulance->update())
                 {
                      return redirect('air-ambulance/edit/info'.'/'.$id)
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -358,7 +358,7 @@ class AirAmbulanceController extends Controller
                 if($air_ambulance->delete())
                 {
                     return redirect('air-ambulance')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

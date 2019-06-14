@@ -38,7 +38,7 @@ class HospitalDoctorController extends Controller
         if($hospital_doctor->save())
         {
         	return redirect('hospital/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -74,7 +74,7 @@ class HospitalDoctorController extends Controller
         if($hospital_doctor->update())
         {
             return redirect('hospital/edit/doctor/edit'.'/'.$hospital_doctor_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -95,7 +95,7 @@ class HospitalDoctorController extends Controller
         if($hospital_doctor->delete())
         {
             return redirect('hospital/edit/info'.'/'.$hospital_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

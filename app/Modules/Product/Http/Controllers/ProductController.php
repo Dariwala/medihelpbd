@@ -47,7 +47,7 @@ class ProductController extends Controller
             if($product->save())
             {
                 return redirect('product-category')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -131,7 +131,7 @@ class ProductController extends Controller
                 if($product->update())
                 {
                      return redirect('product-category')
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -168,7 +168,7 @@ class ProductController extends Controller
                 if($product->delete())
                 {
                     return redirect('product-category')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

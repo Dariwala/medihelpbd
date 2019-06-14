@@ -39,7 +39,7 @@ class HomeopathicDoctorController extends Controller
         if($homeopathic_doctor->save())
         {
         	return redirect('homeopathic/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -75,7 +75,7 @@ class HomeopathicDoctorController extends Controller
         if($homeopathic_doctor->update())
         {
             return redirect('homeopathic/edit/info'.'/'.$homeopathic_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -96,7 +96,7 @@ class HomeopathicDoctorController extends Controller
         if($homeopathic_doctor->delete())
         {
             return redirect('homeopathic/edit/info'.'/'.$homeopathic_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

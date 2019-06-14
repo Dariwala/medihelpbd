@@ -55,7 +55,7 @@ class YogaServiceController extends Controller
         if($yoga_service->save())
         {
         	return redirect('yoga/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -97,7 +97,7 @@ class YogaServiceController extends Controller
         if($yoga_service->update())
         {
             return redirect('yoga/edit/service'.'/'.$yoga_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -118,7 +118,7 @@ class YogaServiceController extends Controller
         if($yoga_service->delete())
         {
             return redirect('yoga/edit/service'.'/'.$yoga_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

@@ -69,7 +69,7 @@ class SubDistrictController extends Controller
             if($sub_district->save())
             {
                 return redirect('district/sub-district')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -160,7 +160,7 @@ class SubDistrictController extends Controller
                 if($sub_district->update())
                 {
                      return redirect('district/sub-district')
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -198,7 +198,7 @@ class SubDistrictController extends Controller
                 if($sub_district->delete())
                 {
                     return redirect('district/sub-district')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

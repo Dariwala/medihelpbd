@@ -59,7 +59,7 @@ class HomeopathicProdutController extends Controller
                 {
                     
                      return redirect('homeopathic/edit/info'.'/'.$id)
-                        ->with('flash_message', 'Added Successfully')
+                        ->with('flash_message', 'Added Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -133,7 +133,7 @@ class HomeopathicProdutController extends Controller
                 {
                     
                      return redirect('homeopathic/edit/info'.'/'.$homeopathic_id)
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -205,7 +205,7 @@ class HomeopathicProdutController extends Controller
         if($homeopathic_product->delete())
         {
             return redirect('homeopathic/edit/info'.'/'.$homeopathic_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

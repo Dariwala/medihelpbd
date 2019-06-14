@@ -33,7 +33,7 @@ class HerbalCenterNoticeController extends Controller
     	if($herbal_center_notice->save())
         {
         	return redirect('herbal-center/edit/info'.'/'.$herbal_center_id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -68,7 +68,7 @@ class HerbalCenterNoticeController extends Controller
         if($herbal_center_notice->update())
         {
             return redirect('herbal-center/edit/info'.'/'.$herbal_center_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -89,7 +89,7 @@ class HerbalCenterNoticeController extends Controller
         if($herbal_center_notice->delete())
         {
             return redirect('herbal-center/edit/info'.'/'.$herbal_center_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

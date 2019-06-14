@@ -125,7 +125,7 @@ class SkinLaserCenterController extends Controller
             if($skin_laser_center->save())
             {
                 return redirect('skin-laser-center')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -249,7 +249,7 @@ class SkinLaserCenterController extends Controller
                 if($skin_laser_center->update())
                 {
                      return redirect('skin-laser-center/edit/info'.'/'.$id)
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -300,7 +300,7 @@ class SkinLaserCenterController extends Controller
             if($skin_laser_center->update())
             {
                 return redirect('skin-laser-center/edit/info'.'/'.$id)
-                    ->with('flash_message', 'Updated Successfully')
+                    ->with('flash_message', 'Edited Successfully.')
                     ->with('flash_notification', 'success');
             }
 
@@ -337,7 +337,7 @@ class SkinLaserCenterController extends Controller
             if($service->update())
             {
                 return redirect('skin-laser-center/edit/service'.'/'.$id)
-                    ->with('flash_message', 'Updated Successfully')
+                    ->with('flash_message', 'Edited Successfully.')
                     ->with('flash_notification', 'success');
             }
 
@@ -367,7 +367,7 @@ class SkinLaserCenterController extends Controller
                 if($skin_laser_center->delete())
                 {
                     return redirect('skin-laser-center')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

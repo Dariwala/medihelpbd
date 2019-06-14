@@ -125,7 +125,7 @@ class PharmacyController extends Controller
             if($pharmacy->save())
             {
                 return redirect('pharmacy')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             
@@ -224,7 +224,7 @@ class PharmacyController extends Controller
                 if($pharmacy->update())
                 {
                      return redirect('pharmacy')
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -274,7 +274,7 @@ class PharmacyController extends Controller
             if($pharmacy->update())
             {
                 return redirect('pharmacy')
-                    ->with('flash_message', 'Updated Successfully')
+                    ->with('flash_message', 'Edited Successfully.')
                     ->with('flash_notification', 'success');
             }
 
@@ -303,7 +303,7 @@ class PharmacyController extends Controller
                 if($pharmacy->delete())
                 {
                     return redirect('pharmacy')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

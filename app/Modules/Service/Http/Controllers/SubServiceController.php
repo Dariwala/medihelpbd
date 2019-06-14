@@ -66,7 +66,7 @@ class SubServiceController extends Controller
             if($sub_service->save())
             {
                 return redirect('service/sub-service')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -156,7 +156,7 @@ class SubServiceController extends Controller
                 if($sub_service->update())
                 {
                      return redirect('service/sub-service')
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -194,7 +194,7 @@ class SubServiceController extends Controller
                 if($sub_service->delete())
                 {
                     return redirect('service/sub-service')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

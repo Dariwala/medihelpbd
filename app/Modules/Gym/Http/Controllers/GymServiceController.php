@@ -55,7 +55,7 @@ class GymServiceController extends Controller
         if($gym_service->save())
         {
         	return redirect('gym/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -97,7 +97,7 @@ class GymServiceController extends Controller
         if($gym_service->update())
         {
             return redirect('gym/edit/service'.'/'.$gym_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -118,7 +118,7 @@ class GymServiceController extends Controller
         if($gym_service->delete())
         {
             return redirect('gym/edit/service'.'/'.$gym_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

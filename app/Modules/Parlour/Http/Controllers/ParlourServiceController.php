@@ -55,7 +55,7 @@ class ParlourServiceController extends Controller
         if($parlour_service->save())
         {
         	return redirect('parlour/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -97,7 +97,7 @@ class ParlourServiceController extends Controller
         if($parlour_service->update())
         {
             return redirect('parlour/edit/service'.'/'.$parlour_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -118,7 +118,7 @@ class ParlourServiceController extends Controller
         if($parlour_service->delete())
         {
             return redirect('parlour/edit/service'.'/'.$parlour_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

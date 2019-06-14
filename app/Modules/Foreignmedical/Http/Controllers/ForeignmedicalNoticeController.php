@@ -30,7 +30,7 @@ class ForeignmedicalNoticeController extends Controller
     	if($foreignmedical_notice->save())
         {
         	return redirect('foreignmedical/edit/info'.'/'.$foreignmedical_id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -66,7 +66,7 @@ class ForeignmedicalNoticeController extends Controller
         if($foreignmedical_notice->update())
         {
             return redirect('foreignmedical/edit/info'.'/'.$foreignmedical_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -86,7 +86,7 @@ class ForeignmedicalNoticeController extends Controller
         if($foreignmedical_notice->delete())
         {
             return redirect('foreignmedical/edit/info'.'/'.$foreignmedical_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

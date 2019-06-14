@@ -55,7 +55,7 @@ class AddictionServiceController extends Controller
         if($addiction_service->save())
         {
         	return redirect('addiction/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -97,7 +97,7 @@ class AddictionServiceController extends Controller
         if($addiction_service->update())
         {
             return redirect('addiction/edit/service'.'/'.$addiction_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -118,7 +118,7 @@ class AddictionServiceController extends Controller
         if($addiction_service->delete())
         {
             return redirect('addiction/edit/service'.'/'.$addiction_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

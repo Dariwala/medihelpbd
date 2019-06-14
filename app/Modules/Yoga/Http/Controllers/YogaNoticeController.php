@@ -33,7 +33,7 @@ class YogaNoticeController extends Controller
     	if($yoga_notice->save())
         {
         	return redirect('yoga/edit/info'.'/'.$yoga_id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -68,7 +68,7 @@ class YogaNoticeController extends Controller
         if($yoga_notice->update())
         {
             return redirect('yoga/edit/info'.'/'.$yoga_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -89,7 +89,7 @@ class YogaNoticeController extends Controller
         if($yoga_notice->delete())
         {
             return redirect('yoga/edit/notice'.'/'.$yoga_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

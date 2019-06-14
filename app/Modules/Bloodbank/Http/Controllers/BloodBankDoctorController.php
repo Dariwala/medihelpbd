@@ -38,7 +38,7 @@ class BloodBankDoctorController extends Controller
         if($blood_bank_doctor->save())
         {
         	return redirect('blood-bank/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -74,7 +74,7 @@ class BloodBankDoctorController extends Controller
         if($blood_bank_doctor->update())
         {
             return redirect('blood-bank/edit/info'.'/'.$blood_bank_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -95,7 +95,7 @@ class BloodBankDoctorController extends Controller
         if($blood_bank_doctor->delete())
         {
             return redirect('blood-bank/edit/info'.'/'.$blood_bank_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

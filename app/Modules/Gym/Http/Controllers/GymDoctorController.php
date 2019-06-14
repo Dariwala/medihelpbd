@@ -38,7 +38,7 @@ class GymDoctorController extends Controller
         if($gym_doctor->save())
         {
         	return redirect('gym/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -74,7 +74,7 @@ class GymDoctorController extends Controller
         if($gym_doctor->update())
         {
             return redirect('gym/edit/doctor/edit'.'/'.$gym_doctor_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -95,7 +95,7 @@ class GymDoctorController extends Controller
         if($gym_doctor->delete())
         {
             return redirect('gym/edit/info'.'/'.$gym_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

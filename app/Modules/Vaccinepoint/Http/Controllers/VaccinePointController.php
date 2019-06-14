@@ -124,7 +124,7 @@ class VaccinePointController extends Controller
             if($vaccine_point->save())
             {
                 return redirect('vaccine-point')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -247,7 +247,7 @@ class VaccinePointController extends Controller
                 if($vaccine_point->update())
                 {
                      return redirect('vaccine-point/edit/info'.'/'.$id)
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -297,7 +297,7 @@ class VaccinePointController extends Controller
             if($vaccine_point->update())
             {
                 return redirect('vaccine-point/edit/info'.'/'.$id)
-                    ->with('flash_message', 'Updated Successfully')
+                    ->with('flash_message', 'Edited Successfully.')
                     ->with('flash_notification', 'success');
             }
 
@@ -333,7 +333,7 @@ class VaccinePointController extends Controller
             if($service->update())
             {
                 return redirect('vaccine-point/edit/service'.'/'.$id)
-                    ->with('flash_message', 'Updated Successfully')
+                    ->with('flash_message', 'Edited Successfully.')
                     ->with('flash_notification', 'success');
             }
 
@@ -363,7 +363,7 @@ class VaccinePointController extends Controller
                 if($vaccine_point->delete())
                 {
                     return redirect('vaccine-point')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

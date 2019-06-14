@@ -33,7 +33,7 @@ class HospitalNoticeController extends Controller
     	if($hospital_notice->save())
         {
         	return redirect('hospital/edit/info'.'/'.$hospital_id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -68,7 +68,7 @@ class HospitalNoticeController extends Controller
         if($hospital_notice->update())
         {
             return redirect('hospital/edit/info'.'/'.$hospital_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -89,7 +89,7 @@ class HospitalNoticeController extends Controller
         if($hospital_notice->delete())
         {
             return redirect('hospital/edit/notice'.'/'.$hospital_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

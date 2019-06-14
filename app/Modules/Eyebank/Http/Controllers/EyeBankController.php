@@ -122,7 +122,7 @@ class EyeBankController extends Controller
             if($eye_bank->save())
             {
                 return redirect('eye-bank')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -223,7 +223,7 @@ class EyeBankController extends Controller
                 if($eye_bank->update())
                 {
                      return redirect('eye-bank/edit/info'.'/'.$id)
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -276,7 +276,7 @@ class EyeBankController extends Controller
                 if($eye_bank->update())
                 {
                      return redirect('eye-bank/edit/info'.'/'.$id)
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -310,7 +310,7 @@ class EyeBankController extends Controller
                 if($eye_bank->delete())
                 {
                     return redirect('eye-bank')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

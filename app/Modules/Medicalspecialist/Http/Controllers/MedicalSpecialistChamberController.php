@@ -32,7 +32,7 @@ class MedicalSpecialistChamberController extends Controller
     	if($medical_specialist_chamber->save())
         {
         	return redirect('medical-specialist/edit/info'.'/'.$medical_specialist_id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -67,7 +67,7 @@ class MedicalSpecialistChamberController extends Controller
         if($medical_specialist_chamber->update())
         {
             return redirect('medical-specialist/edit/info'.'/'.$medical_specialist_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -88,7 +88,7 @@ class MedicalSpecialistChamberController extends Controller
         if($medical_specialist_chamber->delete())
         {
             return redirect('medical-specialist/edit/info'.'/'.$medical_specialist_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

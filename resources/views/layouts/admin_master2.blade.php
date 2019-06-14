@@ -183,7 +183,7 @@
                     <li title="Images">
                         <a href="{{ route('notice_index') }}">
                             <span class="menu_icon"><i class="material-icons">view_list</i></span>
-                            <span class="menu_title">Images</span>
+                            <span class="menu_title">Advertisement Image</span>
                         </a>
                     </li>
                     

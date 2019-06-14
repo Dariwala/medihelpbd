@@ -32,7 +32,7 @@ class AmbulancePriceController extends Controller
     	if($ambulance_pricing->save())
         {
         	return redirect('ambulance/edit/info'.'/'.$ambulance_id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -69,7 +69,7 @@ class AmbulancePriceController extends Controller
         if($ambulance_pricing->update())
         {
             return redirect('ambulance/edit/info'.'/'.$ambulance_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -90,7 +90,7 @@ class AmbulancePriceController extends Controller
         if($ambulance_pricing->delete())
         {
             return redirect('ambulance/edit/info'.'/'.$ambulance_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

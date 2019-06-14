@@ -38,7 +38,7 @@ class YogaDoctorController extends Controller
         if($yoga_doctor->save())
         {
         	return redirect('yoga/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -74,7 +74,7 @@ class YogaDoctorController extends Controller
         if($yoga_doctor->update())
         {
             return redirect('yoga/edit/doctor/edit'.'/'.$yoga_doctor_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -95,7 +95,7 @@ class YogaDoctorController extends Controller
         if($yoga_doctor->delete())
         {
             return redirect('yoga/edit/info'.'/'.$yoga_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

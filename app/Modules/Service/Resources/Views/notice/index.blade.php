@@ -5,7 +5,7 @@
 @section('content')
 <div id="page_content">
     <div id="page_content_inner">
-        <h3 class="heading_b uk-margin-bottom">All Images</h3>
+        <h3 class="heading_b uk-margin-bottom">Advertisement Image</h3>
         @include('partials.flash_message')
         <div class="md-card">
             <div class="md-card-content">
@@ -17,7 +17,7 @@
                             <tr>
                                 <th data-priority="critical">Id</th>
                                 <th data-priority="critical">District</th>
-                                <th data-priority="1">Sub District</th>
+                                <th data-priority="1">Sub-District</th>
                                 <th data-priority="2">Service Provider</th>
                                 <th data-priority="2">Image</th>
                                 <th data-priority="2">Created At</th>
@@ -28,7 +28,7 @@
                             <tr>
                                 <th>Id</th>
                                 <th>District</th>
-                                <th>Sub District</th>
+                                <th>Sub-District</th>
                                 <th>Service Provider</th>
                                 <th>Image</th>
                                 <th>Created At</th>

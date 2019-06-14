@@ -125,7 +125,7 @@ class HerbalCenterController extends Controller
             if($herbal_center->save())
             {
                 return redirect('herbal-center')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -250,7 +250,7 @@ class HerbalCenterController extends Controller
                 if($herbal_center->update())
                 {
                      return redirect('herbal-center/edit/info'.'/'.$id)
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -302,7 +302,7 @@ class HerbalCenterController extends Controller
             if($herbal_center->update())
             {
                 return redirect('herbal-center/edit/info'.'/'.$id)
-                    ->with('flash_message', 'Updated Successfully')
+                    ->with('flash_message', 'Edited Successfully.')
                     ->with('flash_notification', 'success');
             }
 
@@ -339,7 +339,7 @@ class HerbalCenterController extends Controller
             if($service->update())
             {
                 return redirect('herbal-center/edit/service'.'/'.$id)
-                    ->with('flash_message', 'Updated Successfully')
+                    ->with('flash_message', 'Edited Successfully.')
                     ->with('flash_notification', 'success');
             }
 
@@ -369,7 +369,7 @@ class HerbalCenterController extends Controller
                 if($herbal_center->delete())
                 {
                     return redirect('herbal-center')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

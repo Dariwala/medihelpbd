@@ -50,7 +50,7 @@ class SubProductController extends Controller
             if($subproduct_category->save())
             {
                 return redirect('product-category/sub-category')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -145,7 +145,7 @@ class SubProductController extends Controller
                 if($subproduct_category->update())
                 {
                      return redirect('product-category/sub-category')
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -183,7 +183,7 @@ class SubProductController extends Controller
                 if($subproduct_category->delete())
                 {
                     return redirect('product-category/sub-category')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

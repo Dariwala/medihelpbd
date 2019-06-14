@@ -52,7 +52,7 @@ class commonModulesController extends Controller
             
             $data->save();
             
-            $message = "Data Updated Successfully.";
+            $message = "Edited Successfully.";
             
         }catch(Exception $e){
             $message = "Failed to Update Data";

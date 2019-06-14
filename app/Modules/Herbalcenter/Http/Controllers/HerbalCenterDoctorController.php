@@ -38,7 +38,7 @@ class HerbalCenterDoctorController extends Controller
         if($herbal_center_doctor->save())
         {
         	return redirect('herbal-center/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -74,7 +74,7 @@ class HerbalCenterDoctorController extends Controller
         if($herbal_center_doctor->update())
         {
             return redirect('herbal-center/edit/info'.'/'.$herbal_center_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -95,7 +95,7 @@ class HerbalCenterDoctorController extends Controller
         if($herbal_center_doctor->delete())
         {
             return redirect('herbal-center/edit/info'.'/'.$herbal_center_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

@@ -65,7 +65,7 @@ class DistrictController extends Controller
             if($district->save())
             {
                 return redirect('district')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -149,7 +149,7 @@ class DistrictController extends Controller
                 if($district->update())
                 {
                      return redirect('district')
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -186,7 +186,7 @@ class DistrictController extends Controller
                 if($district->delete())
                 {
                     return redirect('district')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

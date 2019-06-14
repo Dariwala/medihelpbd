@@ -121,7 +121,7 @@ class AddictionController extends Controller
             if($addiction->save())
             {
                 return redirect('addiction')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             else
@@ -245,7 +245,7 @@ class AddictionController extends Controller
                 if($addiction->update())
                 {
                      return redirect('addiction/edit/info'.'/'.$id)
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -299,7 +299,7 @@ class AddictionController extends Controller
             if($addiction->update())
             {
                 return redirect('addiction/edit/info'.'/'.$id)
-                    ->with('flash_message', 'Updated Successfully')
+                    ->with('flash_message', 'Edited Successfully.')
                     ->with('flash_notification', 'success');
             }
 
@@ -336,7 +336,7 @@ class AddictionController extends Controller
             if($service->update())
             {
                 return redirect('addiction/edit/service'.'/'.$id)
-                    ->with('flash_message', 'Updated Successfully')
+                    ->with('flash_message', 'Edited Successfully.')
                     ->with('flash_notification', 'success');
             }
 
@@ -366,7 +366,7 @@ class AddictionController extends Controller
                 if($addiction->delete())
                 {
                     return redirect('addiction')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

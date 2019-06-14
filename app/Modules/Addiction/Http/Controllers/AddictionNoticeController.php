@@ -33,7 +33,7 @@ class AddictionNoticeController extends Controller
     	if($addiction_notice->save())
         {
         	return redirect('addiction/edit/info'.'/'.$addiction_id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -68,7 +68,7 @@ class AddictionNoticeController extends Controller
         if($addiction_notice->update())
         {
             return redirect('addiction/edit/info'.'/'.$addiction_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -89,7 +89,7 @@ class AddictionNoticeController extends Controller
         if($addiction_notice->delete())
         {
             return redirect('addiction/edit/notice'.'/'.$addiction_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

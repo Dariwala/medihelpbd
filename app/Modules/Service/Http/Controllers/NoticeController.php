@@ -78,7 +78,7 @@ class NoticeController extends Controller
         if($notice->save()){
             return redirect()
                     ->route('notice_index')
-    				->with('flash_message', 'Image Save Successfully!')
+    				->with('flash_message', 'Added Successfully.')
     				->with('flash_notification', 'success');
         }else{
             return redirect()
@@ -135,7 +135,7 @@ class NoticeController extends Controller
         if($notice->save()){
             return redirect()
                     ->route('notice_index')
-    				->with('flash_message', 'Image updated Successfully!')
+    				->with('flash_message', 'Edited Successfully.')
     				->with('flash_notification', 'success');
         }else{
             return redirect('notice_index')
@@ -159,7 +159,7 @@ class NoticeController extends Controller
             
             return redirect()
                     ->route('notice_index')
-    				->with('flash_message', 'Image deleted Successfully!')
+    				->with('flash_message', 'Deleted Successfully.')
     				->with('flash_notification', 'success');
         }else{
             return redirect()

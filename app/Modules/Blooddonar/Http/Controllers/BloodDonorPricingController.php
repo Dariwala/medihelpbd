@@ -41,7 +41,7 @@ class BloodDonorPricingController extends Controller
     	if($blood_donor_pricing->save())
         {
         	return redirect('blood-donar/edit/info'.'/'.$blood_donor_id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -77,7 +77,7 @@ class BloodDonorPricingController extends Controller
         if($blood_donor_pricing->update())
         {
             return redirect('blood-donar/edit/info'.'/'.$blood_donor_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -98,7 +98,7 @@ class BloodDonorPricingController extends Controller
         if($blood_donor_pricing->delete())
         {
             return redirect('blood-donar/edit/info'.'/'.$blood_donor_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

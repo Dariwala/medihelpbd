@@ -125,7 +125,7 @@ class HomeopathicController extends Controller
             if($homeopathic->save())
             {
                 return redirect('homeopathic')
-                    ->with('flash_message', 'Added Successfully')
+                    ->with('flash_message', 'Added Successfully.')
                     ->with('flash_notification', 'success');
             }
             
@@ -224,7 +224,7 @@ class HomeopathicController extends Controller
                 if($homeopathic->update())
                 {
                      return redirect('homeopathic')
-                        ->with('flash_message', 'Updated Successfully')
+                        ->with('flash_message', 'Edited Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else
@@ -274,7 +274,7 @@ class HomeopathicController extends Controller
             if($homeopathic->update())
             {
                 return redirect('homeopathic')
-                    ->with('flash_message', 'Updated Successfully')
+                    ->with('flash_message', 'Edited Successfully.')
                     ->with('flash_notification', 'success');
             }
 
@@ -303,7 +303,7 @@ class HomeopathicController extends Controller
                 if($homeopathic->delete())
                 {
                     return redirect('homeopathic')
-                        ->with('flash_message', 'Deleted Successfully')
+                        ->with('flash_message', 'Deleted Successfully.')
                         ->with('flash_notification', 'success');
                 }
                 else

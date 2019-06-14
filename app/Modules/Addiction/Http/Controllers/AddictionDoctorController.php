@@ -38,7 +38,7 @@ class AddictionDoctorController extends Controller
         if($addiction_doctor->save())
         {
         	return redirect('addiction/edit/info'.'/'.$id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -74,7 +74,7 @@ class AddictionDoctorController extends Controller
         if($addiction_doctor->update())
         {
             return redirect('addiction/edit/doctor/edit'.'/'.$addiction_doctor_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -95,7 +95,7 @@ class AddictionDoctorController extends Controller
         if($addiction_doctor->delete())
         {
             return redirect('addiction/edit/info'.'/'.$addiction_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else

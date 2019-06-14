@@ -32,7 +32,7 @@ class VaccinePointNoticeController extends Controller
     	if($vaccine_point_notice->save())
         {
         	return redirect('vaccine-point/edit/info'.'/'.$vaccine_point_id)
-                ->with('flash_message', 'Added Successfully')
+                ->with('flash_message', 'Added Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -68,7 +68,7 @@ class VaccinePointNoticeController extends Controller
         if($vaccine_point_notice->update())
         {
             return redirect('vaccine-point/edit/info'.'/'.$vaccine_point_id)
-                ->with('flash_message', 'Updated Successfully')
+                ->with('flash_message', 'Edited Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
@@ -89,7 +89,7 @@ class VaccinePointNoticeController extends Controller
         if($vaccine_point_notice->delete())
         {
             return redirect('vaccine-point/edit/notice'.'/'.$vaccine_point_id)
-                ->with('flash_message', 'Deleted Successfully')
+                ->with('flash_message', 'Deleted Successfully.')
                 ->with('flash_notification', 'success');
         }
         else
