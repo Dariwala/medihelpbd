@@ -5,7 +5,7 @@
 @section('content')
 <div id="page_content">
     <div id="page_content_inner">
-        <h3 class="heading_b uk-margin-bottom">All Service</h3>
+        <h3 class="heading_b uk-margin-bottom">Service</h3>
         @include('partials.flash_message')
         <div class="md-card">
             <div class="md-card-content">
@@ -40,7 +40,7 @@
                                 <td>{{ $service->created_at}}</td>
                                 <td>{{ $service->updated_at}}</td>
                                 <td class="uk-text-center">
-                                    <a href="{{url('/service/view'.'/'.$service->id)}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>
+                                    <!--<a href="{{url('/service/view'.'/'.$service->id)}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE8F4;</i></a>-->
                                     <a href="{{url('/service/edit'.'/'.$service->id)}}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE254;</i></a>
                                     <a class="confirm">
                                     <input class="confirm_id" type="hidden" name="id" value="{{$service->id}}">

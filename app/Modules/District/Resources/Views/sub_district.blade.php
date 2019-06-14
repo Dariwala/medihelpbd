@@ -6,7 +6,7 @@
 <div id="page_content">
         <div id="page_content_inner">
 
-            <h3 class="heading_b uk-margin-bottom">All Sub-District</h3>
+            <h3 class="heading_b uk-margin-bottom">Sub-District</h3>
             @include('partials.flash_message')
             <div class="md-card">
                 <div class="md-card-content">
@@ -43,7 +43,7 @@
                                     <td>{{ $sub_district->created_at}}</td>
                                     <td>{{ $sub_district->updated_at}}</td>
                                     <td class="uk-text-center">
-                                        <a href="{{ url('/district/sub-district/view'.'/'.$sub_district->id) }}" ><i class="md-icon material-icons uk-margin-right ">&#xE8F4;</i></a>
+                                        <!--<a href="{{ url('/district/sub-district/view'.'/'.$sub_district->id) }}" ><i class="md-icon material-icons uk-margin-right ">&#xE8F4;</i></a>-->
                                         <a href="{{ url('/district/sub-district/edit'.'/'.$sub_district->id) }}" ><i class="md-icon material-icons uk-margin-right">&#xE254;</i></a>
                                         <a class="confirm">
                                             <input class="confirm_id" type="hidden" name="id" value="{{$sub_district->id}}"> 

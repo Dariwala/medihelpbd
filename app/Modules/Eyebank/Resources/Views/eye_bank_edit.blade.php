@@ -231,7 +231,7 @@
                                                     <input type="hidden" ng-init="eye_bank_id='asdfg'" value="{{$eye_bank_id}}" name="eye_bank_id" ng-model="eye_bank_id">
                                                     
                                                     <div style="padding: 5px;margin-bottom: 10px;" class="dt_colVis_buttons"></div>
-                                                    <table class="uk-table uk-table-align-vertical uk-table-nowrap tablesorter tablesorter-altair" id="dt_tableExport">
+                                                    <table class="uk-table uk-table-align-vertical uk-table-nowrap tablesorter tablesorter-altair" id="data_table2">
                                                         <thead>
                                                             <tr>
                                                                 <th data-priority="critical">Id</th>
@@ -351,7 +351,7 @@
                                                     <input type="hidden" ng-init="eye_bank_id='asdfg'" value="{{$eye_bank_id}}" name="eye_bank_id" ng-model="eye_bank_id">
                                                     
                                                     <div style="padding: 5px;margin-bottom: 10px;" class="dt_colVis_buttons"></div>
-                                                    <table class="uk-table uk-table-align-vertical uk-table-nowrap tablesorter tablesorter-altair" id="dt_tableExport">
+                                                    <table class="uk-table uk-table-align-vertical uk-table-nowrap tablesorter tablesorter-altair" id="data_table2">
                                                         <thead>
                                                             <tr>
                                                                 <th data-priority="critical">Id</th>

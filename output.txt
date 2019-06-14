@@ -1,31 +1,28 @@
-app/admin/addiction/addiction.controller.js:        $scope.getSubdistrict = function() 
-app/admin/addiction/addiction.service_edit_controller.js:        $scope.getSubdistrict = function() 
-app/admin/air_ambulance/air_ambulance.controller.js:        $scope.getSubdistrict = function() 
-app/admin/ambulance/ambulance.controller.js:        $scope.getSubdistrict = function() 
-app/admin/blood_bank/blood_bank.controller.js:        $scope.getSubdistrict = function() 
-app/admin/blood_donor/blood_donor.controller.js:        $scope.getSubdistrict = function() 
-app/admin/eye_bank/eye_bank.controller.js:        $scope.getSubdistrict = function() 
-app/admin/foreignmedical/foreignmedical.controller.js:        $scope.getSubdistrict = function() 
-app/admin/frontend/frontend.controller.js:        $scope.getSubdistrict = function() 
-app/admin/gym/gym.controller.js:        $scope.getSubdistrict = function() 
-app/admin/gym/gym.service_edit_controller.js:        $scope.getSubdistrict = function() 
-app/admin/herbal_center/herbal_center.controller.js:        $scope.getSubdistrict = function() 
-app/admin/herbal_center/herbal_center.service_edit_controller.js:        $scope.getSubdistrict = function() 
-app/admin/homeopathic/homeopathic.controller.js:        $scope.getSubdistrict = function() 
-app/admin/hospital/hospital.controller.js:        $scope.getSubdistrict = function() 
-app/admin/hospital/hospital.service_edit_controller.js:        $scope.getSubdistrict = function() 
-app/admin/medical_specialist/medical_specialist.controller.js:        $scope.getSubdistrict = function() 
-app/admin/optical/optical.controller.js:        $scope.getSubdistrict = function() 
-app/admin/parlour/parlour.controller.js:        $scope.getSubdistrict = function() 
-app/admin/parlour/parlour.service_edit_controller.js:        $scope.getSubdistrict = function() 
-app/admin/pharmacy/pharmacy.controller.js:        $scope.getSubdistrict = function() 
-app/admin/pharmacynew/pharmacynew.controller.js:        $scope.getSubdistrict = function() 
-app/admin/physiotherapy/physiotherapy.controller.js:        $scope.getSubdistrict = function() 
-app/admin/skin_laser_center/skin_laser_center.controller.js:        $scope.getSubdistrict = function() 
-app/admin/skin_laser_center/skin_laser_center.service_edit_controller.js:        $scope.getSubdistrict = function() 
-app/admin/vaccine_point/vaccine_point.controller.js:        $scope.getSubdistrict = function() 
-app/admin/vaccine_point/vaccine_point.service_edit_controller.js:        $scope.getSubdistrict = function() 
-app/admin/yoga/yoga.controller.js:        $scope.getSubdistrict = function() 
-app/admin/yoga/yoga.service_edit_controller.js:        $scope.getSubdistrict = function() 
-app/frontend/frontend/frontend.b_controller.js:        $scope.getSubdistrict = function() 
-app/frontend/frontend/frontend.controller.js:        $scope.getSubdistrict = function() 
+assets/assets/js/pages/plugins_datatables.js:    altair_datatables.dt_tableExport();
+assets/assets/js/pages/plugins_datatables.js:    dt_tableExport: function() {
+assets/assets/js/pages/plugins_datatables.js:        var $dt_tableExport = $('#dt_tableExport'),
+assets/assets/js/pages/plugins_datatables.js:            $dt_buttons = $dt_tableExport.prev('.dt_colVis_buttons');
+assets/assets/js/pages/plugins_datatables.js:        if($dt_tableExport.length) {
+assets/assets/js/pages/plugins_datatables.js:            var table_export = $dt_tableExport.DataTable({
+assets/assets/js/pages/plugins_datatables.min.js:$(function(){altair_datatables.dt_default(),altair_datatables.dt_scroll(),altair_datatables.dt_individual_search(),altair_datatables.dt_colVis(),altair_datatables.dt_tableExport()}),altair_datatables={dt_default:function(){var t=$("#dt_default");t.length&&t.DataTable()},dt_scroll:function(){var t=$("#dt_scroll");t.length&&t.DataTable({scrollY:"200px",scrollCollapse:!1,paging:!1})},dt_individual_search:function(){var t=$("#dt_individual_search");if(t.length){t.find("tfoot th").each(function(){var a=t.find("tfoot th").eq($(this).index()).text();$(this).html('<input type="text" class="md-input" placeholder="'+a+'" />')}),altair_md.inputs();var a=t.DataTable();a.columns().every(function(){var t=this;$("input",this.footer()).on("keyup change",function(){t.search(this.value).draw()})})}},dt_colVis:function(){var t=$("#dt_colVis"),a=t.prev(".dt_colVis_buttons");if(t.length){var e=t.DataTable({buttons:[{extend:"colvis",fade:0}]});e.buttons().container().appendTo(a)}},dt_tableExport:function(){var t=$("#dt_tableExport"),a=t.prev(".dt_colVis_buttons");if(t.length){var e=t.DataTable({buttons:[{extend:"copyHtml5",text:'<i class="uk-icon-files-o"></i> Copy',titleAttr:"Copy"},{extend:"print",text:'<i class="uk-icon-print"></i> Print',titleAttr:"Print"},{extend:"excelHtml5",text:'<i class="uk-icon-file-excel-o"></i> XLSX',titleAttr:""},{extend:"csvHtml5",text:'<i class="uk-icon-file-text-o"></i> CSV',titleAttr:"CSV"},{extend:"pdfHtml5",text:'<i class="uk-icon-file-pdf-o"></i> PDF',titleAttr:"PDF"}]});e.buttons().container().appendTo(a)}}};
+assets/js/pages/plugins_datatables.js:    altair_datatables.dt_tableExport();
+assets/js/pages/plugins_datatables.js:    dt_tableExport: function() {
+assets/js/pages/plugins_datatables.js:        var $dt_tableExport = $('#data_table'),
+assets/js/pages/plugins_datatables.js:            $dt_buttons = $dt_tableExport.prev('.dt_colVis_buttons');
+assets/js/pages/plugins_datatables.js:        if($dt_tableExport.length) {
+assets/js/pages/plugins_datatables.js:            var table_export = $dt_tableExport.DataTable({
+assets/js/pages/plugins_datatables.min.js:$(function(){altair_datatables.dt_default(),altair_datatables.dt_scroll(),altair_datatables.dt_individual_search(),altair_datatables.dt_colVis(),altair_datatables.dt_tableExport()}),altair_datatables={dt_default:function(){var t=$("#dt_default");t.length&&t.DataTable()},dt_scroll:function(){var t=$("#dt_scroll");t.length&&t.DataTable({scrollY:"200px",scrollCollapse:!1,paging:!1})},dt_individual_search:function(){var t=$("#dt_individual_search");if(t.length){t.find("tfoot th").each(function(){var a=t.find("tfoot th").eq($(this).index()).text();$(this).html('<input type="text" class="md-input" placeholder="'+a+'" />')}),altair_md.inputs();var a=t.DataTable();a.columns().every(function(){var t=this;$("input",this.footer()).on("keyup change",function(){t.search(this.value).draw()})})}},dt_colVis:function(){var t=$("#dt_colVis"),a=t.prev(".dt_colVis_buttons");if(t.length){var e=t.DataTable({buttons:[{extend:"colvis",fade:0}]});e.buttons().container().appendTo(a)}},dt_tableExport:function(){var t=$("#dt_tableExport"),a=t.prev(".dt_colVis_buttons");if(t.length){var e=t.DataTable({buttons:[{extend:"copyHtml5",text:'<i class="uk-icon-files-o"></i> Copy',titleAttr:"Copy"},{extend:"print",text:'<i class="uk-icon-print"></i> Print',titleAttr:"Print"},{extend:"excelHtml5",text:'<i class="uk-icon-file-excel-o"></i> XLSX',titleAttr:""},{extend:"csvHtml5",text:'<i class="uk-icon-file-text-o"></i> CSV',titleAttr:"CSV"},{extend:"pdfHtml5",text:'<i class="uk-icon-file-pdf-o"></i> PDF',titleAttr:"PDF"}]});e.buttons().container().appendTo(a)}}};
+public/assets/assets/js/pages/plugins_datatables.js:    altair_datatables.dt_tableExport();
+public/assets/assets/js/pages/plugins_datatables.js:    dt_tableExport: function() {
+public/assets/assets/js/pages/plugins_datatables.js:        var $dt_tableExport = $('#dt_tableExport'),
+public/assets/assets/js/pages/plugins_datatables.js:            $dt_buttons = $dt_tableExport.prev('.dt_colVis_buttons');
+public/assets/assets/js/pages/plugins_datatables.js:        if($dt_tableExport.length) {
+public/assets/assets/js/pages/plugins_datatables.js:            var table_export = $dt_tableExport.DataTable({
+public/assets/assets/js/pages/plugins_datatables.min.js:$(function(){altair_datatables.dt_default(),altair_datatables.dt_scroll(),altair_datatables.dt_individual_search(),altair_datatables.dt_colVis(),altair_datatables.dt_tableExport()}),altair_datatables={dt_default:function(){var t=$("#dt_default");t.length&&t.DataTable()},dt_scroll:function(){var t=$("#dt_scroll");t.length&&t.DataTable({scrollY:"200px",scrollCollapse:!1,paging:!1})},dt_individual_search:function(){var t=$("#dt_individual_search");if(t.length){t.find("tfoot th").each(function(){var a=t.find("tfoot th").eq($(this).index()).text();$(this).html('<input type="text" class="md-input" placeholder="'+a+'" />')}),altair_md.inputs();var a=t.DataTable();a.columns().every(function(){var t=this;$("input",this.footer()).on("keyup change",function(){t.search(this.value).draw()})})}},dt_colVis:function(){var t=$("#dt_colVis"),a=t.prev(".dt_colVis_buttons");if(t.length){var e=t.DataTable({buttons:[{extend:"colvis",fade:0}]});e.buttons().container().appendTo(a)}},dt_tableExport:function(){var t=$("#dt_tableExport"),a=t.prev(".dt_colVis_buttons");if(t.length){var e=t.DataTable({buttons:[{extend:"copyHtml5",text:'<i class="uk-icon-files-o"></i> Copy',titleAttr:"Copy"},{extend:"print",text:'<i class="uk-icon-print"></i> Print',titleAttr:"Print"},{extend:"excelHtml5",text:'<i class="uk-icon-file-excel-o"></i> XLSX',titleAttr:""},{extend:"csvHtml5",text:'<i class="uk-icon-file-text-o"></i> CSV',titleAttr:"CSV"},{extend:"pdfHtml5",text:'<i class="uk-icon-file-pdf-o"></i> PDF',titleAttr:"PDF"}]});e.buttons().container().appendTo(a)}}};
+public/assets/js/pages/plugins_datatables.js:    altair_datatables.dt_tableExport();
+public/assets/js/pages/plugins_datatables.js:    dt_tableExport: function() {
+public/assets/js/pages/plugins_datatables.js:        var $dt_tableExport = $('#data_table'),
+public/assets/js/pages/plugins_datatables.js:            $dt_buttons = $dt_tableExport.prev('.dt_colVis_buttons');
+public/assets/js/pages/plugins_datatables.js:        if($dt_tableExport.length) {
+public/assets/js/pages/plugins_datatables.js:            var table_export = $dt_tableExport.DataTable({
+public/assets/js/pages/plugins_datatables.min.js:$(function(){altair_datatables.dt_default(),altair_datatables.dt_scroll(),altair_datatables.dt_individual_search(),altair_datatables.dt_colVis(),altair_datatables.dt_tableExport()}),altair_datatables={dt_default:function(){var t=$("#dt_default");t.length&&t.DataTable()},dt_scroll:function(){var t=$("#dt_scroll");t.length&&t.DataTable({scrollY:"200px",scrollCollapse:!1,paging:!1})},dt_individual_search:function(){var t=$("#dt_individual_search");if(t.length){t.find("tfoot th").each(function(){var a=t.find("tfoot th").eq($(this).index()).text();$(this).html('<input type="text" class="md-input" placeholder="'+a+'" />')}),altair_md.inputs();var a=t.DataTable();a.columns().every(function(){var t=this;$("input",this.footer()).on("keyup change",function(){t.search(this.value).draw()})})}},dt_colVis:function(){var t=$("#dt_colVis"),a=t.prev(".dt_colVis_buttons");if(t.length){var e=t.DataTable({buttons:[{extend:"colvis",fade:0}]});e.buttons().container().appendTo(a)}},dt_tableExport:function(){var t=$("#dt_tableExport"),a=t.prev(".dt_colVis_buttons");if(t.length){var e=t.DataTable({buttons:[{extend:"copyHtml5",text:'<i class="uk-icon-files-o"></i> Copy',titleAttr:"Copy"},{extend:"print",text:'<i class="uk-icon-print"></i> Print',titleAttr:"Print"},{extend:"excelHtml5",text:'<i class="uk-icon-file-excel-o"></i> XLSX',titleAttr:""},{extend:"csvHtml5",text:'<i class="uk-icon-file-text-o"></i> CSV',titleAttr:"CSV"},{extend:"pdfHtml5",text:'<i class="uk-icon-file-pdf-o"></i> PDF',titleAttr:"PDF"}]});e.buttons().container().appendTo(a)}}};
