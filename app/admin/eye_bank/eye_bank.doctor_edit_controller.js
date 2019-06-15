@@ -8,7 +8,7 @@ function EyeBankDoctorEditController($scope, $http) {
     console.log(eye_bank_doctor_id);
 
     $http
-        .get(window.location.origin+"/medical-department/api/hospital/get-selected-department/" + eye_bank_doctor_id, {
+        .get(window.location.origin+"/medical-department/api/eye-bank/get-selected-department/" + eye_bank_doctor_id, {
             transformRequest: angular.identity,
             headers: {'Content-Type': undefined, 'Process-Data': false}
         })
@@ -32,7 +32,7 @@ function EyeBankDoctorEditController($scope, $http) {
 
 
         $http
-        .get(window.location.origin+"/medical-specialist/api/hospital/get-selected-medical-specialist/" + eye_bank_doctor_id, {
+        .get(window.location.origin+"/medical-specialist/api/eye-bank/get-selected-medical-specialist/" + eye_bank_doctor_id, {
             transformRequest: angular.identity,
             headers: {'Content-Type': undefined, 'Process-Data': false}
         })

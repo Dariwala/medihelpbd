@@ -79,6 +79,8 @@ Route::group(['prefix' => 'district'], function () {
 
     Route::get('/api/blood-donor/get-selected-district/{id}', 'DistrictController@getSelectedDistrictBloodDonor');
 
+    Route::get('/api/ambulance/get-selected-district/{id}', 'DistrictController@getSelectedDistrictAmbulance');
+
     Route::get('/api/air-ambulance/get-selected-district/{id}', 'DistrictController@getSelectedDistrictAirAmbulance');
 
     Route::get('/api/foreignmedical/get-selected-district/{id}', 'DistrictController@getSelectedDistrictForeignmedical');
