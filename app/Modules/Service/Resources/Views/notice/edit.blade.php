@@ -1,6 +1,6 @@
 @extends('layouts.admin_master')
 
-@section('title', 'Images')
+@section('title', 'Advertisement Image')
 
 @section('content')
 <div id="page_content">

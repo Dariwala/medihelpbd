@@ -18,7 +18,7 @@
                                     <th data-priority="critical">ID</th>
                                     <th data-priority="critical">Name</th>
                                     <th data-priority="critical">নাম</th>
-                                    <th data-priority="1">Updated by</th>
+                                    <th data-priority="1">Created at</th>
                                     <th data-priority="1">Updated at</th>
                                     <th class="filter-false remove sorter-false uk-text-center" data-priority="1">Actions</th>
                                 </tr>
@@ -28,7 +28,7 @@
                                     <th>ID</th>
                                     <th>Name</th>
                                     <th>নাম</th>
-                                    <th>Updated by</th>
+                                    <th>Created at</th>
                                     <th>Updated at</th>
                                     <th class="uk-text-center">Actions</th>
                                 </tr>

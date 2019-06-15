@@ -64,7 +64,7 @@ function VaccinePointController($scope, $http) {
             .then(function(response){
                 data = response.data;
                 $('#subdistrict_id').kendoDropDownList({
-                    optionLabel   : "Select District",
+                    optionLabel   : "Select Sub-District",
                     dataTextField: "text",
                     dataValueField: "value",
                     dataSource: data,

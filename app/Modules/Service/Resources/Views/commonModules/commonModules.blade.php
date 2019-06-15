@@ -5,7 +5,7 @@
 @section('content')
 <div id="page_content">
     <div id="page_content_inner">
-        <h3 class="heading_b uk-margin-bottom">Module Details</h3>
+        <h3 class="heading_b uk-margin-bottom">Modules</h3>
         
         @if(isset($message))<h4 style="color: @if($message == "Data Updated Successfully.") green; @else red; @endif ">{{ $message }}</h4>@endif
         

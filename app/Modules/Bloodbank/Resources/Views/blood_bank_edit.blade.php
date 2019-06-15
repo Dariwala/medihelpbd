@@ -12,6 +12,7 @@
         <div id="page_content_inner">
             <div class="uk-grid" data-uk-grid-margin="" data-uk-grid-match="" id="user_profile">
                 <div class="uk-width-large-1-1">
+                @include('partials.flash_message')
                     <div class="md-card">
                         <div class="user_heading">
                             <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px);margin-top:16px;">
@@ -30,8 +31,6 @@
                                 </h2>
                             </div>
                         </div>
-
-                        @include('partials.flash_message')
                         <div class="user_content">
                             <ul class="uk-tab" data-uk-sticky="{ top: 48, media: 960 }" data-uk-tab="{connect:'#user_profile_tabs_content', animation:'slide-horizontal'}" id="user_profile_tabs">
                                 <li class="uk-active">

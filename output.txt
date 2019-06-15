@@ -1,2 +1,2 @@
-app/admin/eye_bank/eye_bank.doctor_edit_controller.js:        .get(window.location.origin+"/medical-department/api/hospital/get-selected-department/" + eye_bank_doctor_id, {
-app/admin/hospital/hospital.doctor_edit_controller.js:        .get(window.location.origin+"/medical-department/api/hospital/get-selected-department/" + hospital_doctor_id, {
+app/Modules/District/Resources/Views/sub_district.blade.php:                                    <th data-priority="1">Updated by</th>
+app/Modules/District/Resources/Views/sub_district.blade.php:                                    <th>Updated by</th>
