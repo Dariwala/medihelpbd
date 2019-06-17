@@ -49,7 +49,7 @@
                             <div class="uk-width-medium-1-2">
                                 <div class="parsley-row uk-margin-top">
                                     <select id="select_demo_4" ng-model="name" name="subdistrict_id" data-md-selectize>
-                                        <option value="">Select District</option>
+                                        <option value="">Select Sub-District</option>
                                         @foreach($subdistricts as $subdistrict)
                                         <option value="{{ $subdistrict->id }}">{{ $subdistrict->sub_district_name }}</option>
                                         @endforeach
