@@ -495,8 +495,9 @@
                                     @endforeach
                                 </div>
                             </li>
-                        </ul>
                         -->
+                        </ul>
+                        
                     </li>
                     <li ng-controller="ViewBloodBankController">
                         <div class="uk-form-row">
