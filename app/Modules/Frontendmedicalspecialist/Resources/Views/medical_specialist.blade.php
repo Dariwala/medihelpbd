@@ -187,7 +187,7 @@
                     <li>
                         <a href="#">বিশেষত্ব</a>
                     </li>
-
+                    <!--
                     @if(session()->has('flag') || $flag = 1 && $flag != 0)
 
                         <li class="uk-active">
@@ -199,6 +199,7 @@
                             <a href="#">ডাক্তারের সাক্ষাৎ</a>
                         </li>
                     @endif
+                    -->
                     
                 </ul>
     
@@ -869,7 +870,7 @@
                     <li>
                         <a href="#">Speciality</a>
                     </li>
-
+                    <!--
                     @if(session()->has('flag') || $flag = 1 && $flag != 0)
                         <li class="uk-active">
                             <a href="#">Appointment</a>
@@ -880,6 +881,7 @@
                             <a href="#">Appointment</a>
                         </li>
                     @endif
+                    -->
                     
                 </ul>
     

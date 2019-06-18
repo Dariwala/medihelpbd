@@ -320,9 +320,9 @@
                                 <li>
                                     <a href="{{url('/faq')}}"><span><strong>সাধারণ জিজ্ঞাসা</strong></span></a>
                                 </li>
-                                <li>
+                                <!--<li>
                                     <a href="{{url('/make-appointment')}}"><span><strong>সাক্ষাৎ</strong></span></a>
-                                </li>
+                                </li>-->
                                 <li>
                                     <a href="{{url('/services-list')}}"><span><strong>সেবাসমূহের তালিকা</strong></span></a>
                                 </li>
@@ -355,9 +355,9 @@
                                 <li>
                                     <a href="{{url('/vision')}}"><span><strong>About</strong></span></a>
                                 </li>
-                                <li>
+                                <!--<li>
                                     <a href="{{url('/make-appointment')}}"><span><strong>Appointment</strong></span></a>
-                                </li>
+                                </li>-->
                                 <li>
                                     <a href="{{url('/contact')}}"><span><strong>Contact</strong></span></a>
                                 </li>

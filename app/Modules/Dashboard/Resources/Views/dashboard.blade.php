@@ -113,7 +113,7 @@
                     <div class="md-card">
                         <div class="md-card-content">
                             <div class="uk-float-right uk-margin-top uk-margin-small-right"><span class="peity_sale peity_data">5,3,9,6,5,9,7,3,5,2</span></div>
-                            <span class="uk-text-muted uk-text-small">Doctor (s)</span>
+                            <span class="uk-text-muted uk-text-small">Doctors Panel (s)</span>
                             <h2 class="uk-margin-remove"><span class="countUpMe">{{$medical_specialist}}<noscript>142384</noscript></span></h2>
                         </div>
                     </div>

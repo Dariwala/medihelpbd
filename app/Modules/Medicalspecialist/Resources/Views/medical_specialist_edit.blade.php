@@ -44,13 +44,13 @@
                                     <a style="text-align: center;" href="#">Article</a>
                                 </li>
                                 <li>
-                                    <a style="text-align: center;" href="#">Speciality</a>
-                                </li>
-                                <li>
                                     <a style="text-align: center;" href="#">Chamber</a>
                                 </li>
                                 <li>
-                                    <a style="text-align: center;" href="#">Appointment Chamber</a>
+                                    <a style="text-align: center;" href="#">Speciality</a>
+                                </li>
+                                <li>
+                                    <a style="text-align: center;" href="#">Appointment</a>
                                 </li>
                                 <li>
                                     <a style="text-align: center;" href="#">Summary</a>
@@ -79,27 +79,27 @@
 
                                             <div class="uk-width-medium-1-2">
                                                 <div class="parsley-row uk-margin-top">
-                                                    <label for="medical_specialist_name"> Name<span class="req">*</span></label>
+                                                    <label for="medical_specialist_name"> Title<span class="req">*</span></label>
                                                     <input type="text" id="medical_specialist_name" name="medical_specialist_name" value="{{ $medical_specialist->medical_specialist_name}}" required class="md-input" /> 
                                                 </div>
                                             </div>
                                             <div class="uk-width-medium-1-2">
                                                 <div class="parsley-row uk-margin-top">
-                                                    <label for="b_medical_specialist_name"> নাম<span class="req">*</span></label>
+                                                    <label for="b_medical_specialist_name"> শিরোনাম<span class="req">*</span></label>
                                                     <input type="text" id="b_medical_specialist_name" name="b_medical_specialist_name" value="{{ $medical_specialist->b_medical_specialist_name}}" required class="md-input" /> 
                                                 </div>
                                             </div>
 
                                             <div class="uk-width-medium-1-2">
                                                 <div class="parsley-row uk-margin-top">
-                                                    <label for="medical_specialist_subname"> Sub-Name<span class="req"></span></label>
+                                                    <label for="medical_specialist_subname"> Sub-Title<span class="req"></span></label>
                                                     <input type="text" id="medical_specialist_subname" name="medical_specialist_subname" value="{{ $medical_specialist->medical_specialist_subname}}" class="md-input" /> 
                                                 </div>
                                             </div>
 
                                             <div class="uk-width-medium-1-2">
                                                 <div class="parsley-row uk-margin-top">
-                                                    <label for="b_medical_specialist_subname">উপ নাম <span class="req"></span></label>
+                                                    <label for="b_medical_specialist_subname">উপ-শিরোনাম <span class="req"></span></label>
                                                     <input type="text" id="b_medical_specialist_subname" name="b_medical_specialist_subname" value="{{ $medical_specialist->b_medical_specialist_subname}}" class="md-input" /> 
                                                 </div>
                                             </div>
@@ -301,34 +301,6 @@
                                         </div>
                                     </form>
                                 </li>
-                                <li ng-controller="MedicalSpecialistController">
-                                    {!! Form::open(['url' => array('medical-specialist/edit/info', $medical_specialist->id), 'method' => 'POST', 'files' => true]) !!}
-                                        <div class="uk-grid" data-uk-grid-margin>
-
-                                        <input type="hidden" ng-init="medical_specialist_id='asdfg'" value="{{$medical_specialist_id}}" name="medical_specialist_id" ng-model="medical_specialist_id">
-                                        <input type="hidden" value="1" name="medical_specialist_speciality_form">
-                                        
-                                            <div class="uk-width-medium-1-2">
-                                                <label for="specialty">Speciality</label>
-                                                <div class="parsley-row uk-margin-top">
-                                                    <textarea class="md-input" id="specialty" name="specialty" cols="10" rows="3" data-parsley-trigger="keyup" >{{$medical_specialist->specialty}}</textarea>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-medium-1-2">
-                                                <label for="b_specialty">বিশেষত্ব</label>
-                                                <div class="parsley-row uk-margin-top">
-                                                    <textarea class="md-input" id="b_specialty" name="b_specialty" cols="10" rows="3" data-parsley-trigger="keyup" >{{$medical_specialist->b_specialty}}</textarea>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class=" uk-width-medium-1-1 ">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    {!! Form::close() !!}
-                                </li>
                                 <li>
                                     <form action="">
                                         <div class="md-card">
@@ -384,6 +356,35 @@
                                             </div>
                                         </div>
                                     </form>
+                                </li>
+
+                                <li ng-controller="MedicalSpecialistController">
+                                    {!! Form::open(['url' => array('medical-specialist/edit/info', $medical_specialist->id), 'method' => 'POST', 'files' => true]) !!}
+                                        <div class="uk-grid" data-uk-grid-margin>
+
+                                        <input type="hidden" ng-init="medical_specialist_id='asdfg'" value="{{$medical_specialist_id}}" name="medical_specialist_id" ng-model="medical_specialist_id">
+                                        <input type="hidden" value="1" name="medical_specialist_speciality_form">
+                                        
+                                            <div class="uk-width-medium-1-2">
+                                                <label for="specialty">Speciality</label>
+                                                <div class="parsley-row uk-margin-top">
+                                                    <textarea class="md-input" id="specialty" name="specialty" cols="10" rows="3" data-parsley-trigger="keyup" >{{$medical_specialist->specialty}}</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-medium-1-2">
+                                                <label for="b_specialty">বিশেষত্ব</label>
+                                                <div class="parsley-row uk-margin-top">
+                                                    <textarea class="md-input" id="b_specialty" name="b_specialty" cols="10" rows="3" data-parsley-trigger="keyup" >{{$medical_specialist->b_specialty}}</textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class=" uk-width-medium-1-1 ">
+                                                <div class="uk-float-right uk-margin-top">
+                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {!! Form::close() !!}
                                 </li>
                                 
                                 <li>

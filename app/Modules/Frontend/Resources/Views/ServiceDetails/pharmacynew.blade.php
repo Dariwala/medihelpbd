@@ -341,7 +341,7 @@
         <div class="uk-width-large-7-10">
             <div class="md-card">
                 <div class="user_heading">
-                    <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px)">
+                    <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px);margin-top:16px;">
                         @if($pharmacynew->photo_path == '')
                         <div class="thumbnail"><img alt="pharmacynew"  src="{{asset('/pharmacynew.png')}}">
                         </div>
@@ -352,7 +352,7 @@
                     </div>
         
                     <div class="user_heading_content" style="display:table;margin:0 auto;">
-                        <h2 class="heading_b uk-margin-bottom"><span class="uk-text-break">{{$pharmacynew->pharmacynew_name}}</span>
+                        <h2 class="heading_b"><span class="uk-text-break">{{$pharmacynew->pharmacynew_name}}</span>
                         </h2>
                     </div>
                 </div>

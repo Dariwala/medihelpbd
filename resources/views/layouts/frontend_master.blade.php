@@ -421,9 +421,9 @@
                                                 <li>
                                                     <a href="{{url('/faq')}}"><span><strong>সাধারণ জিজ্ঞাসা</strong></span></a>
                                                 </li>
-                                                <li>
+                                                <!--<li>
                                                     <a href="{{url('/make-appointment')}}"><span><strong>সাক্ষাৎ</strong></span></a>
-                                                </li>
+                                                </li>-->
                                                 <li>
                                                     <a href="{{url('/services-list')}}"><span><strong>সেবাসমূহের তালিকা</strong></span></a>
                                                 </li>
@@ -436,7 +436,7 @@
                                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
                                             </a>-->
                                             
-                                            <p style="margin-bottom: 2px;">&copy; মেডিহেল্পবিডি ডট কম</p>
+                                            <p style="margin-bottom: 22px;">&copy; মেডিহেল্পবিডি ডট কম</p>
                                             <!--<p style="font-size: 0.9em; margin-top: 0px; margin-bottom: 10px;">প্রস্তুত এবং রক্ষণাবেক্ষণের দায়িত্বে <a style="color: #444; text-decoration: none;" href="http://www.ontiktechnology.com">অন্তিক টেকনোলজি</a></p>-->
                                         </div>
                                     @else
@@ -446,9 +446,9 @@
                                                 <li>
                                                     <a href="{{url('/vision')}}"><span><strong>About</strong></span></a>
                                                 </li>
-                                                <li>
+                                                <!--<li>
                                                     <a href="{{url('/make-appointment')}}"><span><strong>Appointment</strong></span></a>
-                                                </li>
+                                                </li>-->
                                                 <li>
                                                     <a href="{{url('/contact')}}"><span><strong>Contact</strong></span></a>
                                                 </li>
@@ -470,7 +470,7 @@
                                             	<img style="width: 70%;" src="/uploads/google_app_icon.png" alt="Get on Google Play">
                                             </a>-->
                                             
-                                            <p style="margin-bottom: 2px;">&copy; medihelpbd.com</p>
+                                            <p style="margin-bottom: 22px;">&copy; medihelpbd.com</p>
                                             <!--<p style="font-size: 0.9em; margin-top: 0px;">Developed &amp; Maintained By <a style="color: #444; text-decoration: none;" href="http://www.ontiktechnology.com">Ontik Technology</a></p>-->
                                         </div>
                                     @endif

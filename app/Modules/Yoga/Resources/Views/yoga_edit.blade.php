@@ -18,7 +18,7 @@
                         <div class="user_heading">
                             <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px);margin-top:16px;">
                                 @if($yoga->photo_path == '')
-                                <div class="thumbnail"><img alt="yoga"  src="{{asset('/yoga.PNG')}}">
+                                <div class="thumbnail"><img alt="yoga"  src="{{asset('/yoga.png')}}">
                                 </div>
                                 @else
                                 <div class="thumbnail"><img alt="yoga" src="{{ url($yoga->photo_path) }}">

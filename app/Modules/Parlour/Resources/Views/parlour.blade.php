@@ -11,7 +11,7 @@
             <div class="md-card-content">
                 <div class="uk-overflow-container uk-margin-bottom">
                     <div style="padding: 5px;margin-bottom: 10px;" class="dt_colVis_buttons"></div>
-                    <table class="uk-table" id="dt_tableExport">
+                    <table class="uk-table uk-table-align-vertical uk-table-nowrap tablesorter tablesorter-altair" id="dt_tableExport">
                         <thead>
                             <tr>
                                 <th data-priority="critical">Id</th>

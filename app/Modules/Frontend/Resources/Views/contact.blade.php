@@ -119,7 +119,7 @@
                                                 <textarea type="text" id="name" name="name" value="" required class="md-input" ></textarea>
                                             </div>
                                             <div class="parsley-row uk-margin-top">
-                                                <label for="email">E-Mail or Phone <span class="req">*</span></label>
+                                                <label for="email">E-mail or Phone <span class="req">*</span></label>
                                                 <textarea type="text" id="email" name="email" value="" required class="md-input" ></textarea>
                                             </div>
                                             <div class="parsley-row uk-margin-top">
