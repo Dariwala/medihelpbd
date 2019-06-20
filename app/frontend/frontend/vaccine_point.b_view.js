@@ -101,6 +101,15 @@ function ViewBnVaccinePointController($scope, $http, $sce) {
                 index: 0
             });
 
+            $('#medical_specialist_id').kendoDropDownList({
+                optionLabel   : "ডাক্তার নির্বাচন করুন",
+                dataTextField: "text",
+                dataValueField: "value",
+                dataSource: data,
+                dataType: "jsonp",
+                index: 0
+            });
+
             var dropdownlist = $("#department_id").data("kendoDropDownList");
 
         });
@@ -109,7 +118,12 @@ function ViewBnVaccinePointController($scope, $http, $sce) {
         {
             
             $('#medical_specialist_id').kendoDropDownList({
-             optionLabel   : "ডাক্তার নির্বাচন করুন",
+                optionLabel   : "ডাক্তার নির্বাচন করুন",
+                dataTextField: "text",
+                dataValueField: "value",
+                dataSource: data,
+                dataType: "jsonp",
+                index: 0
             });
         };
 

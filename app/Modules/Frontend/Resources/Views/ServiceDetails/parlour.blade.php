@@ -137,15 +137,15 @@
                 <div class="user_content">
                     <ul class="uk-tab" data-uk-sticky="{ top: 48, media: 960 }" data-uk-tab="{connect:'#user_profile_tabs_content', animation:'slide-horizontal'}" id="user_profile_tabs">
                         <li class="uk-active">
-                            <a style="text-align:center;" href="#">সম্বন্ধে</a>
+                            <a href="#">সম্বন্ধে</a>
                         </li>
                         
                         <li>
-                            <a style="text-align:center;" href="#">প্রবন্ধ </a>
+                            <a href="#">প্রবন্ধ </a>
                         </li>
                         
                         <li ng-controller="ViewBnParlourController">
-                            <a style="text-align:center;" ng-click="getSubServiceDropDown()" href="#">সেবা</a>
+                            <a ng-click="getSubServiceDropDown()" href="#">সেবা</a>
                         </li>
                     </ul>
 
@@ -321,15 +321,15 @@
                 <div class="user_content">
                     <ul class="uk-tab" data-uk-sticky="{ top: 48, media: 960 }" data-uk-tab="{connect:'#user_profile_tabs_content', animation:'slide-horizontal'}" id="user_profile_tabs">
                         <li class="uk-active">
-                            <a style="text-align:center;" href="#">About</a>
+                            <a href="#">About</a>
                         </li>
                         
                         <li>
-                            <a style="text-align:center;" href="#">Article</a>
+                            <a href="#">Article</a>
                         </li>
                         
                         <li ng-controller="ViewParlourController">
-                            <a style="text-align:center;" ng-click="getSubServiceDropDown()" href="#">Service</a>
+                            <a ng-click="getSubServiceDropDown()" href="#">Service</a>
                         </li>
                     </ul>
 

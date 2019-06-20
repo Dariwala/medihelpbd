@@ -1,13 +1,22 @@
-app/Modules/Airambulance/Resources/Views/air_ambulance_edit.blade.php:                                <div class="thumbnail"><img alt="Airmbulance"  src="{{asset('/logo1.png')}}">
-app/Modules/Airambulance/Resources/Views/air_ambulance_view.blade.php:                                        <img alt="user avatar" src="{{asset('/logo1.png')}}">
-app/Modules/Frontend/Resources/Views/contact_list.blade.php:    <link rel="icon" type="image/png" href="{{url('vendor/img/logo1.png')}}" sizes="16x16">
-app/Modules/Frontend/Resources/Views/contact_list.blade.php:                                            <img class="md-card-head-avatar" style = "border: 1px solid red;" src="{{url('logo1.png')}}" alt=""/>
-app/Modules/Frontend/Resources/Views/contact_list.blade.php:                                            <img class="md-card-head-avatar" style = "border: 1px solid red;" src="{{url('logo1.png')}}" alt=""/>
-app/Modules/Frontend/Resources/Views/home.blade.php:    <link rel="icon" type="image/png" href="{{url('vendor/img/logo1.png')}}" sizes="16x16">
-app/Modules/Frontendairambulance/Resources/Views/air_ambulance.blade.php:                            <img alt="user avatar" src="{{asset('/logo1.png')}}">
-app/Modules/Frontendairambulance/Resources/Views/air_ambulance.blade.php:                            <img alt="user avatar" src="{{asset('/logo1.png')}}">
-resources/views/layouts/admin_master.blade.php:        <link rel="icon" type="image/png" href="{{url('vendor/img/logo1.png')}}" sizes="16x16">
-resources/views/layouts/admin_master2.blade.php:        <link rel="icon" type="image/png" href="{{url('vendor/img/logo1.png')}}" sizes="16x16">
-resources/views/layouts/app.blade.php:  <link rel="icon" type="image/png" href="{{url('vendor/img/logo1.png')}}" sizes="16x16">
-resources/views/layouts/frontend_master.blade.php:    <link rel="icon" type="image/png" href="{{url('vendor/img/logo1.png')}}" sizes="16x16">
-resources/views/layouts/frontend_master_02.blade.php:    <link rel="icon" type="image/png" href="{{url('vendor/img/logo1.png')}}" sizes="16x16">
+app/Modules/Frontend/Resources/Views/ServiceDetails/addiction.blade.php:                                <a style="text-align:center;" href="#">সম্বন্ধে</a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/addiction.blade.php:                                <a style="text-align:center;" href="#">প্রবন্ধ </a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/addiction.blade.php:                                <a style="text-align:center;" href="#">About</a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/addiction.blade.php:                                <a style="text-align:center;" href="#">Article</a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/gym.blade.php:                            <a style="text-align:center;" href="#">সম্বন্ধে</a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/gym.blade.php:                            <a style="text-align:center;" href="#">প্রবন্ধ </a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/gym.blade.php:                            <a style="text-align:center;" href="#">About</a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/gym.blade.php:                            <a style="text-align:center;" href="#">Article</a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/parlour.blade.php:                            <a style="text-align:center;" href="#">সম্বন্ধে</a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/parlour.blade.php:                            <a style="text-align:center;" href="#">প্রবন্ধ </a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/parlour.blade.php:                            <a style="text-align:center;" href="#">About</a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/parlour.blade.php:                            <a style="text-align:center;" href="#">Article</a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/yoga.blade.php:                            <a style="text-align:center;" href="#">সম্বন্ধে</a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/yoga.blade.php:                            <a style="text-align:center;" href="#">প্রবন্ধ </a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/yoga.blade.php:                            <a style="text-align:center;" href="#">About</a>
+app/Modules/Frontend/Resources/Views/ServiceDetails/yoga.blade.php:                            <a style="text-align:center;" href="#">Article</a>
+app/Modules/Pharmacy/Resources/Views/pharmacy_view.blade.php:                                    <a style="text-align:center;" href="#">Medicinal</a>
+app/Modules/Skinlasercenter/Resources/Views/skin_laser_center_edit.blade.php:                                    <a style="text-align:center;" href="#">Info</a>
+app/Modules/Skinlasercenter/Resources/Views/skin_laser_center_edit.blade.php:                                    <a style="text-align:center;" href="#">About</a>
+app/Modules/Skinlasercenter/Resources/Views/skin_laser_center_edit.blade.php:                                    <a style="text-align:center;" href="#">Article</a>
+app/Modules/Skinlasercenter/Resources/Views/skin_laser_center_edit.blade.php:                                    <a style="text-align:center;" href="#">Doctor</a>
+app/Modules/Skinlasercenter/Resources/Views/skin_laser_center_edit.blade.php:                                    <a style="text-align:center;" href="#">Service</a>

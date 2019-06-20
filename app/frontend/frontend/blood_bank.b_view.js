@@ -99,6 +99,16 @@ function ViewBnBloodBankController($scope, $http, $sce) {
                 index: 0
             });
 
+            $('#medical_specialist_id').kendoDropDownList({
+                optionLabel   : "ডাক্তার নির্বাচন করুন",
+                dataTextField: "text",
+                dataValueField: "value",
+                dataSource: data,
+                dataType: "jsonp",
+                filter: "contains",
+                index: 0
+            });
+
             var dropdownlist = $("#department_id").data("kendoDropDownList");
 
         });
@@ -108,7 +118,13 @@ function ViewBnBloodBankController($scope, $http, $sce) {
             console.log('med');
             
             $('#medical_specialist_id').kendoDropDownList({
-             optionLabel   : "ডাক্তার নির্বাচন করুন",
+                optionLabel   : "ডাক্তার নির্বাচন করুন",
+                dataTextField: "text",
+                dataValueField: "value",
+                dataSource: data,
+                dataType: "jsonp",
+                filter: "contains",
+                index: 0
             });
         };
 

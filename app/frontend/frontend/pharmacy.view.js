@@ -175,6 +175,16 @@ function ViewPharmacyController($scope, $http , $sce) {
                 index: 0
             });
 
+            $('#medical_specialist_id').kendoDropDownList({
+                optionLabel   : "Select Doctor",
+                dataTextField: "text",
+                dataValueField: "value",
+                dataSource: data,
+                dataType: "jsonp",
+                filter: "contains",
+                index: 0
+            });
+
             var dropdownlist = $("#department_id").data("kendoDropDownList");
 
         });
@@ -183,7 +193,13 @@ function ViewPharmacyController($scope, $http , $sce) {
         {
             
             $('#medical_specialist_id').kendoDropDownList({
-             optionLabel   : "Select Doctor",
+                optionLabel   : "Select Doctor",
+                dataTextField: "text",
+                dataValueField: "value",
+                dataSource: data,
+                dataType: "jsonp",
+                filter: "contains",
+                index: 0
             });
         };
 

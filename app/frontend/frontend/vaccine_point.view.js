@@ -100,6 +100,15 @@ function ViewVaccinePointController($scope, $http, $sce) {
                 index: 0
             });
 
+            $('#medical_specialist_id').kendoDropDownList({
+                optionLabel   : "Select Doctor",
+                dataTextField: "text",
+                dataValueField: "value",
+                dataSource: data,
+                dataType: "jsonp",
+                index: 0
+            });
+
             var dropdownlist = $("#department_id").data("kendoDropDownList");
 
         });
@@ -107,7 +116,12 @@ function ViewVaccinePointController($scope, $http, $sce) {
         $scope.getMedicalSpecialistDropDown = function() 
         {
             $('#medical_specialist_id').kendoDropDownList({
-             optionLabel   : "Select Doctor",
+                optionLabel   : "Select Doctor",
+                dataTextField: "text",
+                dataValueField: "value",
+                dataSource: data,
+                dataType: "jsonp",
+                index: 0
             });
         };
 
