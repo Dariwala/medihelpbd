@@ -114,7 +114,7 @@
 @section('content')
 
     @if(Session('language')=='bn')
-        <div class="uk-width-large-7-10">
+        <div class="uk-width-large-7-10" oncopy="return false" oncut="return false" onpaste="return false">
         <div class="md-card">
             <div class="user_heading">
                 <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px);margin-top:16px;">
@@ -348,7 +348,7 @@
         </div>
     </div>
     @else
-        <div class="uk-width-large-7-10">
+        <div class="uk-width-large-7-10" oncopy="return false" oncut="return false" onpaste="return false">
         <div class="md-card">
             <div class="user_heading">
                 <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px);margin-top:16px;">
