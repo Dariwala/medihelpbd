@@ -62,6 +62,10 @@
     }
 </style>
 
+<style type="text/css" media="print">
+    div { visibility: hidden; display: none }
+</style>
+
 @section('aside')
 
     <?php

@@ -54,6 +54,10 @@
         }
     </style>
 
+    <style type="text/css" media="print">
+        div { visibility: hidden; display: none }
+    </style>
+
     @if(Session('language')=='bn')
         <aside id="sidebar_main">
             <div class="sidebar_main_header">
