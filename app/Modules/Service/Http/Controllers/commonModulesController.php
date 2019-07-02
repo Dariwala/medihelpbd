@@ -49,6 +49,8 @@ class commonModulesController extends Controller
             $data->b_latest_news    = $request->b_latestNews_description;
             $data->notice           = $request->notice_description;
             $data->b_notice         = $request->b_notice_description;
+            $data->report_delivery  = $request->report_delivery;
+            $data->b_report_delivery= $request->b_report_delivery;
             
             $data->save();
             

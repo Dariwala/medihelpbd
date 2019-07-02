@@ -135,6 +135,21 @@
                                 </div>
                             </div>
                             <!-- Notice Ends -->
+
+                            <!-- Report Delivery List -->
+                            <div class="uk-width-medium-1-2 uk-margin-top">
+                                <label for="add_course_description">Report Delivery</label>
+                                <div class="parsley-row uk-margin-top">
+                                    <textarea class="md-input" id="report_delivery" name="report_delivery" cols="10" rows="3" data-parsley-trigger="keyup" >{{ isset($data->report_delivery) ? $data->report_delivery : '' }}</textarea>
+                                </div>
+                            </div>
+                            <div class="uk-width-medium-1-2 uk-margin-top">
+                                <label for="add_course_description">রিপোর্ট ডেলিভারি</label>
+                                <div class="parsley-row uk-margin-top">
+                                    <textarea class="md-input" id="b_report_delivery" name="b_report_delivery" cols="10" rows="3" data-parsley-trigger="keyup" >{{ isset($data->b_report_delivery) ? $data->b_report_delivery : '' }}</textarea>
+                                </div>
+                            </div>
+                            <!-- Report Delivery Ends -->
                             
                         </div>
                         <div class="uk-float-right uk-margin-top">
@@ -174,6 +189,9 @@
     
     CKEDITOR.replace('notice_description');
     CKEDITOR.replace('b_notice_description');
+
+    CKEDITOR.replace('report_delivery');
+    CKEDITOR.replace('b_report_delivery');
 </script>
 
 @endsection

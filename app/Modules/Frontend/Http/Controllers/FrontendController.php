@@ -50,6 +50,12 @@ class FrontendController extends Controller
         
         return view('frontend::contact', compact('data'));
     }
+    public function reportDelivery(){
+        
+        $data = commonModules::first();
+        
+        return view('frontend::report_delivery', compact('data'));
+    }
      public function contactAdmin(Request $request){
        
         $reqdata    = $request->toArray();
@@ -122,6 +128,73 @@ class FrontendController extends Controller
         Session::flash('contact_message',$message);
 
         return view('frontend::contact', compact('data'));
+    }
+
+    public function reportDeliveryPost(Request $request){
+
+        try{
+
+            if($request->hasFile('user_photo'))
+            {
+                $file = $request->file('user_photo');
+
+                $file_name = $file->getClientOriginalName();
+                $without_extention = substr($file_name, 0, strrpos($file_name, "."));
+                $file_extention = $file->getClientOriginalExtension();
+                $phone = $request->phone_number;
+                $new_file_name = $phone.'.'.$file_extention;
+
+                $success = $file->move('uploads/report_delivery',$new_file_name);
+                
+            }
+            $reqdata    = $request->toArray();
+            $reqdata['photo_path'] = 'uploads/report_delivery/'.$new_file_name;
+
+            $mail_send  = Mail::send('report_delivery', ["data1" => $reqdata], function ($message) use ($reqdata) {
+                $message->to('info@medihelpbd.com');
+                $message->subject('Report Delivery');
+            });
+
+            if(Session('language') == 'bn'){
+                $message = "মেসেজ সফলভাবে পাঠানো হয়েছে।";
+            }else{
+                $message = "Message sent successfully.";    
+            }
+                    
+            }catch(Exception $e){
+                
+                if(Session('language') == 'bn'){
+                    $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
+                }else{
+                    $message = "Sorry! Something went wrong. Please try again.";    
+                }
+                
+                //$status = 0;
+                
+            }
+        
+        
+        $data = commonModules::first();
+
+        Session::flash('delivery_message',$message);
+
+        $files = array_diff(scandir('uploads/report_delivery'), array('.', '..'));;
+        foreach($files as $file)
+        {
+            $fpath = 'uploads/report_delivery/'.$file;
+
+            if(file_exists($fpath))
+            {
+                $modified = strtotime(date ("F d Y H:i:s.", filemtime($fpath)));
+                $date = strtotime(date('m/d/Y h:i:s a', time()));
+                if($date - $modified>500)
+                {
+                    unlink($fpath);
+                }
+            }
+        }
+
+        return view('frontend::report_delivery', compact('data'));
     }
     
     public function appointment(){

@@ -419,6 +419,9 @@
                                                     <a href="{{url('/vision')}}"><span><strong> সম্বন্ধে</strong></span></a>
                                                 </li>
                                                 <li>
+                                                    <a href="{{url('/report_delivery')}}"><span><strong>রিপোর্ট ডেলিভারি</strong></span></a>
+                                                </li>
+                                                <li>
                                                     <a href="{{url('/faq')}}"><span><strong>সাধারণ জিজ্ঞাসা</strong></span></a>
                                                 </li>
                                                 <!--<li>
@@ -460,6 +463,9 @@
                                                 </li>
                                                 <li>
                                                     <a href="{{url('/services-list')}}"><span><strong>List of Services</strong></span></a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{url('/report_delivery')}}"><span><strong>Report Delivery</strong></span></a>
                                                 </li>
                                                 
                                             </ul>
