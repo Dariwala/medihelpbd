@@ -86,10 +86,10 @@
                                             <br>
                                             <div class="uk-width-medium-1-2">
                                                 <div class="parsley-row ">
-                                                     <label for="add_publication_title">ছবি<span class="req"></span></label>
+                                                     <label for="add_publication_title">পরিশোধিত বিলের রশিদ<span class="req"></span></label>
                                                 </div>
                                                 <div class="parsley-row uk-margin-top">
-                                                    <input type="file" id="user_photo" name="user_photo" class="dropify"/>
+                                                    <input type="file" id="user_photo" name="user_photo" class="dropify" required/>
                                                 </div>
                                             </div>
                                             
@@ -135,10 +135,10 @@
                                             <br>
                                             <div class="uk-width-medium-1-2">
                                                 <div class="parsley-row ">
-                                                     <label for="add_publication_title">Image<span class="req"></span></label>
+                                                     <label for="add_publication_title">Paid Money Receipt<span class="req"></span></label>
                                                 </div>
                                                 <div class="parsley-row uk-margin-top">
-                                                    <input type="file" id="user_photo" name="user_photo" class="dropify"/>
+                                                    <input type="file" id="user_photo" name="user_photo" class="dropify" required/>
                                                 </div>
                                             </div>
                                         </div>
