@@ -8,6 +8,12 @@
 @endsection
 
 @section('content')
+<style type="text/css">
+    tr:nth-child(even) 
+    {
+        background-color: #f2f2f2;
+    }
+</style>
 <div id="page_content" ng-controller="OpticalController">
         <div id="page_content_inner">
             <div class="uk-grid" data-uk-grid-margin="" data-uk-grid-match="" id="user_profile">
