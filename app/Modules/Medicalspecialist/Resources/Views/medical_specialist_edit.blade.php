@@ -358,33 +358,49 @@
                                     </form>
                                 </li>
 
-                                <li ng-controller="MedicalSpecialistController">
-                                    {!! Form::open(['url' => array('medical-specialist/edit/info', $medical_specialist->id), 'method' => 'POST', 'files' => true]) !!}
-                                        <div class="uk-grid" data-uk-grid-margin>
+                                <li>
+                                <form action="">
+                                        <div class="md-card">
+                                            <div class="md-card-content">
+                                                <div class="uk-overflow-container uk-margin-bottom">
 
-                                        <input type="hidden" ng-init="medical_specialist_id='asdfg'" value="{{$medical_specialist_id}}" name="medical_specialist_id" ng-model="medical_specialist_id">
-                                        <input type="hidden" value="1" name="medical_specialist_speciality_form">
-                                        
-                                            <div class="uk-width-medium-1-2">
-                                                <label for="specialty">Speciality</label>
-                                                <div class="parsley-row uk-margin-top">
-                                                    <textarea class="md-input" id="specialty" name="specialty" cols="10" rows="3" data-parsley-trigger="keyup" >{{$medical_specialist->specialty}}</textarea>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-medium-1-2">
-                                                <label for="b_specialty">বিশেষত্ব</label>
-                                                <div class="parsley-row uk-margin-top">
-                                                    <textarea class="md-input" id="b_specialty" name="b_specialty" cols="10" rows="3" data-parsley-trigger="keyup" >{{$medical_specialist->b_specialty}}</textarea>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class=" uk-width-medium-1-1 ">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
+                                                    <input type="hidden" ng-init="medical_specialist_id='asdfg'" value="{{$medical_specialist_id}}" name="medical_specialist_id" ng-model="medical_specialist_id">
+                                                    
+                                                    <div style="padding: 5px;margin-bottom: 10px;" class="dt_colVis_buttons"></div>
+                                                    <table class="uk-table uk-table-align-vertical uk-table-nowrap tablesorter tablesorter-altair" id="data_table2">
+                                                        <thead>
+                                                            <tr>
+                                                                <th data-priority="critical">Id</th>
+                                                                <th data-priority="2">Created at</th>
+                                                                <th data-priority="2">Updated at</th>
+                                                                <th class="filter-false remove sorter-false uk-text-center" data-priority="1">Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tfoot>
+                                                            <tr>
+                                                                <th>Id</th>
+                                                                <th>Created at</th>
+                                                                <th>Updated at</th>
+                                                                <th class="uk-text-center">Actions</th>
+                                                            </tr>
+                                                        </tfoot>
+                                                        <tbody>
+                                                        
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>{{ $medical_specialist->created_at}}</td>
+                                                            <td>{{ $medical_specialist->updated_at}}</td>
+                                                            <td class="uk-text-center">
+                                                                <a href="{{ url('medical-specialist/edit/speciality/edit'.'/'.$medical_specialist->id) }}" class="publication-edit" ><i class="md-icon material-icons uk-margin-right">&#xE254;</i></a>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
-                                    {!! Form::close() !!}
+                                    </form>
                                 </li>
                                 
                                 <li>

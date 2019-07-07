@@ -39,6 +39,9 @@ Route::group(['prefix' => 'medical-specialist'], function () {
 
     Route::get('/delete/{id}', 'MedicalSpecialistController@deleteMedicalSpecialist');
 
+    Route::get('/edit/speciality/edit/{id}', 'MedicalSpecialistSpecialityController@index');
+    Route::post('/edit/speciality/edit/{id}', 'MedicalSpecialistSpecialityController@postSpeciality');
+
 
 
     Route::get('/edit/notice/add/{id}', 'MedicalSpecialistNoticeController@getMedicalSpecialistNoticeAdd');
