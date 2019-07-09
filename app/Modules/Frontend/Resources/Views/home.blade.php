@@ -280,10 +280,22 @@
                             </button>
                         </a>
                     </div>
+                    <div class="uk-margin-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">
+                        <a href="{{url('/emergency_helpline')}}">                    
+                            <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                            জরুরী হেল্পলাইন
+                            </button>
+                        </a>
+                    </div>
 
                     <div style="margin-bottom:15px;">
                         <a href="{{url('/special-notice')}}">
                             <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">বিজ্ঞপ্তি</button></span>
+                        </a>
+                    </div>
+                    <div style="margin-bottom:15px;">
+                        <a href="{{url('/report_delivery')}}">
+                            <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">রিপোর্ট ডেলিভারি</button></span>
                         </a>
                     </div>
                       <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;"> আরও   </button>
@@ -295,10 +307,22 @@
                             </button>
                         </a>
                     </div>
+                    <div class="uk-margin-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">
+                        <a href="{{url('/emergency_helpline')}}">                    
+                            <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                Emergency Helpline
+                            </button>
+                        </a>
+                    </div>
 
                     <div style="margin-bottom:15px;">
                         <a href="{{url('/special-notice')}}">
                             <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">Notice</button></span>
+                        </a>
+                    </div>
+                    <div style="margin-bottom:15px;">
+                        <a href="{{url('/report_delivery')}}">
+                            <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">Report Delivery</button></span>
                         </a>
                     </div>
                       <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">  More </button>
@@ -318,14 +342,11 @@
                                     <a href="{{url('/vision')}}"><span><strong>সম্বন্ধে</strong></span></a>
                                 </li>
                                 <li>
-                                    <a href="{{url('/report_delivery')}}"><span><strong>রিপোর্ট ডেলিভারি</strong></span></a>
-                                </li>
-                                <li>
                                     <a href="{{url('/faq')}}"><span><strong>সাধারণ জিজ্ঞাসা</strong></span></a>
                                 </li>
-                                <!--<li>
+                                <li>
                                     <a href="{{url('/make-appointment')}}"><span><strong>সাক্ষাৎ</strong></span></a>
-                                </li>-->
+                                </li>
                                 <li>
                                     <a href="{{url('/services-list')}}"><span><strong>সেবাসমূহের তালিকা</strong></span></a>
                                 </li>
@@ -358,9 +379,9 @@
                                 <li>
                                     <a href="{{url('/vision')}}"><span><strong>About</strong></span></a>
                                 </li>
-                                <!--<li>
+                                <li>
                                     <a href="{{url('/make-appointment')}}"><span><strong>Appointment</strong></span></a>
-                                </li>-->
+                                </li>
                                 <li>
                                     <a href="{{url('/contact')}}"><span><strong>Contact</strong></span></a>
                                 </li>
@@ -372,9 +393,6 @@
                                 </li>
                                 <li>
                                     <a href="{{url('/services-list')}}"><span><strong>List of Services</strong></span></a>
-                                </li>
-                                <li>
-                                    <a href="{{url('/report_delivery')}}"><span><strong>Report Delivery</strong></span></a>
                                 </li>
                             </ul>
                             <!--<div class="uk-margin-medium-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">

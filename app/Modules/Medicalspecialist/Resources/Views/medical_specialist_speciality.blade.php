@@ -5,11 +5,12 @@
 @section('content')
 <div id="page_content">
         <div id="page_content_inner">
+        <h3 class="heading_b uk-margin-bottom">Doctor’s Panel</h3>
             <div class="uk-grid" data-uk-grid-margin="" data-uk-grid-match="" id="user_profile">
                 <div class="uk-width-large-1-1">
                 @include('partials.flash_message')
                     <div class="md-card">
-                        <div class="user_heading">
+                        <!--<div class="user_heading">
                             <div class="user_heading_avatar" style="width:100%;margin-left: calc(50% - 41px);margin-top:16px;">
                                 @if($medical_specialist->photo_path == '')
                                 <div class="thumbnail"><img alt=" specialist"  src="{{asset('/medicalspecialist.jpg')}}">
@@ -23,7 +24,7 @@
                                 <h2 class="heading_b"><span style="margin: 10px;" class="uk-text-truncate">{{ $medical_specialist->medical_specialist_name}}</span>
                                 </h2>
                             </div>
-                        </div>
+                        </div>-->
                         <div id="user_content" style="margin-left:20px;margin-right:20px;">
                         <br>
 

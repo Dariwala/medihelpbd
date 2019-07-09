@@ -203,6 +203,12 @@ class FrontendController extends Controller
         
         return view('frontend::appointment', compact('data'));
     }
+
+    public function emergency_helpline(){
+        $data = commonModules::first();
+
+        return view('frontend::emergency_helpline',compact('data'));
+    }
     
     public function serviceEntry(){
         

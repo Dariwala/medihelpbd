@@ -16,6 +16,7 @@ Route::get('/report_delivery', 'FrontendController@reportDelivery');
 Route::get('/report_delivery/post', 'FrontendController@reportDelivery');
 Route::post('/report_delivery/post', 'FrontendController@reportDeliveryPost');
 Route::get('/make-appointment', 'FrontendController@appointment');
+Route::get('/emergency_helpline', 'FrontendController@emergency_helpline');
 Route::get('/service-entry', 'FrontendController@serviceEntry');
 Route::get('/faq', 'FrontendController@faq');
 Route::get('/services-list', 'FrontendController@serviceList');

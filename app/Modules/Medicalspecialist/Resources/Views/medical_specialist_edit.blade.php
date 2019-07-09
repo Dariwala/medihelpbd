@@ -218,25 +218,15 @@
                                             <!-- END   longitude latitude field -->
                                         
                                         <div class="uk-width-medium-1-2">
-                                            <label for="add_publication_title">General Info<span class="req"></span>
-                                            <div class="">
-                                                <div>
-                                                    <div class="parsley-row uk-margin-top">
-                                                        <label class="hidden">New</label>
-                                                        <textarea type="text" cols="10" rows="3" name="fee_new" id="fee_new" value="{{$medical_specialist->fee_new}}" class="md-input"><?php echo $medical_specialist->fee_new; ?></textarea>
-                                                    </div>
-                                                </div>
+                                            <label for="general_info">General Info</label>
+                                            <div class="parsley-row uk-margin-top">
+                                                <textarea class="md-input" id="fee_new" name="fee_new" cols="10" rows="3" data-parsley-trigger="keyup" >{{$medical_specialist->fee_new}}</textarea>
                                             </div>
                                         </div>
                                         <div class="uk-width-medium-1-2">
-                                            <label for="add_publication_title">সাধারণ তথ্য<span class="req"></span>
-                                            <div class="">
-                                                <div>
-                                                    <div class="parsley-row uk-margin-top">
-                                                        <label class="hidden">নতুন</label>
-                                                        <textarea type="text" cols="10" rows="3" id="b_fee_new" name="b_fee_new" value="{{$medical_specialist->b_fee_new}}"  class="md-input"><?php echo $medical_specialist->b_fee_new; ?></textarea>
-                                                    </div>
-                                                </div>
+                                            <label for="b_general_info">সাধারণ তথ্য</label>
+                                            <div class="parsley-row uk-margin-top">
+                                                <textarea class="md-input" id="b_fee_new" name="b_fee_new" cols="10" rows="3" data-parsley-trigger="keyup" >{{$medical_specialist->b_fee_new}}</textarea>
                                             </div>
                                         </div>
                                         <div class=" uk-width-medium-1-1 ">
@@ -531,13 +521,11 @@
 @section('script')
 <script type="text/javascript">
     CKEDITOR.replace('medical_specialist_description');
-    CKEDITOR.replace('specialty');
+    CKEDITOR.replace('fee_new');
 </script>
 <script type="text/javascript">
     CKEDITOR.replace('b_medical_specialist_description');
-    CKEDITOR.replace('b_specialty');
     CKEDITOR.replace('b_fee_new');
-    CKEDITOR.replace('fee_new');
 </script>
 
 <script type="text/javascript">
