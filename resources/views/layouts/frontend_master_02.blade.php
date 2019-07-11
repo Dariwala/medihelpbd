@@ -94,7 +94,7 @@
     	
     	.footer-ul li a span{
     	    color: red; 
-    	    border-bottom: 1px dotted #000; 
+    	    /*border-bottom: 1px dotted #000; */
     	    text-decoration: none;
     	}
     	
@@ -367,17 +367,10 @@
                                             <a href="https://www.google.com/maps">
                                                 <span><button type="submit" class="md-btn md-btn-large uk-margin-top" style="background: #FD0100; width: 70%; color: #fff;">ম্যাপে খুঁজুন</button></span>
                                             </a>-->
-                                            <div class="uk-margin-small-top uk-text-center" style="margin-bottom:15px;">
-                                                <a href="{{url('/latest-news')}}">                    
-                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
-                                                        বিজ্ঞাপন
-                                                    </button>
-                                                </a>
-                                            </div>
                                             <div class="uk-margin-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">
                                                 <a href="{{url('/emergency_helpline')}}">                    
                                                     <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
-                                                        জরুরী হেল্পলাইন
+                                                    জরুরী হেল্পলাইন
                                                     </button>
                                                 </a>
                                             </div>
@@ -385,6 +378,13 @@
                                             <div style="margin-bottom:15px;">
                                                 <a href="{{url('/special-notice')}}">
                                                     <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">বিজ্ঞপ্তি</button></span>
+                                                </a>
+                                            </div>
+                                            <div class="uk-margin-medium-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">
+                                                <a href="{{url('/latest-news')}}">                    
+                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                                        বিজ্ঞাপন
+                                                    </button>
                                                 </a>
                                             </div>
                                             <div style="margin-bottom:15px;">
@@ -450,9 +450,9 @@
                                                 <li>
                                                     <a href="{{url('/faq')}}"><span><strong>সাধারণ জিজ্ঞাসা</strong></span></a>
                                                 </li>
-                                                <li>
+                                                <!--<li>
                                                     <a href="{{url('/make-appointment')}}"><span><strong>সাক্ষাৎ</strong></span></a>
-                                                </li>
+                                                </li>-->
                                                 <li>
                                                     <a href="{{url('/services-list')}}"><span><strong>সেবাসমূহের তালিকা</strong></span></a>
                                                 </li>
@@ -475,9 +475,9 @@
                                                 <li>
                                                     <a href="{{url('/vision')}}"><span><strong>About</strong></span></a>
                                                 </li>
-                                                <li>
+                                                <!--<li>
                                                     <a href="{{url('/make-appointment')}}"><span><strong>Appointment</strong></span></a>
-                                                </li>
+                                                </li>-->
                                                 <li>
                                                     <a href="{{url('/contact')}}"><span><strong>Contact</strong></span></a>
                                                 </li>
