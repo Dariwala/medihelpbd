@@ -298,7 +298,7 @@
                             <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">রিপোর্ট ডেলিভারি</button></span>
                         </a>
                     </div>
-                      <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;"> আরও   </button>
+                      <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;"><font size="6"> &#8801;</font></button>
                     @else
                     <div class="uk-margin-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">
                         <a href="{{url('/latest-news')}}">                    
@@ -325,7 +325,7 @@
                             <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">Report Delivery</button></span>
                         </a>
                     </div>
-                      <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">  More </button>
+                      <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">  <font size="6"> &#8801;</font> </button>
                     @endif 
                     </div>
 

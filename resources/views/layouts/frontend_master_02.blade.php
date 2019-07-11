@@ -393,7 +393,7 @@
                                                 </a>
                                             </div>
                                             
-                                            <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;"> আরও   </button>
+                                            <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;"> <font size="6"> &#8801;</font>   </button>
                                             
                                         @else
                                         
@@ -430,7 +430,7 @@
                                                     <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">Report Delivery</button></span>
                                                 </a>
                                             </div>
-                                            <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">  More </button>
+                                            <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">  <font size="6"> &#8801;</font> </button>
                                             
                                         @endif 
                                     </div>

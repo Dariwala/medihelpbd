@@ -127,7 +127,7 @@
                 <div class="md-card-content serch_bar">
                 <div class="uk-grid" data-uk-grid-margin>
                     <div class="uk-width-medium-1-2">
-                        <label for="contact_list_search">খুঁজুন...(ইংরেজিতে অক্ষর লিখুন)</label>
+                        <label for="contact_list_search">খুঁজুন (ইংরেজিতে অক্ষর লিখুন)</label>
                         <input style="color:#fff;" class="md-input" type="text" id="contact_list_search"/>
                     </div>
                 </div>
@@ -650,7 +650,7 @@
                 <div class="md-card-content serch_bar">
                     <div class="uk-grid" data-uk-grid-margin>
                         <div class="uk-width-medium-1-2">
-                            <label for="contact_list_search">Search...</label>
+                            <label for="contact_list_search">Search</label>
                             <input style="color:#fff;" class="md-input" type="text" id="contact_list_search"/>
                         </div>
                     </div>
