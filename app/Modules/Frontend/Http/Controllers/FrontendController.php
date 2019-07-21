@@ -158,7 +158,7 @@ class FrontendController extends Controller
             if(Session('language') == 'bn'){
                 $message = "পরিশোধিত টাকার রশিদ সফলভাবে পাঠানো হয়েছে।";
             }else{
-                $message = "Message sent successfully.";    
+                $message = "Paid Money Receipt sent successfully.";    
             }
                     
             }catch(Exception $e){
@@ -166,7 +166,7 @@ class FrontendController extends Controller
                 if(Session('language') == 'bn'){
                     $message = "দুঃখিত! আপনার মেসেজটি পাঠানো যায়নি। দয়া করে আবার চেষ্টা করুন।";
                 }else{
-                    $message = "Paid Money Receipt sent successfully";    
+                    $message = "Sorry! Something went wrong. Please try again.";    
                 }
                 
                 //$status = 0;
