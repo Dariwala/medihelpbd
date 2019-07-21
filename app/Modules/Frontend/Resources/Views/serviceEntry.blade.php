@@ -76,13 +76,13 @@
             
                 @if(Session('language') == 'bn')
                 
-                    <div class="uk-width-medium-1-2">  <!-- Part One -->
+                    <div class="uk-width-medium-1-1">  <!-- Part One -->
                         <p><?php echo $data->b_serviceEntry;?></p>
                     </div>
                 
                 @else
                
-                    <div class="uk-width-medium-1-2">  <!-- Part One -->
+                    <div class="uk-width-medium-1-1">  <!-- Part One -->
                         <p><?php echo $data->serviceEntry;?></p>
                     </div>
                     

@@ -119,6 +119,20 @@
           transform: translate(-50%,-50%);
           -ms-transform: translate(-50%,-50%);
         }
+
+        .menu-icon > .line {
+            background-color: #fff;
+            height: 2px;
+            display: block;
+            margin-left:calc(50% - 10px);
+            margin-right:calc(50% - 10px);
+            margin-top:5px;
+            margin-bottom:5px;
+        }
+        .menu-icon > .line + .line {
+            margin-left:calc(50% - 10px);
+            margin-right:calc(50% - 10px);
+        }
         
     </style>
 </head>
@@ -353,13 +367,7 @@
                                             
                                             @endphp
 
-                                            <div class="uk-margin-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">
-                                                <a href="{{url('/emergency_helpline')}}">                    
-                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
-                                                    জরুরী হেল্পলাইন
-                                                    </button>
-                                                </a>
-                                            </div>
+                                            
 
                                             <div style="margin-bottom:15px;">
                                                 <a href="{{url('/special-notice')}}">
@@ -378,6 +386,13 @@
                                                     <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">রিপোর্ট ডেলিভারি</button></span>
                                                 </a>
                                             </div>
+                                            <div class="uk-margin-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">
+                                                <a href="{{url('/emergency_helpline')}}">                    
+                                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                                    হেল্পলাইন
+                                                    </button>
+                                                </a>
+                                            </div>
                                             
                                             <!--<a  href="mailto:?body={{$body_text}}&subject=মেডিহেল্পবিডি ডট কম">
                                                 <span><button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff; padding:2px 7px;">বন্ধুদের সাথে শেয়ার করুন</button></span>
@@ -387,7 +402,13 @@
                                             </a>-->
                                             
                                             
-                                            <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;"> <font size="6"> &#8801;</font>   </button>
+                                            <button type="submit" onclick = "showLinksBN()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                            <div class="menu-icon">
+                                                <span class="line"></span>
+                                                <span class="line"></span>
+                                                <span class="line"></span>
+                                            </div>
+                                            </button>
                                             
                                         @else
                                         
@@ -409,7 +430,7 @@
                                             <div class="uk-margin-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">
                                                 <a href="{{url('/emergency_helpline')}}">                    
                                                     <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
-                                                        Emergency Helpline
+                                                        Helpline
                                                     </button>
                                                 </a>
                                             </div>
@@ -425,7 +446,13 @@
                                                 </a>
                                             </div>
                                             
-                                            <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;"> <font size="6"> &#8801;</font> </button>
+                                            <button type="submit" onclick = "showLinks()" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
+                                            <div class="menu-icon">
+                                                <span class="line"></span>
+                                                <span class="line"></span>
+                                                <span class="line"></span>
+                                            </div>
+                                            </button>
                                             
                                         @endif 
                                     </div>

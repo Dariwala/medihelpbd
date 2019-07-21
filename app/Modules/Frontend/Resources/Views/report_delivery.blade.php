@@ -62,7 +62,7 @@
             <div class="md-card">
                 <div class="user_content">
                     <div class="uk-grid" data-uk-grid-margin>
-                        <div class="uk-width-medium-1-2">
+                        <div class="uk-width-medium-1-1">
                             <p><?php echo $data->b_report_delivery; ?></p>
                         </div>
                         <div class="uk-width-medium-1-2">
@@ -86,7 +86,7 @@
                                             <br>
                                             <div class="uk-width-medium-1-2">
                                                 <div class="parsley-row ">
-                                                     <label for="add_publication_title">পরিশোধিত বিলের রশিদ<span class="req"></span></label>
+                                                     <label for="add_publication_title">পরিশোধিত টাকার রশিদ<span class="req"></span></label>
                                                 </div>
                                                 <div class="parsley-row uk-margin-top">
                                                     <input type="file" id="user_photo" name="user_photo" class="dropify" required/>
@@ -97,7 +97,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-float-right uk-margin-top">
-                                    <button type="submit" class="md-btn md-btn-large" style="background: #808080;color: #fff;">পাঠিয়ে দিন</button>
+                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100;color: #fff;">পাঠিয়ে দিন</button>
                                 </div>
                             {!! Form::close() !!}
                         </div>    
@@ -111,7 +111,7 @@
             <div class="md-card">
                 <div class="user_content">
                     <div class="uk-grid" data-uk-grid-margin>
-                        <div class="uk-width-medium-1-2">
+                        <div class="uk-width-medium-1-1">
                             <p><?php echo $data->report_delivery; ?></p>
                         </div> 
                         <div class="uk-width-medium-1-2">
@@ -145,7 +145,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-float-right uk-margin-top">
-                                    <button type="submit" class="md-btn md-btn-large" style="background: #808080;color: #fff;">Send</button>
+                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100;color: #fff;">Send</button>
                                 </div>
                             {!! Form::close() !!}
                         </div>    

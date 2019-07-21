@@ -62,7 +62,7 @@
             <div class="md-card">
                 <div class="user_content">
                     <div class="uk-grid" data-uk-grid-margin>
-                        <div class="uk-width-medium-1-2">
+                        <div class="uk-width-medium-1-1">
                             <p><?php echo $data->b_contact; ?></p>
                         </div>
                         <div class="uk-width-medium-1-2">
@@ -91,7 +91,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-float-right uk-margin-top">
-                                    <button type="submit" class="md-btn md-btn-large" style="background: #808080;color: #fff;">পাঠিয়ে দিন</button>
+                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100;color: #fff;">পাঠিয়ে দিন</button>
                                 </div>
                             {!! Form::close() !!}
                         </div>    
@@ -105,7 +105,7 @@
             <div class="md-card">
                 <div class="user_content">
                     <div class="uk-grid" data-uk-grid-margin>
-                        <div class="uk-width-medium-1-2">
+                        <div class="uk-width-medium-1-1">
                             <p><?php echo $data->contact; ?></p>
                         </div> 
                         <div class="uk-width-medium-1-2">
@@ -119,7 +119,7 @@
                                                 <textarea type="text" id="name" name="name" value="" required class="md-input" ></textarea>
                                             </div>
                                             <div class="parsley-row uk-margin-top">
-                                                <label for="email">E-mail or Phone <span class="req">*</span></label>
+                                                <label for="email">Email or Phone <span class="req">*</span></label>
                                                 <textarea type="text" id="email" name="email" value="" required class="md-input" ></textarea>
                                             </div>
                                             <div class="parsley-row uk-margin-top">
@@ -134,7 +134,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-float-right uk-margin-top">
-                                    <button type="submit" class="md-btn md-btn-large" style="background: #808080;color: #fff;">Send</button>
+                                    <button type="submit" class="md-btn md-btn-large" style="background: #FD0100;color: #fff;">Send</button>
                                 </div>
                             {!! Form::close() !!}
                         </div>    
