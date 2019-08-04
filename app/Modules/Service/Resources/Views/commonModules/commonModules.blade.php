@@ -184,8 +184,8 @@
     CKEDITOR.replace('vision_description');
     CKEDITOR.replace('b_vision_description');
     
-    //CKEDITOR.replace('contact_description');
-    //CKEDITOR.replace('b_contact_description');
+    CKEDITOR.replace('contact_description');
+    CKEDITOR.replace('b_contact_description');
     
     CKEDITOR.replace('appointment_description');
     CKEDITOR.replace('b_appointment_description');
@@ -202,8 +202,8 @@
     CKEDITOR.replace('latestNews_description');
     CKEDITOR.replace('b_latestNews_description');
     
-    //CKEDITOR.replace('notice_description');
-    //CKEDITOR.replace('b_notice_description');
+    CKEDITOR.replace('notice_description');
+    CKEDITOR.replace('b_notice_description');
 
     CKEDITOR.replace('report_delivery');
     CKEDITOR.replace('b_report_delivery');

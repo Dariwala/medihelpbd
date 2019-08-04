@@ -201,7 +201,7 @@
                                                         @if(!is_numeric($e_phone_number[1]))
                                                             {{$phone_number}}
                                                         @else
-                                                            <a href = "tel:{{$e_phone_number}}">{{$phone_number}}</a>
+                                                        {{$phone_number}}<a href = "tel:{{$e_phone_number}}"><i class="fa fa-phone" style="margin-left:5px;"></i></a>
                                                         @endif
                                                         @if($i != $len - 1)
                                                             <br>
@@ -415,7 +415,7 @@
                                                         @if(!is_numeric($e_phone_number[1]))
                                                             {{$e_phone_number}}
                                                         @else
-                                                            <a href = "tel:{{$e_phone_number}}">{{$e_phone_number}}</a>
+                                                        {{$e_phone_number}}<a href = "tel:{{$e_phone_number}}"><i class="fa fa-phone" style="margin-left:5px;"></i></a>
                                                         @endif
                                                         @if($i != $len - 1)
                                                             <br>
