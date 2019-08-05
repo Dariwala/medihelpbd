@@ -64,7 +64,7 @@
                     <div class="uk-grid" data-uk-grid-margin>
                         <div class="uk-width-medium-1-1">
                             @php
-                            echo str_replace("+৮৮ - ০১৬৩৩ - ০০৯৯০০",'+৮৮ - ০১৬৩৩ - ০০৯৯০০ <a href="tel:01633009900"><i class="fa fa-phone" style="margin-left:5px;"></i></a>',$data->b_contact);                            
+                            echo str_replace("info@medihelpbd.com",'info@medihelpbd.com<a href="mailto:info@medihelpbd.com"><i class="fa fa-envelope-o" style="margin-left:5px;"></i></a>',str_replace("+৮৮-০১৬৩৩-০০৯৯০০",'+৮৮-০১৬৩৩-০০৯৯০০ <a href="tel:01633009900"><i class="fa fa-phone" style="margin-left:5px;"></i></a>',$data->b_contact));
                             @endphp
                         </div>
                         <div class="uk-width-medium-1-2">
@@ -109,7 +109,7 @@
                     <div class="uk-grid" data-uk-grid-margin>
                         <div class="uk-width-medium-1-1">
                             @php
-                            echo str_replace("+88 - 01633 - 009900",'+88 - 01633 - 009900 <a href="tel:01633009900"><i class="fa fa-phone" style="margin-left:5px;"></i></a>',$data->contact);                            
+                            echo str_replace("info@medihelpbd.com",'info@medihelpbd.com<a href="mailto:info@medihelpbd.com"><i class="fa fa-envelope-o" style="margin-left:5px;"></i></a>',str_replace("+88-01633-009900",'+88-01633-009900 <a href="tel:01633009900"><i class="fa fa-phone" style="margin-left:5px;"></i></a>',$data->contact));
                             @endphp
                         </div> 
                         <div class="uk-width-medium-1-2">

@@ -63,7 +63,9 @@
                 <div class="user_content">
                     <div class="uk-grid" data-uk-grid-margin>
                         <div class="uk-width-medium-1-1">
-                            <p><?php echo $data->b_report_delivery; ?></p>
+                        @php
+                            echo str_replace("applya2z@gmail.com",'applya2z@gmail.com<a href="mailto:applya2z@gmail.com"><i class="fa fa-envelope-o" style="margin-left:5px;"></i></a>',str_replace("+৮৮-০১৬৭৩-৬৭৩৭৬৭",'+৮৮-০১৬৭৩-৬৭৩৭৬৭ <a href="tel:+88-01673-673767"><i class="fa fa-phone" style="margin-left:5px;"></i></a>',$data->b_report_delivery));
+                        @endphp
                         </div>
                         <div class="uk-width-medium-1-2">
                             {!! Form::open(['url' => 'report_delivery/post', 'method' => 'POST', 'class' => 'ul-form-stacked', 'files' => true]) !!}
@@ -112,7 +114,9 @@
                 <div class="user_content">
                     <div class="uk-grid" data-uk-grid-margin>
                         <div class="uk-width-medium-1-1">
-                            <p><?php echo $data->report_delivery; ?></p>
+                        @php
+                            echo str_replace("applya2z@gmail.com",'applya2z@gmail.com<a href="mailto:applya2z@gmail.com"><i class="fa fa-envelope-o" style="margin-left:5px;"></i></a>',str_replace("+88-01673-673767",'+88-01673-673767 <a href="tel:+88-01673-673767"><i class="fa fa-phone" style="margin-left:5px;"></i></a>',$data->report_delivery));
+                        @endphp
                         </div> 
                         <div class="uk-width-medium-1-2">
                             {!! Form::open(['url' => 'report_delivery/post', 'method' => 'POST', 'class' => 'ul-form-stacked', 'files' => true]) !!}

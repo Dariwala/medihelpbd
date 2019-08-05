@@ -209,6 +209,7 @@
                                                  <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                             </div>
                                         </li>
+                                        @if($pharmacy->pharmacy_email_ad != '')
                                         <li>
                                             <div class="md-list-addon-element">
                                                 <i style="margin: 0" class="md-list-addon-icon material-icons">&#xE158;</i>
@@ -217,11 +218,12 @@
         
                                             <div class="md-list-content">
                                                 <span style="margin-top:5px" class="md-list-heading">
-                                                    <a href = "mailto:{{$pharmacy->pharmacy_email_ad}}">{{$pharmacy->pharmacy_email_ad}}</a>
+                                                    {{$pharmacy->pharmacy_email_ad}}<a href = "mailto:{{$pharmacy->pharmacy_email_ad}}"><i class="fa fa-envelope-o" style="margin-left:5px;"></i></a>
                                                 </span>
                                                 <span class="uk-text-small uk-text-muted hidden">Email</span>
                                             </div>
                                         </li>
+                                        @endif
                                         <li>
                                             <div class="md-list-addon-element">
                                                 <i style="margin: 0" style="font-size:30px;" class="md-list-addon-icon material-icons">&#xE894;</i>
@@ -429,6 +431,7 @@
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
+                                    @if($pharmacy->pharmacy_email_ad != '')
                                     <li>
                                         <div class="md-list-addon-element">
                                             <i style="margin: 0" class="md-list-addon-icon material-icons">&#xE158;</i>
@@ -436,10 +439,11 @@
     
     
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading"><a href = "mailto:{{$pharmacy->pharmacy_email_ad}}">{{$pharmacy->pharmacy_email_ad}}</a></span>
+                                            <span style="margin-top:5px" class="md-list-heading">{{$pharmacy->pharmacy_email_ad}}<a href = "mailto:{{$pharmacy->pharmacy_email_ad}}"><i class="fa fa-envelope-o" style="margin-left:5px;"></i></a></span>
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
                                     </li>
+                                    @endif
                                     <li>
                                         <div class="md-list-addon-element">
                                             <i style="margin: 0" style="font-size:30px;" class="md-list-addon-icon material-icons">&#xE894;</i>

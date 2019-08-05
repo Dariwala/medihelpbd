@@ -257,16 +257,18 @@
      
                                         </div>
                                     </li>
+                                    @if($medical_specialist->medical_specialist_email_ad != '')
                                     <li>
                                         <div class="md-list-addon-element">
                                             <i  style= "margin: 0" class="md-list-addon-icon material-icons">&#xE158;</i>
                                         </div>
                                         <div class="md-list-content">
                                             <span style="margin-top:5px" class="md-list-heading">
-                                                <a href = "mailto:{{$medical_specialist->medical_specialist_email_ad}}">{{$medical_specialist->medical_specialist_email_ad}}</a>
+                                                {{$medical_specialist->medical_specialist_email_ad}}<a href = "mailto:{{$medical_specialist->medical_specialist_email_ad}}"><i class="fa fa-envelope-o" style="margin-left:5px;"></i></a>
                                             </span>
                                         </div>
                                     </li>
+                                    @endif
                                     <li>
                                         <div class="md-list-addon-element">
                                             <i style= "margin: 0" class="md-list-addon-icon material-icons">&#xE894;</i>
@@ -937,16 +939,18 @@
      
                                         </div>
                                     </li>
+                                    @if($medical_specialist->medical_specialist_email_ad != '')
                                     <li>
                                         <div class="md-list-addon-element">
                                             <i  style= "margin: 0" class="md-list-addon-icon material-icons">&#xE158;</i>
                                         </div>
                                         <div class="md-list-content">
                                             <span style="margin-top:5px" class="md-list-heading">
-                                                <a href = "mailto:{{$medical_specialist->medical_specialist_email_ad}}">{{$medical_specialist->medical_specialist_email_ad}}</a>
+                                                {{$medical_specialist->medical_specialist_email_ad}}<a href = "mailto:{{$medical_specialist->medical_specialist_email_ad}}"><i class="fa fa-envelope-o" style="margin-left:5px;"></i></a>
                                             </span>
                                         </div>
                                     </li>
+                                    @endif
                                     <li>
                                         <div class="md-list-addon-element">
                                             <i style= "margin: 0" class="md-list-addon-icon material-icons">&#xE894;</i>

@@ -209,17 +209,19 @@
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
+                                    @if($eye_bank->eye_bank_email_ad != '')
                                     <li>
                                         <div class="md-list-addon-element">
                                             <i  style= "margin: 0" class="md-list-addon-icon material-icons">&#xE158;</i>
                                         </div>
                                         <div class="md-list-content">
                                             <span style="margin-top:5px" class="md-list-heading">
-                                                <a href = "mailto:{{$eye_bank->eye_bank_email_ad}}">{{$eye_bank->eye_bank_email_ad}}</a>
+                                                {{$eye_bank->eye_bank_email_ad}}<a href = "mailto:{{$eye_bank->eye_bank_email_ad}}"><i class="fa fa-envelope-o" style="margin-left:5px;"></i></a>
                                             </span>
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
                                     </li>
+                                    @endif
                                     <li>
                                         <div class="md-list-addon-element">
                                            <i  style= "margin: 0" class="md-list-addon-icon material-icons">language</i> 
@@ -413,17 +415,19 @@
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
+                                    @if($eye_bank->eye_bank_email_ad != '')  
                                     <li>
                                         <div class="md-list-addon-element">
                                             <i  style= "margin: 0" class="md-list-addon-icon material-icons">&#xE158;</i>
                                         </div>
                                         <div class="md-list-content">
                                             <span style="margin-top:5px" class="md-list-heading">
-                                                <a href = "mailto:{{$eye_bank->eye_bank_email_ad}}">{{$eye_bank->eye_bank_email_ad}}</a>
+                                                {{$eye_bank->eye_bank_email_ad}}<a href = "mailto:{{$eye_bank->eye_bank_email_ad}}"><i class="fa fa-envelope-o" style="margin-left:5px;"></i></a>
                                             </span>
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
                                     </li>
+                                    @endif
                                     <li>
                                         <div class="md-list-addon-element">
                                            <i  style= "margin: 0" class="md-list-addon-icon material-icons">language</i> 

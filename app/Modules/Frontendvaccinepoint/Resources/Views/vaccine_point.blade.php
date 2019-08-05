@@ -212,6 +212,7 @@
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
+                                    @if($vaccine_point->vaccine_point_email_ad != '')
                                     <li>
                                         <div class="md-list-addon-element">
                                             <i style=" margin: 0;" class="md-list-addon-icon material-icons">&#xE158;</i>
@@ -220,11 +221,12 @@
     
                                         <div class="md-list-content">
                                             <span style="margin-top:5px" class="md-list-heading">
-                                                <a href = "mailto:{{$vaccine_point->vaccine_point_email_ad}}">{{$vaccine_point->vaccine_point_email_ad}}</a>
+                                                {{$vaccine_point->vaccine_point_email_ad}}<a href = "mailto:{{$vaccine_point->vaccine_point_email_ad}}"><i class="fa fa-envelope-o" style="margin-left:5px;"></i></a>
                                             </span>
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
                                     </li>
+                                    @endif
                                     <li>
                                         <div class="md-list-addon-element">
                                             <i style=" margin: 0;" class="md-list-addon-icon material-icons">&#xE894;</i>
@@ -426,6 +428,7 @@
                                              <span class="uk-text-small uk-text-muted hidden">Phone</span>
                                         </div>
                                     </li>
+                                    @if($vaccine_point->vaccine_point_email_ad != '')
                                     <li>
                                         <div class="md-list-addon-element">
                                             <i style=" margin: 0;" class="md-list-addon-icon material-icons">&#xE158;</i>
@@ -433,10 +436,11 @@
     
     
                                         <div class="md-list-content">
-                                            <span style="margin-top:5px" class="md-list-heading"><a href = "mailto:{{$vaccine_point->vaccine_point_email_ad}}">{{$vaccine_point->vaccine_point_email_ad}}</a></span>
+                                            <span style="margin-top:5px" class="md-list-heading">{{$vaccine_point->vaccine_point_email_ad}}<a href = "mailto:{{$vaccine_point->vaccine_point_email_ad}}"><i class="fa fa-envelope-o" style="margin-left:5px;"></i></a></span>
                                             <span class="uk-text-small uk-text-muted hidden">Email</span>
                                         </div>
                                     </li>
+                                    @endif
                                     <li>
                                         <div class="md-list-addon-element">
                                             <i style=" margin: 0;" class="md-list-addon-icon material-icons">&#xE894;</i>
