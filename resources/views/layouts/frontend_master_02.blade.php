@@ -149,9 +149,9 @@
             <nav class="uk-navbar">
                  <div class="main_logo_top">
                     @if(Session('language')=='bn')
-                        <a class = "home-link" href="{{'/'}}">হোম</a>
+                        <a class = "home-link" href="{{'/'}}"><b>হোম</b></a>
                     @else
-                        <a class = "home-link" href="{{'/'}}">Home</a>
+                        <a class = "home-link" href="{{'/'}}"><b>Home</b></a>
                     @endif
                 </div>
 
@@ -159,7 +159,7 @@
                     @if(Session('language')=='bn')
                     <ul class="uk-navbar-nav user_actions">
                         <li data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
-                            <a class="user_action_image" href="#">ভাষা</a>
+                            <a class="user_action_image" href="#"><b>ভাষা</b></a>
 
                             <div class="uk-dropdown uk-dropdown-small">
                                 <ul class="uk-nav js-uk-prevent">
@@ -178,7 +178,7 @@
                     @else
                     <ul class="uk-navbar-nav user_actions">
                         <li data-uk-dropdown="{mode:'click',pos:'bottom-right'}">
-                            <a class="user_action_image" href="#">Language</a>
+                            <a class="user_action_image" href="#"><b>Language</b></a>
 
                             <div class="uk-dropdown uk-dropdown-small">
                                 <ul class="uk-nav js-uk-prevent">
