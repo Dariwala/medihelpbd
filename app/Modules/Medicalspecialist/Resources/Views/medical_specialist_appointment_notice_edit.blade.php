@@ -19,13 +19,13 @@
                                         <div class="uk-grid">
                                             
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>Description</label>
+                                                <label>Summary</label>
                                                 <div class="parsley-row">
                                                    <textarea class="ckeditor" name="notice" id="notice" class="md-input">{{ $appointment_notice->notice }}</textarea>
                                                 </div>
                                             </div>
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>বর্ণনা</label>
+                                                <label>সারাংশ</label>
                                                 <div class="parsley-row">
                                                     <textarea class="ckeditor" name="notice_bn" id="notice_bn" class="md-input">{{ $appointment_notice->notice_bn }}</textarea>
                                                 </div>

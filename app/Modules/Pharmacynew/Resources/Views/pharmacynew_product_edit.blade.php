@@ -24,13 +24,13 @@
                                 <div class="uk-width-9-12">
                                     <div class="uk-grid">
                                         <div class="uk-width-1-2">
-                                            <label>Description</label>
+                                            <label>Medicinal</label>
                                             <div class="parsley-row">
                                                 <textarea class="md-input" id="pharmacynew_product_description" name="pharmacynew_product_description" cols="10" rows="3" data-parsley-trigger="keyup" ><?php echo $pharmacynew_product->pharmacynew_product_description; ?></textarea>
                                             </div>
                                         </div>
                                         <div class="uk-width-1-2">
-                                            <label>বর্ণনা</label>
+                                            <label>ঔষধ-সম্বন্ধীয়</label>
                                             <div class="parsley-row">
                                                 <textarea class="md-input" id="b_pharmacynew_product_description" name="b_pharmacynew_product_description" cols="10" rows="3" data-parsley-trigger="keyup" > <?php echo $pharmacynew_product->b_pharmacynew_product_description; ?></textarea>
                                             </div>

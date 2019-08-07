@@ -18,13 +18,13 @@
                                     <div class="uk-width-9-12">
                                         <div class="uk-grid">
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>Description</label>
+                                                <label>Chamber</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="medical_specialist_chamber_description" name="medical_specialist_chamber_description" cols="10" rows="3" data-parsley-trigger="keyup" > {{ $medical_specialist_chamber->medical_specialist_chamber_description }} </textarea>
                                                 </div>
                                             </div>
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>বর্ণনা</label>
+                                                <label>চেম্বার</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="b_medical_specialist_chamber_description" name="b_medical_specialist_chamber_description" cols="10" rows="3" data-parsley-trigger="keyup" > {{ $medical_specialist_chamber->b_medical_specialist_chamber_description }} </textarea>
                                                 </div>

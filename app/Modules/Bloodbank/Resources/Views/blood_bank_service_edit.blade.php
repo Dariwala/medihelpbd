@@ -35,13 +35,13 @@
                                         </div>
                                         <div class="uk-grid">
                                             <div class="uk-width-1-2">
-                                                <label>Description</label>
+                                                <label>Service</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="blood_bank_service_description" name="blood_bank_service_description" cols="10" rows="3" data-parsley-trigger="keyup" > {{ $blood_bank_service->blood_bank_service_description }} </textarea>
                                                 </div>
                                             </div>
                                             <div class="uk-width-1-2">
-                                                <label>বর্ণনা</label>
+                                                <label>সেবা</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="b_blood_bank_service_description" name="b_blood_bank_service_description" cols="10" rows="3" data-parsley-trigger="keyup" > {{ $blood_bank_service->b_blood_bank_service_description }} </textarea>
                                                 </div>

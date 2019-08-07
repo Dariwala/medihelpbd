@@ -404,7 +404,7 @@
                                                 </a>
                                             </div>
                                             <div class="uk-margin-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">
-                                                <a href="{{url('/emergency_helpline')}}">                    
+                                                <a href="{{url('/helpline')}}">                    
                                                     <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
                                                     হেল্পলাইন
                                                     </button>
@@ -437,7 +437,7 @@
                                                 </a>
                                             </div>
                                             <div class="uk-margin-top uk-text-center" style = "margin-top: 6px!important;margin-bottom:15px!important;">
-                                                <a href="{{url('/emergency_helpline')}}">                    
+                                                <a href="{{url('/helpline')}}">                    
                                                     <button type="submit" class="md-btn md-btn-large" style="background: #FD0100; width: 70%; color: #fff;">
                                                         Helpline
                                                     </button>

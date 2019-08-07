@@ -35,13 +35,13 @@
                                         </div>
                                         <div class="uk-grid">
                                             <div class="uk-width-1-2">
-                                                <label>Description</label>
+                                                <label>Service</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="gym_service_description" name="gym_service_description" cols="10" rows="3" data-parsley-trigger="keyup" ><?php echo $gym_service->gym_service_description ; ?> </textarea>
                                                 </div>
                                             </div>
                                             <div class="uk-width-1-2">
-                                                <label>বর্ণনা</label>
+                                                <label>সেবা</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="b_gym_service_description" name="b_gym_service_description" cols="10" rows="3" data-parsley-trigger="keyup" > <?php echo $gym_service->b_gym_service_description ; ?></textarea>
                                                 </div>

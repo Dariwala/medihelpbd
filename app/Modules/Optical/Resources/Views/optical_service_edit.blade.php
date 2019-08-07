@@ -26,13 +26,13 @@
                                         </div>
                                         <div class="uk-grid">
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>Description</label>
+                                                <label>Service</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="optical_notice_description" name="optical_service_description" cols="10" rows="3" data-parsley-trigger="keyup" >{{ $optical_service->optical_service_description }}</textarea>
                                                 </div>
                                             </div>
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>বর্ণনা</label>
+                                                <label>সেবা</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="b_optical_notice_description" name="b_optical_service_description" cols="10" rows="3" data-parsley-trigger="keyup" >{{ $optical_service->b_optical_service_description }}</textarea>
                                                 </div>

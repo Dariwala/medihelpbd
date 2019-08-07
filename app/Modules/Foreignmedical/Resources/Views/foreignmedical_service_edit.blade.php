@@ -26,13 +26,13 @@
                                         </div>
                                         <div class="uk-grid">
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>Description</label>
+                                                <label>Service</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="foreignmedical_notice_description" name="foreignmedical_service_description" cols="10" rows="3" data-parsley-trigger="keyup" >{{ $foreignmedical_service->foreignmedical_service_description }}</textarea>
                                                 </div>
                                             </div>
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>বর্ণনা</label>
+                                                <label>সেবা</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="b_foreignmedical_notice_description" name="b_foreignmedical_service_description" cols="10" rows="3" data-parsley-trigger="keyup" >{{ $foreignmedical_service->b_foreignmedical_service_description }}</textarea>
                                                 </div>

@@ -33,13 +33,13 @@
 
                             <!-- Emergency Helpline List -->
                             <div class="uk-width-medium-1-2 uk-margin-top">
-                                <label for="add_course_description">Emergency Helpline</label>
+                                <label for="add_course_description">Helpline</label>
                                 <div class="parsley-row uk-margin-top">
                                     <textarea class="md-input" id="emergency_helpline" name="emergency_helpline" cols="10" rows="3" data-parsley-trigger="keyup" >{{ isset($data->emergency_helpline) ? $data->emergency_helpline : '' }}</textarea>
                                 </div>
                             </div>
                             <div class="uk-width-medium-1-2 uk-margin-top">
-                                <label for="add_course_description">জরুরী হেল্পলাইন</label>
+                                <label for="add_course_description">হেল্পলাইন</label>
                                 <div class="parsley-row uk-margin-top">
                                     <textarea class="md-input" id="b_emergency_helpline" name="b_emergency_helpline" cols="10" rows="3" data-parsley-trigger="keyup" >{{ isset($data->b_emergency_helpline) ? $data->b_emergency_helpline : '' }}</textarea>
                                 </div>

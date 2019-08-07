@@ -19,13 +19,13 @@
                                         <div class="uk-grid">
                                             
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>Description</label>
+                                                <label>Article</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="blood_bank_notice_description" name="blood_bank_notice_description" cols="10" rows="3" data-parsley-trigger="keyup" > {{ $blood_bank_notice->blood_bank_notice_description }} </textarea>
                                                 </div>
                                             </div>
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>বিস্তারিত</label>
+                                                <label>প্রবন্ধ</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="b_blood_bank_notice_description" name="b_blood_bank_notice_description" cols="10" rows="3" data-parsley-trigger="keyup" > {{ $blood_bank_notice->b_blood_bank_notice_description }} </textarea>
                                                 </div>

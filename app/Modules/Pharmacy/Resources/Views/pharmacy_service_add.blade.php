@@ -36,14 +36,14 @@
                                         </div>
                                         <div class="uk-grid">
                                             <div class="uk-width-1-2">
-                                                <label>Description</label>
+                                                <label>Service</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="pharmacy_service_description" name="pharmacy_service_description" cols="10" rows="3" data-parsley-trigger="keyup" ></textarea>
                                                 </div>
                                                 <p style="color:red;">{{ $errors->has('pharmacy_service_description')?$errors->first('pharmacy_service_description'):'' }}</p>
                                             </div>
                                             <div class="uk-width-1-2">
-                                                <label>বর্ণনা</label>
+                                                <label>সেবা</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="b_pharmacy_service_description" name="b_pharmacy_service_description" cols="10" rows="3" data-parsley-trigger="keyup" ></textarea>
                                                 </div>

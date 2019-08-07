@@ -21,13 +21,13 @@
                                 <div class="uk-width-9-12">
                                     <div class="uk-grid">
                                         <div class="uk-width-1-2">
-                                            <label>Description</label>
+                                            <label>Medicinal</label>
                                             <div class="parsley-row">
                                                 <textarea class="md-input" id="optical_product_description" name="optical_product_description" cols="10" rows="3" data-parsley-trigger="keyup" ></textarea>
                                             </div>
                                         </div>
                                         <div class="uk-width-1-2">
-                                            <label>বর্ণনা</label>
+                                            <label>ঔষধ-সম্বন্ধীয়</label>
                                             <div class="parsley-row">
                                                 <textarea class="md-input" id="b_optical_product_description" name="b_optical_product_description" cols="10" rows="3" data-parsley-trigger="keyup" ></textarea>
                                             </div>

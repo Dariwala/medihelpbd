@@ -23,7 +23,7 @@
                                         <div class="uk-grid">
                                            
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>Description</label>
+                                                <label>Article</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="package_details" name="package_details" cols="10" rows="3" data-parsley-trigger="keyup" >
                                                         
@@ -31,7 +31,7 @@
                                                 </div>
                                             </div>
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>বর্ণনা</label>
+                                                <label>প্রবন্ধ</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="b_package_details" name="b_package_details" cols="10" rows="3" data-parsley-trigger="keyup" >
                                                     </textarea>

@@ -18,13 +18,13 @@
                                     <div class="uk-width-9-12">
                                         <div class="uk-grid">
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                 <label>Description</label>
+                                                 <label>Article</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="pharmacy_notice_description" name="pharmacy_notice_description" cols="10" rows="3" data-parsley-trigger="keyup" > {{ $pharmacy_notice->pharmacy_notice_description }} </textarea>
                                                 </div>
                                             </div>
                                             <div class="uk-width-1-2 uk-margin-top">
-                                                <label>বর্ণনা</label>
+                                                <label>প্রবন্ধ</label>
                                                 <div class="parsley-row">
                                                     <textarea class="md-input" id="b_pharmacy_notice_description" name="b_pharmacy_notice_description" cols="10" rows="3" data-parsley-trigger="keyup" > {{ $pharmacy_notice->b_pharmacy_notice_description }} </textarea>
                                                 </div>
