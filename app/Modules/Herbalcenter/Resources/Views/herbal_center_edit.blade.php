@@ -116,12 +116,9 @@
                                                     <input type="file" id="herbal_center_photo" name="herbal_center_photo" class="dropify"/>
                                                 </div>
                                             </div>
-
-                                            <div class=" uk-width-medium-1-1 ">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                                </div>
-                                            </div>
+                                        </div>
+                                        <div class="uk-float-right uk-margin-top">
+                                            <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                         </div>
                                     {!! Form::close() !!}
                                 </li>
@@ -247,11 +244,9 @@
                                                     <input type="text" id="b_herbal_center_total_staff" name="b_herbal_center_total_staff" value="{{ $herbal_center->b_herbal_center_total_staff}}" class="md-input" /> 
                                                 </div>
                                             </div>
-                                            <div class=" uk-width-medium-1-1 ">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                                </div>
-                                            </div>
+                                        </div>
+                                        <div class="uk-float-right uk-margin-top">
+                                            <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                         </div>
                                     {!! Form::close() !!}
                                 </li>

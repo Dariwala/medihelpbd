@@ -112,12 +112,9 @@
                                                     <input type="file" id="medical_specialist_photo" name="medical_specialist_photo" class="dropify"/>
                                                 </div>
                                             </div>
-                                            
-                                            <div class=" uk-width-medium-1-1 ">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                                </div>
-                                            </div>
+                                        </div>
+                                        <div class="uk-float-right uk-margin-top">
+                                            <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                         </div>
                                     {!! Form::close() !!}
                                 </li>
@@ -229,11 +226,9 @@
                                                 <textarea class="md-input" id="b_fee_new" name="b_fee_new" cols="10" rows="3" data-parsley-trigger="keyup" >{{$medical_specialist->b_fee_new}}</textarea>
                                             </div>
                                         </div>
-                                        <div class=" uk-width-medium-1-1 ">
-                                            <div class="uk-float-right uk-margin-top">
-                                                <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                            </div>
-                                        </div>
+                                    </div>
+                                    <div class="uk-float-right uk-margin-top">
+                                        <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                     </div>
                                     {!! Form::close() !!}
                                 </li>

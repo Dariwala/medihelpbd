@@ -52,8 +52,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="uk-float-right uk-margin-top">
-                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
+                                <div class="uk-float-right">
+                                    <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                 </div>
                             </div>
                         </div>

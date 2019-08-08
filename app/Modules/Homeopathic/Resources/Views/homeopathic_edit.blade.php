@@ -114,11 +114,9 @@
                                                     <input type="file" id="homeopathic_photo" name="homeopathic_photo" class="dropify"/>
                                                 </div>
                                             </div>
-                                            <div class=" uk-width-medium-1-1 ">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                                </div>
-                                            </div>
+                                        </div>
+                                        <div class="uk-float-right uk-margin-top">
+                                            <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                         </div>
                                     {!! Form::close() !!}
                                 </li>
@@ -218,12 +216,10 @@
                                                     <textarea type="text" id="add_publication_title2" name="b_total_medicine" value="{{ $homeopathic->b_total_medicine}}" required class="md-input">{{ $homeopathic->b_total_medicine}}</textarea>
                                                 </div> 
                                             </div>
-                                        </div>
-                                        <div class="uk-width-medium-1-1">
-                                            <div class="uk-float-right uk-margin-top">
-                                                <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                            </div>
-                                        </div>
+                                        </div>                                            
+                                    </div>
+                                    <div class="uk-float-right uk-margin-top">
+                                        <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                     </div>
                                 {!! Form::close() !!}
                                 </li>

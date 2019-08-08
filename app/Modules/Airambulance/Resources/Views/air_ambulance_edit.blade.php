@@ -106,12 +106,9 @@
                                                     <input type="file" id="air_ambulance_photo" name="air_ambulance_photo" class="dropify"/>
                                                 </div>
                                             </div>
-                                            <div class=" uk-width-medium-1-1 ">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                                </div>
-                                            </div>
-                                            
+                                        </div>
+                                        <div class="uk-float-right uk-margin-top">
+                                            <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                         </div>
                                     {!! Form::close() !!}
                                 </li>
@@ -212,17 +209,18 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="uk-width-medium-1-2">
+                                            <!--<div class="uk-width-medium-1-2">
                                                 <div class="parsley-row uk-margin-top hidden">
                                                     <label for="air_ambulance_web_link">Website</label>
                                                     <input type="text" id="air_ambulance_web_link" name="air_ambulance_web_link" value="{{$air_ambulance->air_ambulance_web_link}}"  class="md-input" />
                                                 </div>
-                                            </div>
-                                            <div class=" uk-width-medium-1-1 ">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                                </div>
-                                            </div>
+                                            </div>-->
+                                            
+                                                
+                                            
+                                        </div>
+                                        <div class="uk-float-right uk-margin-top">
+                                            <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                         </div>
                                     {!! Form::close() !!}
                                 </li>

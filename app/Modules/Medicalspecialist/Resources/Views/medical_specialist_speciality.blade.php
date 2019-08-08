@@ -50,7 +50,7 @@
                                     
                                     <div class=" uk-width-medium-1-1 ">
                                         <div class="uk-float-right uk-margin-top uk-margin-bottom">
-                                            <button type="submit" class="md-btn md-btn-primary" >Submit</button>
+                                            <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                         </div>
                                     </div>
                                 </div>

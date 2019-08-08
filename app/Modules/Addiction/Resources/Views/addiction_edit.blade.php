@@ -113,11 +113,10 @@
                                                 </div>
                                             </div>
                                             
-                                            <div class=" uk-width-medium-1-1 ">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                                </div>
-                                            </div>
+                                            <!--<div class=" uk-width-medium-1-1 ">-->                                            
+                                        </div>
+                                        <div class="uk-float-right uk-margin-top">
+                                            <button type="submit" class="md-btn md-btn-primary"  style="background: #FD0100;color: #fff;">Submit</button>
                                         </div>
                                     {!! Form::close() !!}
                                 </li>
@@ -221,7 +220,7 @@
                                                 </div>
                                                 <p style="color:red;">{{ $errors->has('b_addiction_total_bed')?$errors->first('b_addiction_total_bed'):'' }}</p>
                                             </div>
-                                            <div class="uk-width-medium-1-2 hidden">
+                                            <!--<div class="uk-width-medium-1-2 hidden">
                                                 <div class="parsley-row uk-margin-top">
                                                     <label for="addiction_total_doctor">Total Doctor<span class="req"></span></label>
                                                     <input type="text" id="addiction_total_doctor" name="addiction_total_doctor" value="{{ $addiction->addiction_total_doctor}}" class="md-input" /> 
@@ -248,14 +247,15 @@
                                                     <input type="text" id="b_addiction_total_staff" name="b_addiction_total_staff" value="{{ $addiction->b_addiction_total_staff}}" class="md-input" /> 
                                                 </div>
                                                 <p style="color:red;">{{ $errors->has('b_addiction_total_staff')?$errors->first('b_addiction_total_staff'):'' }}</p>
-                                            </div>
+                                            </div>-->
                                             
-                                            <div class="uk-width-medium-1-1">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
+                                        
+                                        <div class="uk-float-right">
+                                            <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
+                                        </div>
+                                        
                                     {!! Form::close() !!}
                                 </li>
                                 <li>

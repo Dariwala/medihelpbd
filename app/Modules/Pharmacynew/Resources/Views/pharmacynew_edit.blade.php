@@ -114,11 +114,9 @@
                                                     <input type="file" id="pharmacynew_photo" name="pharmacynew_photo" class="dropify"/>
                                                 </div>
                                             </div>
-                                            <div class=" uk-width-medium-1-1 ">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                                </div>
-                                            </div>
+                                        </div>
+                                        <div class="uk-float-right uk-margin-top">
+                                            <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                         </div>
                                     {!! Form::close() !!}
                                 </li>
@@ -202,11 +200,9 @@
                                                 </div> 
                                             </div>
                                         </div>
-                                        <div class="uk-width-medium-1-1">
-                                            <div class="uk-float-right uk-margin-top">
-                                                <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                            </div>
-                                        </div>
+                                    </div>
+                                    <div class="uk-float-right uk-margin-top">
+                                        <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                     </div>
                                 {!! Form::close() !!}
                                 </li>

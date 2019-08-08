@@ -231,7 +231,7 @@
 
                                 <div class="uk-grid uk-ma" data-uk-grid-margin>
                                     <div class="uk-width-1-1">
-                                        <button style="float: right" type="submit" class="md-btn md-btn-primary" >Submit</button>
+                                        <button style="float: right" type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                         <!-- <button type="button" class="md-btn md-btn-flat uk-modal-close">Close</button> -->
                                     </div>
                                 </div>

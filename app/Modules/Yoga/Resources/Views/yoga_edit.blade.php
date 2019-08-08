@@ -109,12 +109,9 @@
                                                     <input type="file" id="yoga_photo" name="yoga_photo" class="dropify"/>
                                                 </div>
                                             </div>
-                                            
-                                            <div class=" uk-width-medium-1-1 ">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                                </div>
-                                            </div>
+                                        </div>
+                                        <div class="uk-float-right uk-margin-top">
+                                            <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                         </div>
                                     {!! Form::close() !!}
                                 </li>
@@ -246,12 +243,9 @@
                                                 </div>
                                                 <p style="color:red;">{{ $errors->has('b_yoga_total_staff')?$errors->first('b_yoga_total_staff'):'' }}</p>
                                             </div>
-                                            
-                                            <div class="uk-width-medium-1-1">
-                                                <div class="uk-float-right uk-margin-top">
-                                                    <button type="submit" class="md-btn md-btn-primary" >Submit</button>
-                                                </div>
-                                            </div>
+                                        </div>
+                                        <div class="uk-float-right">
+                                            <button type="submit" class="md-btn md-btn-primary" style="background: #FD0100;color: #fff;">Submit</button>
                                         </div>
                                     {!! Form::close() !!}
                                 </li>

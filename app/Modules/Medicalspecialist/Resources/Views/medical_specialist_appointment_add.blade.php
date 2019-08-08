@@ -230,12 +230,12 @@
                                     </div>
                                 </div>
 
-                                <div class="uk-grid uk-ma" data-uk-grid-margin>
-                                    <div class="uk-width-1-1">
-                                        <button style="float: right" type="submit" class="md-btn md-btn-primary" >Submit</button>
+                                
+                                    <div class="uk-width-1-1 uk-margin-top">
+                                        <button style="float: right;background: #FD0100;color: #fff;" type="submit" class="md-btn md-btn-primary">Submit</button>
                                        <!--  <button type="button" class="md-btn md-btn-flat uk-modal-close">Close</button> -->
                                     </div>
-                                </div>
+                                
 
                             </div>
 
